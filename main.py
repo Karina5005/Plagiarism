@@ -1,33 +1,45 @@
-import itertools
-
 import networkx as nx
-import sys
+
+
+class Subgraphs:
+    def __init__(self, G):
+        self.subgraphs_set = []
+        self.can_be_added = {}
+        self.graph = G
+
+    def build_subgraphs(self, nodes):
+        self.can_be_added = {}
+        if len(nodes) > 0:
+            self.subgraphs_set.append(nodes)
+        for edge in self.graph.edges(nodes):
+            if edge[1] not in nodes and edge[1] not in self.can_be_added.keys():
+                self.can_be_added[edge[1]] = True
+        for node in [k for k, v in self.can_be_added.items() if v]:
+            if node not in nodes:
+                copy_nodes = nodes.copy()
+                copy_nodes.append(node)
+                self.can_be_added[node] = False
+                self.build_subgraphs(copy_nodes)
+                self.can_be_added[node] = True
+
+    def get_subgraphs(self):
+        for node in self.graph.nodes():
+            self.build_subgraphs([node])
+        return self.subgraphs_set
+
 
 if __name__ == '__main__':
-    G1 = nx.drawing.nx_pydot.read_dot(f'{sys.argv[1]}').to_undirected()
-    G2 = nx.drawing.nx_pydot.read_dot(f'{sys.argv[2]}').to_undirected()
-    
-    all_connected_subgraphs_1 = []
-    for nb_nodes in range(2, G1.number_of_nodes()):
-        for SG in (G1.subgraph(selected_nodes) for selected_nodes in itertools.combinations(G1, nb_nodes)):
-            if nx.is_connected(SG):
-                all_connected_subgraphs_1.append(SG)
-    print("Count subgraphs of graph1: ", len(all_connected_subgraphs_1))
+    G2 = nx.drawing.nx_pydot.read_dot("file2.dot").to_undirected()
+    G2 = G2.subgraph(max(nx.connected_components(G2), key=len))
+    G1 = nx.drawing.nx_pydot.read_dot("file1.dot").to_undirected()
+    G1 = G1.subgraph(max(nx.connected_components(G1), key=len))
+    G1_subgraphs = Subgraphs(G1).get_subgraphs()
+    max_iso = 0
+    for SG in sorted(G1_subgraphs, key=lambda x: len(x), reverse=True):
+        SG = G1.subgraph(SG)
+        GM = nx.algorithms.isomorphism.GraphMatcher(G2, SG)
+        if list(GM.subgraph_isomorphisms_iter()):
+            max_iso = SG.number_of_nodes()
+            break
 
-    all_connected_subgraphs_2 = []
-    for nb_nodes in range(2, G2.number_of_nodes()):
-        for SG in (G2.subgraph(selected_nodes) for selected_nodes in itertools.combinations(G2, nb_nodes)):
-            if nx.is_connected(SG):
-                all_connected_subgraphs_2.append(SG)
-    print("Count subgraphs of graph2: ", len(all_connected_subgraphs_2))
-
-    isomorphic = []
-    for g1 in all_connected_subgraphs_1:
-        for g2 in all_connected_subgraphs_2:
-            DiGM = nx.algorithms.isomorphism.GraphMatcher(g1, g2)
-            if DiGM.is_isomorphic():
-                isomorphic.append((g1, g2))
-
-    print("Count isomorphism: ", len(isomorphic))
-
-    print("Result: ", len(isomorphic) / len(all_connected_subgraphs_1) / len(all_connected_subgraphs_2)*100)
+    print(max_iso / (min(G1.number_of_nodes(), G2.number_of_nodes())))
