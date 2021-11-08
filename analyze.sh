@@ -5,6 +5,7 @@ export PATH=$HOME/clang_llvm_9.0.0/bin:$PATH
 clang -emit-llvm -S $1 -o file1.bc
 clang -emit-llvm -S $2 -o file2.bc
 mkdir build
+export LD_LIBRARY_PATH="$HOME/Plagiarism/my_llvm_program_dependency_generator/build"
 mv file1.bc build
 mv file2.bc build
 cd build
@@ -18,6 +19,15 @@ dot -Tpng file1.dot -o file1.png
 dot -Tpng file2.dot -o file2.png
 mv file1.png ../../
 mv file2.png ../../
+mv file1.dot ../../
+mv file2.dot ../../
+cd ../../
 pip3 install networkx
-pip3 install pydot
-python3 ../../main.py file1.dot file2.dot
+pip3 install pydot==1.4.2
+pip3 install graphviz
+pip3 install scipy
+pip3 install pyparsing
+python3.8 matrix.py
+g++ subgraphs.cpp -o subgraphs
+./subgraphs
+python3.8 main.py
