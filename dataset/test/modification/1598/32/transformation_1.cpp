@@ -1,0 +1,83 @@
+#include "bits/stdc++.h"
+using namespace std;
+#define forn(i,n) for(int i=0;i<n;i++)
+#define in(n) int n; cin>>n;
+#define w(x) int x; cin>>x; while(x--)
+#define pb(x) push_back(x)
+#define dbg(x) cerr << #x << "->" << x << "\n"
+#define prnt(x) cerr<<#x<<'{';for(auto T:x)cerr<<T<<' ';cerr<<"}\n";
+#define prntp(x) cerr<<#x<<'{';for(auto T:x)cerr<<T.first<<'-'<<T.second<<' ';cerr<<"}\n";
+#define int long long
+#define str(s) string s; cin>>s;
+#define endl "\n"
+#define sz(x) static_cast<int32_t>(x.size())
+const int mod = 1000000007;
+#define FAST ios_base::sync_with_stdio(false); cin.tie(NULL);
+
+int32_t main() {
+    w(t){
+        in(n);
+        int a[n][5];
+        forn(i,n){
+            forn(j,5){
+                cin>>a[i][j];
+            }
+        }
+        forn(j,5){
+            for(int k=j+1;k<5;k++)/* 'for' inside */
+            {
+                int f=0;
+                int s=0;
+                int b=0;
+                forn(i,n){
+                    /* 'if' begin */
+                    if(a[i][j]==1 and a[i][k]==1)/* 'if' inside */
+                    {
+                        b++;
+                    }
+                    else /* 'if' begin */
+                    if(a[i][j]==1)/* 'if' inside */
+                    {
+                        f++;
+                    }
+                    else /* 'if' begin */
+                    if(a[i][k]==1)/* 'if' inside */
+                    {
+                        s++;
+                    }
+                }
+                /* 'if' begin */
+                if(f>=n/2 and s>=n/2)/* 'if' inside */
+                {
+                    cout<<"YES"<<endl;
+                    goto label;
+                }
+                /* 'if' begin */
+                if(b>=abs(s-f) and s+f+b>=n)/* 'if' inside */
+                {
+                    cout<<"YES"<<endl;
+                    goto label;
+                }
+
+            }
+        }
+        cout<<"NO"<<endl;
+        label:;
+
+
+
+    }
+
+
+
+
+
+    
+
+
+
+
+
+    return 0;  
+        
+}

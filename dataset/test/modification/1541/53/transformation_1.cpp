@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std; 
+#define ll long long 
+
+
+ll a[200005];
+void solve()
+{	
+	ll n,ans=0;
+	cin>>n;
+	/* 'if' begin */
+	if(n%2==0)
+	/* 'if' inside */
+	{
+		for(int i=2;i<=n;i+=2)
+		/* 'for' inside */
+		{
+			cout<<i<<" "<<i-1<<" "; 
+		}
+	}
+	else
+	{
+		for(int i=2;i<=n-3;i+=2)
+		/* 'for' inside */
+		{
+			cout<<i<<" "<<i-1<<" "; 
+		}
+		cout<<n-1<<" "<<n<<" "<<n-2<<" ";
+	}
+	cout<<endl;
+}
+int main()
+{	
+	int t;
+	cin>>t;
+	while(t--)
+	{	
+		solve();
+	}
+	return 0;
+}
