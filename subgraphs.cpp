@@ -2,13 +2,13 @@
 #include <vector>
 #include <fstream>
 #include <bitset>
-#include <time.h>
+#include <filesystem>
+
 
 using namespace std;
 
-const int G_SIZE = 22;
-const int TRESHOLD = 10;
-const int TRESHOLD_MAX_SUB = 20;
+const int G_SIZE = 11;
+const int TRESHOLD = 0;
 const int MAX_SUBGRAPHS_NUM = 10000000;
 
 class Subgraph {
@@ -16,14 +16,21 @@ public:
     std::fstream file;
     int count;
 
-    explicit Subgraph(const vector<vector<int>> &g) : g(g) {
+    explicit Subgraph(const vector<vector<int>> &g, int i, const string& p) : g(g) {
         can_be_added = bitset<G_SIZE>();
         was_start = bitset<G_SIZE>();
         visited = bitset<G_SIZE>();
+        n = i;
 
-        file.open("subgraphs.txt", std::fstream::out | std::ofstream::trunc);
+        string path = p;
+        path.append("/subgraph/");
+        filesystem::create_directory(path);
+
+        path.append(to_string(n));
+        path.append(".txt");
+        file.open(path, std::fstream::out | std::ofstream::trunc);
         file.close();
-        file.open("subgraphs.txt", std::fstream::out | std::ofstream::trunc);
+        file.open(path, std::fstream::out | std::ofstream::trunc);
         if (!file.is_open()) {
             std::cout << "Failed to open file" << std::endl;
         }
@@ -55,6 +62,7 @@ private:
     bitset<G_SIZE> was_start;
     bitset<G_SIZE> visited;
     vector<vector<int>> g;
+    int n;
 
 
     void add_neighbours(const bitset<G_SIZE> &nodes, int cur_node) {
@@ -73,9 +81,6 @@ private:
             if (subgraphs.size() > MAX_SUBGRAPHS_NUM) {
                 to_file();
             }
-        }
-        if (nodes.count() > TRESHOLD_MAX_SUB) {
-            return;
         }
         for (int i = 0; i < g.size(); i++) {
             if (!can_be_added[i] || was_start[i] || nodes[i] || visited[i]) continue;
@@ -101,40 +106,52 @@ private:
 
 };
 
-vector<vector<int>> read_matrix() {
-    vector<vector<int>> matrix;
-    std::fstream file;
-    file.open("matrix.txt", std::fstream::in);
-    if (!file.is_open()) {
-        std::cout << "Failed to open file" << std::endl;
-    }
-    string line;
-    while(getline(file,line)){
-        vector<int>tmp;
-        for (const auto& c: line) {
-            if (c == ' ' || c == '\n') continue;
-            tmp.push_back(atoi(&c));
+vector<vector<vector<int>>> read_matrix(const string& p) {
+    vector<vector<vector<int>>> res;
+    string path = p;
+    path.append("/matrix/");
+    for (const auto & entry : filesystem::directory_iterator(path)) {
+        entry.path();
+        vector<vector<int>> matrix;
+        std::fstream file;
+        file.open(entry.path(), std::fstream::in);
+        if (!file.is_open()) {
+            std::cout << "Failed to open file" << std::endl;
         }
-        matrix.push_back(tmp);
+        string line;
+        while (getline(file, line)) {
+            vector<int> tmp;
+            for (const auto &c: line) {
+                if (c == ' ' || c == '\n') continue;
+                tmp.push_back(atoi(&c));
+            }
+            matrix.push_back(tmp);
+        }
+        file.close();
+        res.push_back(matrix);
     }
-    file.close();
-    return matrix;
+    return res;
 }
 
-int main() {
+int main(int, char *argv[]) {
     clock_t tStart = clock();
     cout << "Started search of subgraphs" << endl;
-    vector<vector<int>> matrix = read_matrix();
-    auto s = Subgraph(matrix);
-    cout <<"Matrix size: " << matrix.size() << endl;
-    for (int i = 0; i < matrix.size(); i++) {
-        cout <<"Step " << i << "/" << matrix.size() - 1 << endl;
-        s.subgraphs_with_node(i);
+    int count = 0;
+    vector<vector<vector<int>>> matrix = read_matrix(argv[1]);
+    for(int i = 0; i < matrix.size(); i++) {
+        clock_t tStart = clock();
+        auto s = Subgraph(matrix[i], i, argv[1]);
+        cout <<"Matrix size: " << matrix[i].size() << endl;
+        for (int j = 0; j < matrix[i].size(); j++) {
+            cout <<"Step " << j << "/" << matrix[i].size() - 1 << endl;
+            s.subgraphs_with_node(j);
+        }
+        count += s.count;
+        s.file.flush();
+        s.file.close();
     }
-    cout << "Number of subgraphs: " << s.count << endl;
+    cout << "Number of subgraphs: " << count << endl;
     cout << "Finished search of subgraphs in " << (double)(clock() - tStart)/CLOCKS_PER_SEC << " seconds" << endl << endl;
-    s.file.flush();
-    s.file.close();
     return 0;
 }
 
