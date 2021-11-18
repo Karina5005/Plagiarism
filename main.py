@@ -6,12 +6,12 @@ import time
 tic = time.perf_counter()
 
 
-def read_subgraphs(nodes, path):
+def read_subgraphs(nodes, path, size):
     subgraphs = []
     with open(path, 'r') as file:
         for line in file:
             subgraph = []
-            l = line.replace('\n', '')[::-1]
+            l = line.replace('\n', '')[::-1][0:size]
             for i, c in enumerate(l):
                 if c == '1':
                     subgraph.append(nodes[i])
@@ -24,6 +24,7 @@ if __name__ == '__main__':
     files1 = [f for f in os.listdir('pdg1/graph') if os.path.isfile(os.path.join('pdg1/graph', f))]
     files1_s = [f for f in os.listdir('pdg1/subgraph') if os.path.isfile(os.path.join('pdg1/subgraph', f))]
     files2 = [f for f in os.listdir('pdg2/') if os.path.isfile(os.path.join('pdg2/', f))]
+    nodes_iso = set()
     sum = 0
     max_iso_sum = 0
     for i, file1 in enumerate(files1):
@@ -32,18 +33,17 @@ if __name__ == '__main__':
             G2 = G2.subgraph(max(nx.weakly_connected_components(G2), key=len))
             G1 = nx.drawing.nx_pydot.read_dot('pdg1/graph/' + file1)
             G1 = G1.subgraph(max(nx.weakly_connected_components(G1), key=len))
-            G1_subgraphs = read_subgraphs(sorted(G1.nodes()), 'pdg1/subgraph/' + files1_s[i])
+            G1_subgraphs = read_subgraphs(sorted(G1.nodes()), 'pdg1/subgraph/' + files1_s[i], len(G1.nodes()))
             max_iso = 0
             for SG in sorted(G1_subgraphs, key=lambda x: len(x), reverse=True):
                 SG = G1.subgraph(SG)
                 GM = nx.algorithms.isomorphism.DiGraphMatcher(G2, SG)
                 if list(GM.subgraph_isomorphisms_iter()):
-                    max_iso = SG.number_of_nodes()
-                    break
-            max_iso_sum += max_iso
+                    for node in SG.nodes():
+                        nodes_iso.add(node)
             sum += (min(G1.number_of_nodes(), G2.number_of_nodes()))
 
-    print("Result: ", max_iso_sum / sum)
+    print("Result: ", len(nodes_iso) / sum)
 toc = time.perf_counter()
 print(f"Finished search of isomorphism in {toc - tic} seconds")
 

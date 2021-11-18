@@ -7,9 +7,9 @@
 
 using namespace std;
 
-const int G_SIZE = 11;
-const int TRESHOLD = 0;
-const int MAX_SUBGRAPHS_NUM = 10000000;
+const int G_SIZE = 1000;
+const int TRESHOLD = 9;
+const int MAX_SUBGRAPHS_NUM = 100000;
 
 class Subgraph {
 public:
@@ -76,11 +76,12 @@ private:
     }
 
     void build_subgraphs(bitset<G_SIZE> nodes) {
-        if (nodes.count() > TRESHOLD) {
+        if (nodes.count() >= TRESHOLD) {
             subgraphs.push_back(nodes);
             if (subgraphs.size() > MAX_SUBGRAPHS_NUM) {
                 to_file();
             }
+            return;
         }
         for (int i = 0; i < g.size(); i++) {
             if (!can_be_added[i] || was_start[i] || nodes[i] || visited[i]) continue;
