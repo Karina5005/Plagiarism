@@ -10,6 +10,8 @@ def fix_labels(G):
     for i in G.nodes:
         is_fixed = False
         for old_l, new_l in NODE_LABELS.items():
+            if 'label' not in G.nodes[i].keys():
+                break
             if old_l in G.nodes()[i]['label'].lower():
                 G.nodes[i]['label'] = new_l
                 is_fixed = True
@@ -19,6 +21,8 @@ def fix_labels(G):
     for i in G.edges:
         is_fixed = False
         for old_l, new_l in EDGE_LABELS.items():
+            if 'label' not in G.edges[i].keys():
+                break
             if old_l in G.edges[i]['label'].lower():
                 G.edges[i]['label'] = new_l
                 is_fixed = True

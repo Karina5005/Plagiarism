@@ -1,0 +1,5 @@
+transformation_1
+		for to while
+		if else swap
+		printf to cout
+		while to for
