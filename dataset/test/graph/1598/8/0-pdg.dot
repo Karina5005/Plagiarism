@@ -1,0 +1,16 @@
+digraph "INPUT" {  
+"1000105" [label = "(METHOD,INPUT)" ]
+"1000115" [label = "(METHOD_RETURN,void)" ]
+"1000107" [label = "(ios_base::sync_with_stdio,ios_base::sync_with_stdio(false))" ]
+"1000109" [label = "(cin.tie,cin.tie(NULL))" ]
+"1000111" [label = "(freopen,freopen(\"input\", \"r\", stdin))" ]
+  "1000107" -> "1000115"  [ label = "DDG: ios_base::sync_with_stdio(false)"] 
+  "1000109" -> "1000115"  [ label = "DDG: cin.tie(NULL)"] 
+  "1000111" -> "1000115"  [ label = "DDG: freopen(\"input\", \"r\", stdin)"] 
+  "1000111" -> "1000115"  [ label = "DDG: stdin"] 
+  "1000109" -> "1000115"  [ label = "DDG: NULL"] 
+  "1000107" -> "1000115"  [ label = "DDG: false"] 
+  "1000105" -> "1000107"  [ label = "DDG: "] 
+  "1000105" -> "1000109"  [ label = "DDG: "] 
+  "1000105" -> "1000111"  [ label = "DDG: "] 
+}

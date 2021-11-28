@@ -1,0 +1,8 @@
+digraph "debug" {  
+"1000144" [label = "(METHOD,debug)" ]
+"1000149" [label = "(METHOD_RETURN,void)" ]
+"1000146" [label = "(<operator>.shiftLeft,cerr << \"\n\")" ]
+  "1000146" -> "1000149"  [ label = "DDG: cerr << \"\n\""] 
+  "1000146" -> "1000149"  [ label = "DDG: cerr"] 
+  "1000144" -> "1000146"  [ label = "DDG: "] 
+}

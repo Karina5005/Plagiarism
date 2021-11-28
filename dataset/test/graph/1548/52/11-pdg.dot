@@ -1,0 +1,13 @@
+digraph "singlval" {  
+"1000378" [label = "(METHOD,singlval)" ]
+"1000383" [label = "(METHOD_RETURN,item)" ]
+"1000379" [label = "(PARAM,ll x)" ]
+"1000381" [label = "(RETURN,return x;,return x;)" ]
+"1000382" [label = "(IDENTIFIER,x,return x;)" ]
+  "1000379" -> "1000383"  [ label = "DDG: x"] 
+  "1000381" -> "1000383"  [ label = "DDG: <RET>"] 
+  "1000378" -> "1000379"  [ label = "DDG: "] 
+  "1000382" -> "1000381"  [ label = "DDG: x"] 
+  "1000379" -> "1000381"  [ label = "DDG: x"] 
+  "1000378" -> "1000382"  [ label = "DDG: "] 
+}

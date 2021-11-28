@@ -1,0 +1,12 @@
+digraph "mop" {  
+"1000127" [label = "(METHOD,mop)" ]
+"1000132" [label = "(METHOD_RETURN,T)" ]
+"1000128" [label = "(PARAM,T a)" ]
+"1000129" [label = "(PARAM,Args... args)" ]
+"1000131" [label = "(IDENTIFIER,M,)" ]
+  "1000128" -> "1000132"  [ label = "DDG: a"] 
+  "1000129" -> "1000132"  [ label = "DDG: args"] 
+  "1000127" -> "1000128"  [ label = "DDG: "] 
+  "1000127" -> "1000129"  [ label = "DDG: "] 
+  "1000127" -> "1000131"  [ label = "DDG: "] 
+}

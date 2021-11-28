@@ -1,0 +1,13 @@
+digraph "_IO" {  
+"1000102" [label = "(METHOD,_IO)" ]
+"1000110" [label = "(METHOD_RETURN,int)" ]
+"1000104" [label = "(ios::sync_with_stdio,ios::sync_with_stdio(0))" ]
+"1000106" [label = "(cin.tie,cin.tie(0))" ]
+"1000108" [label = "(cout.tie,cout.tie(0))" ]
+  "1000104" -> "1000110"  [ label = "DDG: ios::sync_with_stdio(0)"] 
+  "1000106" -> "1000110"  [ label = "DDG: cin.tie(0)"] 
+  "1000108" -> "1000110"  [ label = "DDG: cout.tie(0)"] 
+  "1000102" -> "1000104"  [ label = "DDG: "] 
+  "1000102" -> "1000106"  [ label = "DDG: "] 
+  "1000102" -> "1000108"  [ label = "DDG: "] 
+}

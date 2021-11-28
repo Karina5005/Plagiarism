@@ -1,0 +1,16 @@
+digraph "main" {  
+"1000429" [label = "(METHOD,main)" ]
+"1000439" [label = "(METHOD_RETURN,signed)" ]
+"1000432" [label = "(<operator>.assignment,T=read())" ]
+"1000436" [label = "(<operator>.postDecrement,T--)" ]
+"1000438" [label = "(solve,solve())" ]
+  "1000432" -> "1000439"  [ label = "DDG: read()"] 
+  "1000436" -> "1000439"  [ label = "DDG: T"] 
+  "1000438" -> "1000439"  [ label = "DDG: solve()"] 
+  "1000429" -> "1000432"  [ label = "DDG: "] 
+  "1000429" -> "1000438"  [ label = "DDG: "] 
+  "1000432" -> "1000436"  [ label = "DDG: T"] 
+  "1000429" -> "1000436"  [ label = "DDG: "] 
+  "1000436" -> "1000438"  [ label = "CDG: "] 
+  "1000436" -> "1000436"  [ label = "CDG: "] 
+}

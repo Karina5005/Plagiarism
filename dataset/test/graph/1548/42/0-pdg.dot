@@ -1,0 +1,15 @@
+digraph "input" {  
+"1000106" [label = "(METHOD,input)" ]
+"1000113" [label = "(METHOD_RETURN,void)" ]
+"1000108" [label = "(<operator>.arithmeticShiftRight,cin >> n >> q)" ]
+"1000110" [label = "(<operator>.arithmeticShiftRight,n >> q)" ]
+  "1000110" -> "1000113"  [ label = "DDG: n"] 
+  "1000108" -> "1000113"  [ label = "DDG: n >> q"] 
+  "1000108" -> "1000113"  [ label = "DDG: cin >> n >> q"] 
+  "1000108" -> "1000113"  [ label = "DDG: cin"] 
+  "1000110" -> "1000113"  [ label = "DDG: q"] 
+  "1000106" -> "1000108"  [ label = "DDG: "] 
+  "1000110" -> "1000108"  [ label = "DDG: q"] 
+  "1000110" -> "1000108"  [ label = "DDG: n"] 
+  "1000106" -> "1000110"  [ label = "DDG: "] 
+}

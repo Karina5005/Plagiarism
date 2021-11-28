@@ -1,0 +1,15 @@
+digraph "make" {  
+"1000116" [label = "(METHOD,make)" ]
+"1000129" [label = "(METHOD_RETURN,void)" ]
+"1000117" [label = "(PARAM,T a)" ]
+"1000119" [label = "(<operator>.assignment,size[a] = 1)" ]
+"1000124" [label = "(<operator>.assignment,parent[a] = a)" ]
+  "1000117" -> "1000129"  [ label = "DDG: a"] 
+  "1000119" -> "1000129"  [ label = "DDG: size[a]"] 
+  "1000124" -> "1000129"  [ label = "DDG: parent[a]"] 
+  "1000124" -> "1000129"  [ label = "DDG: a"] 
+  "1000116" -> "1000117"  [ label = "DDG: "] 
+  "1000116" -> "1000119"  [ label = "DDG: "] 
+  "1000117" -> "1000124"  [ label = "DDG: a"] 
+  "1000116" -> "1000124"  [ label = "DDG: "] 
+}

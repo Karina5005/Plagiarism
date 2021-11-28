@@ -1,0 +1,13 @@
+digraph "getString" {  
+"1000241" [label = "(METHOD,getString)" ]
+"1000247" [label = "(METHOD_RETURN,string)" ]
+"1000242" [label = "(PARAM,char x)" ]
+"1000245" [label = "(RETURN,return s;,return s;)" ]
+"1000246" [label = "(IDENTIFIER,s,return s;)" ]
+  "1000242" -> "1000247"  [ label = "DDG: x"] 
+  "1000245" -> "1000247"  [ label = "DDG: <RET>"] 
+  "1000241" -> "1000242"  [ label = "DDG: "] 
+  "1000246" -> "1000245"  [ label = "DDG: s"] 
+  "1000241" -> "1000245"  [ label = "DDG: "] 
+  "1000241" -> "1000246"  [ label = "DDG: "] 
+}

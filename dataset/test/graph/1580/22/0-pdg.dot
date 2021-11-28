@@ -1,0 +1,16 @@
+digraph "rnd" {  
+"1000106" [label = "(METHOD,rnd)" ]
+"1000113" [label = "(METHOD_RETURN,int)" ]
+"1000107" [label = "(PARAM,int x)" ]
+"1000109" [label = "(RETURN,return mrand() % x;,return mrand() % x;)" ]
+"1000110" [label = "(<operator>.modulo,mrand() % x)" ]
+  "1000109" -> "1000113"  [ label = "DDG: <RET>"] 
+  "1000107" -> "1000113"  [ label = "DDG: x"] 
+  "1000110" -> "1000113"  [ label = "DDG: mrand()"] 
+  "1000110" -> "1000113"  [ label = "DDG: x"] 
+  "1000110" -> "1000113"  [ label = "DDG: mrand() % x"] 
+  "1000106" -> "1000107"  [ label = "DDG: "] 
+  "1000110" -> "1000109"  [ label = "DDG: mrand() % x"] 
+  "1000106" -> "1000110"  [ label = "DDG: "] 
+  "1000107" -> "1000110"  [ label = "DDG: x"] 
+}

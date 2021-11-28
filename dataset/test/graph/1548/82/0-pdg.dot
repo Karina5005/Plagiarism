@@ -1,0 +1,12 @@
+digraph "check" {  
+"1000108" [label = "(METHOD,check)" ]
+"1000114" [label = "(METHOD_RETURN,void)" ]
+"1000109" [label = "(PARAM,ll u)" ]
+"1000112" [label = "(cont.insert,cont.insert(u))" ]
+  "1000109" -> "1000114"  [ label = "DDG: u"] 
+  "1000112" -> "1000114"  [ label = "DDG: u"] 
+  "1000112" -> "1000114"  [ label = "DDG: cont.insert(u)"] 
+  "1000108" -> "1000109"  [ label = "DDG: "] 
+  "1000109" -> "1000112"  [ label = "DDG: u"] 
+  "1000108" -> "1000112"  [ label = "DDG: "] 
+}

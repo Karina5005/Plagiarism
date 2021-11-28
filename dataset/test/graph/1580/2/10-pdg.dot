@@ -1,0 +1,12 @@
+digraph "_W" {  
+"1000170" [label = "(METHOD,_W)" ]
+"1000176" [label = "(METHOD_RETURN,void)" ]
+"1000171" [label = "(PARAM,const int &x)" ]
+"1000173" [label = "(printf,printf(\"%d\", x))" ]
+  "1000171" -> "1000176"  [ label = "DDG: x"] 
+  "1000173" -> "1000176"  [ label = "DDG: x"] 
+  "1000173" -> "1000176"  [ label = "DDG: printf(\"%d\", x)"] 
+  "1000170" -> "1000171"  [ label = "DDG: "] 
+  "1000170" -> "1000173"  [ label = "DDG: "] 
+  "1000171" -> "1000173"  [ label = "DDG: x"] 
+}

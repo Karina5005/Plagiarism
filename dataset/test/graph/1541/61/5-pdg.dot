@@ -1,0 +1,15 @@
+digraph "ts" {  
+"1000141" [label = "(METHOD,ts)" ]
+"1000149" [label = "(METHOD_RETURN,string)" ]
+"1000142" [label = "(PARAM,bool b)" ]
+"1000144" [label = "(RETURN,return b ? \"true\" : \"false\";,return b ? \"true\" : \"false\";)" ]
+"1000145" [label = "(<operator>.conditional,b ? \"true\" : \"false\")" ]
+  "1000144" -> "1000149"  [ label = "DDG: <RET>"] 
+  "1000142" -> "1000149"  [ label = "DDG: b"] 
+  "1000145" -> "1000149"  [ label = "DDG: b"] 
+  "1000145" -> "1000149"  [ label = "DDG: b ? \"true\" : \"false\""] 
+  "1000141" -> "1000142"  [ label = "DDG: "] 
+  "1000145" -> "1000144"  [ label = "DDG: b ? \"true\" : \"false\""] 
+  "1000141" -> "1000145"  [ label = "DDG: "] 
+  "1000142" -> "1000145"  [ label = "DDG: b"] 
+}

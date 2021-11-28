@@ -1,0 +1,10 @@
+digraph "query" {  
+"1000211" [label = "(METHOD,query)" ]
+"1000215" [label = "(METHOD_RETURN,inline int)" ]
+"1000213" [label = "(RETURN,return ret;,return ret;)" ]
+"1000214" [label = "(IDENTIFIER,ret,return ret;)" ]
+  "1000213" -> "1000215"  [ label = "DDG: <RET>"] 
+  "1000214" -> "1000213"  [ label = "DDG: ret"] 
+  "1000211" -> "1000213"  [ label = "DDG: "] 
+  "1000211" -> "1000214"  [ label = "DDG: "] 
+}

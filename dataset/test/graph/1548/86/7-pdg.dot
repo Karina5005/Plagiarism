@@ -1,0 +1,15 @@
+digraph "DB" {  
+"1000172" [label = "(METHOD,DB)" ]
+"1000179" [label = "(METHOD_RETURN,inline int)" ]
+"1000173" [label = "(PARAM,int x)" ]
+"1000175" [label = "(RETURN,return x << 1;,return x << 1;)" ]
+"1000176" [label = "(<operator>.shiftLeft,x << 1)" ]
+  "1000173" -> "1000179"  [ label = "DDG: x"] 
+  "1000176" -> "1000179"  [ label = "DDG: x"] 
+  "1000176" -> "1000179"  [ label = "DDG: x << 1"] 
+  "1000175" -> "1000179"  [ label = "DDG: <RET>"] 
+  "1000172" -> "1000173"  [ label = "DDG: "] 
+  "1000176" -> "1000175"  [ label = "DDG: x << 1"] 
+  "1000173" -> "1000176"  [ label = "DDG: x"] 
+  "1000172" -> "1000176"  [ label = "DDG: "] 
+}

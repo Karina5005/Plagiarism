@@ -1,0 +1,18 @@
+digraph "operator%" {  
+"1000139" [label = "(METHOD,operator%)" ]
+"1000146" [label = "(METHOD_RETURN,inline ll)" ]
+"1000140" [label = "(PARAM,const ll &x)" ]
+"1000141" [label = "(PARAM,const barrett &mod)" ]
+"1000143" [label = "(RETURN,return mod.reduce(x);,return mod.reduce(x);)" ]
+"1000144" [label = "(mod.reduce,mod.reduce(x))" ]
+  "1000140" -> "1000146"  [ label = "DDG: x"] 
+  "1000141" -> "1000146"  [ label = "DDG: mod"] 
+  "1000144" -> "1000146"  [ label = "DDG: x"] 
+  "1000144" -> "1000146"  [ label = "DDG: mod.reduce(x)"] 
+  "1000143" -> "1000146"  [ label = "DDG: <RET>"] 
+  "1000139" -> "1000140"  [ label = "DDG: "] 
+  "1000139" -> "1000141"  [ label = "DDG: "] 
+  "1000144" -> "1000143"  [ label = "DDG: mod.reduce(x)"] 
+  "1000140" -> "1000144"  [ label = "DDG: x"] 
+  "1000139" -> "1000144"  [ label = "DDG: "] 
+}

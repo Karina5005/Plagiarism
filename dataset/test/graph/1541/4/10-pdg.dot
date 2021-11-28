@@ -1,0 +1,17 @@
+digraph "py" {  
+"1000465" [label = "(METHOD,py)" ]
+"1000477" [label = "(METHOD_RETURN,void)" ]
+"1000466" [label = "(PARAM,bool y)" ]
+"1000469" [label = "(IDENTIFIER,y,if(y))" ]
+"1000470" [label = "(<operator>.shiftLeft,cout<<\"YES\n\")" ]
+"1000474" [label = "(<operator>.shiftLeft,cout<<\"NO\n\")" ]
+  "1000466" -> "1000477"  [ label = "DDG: y"] 
+  "1000474" -> "1000477"  [ label = "DDG: cout"] 
+  "1000474" -> "1000477"  [ label = "DDG: cout<<\"NO\n\""] 
+  "1000470" -> "1000477"  [ label = "DDG: cout"] 
+  "1000470" -> "1000477"  [ label = "DDG: cout<<\"YES\n\""] 
+  "1000465" -> "1000466"  [ label = "DDG: "] 
+  "1000465" -> "1000469"  [ label = "DDG: "] 
+  "1000465" -> "1000470"  [ label = "DDG: "] 
+  "1000465" -> "1000474"  [ label = "DDG: "] 
+}

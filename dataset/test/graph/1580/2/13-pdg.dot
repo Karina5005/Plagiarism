@@ -1,0 +1,12 @@
+digraph "_W" {  
+"1000191" [label = "(METHOD,_W)" ]
+"1000196" [label = "(METHOD_RETURN,void)" ]
+"1000192" [label = "(PARAM,const char &x)" ]
+"1000194" [label = "(putchar,putchar(x))" ]
+  "1000192" -> "1000196"  [ label = "DDG: x"] 
+  "1000194" -> "1000196"  [ label = "DDG: x"] 
+  "1000194" -> "1000196"  [ label = "DDG: putchar(x)"] 
+  "1000191" -> "1000192"  [ label = "DDG: "] 
+  "1000192" -> "1000194"  [ label = "DDG: x"] 
+  "1000191" -> "1000194"  [ label = "DDG: "] 
+}

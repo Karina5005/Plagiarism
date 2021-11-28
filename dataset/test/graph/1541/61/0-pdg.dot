@@ -1,0 +1,5 @@
+digraph "mos" {  
+"1000113" [label = "(METHOD,mos)" ]
+"1000115" [label = "(IDENTIFIER,L,)" ]
+  "1000113" -> "1000115"  [ label = "DDG: "] 
+}

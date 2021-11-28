@@ -1,0 +1,10 @@
+digraph "write" {  
+"1000500" [label = "(METHOD,write)" ]
+"1000504" [label = "(METHOD_RETURN,inline void)" ]
+"1000501" [label = "(PARAM,Head H)" ]
+"1000502" [label = "(PARAM,Tail... T)" ]
+  "1000501" -> "1000504"  [ label = "DDG: H"] 
+  "1000502" -> "1000504"  [ label = "DDG: T"] 
+  "1000500" -> "1000501"  [ label = "DDG: "] 
+  "1000500" -> "1000502"  [ label = "DDG: "] 
+}

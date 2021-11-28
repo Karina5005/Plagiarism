@@ -1,0 +1,7 @@
+digraph "flush" {  
+"1000505" [label = "(METHOD,flush)" ]
+"1000509" [label = "(METHOD_RETURN,inline void)" ]
+"1000507" [label = "(pc,pc(0))" ]
+  "1000507" -> "1000509"  [ label = "DDG: pc(0)"] 
+  "1000505" -> "1000507"  [ label = "DDG: "] 
+}

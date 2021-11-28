@@ -1,0 +1,18 @@
+digraph "read" {  
+"1000152" [label = "(METHOD,read)" ]
+"1000164" [label = "(METHOD_RETURN,void)" ]
+"1000153" [label = "(PARAM,pair<H, T>& p)" ]
+"1000155" [label = "(<operator>.arithmeticShiftRight,cin >> p.f >> p.s)" ]
+"1000157" [label = "(<operator>.arithmeticShiftRight,p.f >> p.s)" ]
+  "1000153" -> "1000164"  [ label = "DDG: p"] 
+  "1000157" -> "1000164"  [ label = "DDG: p.f"] 
+  "1000157" -> "1000164"  [ label = "DDG: p.s"] 
+  "1000155" -> "1000164"  [ label = "DDG: p.f >> p.s"] 
+  "1000155" -> "1000164"  [ label = "DDG: cin >> p.f >> p.s"] 
+  "1000155" -> "1000164"  [ label = "DDG: cin"] 
+  "1000152" -> "1000153"  [ label = "DDG: "] 
+  "1000152" -> "1000155"  [ label = "DDG: "] 
+  "1000157" -> "1000155"  [ label = "DDG: p.s"] 
+  "1000157" -> "1000155"  [ label = "DDG: p.f"] 
+  "1000153" -> "1000157"  [ label = "DDG: p"] 
+}

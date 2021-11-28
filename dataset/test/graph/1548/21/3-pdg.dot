@@ -1,0 +1,15 @@
+digraph "writesp" {  
+"1000232" [label = "(METHOD,writesp)" ]
+"1000240" [label = "(METHOD_RETURN,inline void)" ]
+"1000233" [label = "(PARAM,ll x)" ]
+"1000236" [label = "(write,write(x))" ]
+"1000238" [label = "(putchar,putchar(' '))" ]
+  "1000233" -> "1000240"  [ label = "DDG: x"] 
+  "1000236" -> "1000240"  [ label = "DDG: x"] 
+  "1000236" -> "1000240"  [ label = "DDG: write(x)"] 
+  "1000238" -> "1000240"  [ label = "DDG: putchar(' ')"] 
+  "1000232" -> "1000233"  [ label = "DDG: "] 
+  "1000233" -> "1000236"  [ label = "DDG: x"] 
+  "1000232" -> "1000236"  [ label = "DDG: "] 
+  "1000232" -> "1000238"  [ label = "DDG: "] 
+}

@@ -1,0 +1,15 @@
+digraph "writeln" {  
+"1000217" [label = "(METHOD,writeln)" ]
+"1000224" [label = "(METHOD_RETURN,inline void)" ]
+"1000218" [label = "(PARAM,ll x)" ]
+"1000220" [label = "(write,write(x))" ]
+"1000222" [label = "(puts,puts(\"\"))" ]
+  "1000218" -> "1000224"  [ label = "DDG: x"] 
+  "1000220" -> "1000224"  [ label = "DDG: x"] 
+  "1000220" -> "1000224"  [ label = "DDG: write(x)"] 
+  "1000222" -> "1000224"  [ label = "DDG: puts(\"\")"] 
+  "1000217" -> "1000218"  [ label = "DDG: "] 
+  "1000218" -> "1000220"  [ label = "DDG: x"] 
+  "1000217" -> "1000220"  [ label = "DDG: "] 
+  "1000217" -> "1000222"  [ label = "DDG: "] 
+}

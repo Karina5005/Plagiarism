@@ -1,0 +1,18 @@
+digraph "sc" {  
+"1000130" [label = "(METHOD,sc)" ]
+"1000143" [label = "(METHOD_RETURN,void)" ]
+"1000131" [label = "(PARAM,int &x)" ]
+"1000132" [label = "(PARAM,int &y)" ]
+"1000133" [label = "(PARAM,int &z)" ]
+"1000135" [label = "(scanf,scanf(\"%d%d%d\", &x, &y, &z))" ]
+  "1000131" -> "1000143"  [ label = "DDG: x"] 
+  "1000132" -> "1000143"  [ label = "DDG: y"] 
+  "1000133" -> "1000143"  [ label = "DDG: z"] 
+  "1000135" -> "1000143"  [ label = "DDG: &x"] 
+  "1000135" -> "1000143"  [ label = "DDG: &y"] 
+  "1000135" -> "1000143"  [ label = "DDG: &z"] 
+  "1000130" -> "1000131"  [ label = "DDG: "] 
+  "1000130" -> "1000132"  [ label = "DDG: "] 
+  "1000130" -> "1000133"  [ label = "DDG: "] 
+  "1000130" -> "1000135"  [ label = "DDG: "] 
+}

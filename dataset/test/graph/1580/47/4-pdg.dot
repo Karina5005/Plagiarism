@@ -1,0 +1,15 @@
+digraph "operator =" {  
+"1000210" [label = "(METHOD,operator =)" ]
+"1000220" [label = "(METHOD_RETURN,modint &)" ]
+"1000211" [label = "(PARAM,int o)" ]
+"1000213" [label = "(RETURN,return x=o,*this;,return x=o,*this;)" ]
+"1000215" [label = "(<operator>.assignment,x=o)" ]
+  "1000213" -> "1000220"  [ label = "DDG: <RET>"] 
+  "1000211" -> "1000220"  [ label = "DDG: o"] 
+  "1000215" -> "1000220"  [ label = "DDG: o"] 
+  "1000215" -> "1000220"  [ label = "DDG: x"] 
+  "1000210" -> "1000211"  [ label = "DDG: "] 
+  "1000210" -> "1000213"  [ label = "DDG: "] 
+  "1000211" -> "1000215"  [ label = "DDG: o"] 
+  "1000210" -> "1000215"  [ label = "DDG: "] 
+}

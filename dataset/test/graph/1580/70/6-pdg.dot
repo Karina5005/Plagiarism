@@ -1,0 +1,14 @@
+digraph "query" {  
+"1000424" [label = "(METHOD,query)" ]
+"1000437" [label = "(METHOD_RETURN,inline int)" ]
+"1000425" [label = "(PARAM,int pos)" ]
+"1000427" [label = "(RETURN,return a[pos]+tag[id[pos]];,return a[pos]+tag[id[pos]];)" ]
+"1000428" [label = "(<operator>.addition,a[pos]+tag[id[pos]])" ]
+  "1000427" -> "1000437"  [ label = "DDG: <RET>"] 
+  "1000425" -> "1000437"  [ label = "DDG: pos"] 
+  "1000428" -> "1000437"  [ label = "DDG: a[pos]"] 
+  "1000428" -> "1000437"  [ label = "DDG: tag[id[pos]]"] 
+  "1000428" -> "1000437"  [ label = "DDG: a[pos]+tag[id[pos]]"] 
+  "1000424" -> "1000425"  [ label = "DDG: "] 
+  "1000428" -> "1000427"  [ label = "DDG: a[pos]+tag[id[pos]]"] 
+}

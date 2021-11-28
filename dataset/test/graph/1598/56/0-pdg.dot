@@ -1,0 +1,17 @@
+digraph "rand" {  
+"1000107" [label = "(METHOD,rand)" ]
+"1000115" [label = "(METHOD_RETURN,int)" ]
+"1000108" [label = "(PARAM,int l)" ]
+"1000109" [label = "(PARAM,int r)" ]
+"1000112" [label = "(RETURN,return ludo(rng);,return ludo(rng);)" ]
+"1000113" [label = "(ludo,ludo(rng))" ]
+  "1000112" -> "1000115"  [ label = "DDG: <RET>"] 
+  "1000108" -> "1000115"  [ label = "DDG: l"] 
+  "1000109" -> "1000115"  [ label = "DDG: r"] 
+  "1000113" -> "1000115"  [ label = "DDG: ludo(rng)"] 
+  "1000113" -> "1000115"  [ label = "DDG: rng"] 
+  "1000107" -> "1000108"  [ label = "DDG: "] 
+  "1000107" -> "1000109"  [ label = "DDG: "] 
+  "1000113" -> "1000112"  [ label = "DDG: ludo(rng)"] 
+  "1000107" -> "1000113"  [ label = "DDG: "] 
+}

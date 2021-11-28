@@ -1,0 +1,11 @@
+digraph "read" {  
+"1000165" [label = "(METHOD,read)" ]
+"1000170" [label = "(METHOD_RETURN,void)" ]
+"1000166" [label = "(PARAM,array<A, S>& x)" ]
+"1000168" [label = "(read,read(a))" ]
+  "1000166" -> "1000170"  [ label = "DDG: x"] 
+  "1000168" -> "1000170"  [ label = "DDG: read(a)"] 
+  "1000168" -> "1000170"  [ label = "DDG: a"] 
+  "1000165" -> "1000166"  [ label = "DDG: "] 
+  "1000165" -> "1000168"  [ label = "DDG: "] 
+}

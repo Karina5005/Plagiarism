@@ -1,0 +1,15 @@
+digraph "ts" {  
+"1000133" [label = "(METHOD,ts)" ]
+"1000140" [label = "(METHOD_RETURN,string)" ]
+"1000134" [label = "(PARAM,char c)" ]
+"1000136" [label = "(RETURN,return string(1, c);,return string(1, c);)" ]
+"1000137" [label = "(string,string(1, c))" ]
+  "1000136" -> "1000140"  [ label = "DDG: <RET>"] 
+  "1000134" -> "1000140"  [ label = "DDG: c"] 
+  "1000137" -> "1000140"  [ label = "DDG: c"] 
+  "1000137" -> "1000140"  [ label = "DDG: string(1, c)"] 
+  "1000133" -> "1000134"  [ label = "DDG: "] 
+  "1000137" -> "1000136"  [ label = "DDG: string(1, c)"] 
+  "1000133" -> "1000137"  [ label = "DDG: "] 
+  "1000134" -> "1000137"  [ label = "DDG: c"] 
+}

@@ -1,0 +1,12 @@
+digraph "write" {  
+"1000458" [label = "(METHOD,write)" ]
+"1000463" [label = "(METHOD_RETURN,inline void)" ]
+"1000459" [label = "(PARAM,char c)" ]
+"1000461" [label = "(pc,pc(c))" ]
+  "1000459" -> "1000463"  [ label = "DDG: c"] 
+  "1000461" -> "1000463"  [ label = "DDG: c"] 
+  "1000461" -> "1000463"  [ label = "DDG: pc(c)"] 
+  "1000458" -> "1000459"  [ label = "DDG: "] 
+  "1000459" -> "1000461"  [ label = "DDG: c"] 
+  "1000458" -> "1000461"  [ label = "DDG: "] 
+}

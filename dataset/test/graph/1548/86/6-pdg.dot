@@ -1,0 +1,15 @@
+digraph "HF" {  
+"1000164" [label = "(METHOD,HF)" ]
+"1000171" [label = "(METHOD_RETURN,inline int)" ]
+"1000165" [label = "(PARAM,int x)" ]
+"1000167" [label = "(RETURN,return x >> 1;,return x >> 1;)" ]
+"1000168" [label = "(<operator>.arithmeticShiftRight,x >> 1)" ]
+  "1000165" -> "1000171"  [ label = "DDG: x"] 
+  "1000168" -> "1000171"  [ label = "DDG: x"] 
+  "1000168" -> "1000171"  [ label = "DDG: x >> 1"] 
+  "1000167" -> "1000171"  [ label = "DDG: <RET>"] 
+  "1000164" -> "1000165"  [ label = "DDG: "] 
+  "1000168" -> "1000167"  [ label = "DDG: x >> 1"] 
+  "1000165" -> "1000168"  [ label = "DDG: x"] 
+  "1000164" -> "1000168"  [ label = "DDG: "] 
+}

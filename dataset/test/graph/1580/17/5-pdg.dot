@@ -1,0 +1,15 @@
+digraph "main" {  
+"1000508" [label = "(METHOD,main)" ]
+"1000520" [label = "(METHOD_RETURN,int)" ]
+"1000511" [label = "(scanf,scanf(\"%d\", &T))" ]
+"1000516" [label = "(<operator>.postDecrement,T--)" ]
+"1000519" [label = "(test_case,test_case())" ]
+  "1000511" -> "1000520"  [ label = "DDG: &T"] 
+  "1000516" -> "1000520"  [ label = "DDG: T"] 
+  "1000519" -> "1000520"  [ label = "DDG: test_case()"] 
+  "1000508" -> "1000511"  [ label = "DDG: "] 
+  "1000508" -> "1000516"  [ label = "DDG: "] 
+  "1000508" -> "1000519"  [ label = "DDG: "] 
+  "1000516" -> "1000516"  [ label = "CDG: "] 
+  "1000516" -> "1000519"  [ label = "CDG: "] 
+}

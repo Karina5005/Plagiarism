@@ -1,0 +1,15 @@
+digraph "LT" {  
+"1000129" [label = "(METHOD,LT)" ]
+"1000136" [label = "(METHOD_RETURN,inline int)" ]
+"1000130" [label = "(PARAM,int x)" ]
+"1000132" [label = "(RETURN,return x << 1;,return x << 1;)" ]
+"1000133" [label = "(<operator>.shiftLeft,x << 1)" ]
+  "1000130" -> "1000136"  [ label = "DDG: x"] 
+  "1000133" -> "1000136"  [ label = "DDG: x"] 
+  "1000133" -> "1000136"  [ label = "DDG: x << 1"] 
+  "1000132" -> "1000136"  [ label = "DDG: <RET>"] 
+  "1000129" -> "1000130"  [ label = "DDG: "] 
+  "1000133" -> "1000132"  [ label = "DDG: x << 1"] 
+  "1000130" -> "1000133"  [ label = "DDG: x"] 
+  "1000129" -> "1000133"  [ label = "DDG: "] 
+}

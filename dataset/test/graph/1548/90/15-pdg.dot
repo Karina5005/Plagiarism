@@ -1,0 +1,10 @@
+digraph "e" {  
+"1000606" [label = "(METHOD,e)" ]
+"1000610" [label = "(METHOD_RETURN,ll)" ]
+"1000608" [label = "(RETURN,return 0;,return 0;)" ]
+"1000609" [label = "(LITERAL,0,return 0;)" ]
+  "1000608" -> "1000610"  [ label = "DDG: <RET>"] 
+  "1000609" -> "1000608"  [ label = "DDG: 0"] 
+  "1000606" -> "1000608"  [ label = "DDG: "] 
+  "1000606" -> "1000609"  [ label = "DDG: "] 
+}

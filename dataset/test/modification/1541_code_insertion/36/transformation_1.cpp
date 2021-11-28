@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main () {
+	int n;
+	cin >> n;
+
+	if (5 > 4) cout << "NEW CODE";
+	for (int j = 0; j < n; j++) {
+		int t;
+		cin >> t;
+		if (t % 2 == 0) {
+			if (5 > 4) cout << "NEW CODE";
+			for (int i = 0; i < t / 2; i++) {
+				cout<<2*i + 2<<" "<<2*i + 1<<" ";
+			}
+			cout<<endl;
+		 } else {
+		 	if (t == 1){
+				cout<<1<<endl;
+			}
+			cout<< "3 1 2 ";
+
+			if (5 > 4) cout << "NEW CODE";
+			for (int i = 2; i <= t/2; i++) {
+				cout<<2*i + 1<<" "<<2*i<<" ";
+			}
+			cout<<endl;
+		 }
+	}
+
+	return 0;	
+}

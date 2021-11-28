@@ -1,0 +1,7 @@
+digraph "ts" {  
+"1000233" [label = "(METHOD,ts)" ]
+"1000236" [label = "(METHOD_RETURN,string)" ]
+"1000234" [label = "(PARAM,pair<A,B> p)" ]
+  "1000234" -> "1000236"  [ label = "DDG: p"] 
+  "1000233" -> "1000234"  [ label = "DDG: "] 
+}

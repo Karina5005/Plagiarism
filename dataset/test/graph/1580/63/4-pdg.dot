@@ -1,0 +1,13 @@
+digraph "C" {  
+"1000248" [label = "(METHOD,C)" ]
+"1000258" [label = "(METHOD_RETURN,int)" ]
+"1000249" [label = "(PARAM,int x)" ]
+"1000250" [label = "(PARAM,int y)" ]
+"1000252" [label = "(RETURN,return c[x][y];,return c[x][y];)" ]
+  "1000252" -> "1000258"  [ label = "DDG: <RET>"] 
+  "1000249" -> "1000258"  [ label = "DDG: x"] 
+  "1000250" -> "1000258"  [ label = "DDG: y"] 
+  "1000248" -> "1000249"  [ label = "DDG: "] 
+  "1000248" -> "1000250"  [ label = "DDG: "] 
+  "1000248" -> "1000252"  [ label = "DDG: "] 
+}

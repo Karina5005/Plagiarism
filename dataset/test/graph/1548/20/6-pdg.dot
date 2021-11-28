@@ -1,0 +1,18 @@
+digraph "init" {  
+"1000279" [label = "(METHOD,init)" ]
+"1000290" [label = "(METHOD_RETURN,void)" ]
+"1000280" [label = "(PARAM,int x)" ]
+"1000282" [label = "(<operator>.assignment,P=x)" ]
+"1000285" [label = "(memset,memset(c,0,sizeof(c)))" ]
+"1000288" [label = "(<operator>.sizeOf,sizeof(c))" ]
+  "1000280" -> "1000290"  [ label = "DDG: x"] 
+  "1000282" -> "1000290"  [ label = "DDG: x"] 
+  "1000285" -> "1000290"  [ label = "DDG: c"] 
+  "1000285" -> "1000290"  [ label = "DDG: memset(c,0,sizeof(c))"] 
+  "1000282" -> "1000290"  [ label = "DDG: P"] 
+  "1000279" -> "1000280"  [ label = "DDG: "] 
+  "1000280" -> "1000282"  [ label = "DDG: x"] 
+  "1000279" -> "1000282"  [ label = "DDG: "] 
+  "1000279" -> "1000285"  [ label = "DDG: "] 
+  "1000279" -> "1000288"  [ label = "DDG: "] 
+}

@@ -1,0 +1,7 @@
+digraph "FastMod" {  
+"1000165" [label = "(METHOD,FastMod)" ]
+"1000168" [label = "(METHOD_RETURN,int)" ]
+"1000166" [label = "(PARAM,ull b)" ]
+  "1000166" -> "1000168"  [ label = "DDG: b"] 
+  "1000165" -> "1000166"  [ label = "DDG: "] 
+}

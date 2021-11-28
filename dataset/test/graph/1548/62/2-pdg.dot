@@ -1,0 +1,14 @@
+digraph "rem" {  
+"1000152" [label = "(METHOD,rem)" ]
+"1000158" [label = "(METHOD_RETURN,void)" ]
+"1000157" [label = "(st2.pop,st2.pop())" ]
+"1000155" [label = "(st2.empty,st2.empty())" ]
+"1000156" [label = "(thr,thr())" ]
+  "1000155" -> "1000158"  [ label = "DDG: st2.empty()"] 
+  "1000156" -> "1000158"  [ label = "DDG: thr()"] 
+  "1000157" -> "1000158"  [ label = "DDG: st2.pop()"] 
+  "1000152" -> "1000157"  [ label = "DDG: "] 
+  "1000152" -> "1000155"  [ label = "DDG: "] 
+  "1000152" -> "1000156"  [ label = "DDG: "] 
+  "1000155" -> "1000156"  [ label = "CDG: "] 
+}

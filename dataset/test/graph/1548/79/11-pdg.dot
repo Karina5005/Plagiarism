@@ -1,0 +1,17 @@
+digraph "out" {  
+"1000214" [label = "(METHOD,out)" ]
+"1000222" [label = "(METHOD_RETURN,void)" ]
+"1000215" [label = "(PARAM,int x)" ]
+"1000216" [label = "(PARAM,int y)" ]
+"1000218" [label = "(printf,printf(\"%d %d\n\", x, y))" ]
+  "1000215" -> "1000222"  [ label = "DDG: x"] 
+  "1000216" -> "1000222"  [ label = "DDG: y"] 
+  "1000218" -> "1000222"  [ label = "DDG: x"] 
+  "1000218" -> "1000222"  [ label = "DDG: y"] 
+  "1000218" -> "1000222"  [ label = "DDG: printf(\"%d %d\n\", x, y)"] 
+  "1000214" -> "1000215"  [ label = "DDG: "] 
+  "1000214" -> "1000216"  [ label = "DDG: "] 
+  "1000214" -> "1000218"  [ label = "DDG: "] 
+  "1000215" -> "1000218"  [ label = "DDG: x"] 
+  "1000216" -> "1000218"  [ label = "DDG: y"] 
+}

@@ -1,0 +1,10 @@
+digraph "sc" {  
+"1000111" [label = "(METHOD,sc)" ]
+"1000118" [label = "(METHOD_RETURN,void)" ]
+"1000112" [label = "(PARAM,int &x)" ]
+"1000114" [label = "(scanf,scanf(\"%d\", &x))" ]
+  "1000112" -> "1000118"  [ label = "DDG: x"] 
+  "1000114" -> "1000118"  [ label = "DDG: &x"] 
+  "1000111" -> "1000112"  [ label = "DDG: "] 
+  "1000111" -> "1000114"  [ label = "DDG: "] 
+}

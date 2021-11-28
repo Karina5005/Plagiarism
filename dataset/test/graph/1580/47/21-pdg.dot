@@ -1,0 +1,11 @@
+digraph "operator !" {  
+"1000473" [label = "(METHOD,operator !)" ]
+"1000478" [label = "(METHOD_RETURN,bool)" ]
+"1000475" [label = "(RETURN,return !x;,return !x;)" ]
+"1000476" [label = "(<operator>.logicalNot,!x)" ]
+  "1000475" -> "1000478"  [ label = "DDG: <RET>"] 
+  "1000476" -> "1000478"  [ label = "DDG: !x"] 
+  "1000476" -> "1000478"  [ label = "DDG: x"] 
+  "1000476" -> "1000475"  [ label = "DDG: !x"] 
+  "1000473" -> "1000476"  [ label = "DDG: "] 
+}

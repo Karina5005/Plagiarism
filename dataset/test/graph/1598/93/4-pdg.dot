@@ -1,0 +1,14 @@
+digraph "sizenode" {  
+"1000204" [label = "(METHOD,sizenode)" ]
+"1000212" [label = "(METHOD_RETURN,int)" ]
+"1000205" [label = "(PARAM,T a)" ]
+"1000207" [label = "(RETURN,return size[find(a)];,return size[find(a)];)" ]
+"1000210" [label = "(find,find(a))" ]
+  "1000205" -> "1000212"  [ label = "DDG: a"] 
+  "1000210" -> "1000212"  [ label = "DDG: a"] 
+  "1000207" -> "1000212"  [ label = "DDG: <RET>"] 
+  "1000204" -> "1000205"  [ label = "DDG: "] 
+  "1000204" -> "1000207"  [ label = "DDG: "] 
+  "1000205" -> "1000210"  [ label = "DDG: a"] 
+  "1000204" -> "1000210"  [ label = "DDG: "] 
+}

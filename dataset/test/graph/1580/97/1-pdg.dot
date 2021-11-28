@@ -1,0 +1,12 @@
+digraph "in" {  
+"1000154" [label = "(METHOD,in)" ]
+"1000160" [label = "(METHOD_RETURN,inline void)" ]
+"1000155" [label = "(PARAM,int &x)" ]
+"1000157" [label = "(<operator>.assignment,x=gi())" ]
+  "1000155" -> "1000160"  [ label = "DDG: x"] 
+  "1000157" -> "1000160"  [ label = "DDG: x"] 
+  "1000157" -> "1000160"  [ label = "DDG: gi()"] 
+  "1000154" -> "1000155"  [ label = "DDG: "] 
+  "1000154" -> "1000157"  [ label = "DDG: "] 
+  "1000155" -> "1000157"  [ label = "DDG: x"] 
+}

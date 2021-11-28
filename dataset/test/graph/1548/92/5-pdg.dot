@@ -1,0 +1,15 @@
+digraph "MSK" {  
+"1000156" [label = "(METHOD,MSK)" ]
+"1000163" [label = "(METHOD_RETURN,inline int)" ]
+"1000157" [label = "(PARAM,int x)" ]
+"1000159" [label = "(RETURN,return 1 << x;,return 1 << x;)" ]
+"1000160" [label = "(<operator>.shiftLeft,1 << x)" ]
+  "1000159" -> "1000163"  [ label = "DDG: <RET>"] 
+  "1000157" -> "1000163"  [ label = "DDG: x"] 
+  "1000160" -> "1000163"  [ label = "DDG: x"] 
+  "1000160" -> "1000163"  [ label = "DDG: 1 << x"] 
+  "1000156" -> "1000157"  [ label = "DDG: "] 
+  "1000160" -> "1000159"  [ label = "DDG: 1 << x"] 
+  "1000156" -> "1000160"  [ label = "DDG: "] 
+  "1000157" -> "1000160"  [ label = "DDG: x"] 
+}

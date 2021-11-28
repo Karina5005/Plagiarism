@@ -1,0 +1,12 @@
+digraph "init_code" {  
+"1000116" [label = "(METHOD,init_code)" ]
+"1000126" [label = "(METHOD_RETURN,void)" ]
+"1000118" [label = "(freopen,freopen(\"G:/Personal/CP/input.txt\", \"r\", stdin))" ]
+"1000122" [label = "(freopen,freopen(\"G:/Personal/CP/output.txt\", \"w\", stdout))" ]
+  "1000118" -> "1000126"  [ label = "DDG: freopen(\"G:/Personal/CP/input.txt\", \"r\", stdin)"] 
+  "1000122" -> "1000126"  [ label = "DDG: freopen(\"G:/Personal/CP/output.txt\", \"w\", stdout)"] 
+  "1000122" -> "1000126"  [ label = "DDG: stdout"] 
+  "1000118" -> "1000126"  [ label = "DDG: stdin"] 
+  "1000116" -> "1000118"  [ label = "DDG: "] 
+  "1000116" -> "1000122"  [ label = "DDG: "] 
+}

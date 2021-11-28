@@ -1,0 +1,7 @@
+digraph "_print" {  
+"1000260" [label = "(METHOD,_print)" ]
+"1000263" [label = "(METHOD_RETURN,void)" ]
+"1000261" [label = "(PARAM,stack<A> s)" ]
+  "1000261" -> "1000263"  [ label = "DDG: s"] 
+  "1000260" -> "1000261"  [ label = "DDG: "] 
+}

@@ -1,0 +1,14 @@
+digraph "min_left" {  
+"1000452" [label = "(METHOD,min_left)" ]
+"1000459" [label = "(METHOD_RETURN,int)" ]
+"1000453" [label = "(PARAM,int r)" ]
+"1000456" [label = "(RETURN,return f(x);,return f(x);)" ]
+"1000457" [label = "(f,f(x))" ]
+  "1000456" -> "1000459"  [ label = "DDG: <RET>"] 
+  "1000453" -> "1000459"  [ label = "DDG: r"] 
+  "1000457" -> "1000459"  [ label = "DDG: f(x)"] 
+  "1000457" -> "1000459"  [ label = "DDG: x"] 
+  "1000452" -> "1000453"  [ label = "DDG: "] 
+  "1000457" -> "1000456"  [ label = "DDG: f(x)"] 
+  "1000452" -> "1000457"  [ label = "DDG: "] 
+}

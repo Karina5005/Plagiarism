@@ -1,0 +1,7 @@
+digraph "read" {  
+"1000345" [label = "(METHOD,read)" ]
+"1000348" [label = "(METHOD_RETURN,int)" ]
+"1000346" [label = "(PARAM,T...)" ]
+  "1000346" -> "1000348"  [ label = "DDG: <anonymous>"] 
+  "1000345" -> "1000346"  [ label = "DDG: "] 
+}

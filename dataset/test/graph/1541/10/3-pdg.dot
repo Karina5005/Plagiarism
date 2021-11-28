@@ -1,0 +1,18 @@
+digraph "comp" {  
+"1000313" [label = "(METHOD,comp)" ]
+"1000321" [label = "(METHOD_RETURN,bool)" ]
+"1000314" [label = "(PARAM,vector<ll> &a)" ]
+"1000315" [label = "(PARAM,vector<ll> &b)" ]
+"1000317" [label = "(RETURN,return a.size() > b.size();,return a.size() > b.size();)" ]
+"1000318" [label = "(<operator>.greaterThan,a.size() > b.size())" ]
+  "1000314" -> "1000321"  [ label = "DDG: a"] 
+  "1000315" -> "1000321"  [ label = "DDG: b"] 
+  "1000318" -> "1000321"  [ label = "DDG: a.size()"] 
+  "1000318" -> "1000321"  [ label = "DDG: b.size()"] 
+  "1000318" -> "1000321"  [ label = "DDG: a.size() > b.size()"] 
+  "1000317" -> "1000321"  [ label = "DDG: <RET>"] 
+  "1000313" -> "1000314"  [ label = "DDG: "] 
+  "1000313" -> "1000315"  [ label = "DDG: "] 
+  "1000318" -> "1000317"  [ label = "DDG: a.size() > b.size()"] 
+  "1000313" -> "1000318"  [ label = "DDG: "] 
+}

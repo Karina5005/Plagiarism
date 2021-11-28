@@ -1,0 +1,12 @@
+digraph "modint" {  
+"1000203" [label = "(METHOD,modint)" ]
+"1000209" [label = "(METHOD_RETURN,int)" ]
+"1000204" [label = "(PARAM,int o=0)" ]
+"1000206" [label = "(<operator>.assignment,x=o)" ]
+  "1000204" -> "1000209"  [ label = "DDG: o"] 
+  "1000206" -> "1000209"  [ label = "DDG: o"] 
+  "1000206" -> "1000209"  [ label = "DDG: x"] 
+  "1000203" -> "1000204"  [ label = "DDG: "] 
+  "1000204" -> "1000206"  [ label = "DDG: o"] 
+  "1000203" -> "1000206"  [ label = "DDG: "] 
+}

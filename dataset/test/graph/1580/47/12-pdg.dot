@@ -1,0 +1,7 @@
+digraph "operator *=" {  
+"1000386" [label = "(METHOD,operator *=)" ]
+"1000391" [label = "(METHOD_RETURN,modint &)" ]
+"1000387" [label = "(PARAM,int o)" ]
+  "1000387" -> "1000391"  [ label = "DDG: o"] 
+  "1000386" -> "1000387"  [ label = "DDG: "] 
+}

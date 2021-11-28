@@ -1,0 +1,12 @@
+digraph "mos" {  
+"1000117" [label = "(METHOD,mos)" ]
+"1000122" [label = "(METHOD_RETURN,T)" ]
+"1000118" [label = "(PARAM,T a)" ]
+"1000119" [label = "(PARAM,Args... args)" ]
+"1000121" [label = "(IDENTIFIER,M,)" ]
+  "1000118" -> "1000122"  [ label = "DDG: a"] 
+  "1000119" -> "1000122"  [ label = "DDG: args"] 
+  "1000117" -> "1000118"  [ label = "DDG: "] 
+  "1000117" -> "1000119"  [ label = "DDG: "] 
+  "1000117" -> "1000121"  [ label = "DDG: "] 
+}

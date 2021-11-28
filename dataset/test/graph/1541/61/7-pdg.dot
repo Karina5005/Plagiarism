@@ -1,0 +1,13 @@
+digraph "ts" {  
+"1000158" [label = "(METHOD,ts)" ]
+"1000163" [label = "(METHOD_RETURN,string)" ]
+"1000159" [label = "(PARAM,string s)" ]
+"1000161" [label = "(RETURN,return s;,return s;)" ]
+"1000162" [label = "(IDENTIFIER,s,return s;)" ]
+  "1000159" -> "1000163"  [ label = "DDG: s"] 
+  "1000161" -> "1000163"  [ label = "DDG: <RET>"] 
+  "1000158" -> "1000159"  [ label = "DDG: "] 
+  "1000162" -> "1000161"  [ label = "DDG: s"] 
+  "1000159" -> "1000161"  [ label = "DDG: s"] 
+  "1000158" -> "1000162"  [ label = "DDG: "] 
+}

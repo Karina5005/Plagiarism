@@ -1,0 +1,16 @@
+digraph "main" {  
+"1000177" [label = "(METHOD,main)" ]
+"1000186" [label = "(METHOD_RETURN,int)" ]
+"1000179" [label = "(ios_base::sync_with_stdio,ios_base::sync_with_stdio(0))" ]
+"1000181" [label = "(cin.tie,cin.tie(0))" ]
+"1000183" [label = "(cout.tie,cout.tie(0))" ]
+"1000185" [label = "(solve,solve())" ]
+  "1000179" -> "1000186"  [ label = "DDG: ios_base::sync_with_stdio(0)"] 
+  "1000181" -> "1000186"  [ label = "DDG: cin.tie(0)"] 
+  "1000183" -> "1000186"  [ label = "DDG: cout.tie(0)"] 
+  "1000185" -> "1000186"  [ label = "DDG: solve()"] 
+  "1000177" -> "1000185"  [ label = "DDG: "] 
+  "1000177" -> "1000179"  [ label = "DDG: "] 
+  "1000177" -> "1000181"  [ label = "DDG: "] 
+  "1000177" -> "1000183"  [ label = "DDG: "] 
+}
