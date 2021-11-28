@@ -13,6 +13,6 @@ FILE=${source_file_filename_no_ext##*/}
 echo $FILE
 joern-export --repr pdg --out ../../../../home/karina/Plagiarism/build_subs/$FILE
 cd ../../../../home/karina/Plagiarism/build_subs/$FILE
-find . -size -61c -delete
+find . -size -67c -delete
 cd ../..
 done
