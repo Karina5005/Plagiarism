@@ -1,0 +1,18 @@
+digraph "flush" {  
+"1000216" [label = "(METHOD,flush)" ]
+"1000228" [label = "(METHOD_RETURN,inline void)" ]
+"1000218" [label = "(fwrite,fwrite(buf, 1, S - buf, stdout))" ]
+"1000225" [label = "(<operator>.assignment,S = buf)" ]
+"1000221" [label = "(<operator>.subtraction,S - buf)" ]
+  "1000218" -> "1000228"  [ label = "DDG: S - buf"] 
+  "1000218" -> "1000228"  [ label = "DDG: fwrite(buf, 1, S - buf, stdout)"] 
+  "1000225" -> "1000228"  [ label = "DDG: S"] 
+  "1000225" -> "1000228"  [ label = "DDG: buf"] 
+  "1000218" -> "1000228"  [ label = "DDG: stdout"] 
+  "1000218" -> "1000225"  [ label = "DDG: buf"] 
+  "1000216" -> "1000225"  [ label = "DDG: "] 
+  "1000221" -> "1000218"  [ label = "DDG: buf"] 
+  "1000216" -> "1000218"  [ label = "DDG: "] 
+  "1000221" -> "1000218"  [ label = "DDG: S"] 
+  "1000216" -> "1000221"  [ label = "DDG: "] 
+}

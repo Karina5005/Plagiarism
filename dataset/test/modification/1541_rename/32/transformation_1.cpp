@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int trb;
-	cin>>trb;
-	while(trb--){
-		int tvx;
-		cin>>tvx;
-		if(tvx%2==1)
+	int fij;
+	cin>>fij;
+	while(fij--){
+		int y;
+		cin>>y;
+		if(y%2==1)
 			cout<<"3 1 2 ";
 		else
 			cout<<"2 1 ";
-		for(int dit=3+(tvx%2);dit<=tvx;dit+=2)
-			cout<<dit+1<<' '<<dit<<' ';
+		for(int p=3+(y%2);p<=y;p+=2)
+			cout<<p+1<<' '<<p<<' ';
 		cout<<endl;
 	}
 }

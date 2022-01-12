@@ -1,0 +1,10 @@
+digraph "edges" {  
+"1004882" [label = "(METHOD,edges)" ]
+"1004886" [label = "(METHOD_RETURN,std::vector<edge>)" ]
+"1004884" [label = "(RETURN,return _edges;,return _edges;)" ]
+"1004885" [label = "(IDENTIFIER,_edges,return _edges;)" ]
+  "1004884" -> "1004886"  [ label = "DDG: <RET>"] 
+  "1004885" -> "1004884"  [ label = "DDG: _edges"] 
+  "1004882" -> "1004884"  [ label = "DDG: "] 
+  "1004882" -> "1004885"  [ label = "DDG: "] 
+}

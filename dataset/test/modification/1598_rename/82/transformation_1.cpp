@@ -11,23 +11,23 @@
 #define  irep(i,b,a)  for(int i = b; i >= a; i--)
 using namespace std;
 
-void ouz_h(int tc)
+void gj_b(int tc)
 {
-   map<double, int> v_v;
+   map<double, int> am_gn;
    int n, ans = 0;
-   double av = 0, z_btl;
+   double zgs_ngn = 0, fnc_h;
    cin >> n;
 
-   double vjx_bw[n];
-   for (double &o_but : vjx_bw) {
-      cin >> o_but;
-      v_v[o_but]++, av += o_but;
+   double k_eyw[n];
+   for (double &y_jmf : k_eyw) {
+      cin >> y_jmf;
+      am_gn[y_jmf]++, zgs_ngn += y_jmf;
    }
-   z_btl = av / (n * 1.0);
+   fnc_h = zgs_ngn / (n * 1.0);
 
-   for (double auo_dy : vjx_bw) {
-      v_v[auo_dy]--;
-      ans += v_v[2 * z_btl - auo_dy];
+   for (double fs_r : k_eyw) {
+      am_gn[fs_r]--;
+      ans += am_gn[2 * fnc_h - fs_r];
    }
    cout << ans << "\n";
 }
@@ -40,7 +40,7 @@ signed main()
    cin >> T;
 
    for (int tc = 1; tc <= T; tc++) {
-      ouz_h(tc);
+      gj_b(tc);
    }
 
    return 0;

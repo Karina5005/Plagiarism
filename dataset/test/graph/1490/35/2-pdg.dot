@@ -1,0 +1,7 @@
+digraph "main" {  
+"1000342" [label = "(METHOD,main)" ]
+"1000345" [label = "(METHOD_RETURN,int32_t)" ]
+"1000344" [label = "(solve,solve())" ]
+  "1000344" -> "1000345"  [ label = "DDG: solve()"] 
+  "1000342" -> "1000344"  [ label = "DDG: "] 
+}

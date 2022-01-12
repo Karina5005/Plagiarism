@@ -1,0 +1,10 @@
+digraph "new_node" {  
+"1000458" [label = "(METHOD,new_node)" ]
+"1000462" [label = "(METHOD_RETURN,bool)" ]
+"1000460" [label = "(RETURN,return true;,return true;)" ]
+"1000461" [label = "(IDENTIFIER,true,return true;)" ]
+  "1000460" -> "1000462"  [ label = "DDG: <RET>"] 
+  "1000461" -> "1000460"  [ label = "DDG: true"] 
+  "1000458" -> "1000460"  [ label = "DDG: "] 
+  "1000458" -> "1000461"  [ label = "DDG: "] 
+}

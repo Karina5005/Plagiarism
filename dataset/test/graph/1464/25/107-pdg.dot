@@ -1,0 +1,12 @@
+digraph "push" {  
+"1004257" [label = "(METHOD,push)" ]
+"1004262" [label = "(METHOD_RETURN,void)" ]
+"1004258" [label = "(PARAM,const T& t)" ]
+"1004260" [label = "(payload.push_back,payload.push_back(t))" ]
+  "1004258" -> "1004262"  [ label = "DDG: t"] 
+  "1004260" -> "1004262"  [ label = "DDG: t"] 
+  "1004260" -> "1004262"  [ label = "DDG: payload.push_back(t)"] 
+  "1004257" -> "1004258"  [ label = "DDG: "] 
+  "1004258" -> "1004260"  [ label = "DDG: t"] 
+  "1004257" -> "1004260"  [ label = "DDG: "] 
+}

@@ -1,0 +1,18 @@
+digraph "arrayInput" {  
+"1000185" [label = "(METHOD,arrayInput)" ]
+"1000197" [label = "(METHOD_RETURN,void)" ]
+"1000187" [label = "(<operator>.arithmeticShiftRight,cin >> n)" ]
+"1000190" [label = "(a.resize,a.resize(n))" ]
+"1000192" [label = "(<operator>.arithmeticShiftRight,cin >> a[i])" ]
+  "1000187" -> "1000197"  [ label = "DDG: cin >> n"] 
+  "1000190" -> "1000197"  [ label = "DDG: n"] 
+  "1000190" -> "1000197"  [ label = "DDG: a.resize(n)"] 
+  "1000192" -> "1000197"  [ label = "DDG: cin"] 
+  "1000192" -> "1000197"  [ label = "DDG: a[i]"] 
+  "1000192" -> "1000197"  [ label = "DDG: cin >> a[i]"] 
+  "1000185" -> "1000187"  [ label = "DDG: "] 
+  "1000187" -> "1000190"  [ label = "DDG: n"] 
+  "1000185" -> "1000190"  [ label = "DDG: "] 
+  "1000187" -> "1000192"  [ label = "DDG: cin"] 
+  "1000185" -> "1000192"  [ label = "DDG: "] 
+}

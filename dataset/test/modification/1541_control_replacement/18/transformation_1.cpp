@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 #include <iostream>
 #include <vector>
 #include <map>
@@ -12,14 +14,16 @@ void solve() {
     vector<int> a(n);
     {
     int i = 0;
-    while (i < n) {
+    for ( ; i < n; ) 
+{
     a[i] = i + 1;
     i++; 
     
     }}
     {
     int i = 0;
-    while (i < n - 1) {
+    for ( ; i < n - 1; ) 
+{
     swap(a[i], a[i + 1]);
     i += 2; 
     
@@ -36,10 +40,11 @@ int main() {
     freopen("out.txt", "w", stdout);
 #endif
 
-    ios::sync_with_stdio(false);
+    
 
     int t; cin >> t;
-    while (t--) solve();
+    for ( ; t--; ) 
+solve();
 
     return 0;
 }

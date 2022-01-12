@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 #include <bits/stdc++.h>
 /* #include <ext/pb_ds/assoc_container.hpp> */
 /* #include <ext/pb_ds/tree_policy.hpp> */
@@ -83,14 +85,15 @@ void solve() {
 }
 
 int main() {
-    ios_base::sync_with_stdio(0);
+    
     cin.tie(0);
 
     int T=1;
     read(T);
     {
     int tc=1;
-    while (tc<=T) {
+    for ( ; tc<=T; ) 
+{
         /* write("Case #", tc, ": "); */
         solve();
     	++tc; 

@@ -1,0 +1,14 @@
+digraph "no" {  
+"1000305" [label = "(METHOD,no)" ]
+"1000312" [label = "(METHOD_RETURN,void)" ]
+"1000307" [label = "(<operator>.shiftLeft,cout<<\"NO\"<<endl)" ]
+"1000309" [label = "(<operator>.shiftLeft,\"NO\"<<endl)" ]
+  "1000307" -> "1000312"  [ label = "DDG: \"NO\"<<endl"] 
+  "1000307" -> "1000312"  [ label = "DDG: cout<<\"NO\"<<endl"] 
+  "1000309" -> "1000312"  [ label = "DDG: endl"] 
+  "1000307" -> "1000312"  [ label = "DDG: cout"] 
+  "1000305" -> "1000307"  [ label = "DDG: "] 
+  "1000309" -> "1000307"  [ label = "DDG: \"NO\""] 
+  "1000309" -> "1000307"  [ label = "DDG: endl"] 
+  "1000305" -> "1000309"  [ label = "DDG: "] 
+}

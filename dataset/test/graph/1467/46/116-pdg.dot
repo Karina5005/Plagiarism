@@ -1,0 +1,15 @@
+digraph "parity" {  
+"1001904" [label = "(METHOD,parity)" ]
+"1001910" [label = "(METHOD_RETURN,inline int)" ]
+"1001905" [label = "(PARAM,LL x)" ]
+"1001907" [label = "(RETURN,return __builtin_parityll(x);,return __builtin_parityll(x);)" ]
+"1001908" [label = "(__builtin_parityll,__builtin_parityll(x))" ]
+  "1001907" -> "1001910"  [ label = "DDG: <RET>"] 
+  "1001905" -> "1001910"  [ label = "DDG: x"] 
+  "1001908" -> "1001910"  [ label = "DDG: x"] 
+  "1001908" -> "1001910"  [ label = "DDG: __builtin_parityll(x)"] 
+  "1001904" -> "1001905"  [ label = "DDG: "] 
+  "1001908" -> "1001907"  [ label = "DDG: __builtin_parityll(x)"] 
+  "1001905" -> "1001908"  [ label = "DDG: x"] 
+  "1001904" -> "1001908"  [ label = "DDG: "] 
+}

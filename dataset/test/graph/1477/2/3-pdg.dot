@@ -1,0 +1,17 @@
+digraph "LCM" {  
+"1000154" [label = "(METHOD,LCM)" ]
+"1000161" [label = "(METHOD_RETURN,NUMERICAL_TYPE)" ]
+"1000155" [label = "(PARAM,NUMERICAL_TYPE X)" ]
+"1000156" [label = "(PARAM,NUMERICAL_TYPE Y)" ]
+"1000158" [label = "(GCD,GCD(X, Y))" ]
+  "1000155" -> "1000161"  [ label = "DDG: X"] 
+  "1000156" -> "1000161"  [ label = "DDG: Y"] 
+  "1000158" -> "1000161"  [ label = "DDG: X"] 
+  "1000158" -> "1000161"  [ label = "DDG: Y"] 
+  "1000158" -> "1000161"  [ label = "DDG: GCD(X, Y)"] 
+  "1000154" -> "1000155"  [ label = "DDG: "] 
+  "1000154" -> "1000156"  [ label = "DDG: "] 
+  "1000155" -> "1000158"  [ label = "DDG: X"] 
+  "1000154" -> "1000158"  [ label = "DDG: "] 
+  "1000156" -> "1000158"  [ label = "DDG: Y"] 
+}

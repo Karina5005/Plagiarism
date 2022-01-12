@@ -1,0 +1,10 @@
+digraph "operator>>" {  
+"1000701" [label = "(METHOD,operator>>)" ]
+"1000705" [label = "(METHOD_RETURN,friend V&)" ]
+"1000702" [label = "(PARAM,V& stream)" ]
+"1000703" [label = "(PARAM,Modular<U>& number)" ]
+  "1000702" -> "1000705"  [ label = "DDG: stream"] 
+  "1000703" -> "1000705"  [ label = "DDG: number"] 
+  "1000701" -> "1000702"  [ label = "DDG: "] 
+  "1000701" -> "1000703"  [ label = "DDG: "] 
+}

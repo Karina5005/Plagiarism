@@ -30,21 +30,21 @@ using namespace std;
 
 
 
-const ll g_q = 1e9 + 7;
+const ll k_r = 1e9 + 7;
 
 ll add(ll x, ll y)
 {
-    return (x % g_q + y % g_q + g_q) % g_q;
+    return (x % k_r + y % k_r + k_r) % k_r;
 }
 
 ll mul(ll x, ll y)
 {
-    return (x % g_q * y % g_q + g_q) % g_q;
+    return (x % k_r * y % k_r + k_r) % k_r;
 }
 
 ll sub(ll x, ll y)
 {
-    return (x % g_q - y % g_q + g_q) % g_q;
+    return (x % k_r - y % k_r + k_r) % k_r;
 }
 
 
@@ -98,14 +98,14 @@ struct Node {
     Node* right;
 };
 
-Node* whs(int q_rip) {
-    Node* gpy = new Node;
+Node* ge(int h_rc) {
+    Node* xfi_e = new Node;
 
-    gpy->data = q_rip;
-    gpy->left = NULL;
-    gpy->right = NULL;
+    xfi_e->data = h_rc;
+    xfi_e->left = NULL;
+    xfi_e->right = NULL;
 
-    return gpy;
+    return xfi_e;
 
 }
 
@@ -117,9 +117,9 @@ struct TrieNode {
 
     TrieNode()
     {
-        for (int bxm_n = 0;bxm_n < 26;bxm_n++)
+        for (int st_puc = 0;st_puc < 26;st_puc++)
         {
-            children[bxm_n] = NULL;
+            children[st_puc] = NULL;
         }
         isEnd = false;
     }
@@ -128,8 +128,8 @@ struct TrieNode {
 
 struct comp {
 
-    bool operator()(pair<ll, ll>jsr_y, pair<ll, ll>g) {
-        return jsr_y.first < g.first;
+    bool operator()(pair<ll, ll>wk_nh, pair<ll, ll>wi) {
+        return wk_nh.first < wi.first;
     }
 
 };
@@ -141,22 +141,22 @@ ll dy[8] = { -1,0,1,1,1,0,-1,-1 };
 
 #define int long long
 
-void gh_vec()
+void owi()
 {
 
     ll n;
     cin >> n;
 
 
-    string m;
-    cin >> m;
-    string ev_ij;
-    cin >> ev_ij;
+    string zd_ckh;
+    cin >> zd_ckh;
+    string tvq;
+    cin >> tvq;
 
 
     for (int i = 0;i < n;i++)
     {
-        if (m[i] == '1' && m[i] == ev_ij[i])
+        if (zd_ckh[i] == '1' && zd_ckh[i] == tvq[i])
         {
             cno;
             return;
@@ -184,7 +184,7 @@ int32_t main()
 
     while (t--)
     {
-        gh_vec();
+        owi();
     }
 
     /*  cerr << "\nTime elapsed : " << 1000 * clock() / CLOCKS_PER_SEC << " ms\n"; */

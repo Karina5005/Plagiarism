@@ -1,0 +1,10 @@
+digraph "operator()" {  
+"1000471" [label = "(METHOD,operator())" ]
+"1000475" [label = "(METHOD_RETURN,const Type&)" ]
+"1000473" [label = "(RETURN,return value;,return value;)" ]
+"1000474" [label = "(IDENTIFIER,value,return value;)" ]
+  "1000473" -> "1000475"  [ label = "DDG: <RET>"] 
+  "1000474" -> "1000473"  [ label = "DDG: value"] 
+  "1000471" -> "1000473"  [ label = "DDG: "] 
+  "1000471" -> "1000474"  [ label = "DDG: "] 
+}

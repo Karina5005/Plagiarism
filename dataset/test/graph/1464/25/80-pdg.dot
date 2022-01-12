@@ -1,0 +1,7 @@
+digraph "fenwick_tree" {  
+"1003054" [label = "(METHOD,fenwick_tree)" ]
+"1003057" [label = "(METHOD_RETURN,int)" ]
+"1003055" [label = "(PARAM,int n)" ]
+  "1003055" -> "1003057"  [ label = "DDG: n"] 
+  "1003054" -> "1003055"  [ label = "DDG: "] 
+}

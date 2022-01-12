@@ -2,20 +2,20 @@
 using namespace std;
 
 int main(){
-	int l;
-	cin >> l;
-	while(l--){
-		int dor_zi; string pbm, km;
-		cin >> dor_zi >> pbm >> km;
+	int y;
+	cin >> y;
+	while(y--){
+		int p; string dw, r;
+		cin >> p >> dw >> r;
 
-		bool ieo_i = true;
+		bool vep_y = true;
 
-		for(int p_jl = 0; p_jl < pbm.size(); ++p_jl){
-			if(pbm[p_jl] == '1' && km[p_jl] == '1'){
-				ieo_i = false;
+		for(int v_n = 0; v_n < dw.size(); ++v_n){
+			if(dw[v_n] == '1' && r[v_n] == '1'){
+				vep_y = false;
 			}
 		}
 
-		ieo_i ? cout << "YES\n" : cout << "NO\n";
+		vep_y ? cout << "YES\n" : cout << "NO\n";
 	}
 }

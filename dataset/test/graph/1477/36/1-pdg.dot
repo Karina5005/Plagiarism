@@ -1,0 +1,16 @@
+digraph "segtree" {  
+"1000125" [label = "(METHOD,segtree)" ]
+"1000132" [label = "(METHOD_RETURN,int)" ]
+"1000126" [label = "(PARAM,int n)" ]
+"1000128" [label = "(tree.resize,tree.resize(4 * n))" ]
+"1000129" [label = "(<operator>.multiplication,4 * n)" ]
+  "1000126" -> "1000132"  [ label = "DDG: n"] 
+  "1000129" -> "1000132"  [ label = "DDG: n"] 
+  "1000128" -> "1000132"  [ label = "DDG: 4 * n"] 
+  "1000128" -> "1000132"  [ label = "DDG: tree.resize(4 * n)"] 
+  "1000125" -> "1000126"  [ label = "DDG: "] 
+  "1000129" -> "1000128"  [ label = "DDG: 4"] 
+  "1000129" -> "1000128"  [ label = "DDG: n"] 
+  "1000125" -> "1000129"  [ label = "DDG: "] 
+  "1000126" -> "1000129"  [ label = "DDG: n"] 
+}

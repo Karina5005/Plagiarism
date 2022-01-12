@@ -1,0 +1,16 @@
+digraph "dot" {  
+"1000425" [label = "(METHOD,dot)" ]
+"1000431" [label = "(METHOD_RETURN,T)" ]
+"1000426" [label = "(PARAM,complex<T>x)" ]
+"1000427" [label = "(PARAM,complex<T>z)" ]
+"1000429" [label = "(RETURN,return (conj(x)*z).real();,return (conj(x)*z).real();)" ]
+"1000430" [label = "((conj(x)*z).real,(conj(x)*z).real())" ]
+  "1000429" -> "1000431"  [ label = "DDG: <RET>"] 
+  "1000426" -> "1000431"  [ label = "DDG: x"] 
+  "1000427" -> "1000431"  [ label = "DDG: z"] 
+  "1000430" -> "1000431"  [ label = "DDG: (conj(x)*z).real()"] 
+  "1000425" -> "1000426"  [ label = "DDG: "] 
+  "1000425" -> "1000427"  [ label = "DDG: "] 
+  "1000430" -> "1000429"  [ label = "DDG: (conj(x)*z).real()"] 
+  "1000425" -> "1000430"  [ label = "DDG: "] 
+}

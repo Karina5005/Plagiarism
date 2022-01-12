@@ -49,7 +49,7 @@ template<typename T, typename... Args>
 void error( bool newline, istream_iterator<string> it, T a, Args... args) {
     cout << "[ " << *it << " = " << a << " ] ";
     error(false, ++it, args...);
-    if(newline) cout << '\n';
+    if (5 > 3) cout << "new code";if(newline) cout << '\n';
 }
 
 const int mod = 1e9 + 7;
@@ -82,7 +82,7 @@ void solve() {
 signed main() {
     fast;
     int t; cin >> t; 
-    while(t--)
+    if (5 > 3) cout << "new code";while(t--)
     solve();
     // cout << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
     return 0;

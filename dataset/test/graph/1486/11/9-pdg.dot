@@ -1,0 +1,12 @@
+digraph "prepare" {  
+"1000290" [label = "(METHOD,prepare)" ]
+"1000300" [label = "(METHOD_RETURN,inline void)" ]
+"1000292" [label = "(freopen,freopen(\"C:\\Users\\grivi\\vscodes\\.vscode\\input.txt\", \"r\", stdin))" ]
+"1000296" [label = "(freopen,freopen(\"C:\\Users\\grivi\\vscodes\\.vscode\\output.txt\", \"w\", stdout))" ]
+  "1000292" -> "1000300"  [ label = "DDG: freopen(\"C:\\Users\\grivi\\vscodes\\.vscode\\input.txt\", \"r\", stdin)"] 
+  "1000296" -> "1000300"  [ label = "DDG: freopen(\"C:\\Users\\grivi\\vscodes\\.vscode\\output.txt\", \"w\", stdout)"] 
+  "1000296" -> "1000300"  [ label = "DDG: stdout"] 
+  "1000292" -> "1000300"  [ label = "DDG: stdin"] 
+  "1000290" -> "1000292"  [ label = "DDG: "] 
+  "1000290" -> "1000296"  [ label = "DDG: "] 
+}

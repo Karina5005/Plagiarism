@@ -1,0 +1,8 @@
+digraph "write" {  
+"1000206" [label = "(METHOD,write)" ]
+"1000211" [label = "(METHOD_RETURN,void)" ]
+"1000208" [label = "(<operator>.shiftLeft,cout<<\"\")" ]
+  "1000208" -> "1000211"  [ label = "DDG: cout<<\"\""] 
+  "1000208" -> "1000211"  [ label = "DDG: cout"] 
+  "1000206" -> "1000208"  [ label = "DDG: "] 
+}

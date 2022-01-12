@@ -1,0 +1,10 @@
+digraph "emplace" {  
+"1000515" [label = "(METHOD,emplace)" ]
+"1000519" [label = "(METHOD_RETURN,int)" ]
+"1000516" [label = "(PARAM,false)" ]
+"1000517" [label = "(PARAM,me)" ]
+  "1000516" -> "1000519"  [ label = "DDG: <anonymous>"] 
+  "1000517" -> "1000519"  [ label = "DDG: <anonymous>"] 
+  "1000515" -> "1000516"  [ label = "DDG: "] 
+  "1000515" -> "1000517"  [ label = "DDG: "] 
+}

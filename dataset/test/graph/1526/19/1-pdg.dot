@@ -1,0 +1,15 @@
+digraph "continue_loop" {  
+"1000114" [label = "(METHOD,continue_loop)" ]
+"1000120" [label = "(METHOD_RETURN,bool)" ]
+"1000115" [label = "(PARAM,bool compose_flag)" ]
+"1000117" [label = "(RETURN,return !compose_flag;,return !compose_flag;)" ]
+"1000118" [label = "(<operator>.logicalNot,!compose_flag)" ]
+  "1000115" -> "1000120"  [ label = "DDG: compose_flag"] 
+  "1000118" -> "1000120"  [ label = "DDG: compose_flag"] 
+  "1000118" -> "1000120"  [ label = "DDG: !compose_flag"] 
+  "1000117" -> "1000120"  [ label = "DDG: <RET>"] 
+  "1000114" -> "1000115"  [ label = "DDG: "] 
+  "1000118" -> "1000117"  [ label = "DDG: !compose_flag"] 
+  "1000115" -> "1000118"  [ label = "DDG: compose_flag"] 
+  "1000114" -> "1000118"  [ label = "DDG: "] 
+}

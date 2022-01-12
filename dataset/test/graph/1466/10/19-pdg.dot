@@ -1,0 +1,15 @@
+digraph "gd" {  
+"1000597" [label = "(METHOD,gd)" ]
+"1000604" [label = "(METHOD_RETURN,ll)" ]
+"1000598" [label = "(PARAM,char ch)" ]
+"1000600" [label = "(RETURN,return ch-48;,return ch-48;)" ]
+"1000601" [label = "(<operator>.subtraction,ch-48)" ]
+  "1000598" -> "1000604"  [ label = "DDG: ch"] 
+  "1000601" -> "1000604"  [ label = "DDG: ch"] 
+  "1000601" -> "1000604"  [ label = "DDG: ch-48"] 
+  "1000600" -> "1000604"  [ label = "DDG: <RET>"] 
+  "1000597" -> "1000598"  [ label = "DDG: "] 
+  "1000601" -> "1000600"  [ label = "DDG: ch-48"] 
+  "1000598" -> "1000601"  [ label = "DDG: ch"] 
+  "1000597" -> "1000601"  [ label = "DDG: "] 
+}

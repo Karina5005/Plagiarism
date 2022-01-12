@@ -11,7 +11,7 @@ using namespace std;
 #define str(s) string s; cin>>s;
 #define endl "\n"
 #define sz(x) static_cast<int32_t>(x.size())
-const int h_dh = 1000000007;
+const int am = 1000000007;
 #define FAST ios_base::sync_with_stdio(false); cin.tie(NULL);
 
 int32_t main() {

@@ -1,0 +1,95 @@
+digraph "binpow" {  
+"1000169" [label = "(METHOD,binpow)" ]
+"1000209" [label = "(METHOD_RETURN,define ff first \n# define ss second\n#define p push\n#define po pop\n#define t top\n#define ordered_set tree<int, null_type,less<int>, rb_tree_tag,tree_order_statistics_node_update>\n#define INF INT64_MAX\n#define FNI INT64_MIN\n#define yes         cout<<\"YES\"<<endl\n#define no          cout<<\"NO\"<<endl\n\n//========================================Functions=============================================\n\n// ll _sieve_size;\n// bitset<10000010> bs;                             // 10^7 is the rough limit\n// vll p;                                           // compact list of primes\n\n// void sieve(ll upperbound) {                      // range = [0..upperbound]\n//   _sieve_size = upperbound+1;                    // to include upperbound\n//   bs.set();                                      // all 1s\n//   bs[0] = bs[1] = 0;                             // except index 0+1\n//   for (ll i = 2; i < _sieve_size; ++i) if (bs[i]) {\n//     // cross out multiples of i starting from i*i\n//     for (ll j = i*i; j < _sieve_size; j += i) bs[j] = 0;\n//     p.push_back(i);                              // add prime i to the list\n//   }\n// }\n\n// bool isPrime(ll N) {                             // good enough prime test\n//   if (N < _sieve_size) return bs[N];             // O(1) for small primes\n//   for (int i = 0; i < (int)p.size() && p[i]*p[i] <= N; ++i)\n//     if (N%p[i] == 0)\n//       return false;\n//   return true;                                   // slow if N = large prime\n// } // note: only guaranteed to work for N <= (last prime in vll p)^2\n\n// int numPF(ll N) {\n//   int ans = 0;\n//   for (int i = 0; i < (int)p.size() && p[i]*p[i] <= N; ++i)\n//     while (N%p[i] == 0) { N /= p[i]; ++ans; }\n//   return ans + (N != 1);\n// }\n\n// int numDiffPF(ll N) {\n//   int ans = 0;\n//   for (int i = 0; i < p.size() && p[i]*p[i] <= N; ++i) {\n//     if (N%p[i] == 0) ++ans;                      // count this prime factor\n//     while (N%p[i] == 0) N /= p[i];               // only once\n//   }\n//   if (N != 1) ++ans;\n//   return ans;\n// }\n\n// ll sumPF(ll N) {\n//   ll ans = 0;\n//   for (int i = 0; i < p.size() && p[i]*p[i] <= N; ++i)\n//     while (N%p[i] == 0) { N /= p[i]; ans += p[i]; }\n//   if (N != 1) ans += N;\n//   return ans;\n// }\n\n// int numDiv(ll N) {\n//   int ans = 1;                                   // start from ans = 1\n//   for (int i = 0; i < (int)p.size() && p[i]*p[i] <= N; ++i) {\n//     int power = 0;                               // count the power\n//     while (N%p[i] == 0) { N /= p[i]; ++power; }\n//     ans *= power+1;                              // follow the formula\n//   }\n//   return (N != 1) ? 2*ans : ans;                 // last factor = N^1\n// }\n\n\n\nlong long)" ]
+"1000170" [label = "(PARAM,long long a)" ]
+"1000171" [label = "(PARAM,long long b)" ]
+"1000172" [label = "(PARAM,long long m)" ]
+"1000174" [label = "(<operator>.assignmentDivision,a %= m)" ]
+"1000178" [label = "(<operator>.assignment,res = 1)" ]
+"1000207" [label = "(RETURN,return res;,return res;)" ]
+"1000182" [label = "(<operator>.greaterThan,b > 0)" ]
+"1000208" [label = "(IDENTIFIER,res,return res;)" ]
+"1000197" [label = "(<operator>.assignment,a = a * a % m)" ]
+"1000204" [label = "(<operators>.assignmentArithmeticShiftRight,b >>= 1)" ]
+"1000187" [label = "(<operator>.and,b & 1)" ]
+"1000190" [label = "(<operator>.assignment,res = res * a % m)" ]
+"1000199" [label = "(<operator>.multiplication,a * a % m)" ]
+"1000192" [label = "(<operator>.multiplication,res * a % m)" ]
+"1000201" [label = "(<operator>.modulo,a % m)" ]
+"1000194" [label = "(<operator>.modulo,a % m)" ]
+  "1000170" -> "1000209"  [ label = "DDG: a"] 
+  "1000171" -> "1000209"  [ label = "DDG: b"] 
+  "1000172" -> "1000209"  [ label = "DDG: m"] 
+  "1000174" -> "1000209"  [ label = "DDG: a"] 
+  "1000174" -> "1000209"  [ label = "DDG: m"] 
+  "1000178" -> "1000209"  [ label = "DDG: res"] 
+  "1000182" -> "1000209"  [ label = "DDG: b"] 
+  "1000182" -> "1000209"  [ label = "DDG: b > 0"] 
+  "1000187" -> "1000209"  [ label = "DDG: b & 1"] 
+  "1000190" -> "1000209"  [ label = "DDG: res"] 
+  "1000190" -> "1000209"  [ label = "DDG: res * a % m"] 
+  "1000197" -> "1000209"  [ label = "DDG: a"] 
+  "1000201" -> "1000209"  [ label = "DDG: m"] 
+  "1000199" -> "1000209"  [ label = "DDG: a % m"] 
+  "1000197" -> "1000209"  [ label = "DDG: a * a % m"] 
+  "1000204" -> "1000209"  [ label = "DDG: b >>= 1"] 
+  "1000207" -> "1000209"  [ label = "DDG: <RET>"] 
+  "1000169" -> "1000170"  [ label = "DDG: "] 
+  "1000169" -> "1000171"  [ label = "DDG: "] 
+  "1000169" -> "1000172"  [ label = "DDG: "] 
+  "1000172" -> "1000174"  [ label = "DDG: m"] 
+  "1000169" -> "1000174"  [ label = "DDG: "] 
+  "1000169" -> "1000178"  [ label = "DDG: "] 
+  "1000208" -> "1000207"  [ label = "DDG: res"] 
+  "1000178" -> "1000207"  [ label = "DDG: res"] 
+  "1000190" -> "1000207"  [ label = "DDG: res"] 
+  "1000170" -> "1000174"  [ label = "DDG: a"] 
+  "1000169" -> "1000208"  [ label = "DDG: "] 
+  "1000204" -> "1000182"  [ label = "DDG: b"] 
+  "1000171" -> "1000182"  [ label = "DDG: b"] 
+  "1000169" -> "1000182"  [ label = "DDG: "] 
+  "1000199" -> "1000197"  [ label = "DDG: a % m"] 
+  "1000199" -> "1000197"  [ label = "DDG: a"] 
+  "1000192" -> "1000190"  [ label = "DDG: res"] 
+  "1000192" -> "1000190"  [ label = "DDG: a % m"] 
+  "1000170" -> "1000197"  [ label = "DDG: a"] 
+  "1000169" -> "1000197"  [ label = "DDG: "] 
+  "1000187" -> "1000204"  [ label = "DDG: b"] 
+  "1000171" -> "1000204"  [ label = "DDG: b"] 
+  "1000169" -> "1000204"  [ label = "DDG: "] 
+  "1000182" -> "1000187"  [ label = "DDG: b"] 
+  "1000171" -> "1000187"  [ label = "DDG: b"] 
+  "1000169" -> "1000187"  [ label = "DDG: "] 
+  "1000169" -> "1000190"  [ label = "DDG: "] 
+  "1000201" -> "1000199"  [ label = "DDG: a"] 
+  "1000170" -> "1000199"  [ label = "DDG: a"] 
+  "1000169" -> "1000199"  [ label = "DDG: "] 
+  "1000201" -> "1000199"  [ label = "DDG: m"] 
+  "1000178" -> "1000192"  [ label = "DDG: res"] 
+  "1000190" -> "1000192"  [ label = "DDG: res"] 
+  "1000169" -> "1000192"  [ label = "DDG: "] 
+  "1000194" -> "1000192"  [ label = "DDG: a"] 
+  "1000194" -> "1000192"  [ label = "DDG: m"] 
+  "1000174" -> "1000201"  [ label = "DDG: a"] 
+  "1000194" -> "1000201"  [ label = "DDG: a"] 
+  "1000197" -> "1000201"  [ label = "DDG: a"] 
+  "1000170" -> "1000201"  [ label = "DDG: a"] 
+  "1000169" -> "1000201"  [ label = "DDG: "] 
+  "1000194" -> "1000201"  [ label = "DDG: m"] 
+  "1000172" -> "1000201"  [ label = "DDG: m"] 
+  "1000174" -> "1000194"  [ label = "DDG: a"] 
+  "1000197" -> "1000194"  [ label = "DDG: a"] 
+  "1000170" -> "1000194"  [ label = "DDG: a"] 
+  "1000169" -> "1000194"  [ label = "DDG: "] 
+  "1000201" -> "1000194"  [ label = "DDG: m"] 
+  "1000172" -> "1000194"  [ label = "DDG: m"] 
+  "1000182" -> "1000201"  [ label = "CDG: "] 
+  "1000182" -> "1000199"  [ label = "CDG: "] 
+  "1000182" -> "1000182"  [ label = "CDG: "] 
+  "1000182" -> "1000197"  [ label = "CDG: "] 
+  "1000182" -> "1000187"  [ label = "CDG: "] 
+  "1000182" -> "1000204"  [ label = "CDG: "] 
+  "1000187" -> "1000194"  [ label = "CDG: "] 
+  "1000187" -> "1000192"  [ label = "CDG: "] 
+  "1000187" -> "1000190"  [ label = "CDG: "] 
+}

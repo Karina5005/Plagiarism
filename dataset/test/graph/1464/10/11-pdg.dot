@@ -1,0 +1,11 @@
+digraph "pushup" {  
+"1000510" [label = "(METHOD,pushup)" ]
+"1000525" [label = "(METHOD_RETURN,void)" ]
+"1000512" [label = "(<operator>.assignment,val=ch[0]->val+ch[1]->val)" ]
+"1000514" [label = "(<operator>.addition,ch[0]->val+ch[1]->val)" ]
+  "1000514" -> "1000525"  [ label = "DDG: ch[0]->val"] 
+  "1000514" -> "1000525"  [ label = "DDG: ch[1]->val"] 
+  "1000512" -> "1000525"  [ label = "DDG: ch[0]->val+ch[1]->val"] 
+  "1000512" -> "1000525"  [ label = "DDG: val"] 
+  "1000510" -> "1000512"  [ label = "DDG: "] 
+}

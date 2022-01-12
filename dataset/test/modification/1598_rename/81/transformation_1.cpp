@@ -3,23 +3,23 @@ using namespace std;
 
 int main() {
 
-    int hu_d; cin >> hu_d;
+    int mav_iz; cin >> mav_iz;
     
-    while (hu_d--) {
+    while (mav_iz--) {
         
-        int io_i; cin >> io_i;
+        int z; cin >> z;
         
-        string k_s, pvq_dlp; cin >> k_s >> pvq_dlp;
+        string lo_ym, j; cin >> lo_ym >> j;
         
-        bool i_r = true;
-        for (int av = 0; av < io_i; av++) {
-            if (k_s[av] == '1' && pvq_dlp[av] == '1') {
-                i_r = false;
+        bool hc_q = true;
+        for (int rul_bd = 0; rul_bd < z; rul_bd++) {
+            if (lo_ym[rul_bd] == '1' && j[rul_bd] == '1') {
+                hc_q = false;
                 break;
             }
         }
         
-        cout << (i_r ? "YES" : "NO") << "\n";
+        cout << (hc_q ? "YES" : "NO") << "\n";
     }
 
 }

@@ -1,0 +1,13 @@
+digraph "EPT" {  
+"1001289" [label = "(METHOD,EPT)" ]
+"1001294" [label = "(METHOD_RETURN,inline bool)" ]
+"1001290" [label = "(PARAM,T &a)" ]
+"1001292" [label = "(RETURN,return a.empty();,return a.empty();)" ]
+"1001293" [label = "(a.empty,a.empty())" ]
+  "1001290" -> "1001294"  [ label = "DDG: a"] 
+  "1001293" -> "1001294"  [ label = "DDG: a.empty()"] 
+  "1001292" -> "1001294"  [ label = "DDG: <RET>"] 
+  "1001289" -> "1001290"  [ label = "DDG: "] 
+  "1001293" -> "1001292"  [ label = "DDG: a.empty()"] 
+  "1001289" -> "1001293"  [ label = "DDG: "] 
+}

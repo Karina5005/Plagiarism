@@ -1,0 +1,8 @@
+digraph "yes" {  
+"1000125" [label = "(METHOD,yes)" ]
+"1000130" [label = "(METHOD_RETURN,void)" ]
+"1000127" [label = "(<operator>.shiftLeft,cout<<\"YES\")" ]
+  "1000127" -> "1000130"  [ label = "DDG: cout<<\"YES\""] 
+  "1000127" -> "1000130"  [ label = "DDG: cout"] 
+  "1000125" -> "1000127"  [ label = "DDG: "] 
+}

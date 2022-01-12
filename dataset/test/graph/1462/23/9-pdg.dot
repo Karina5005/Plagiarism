@@ -1,0 +1,17 @@
+digraph "print" {  
+"1000256" [label = "(METHOD,print)" ]
+"1000265" [label = "(METHOD_RETURN,void)" ]
+"1000257" [label = "(PARAM,multiset<int> &s)" ]
+"1000260" [label = "(<operator>.shiftLeft,cout << x << \"\n\")" ]
+"1000262" [label = "(<operator>.shiftLeft,x << \"\n\")" ]
+  "1000257" -> "1000265"  [ label = "DDG: s"] 
+  "1000260" -> "1000265"  [ label = "DDG: x << \"\n\""] 
+  "1000260" -> "1000265"  [ label = "DDG: cout << x << \"\n\""] 
+  "1000262" -> "1000265"  [ label = "DDG: x"] 
+  "1000260" -> "1000265"  [ label = "DDG: cout"] 
+  "1000256" -> "1000257"  [ label = "DDG: "] 
+  "1000256" -> "1000260"  [ label = "DDG: "] 
+  "1000262" -> "1000260"  [ label = "DDG: x"] 
+  "1000262" -> "1000260"  [ label = "DDG: \"\n\""] 
+  "1000256" -> "1000262"  [ label = "DDG: "] 
+}

@@ -1,0 +1,10 @@
+digraph "rbegin" {  
+"1000735" [label = "(METHOD,rbegin)" ]
+"1000739" [label = "(METHOD_RETURN,reverse_iterator &)" ]
+"1000737" [label = "(RETURN,return x.rbegin();,return x.rbegin();)" ]
+"1000738" [label = "(x.rbegin,x.rbegin())" ]
+  "1000737" -> "1000739"  [ label = "DDG: <RET>"] 
+  "1000738" -> "1000739"  [ label = "DDG: x.rbegin()"] 
+  "1000738" -> "1000737"  [ label = "DDG: x.rbegin()"] 
+  "1000735" -> "1000738"  [ label = "DDG: "] 
+}

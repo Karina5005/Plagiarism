@@ -1,0 +1,10 @@
+digraph "flow" {  
+"1004485" [label = "(METHOD,flow)" ]
+"1004489" [label = "(METHOD_RETURN,Cap)" ]
+"1004486" [label = "(PARAM,int s)" ]
+"1004487" [label = "(PARAM,int t)" ]
+  "1004486" -> "1004489"  [ label = "DDG: s"] 
+  "1004487" -> "1004489"  [ label = "DDG: t"] 
+  "1004485" -> "1004486"  [ label = "DDG: "] 
+  "1004485" -> "1004487"  [ label = "DDG: "] 
+}

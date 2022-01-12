@@ -1,0 +1,10 @@
+digraph "dfs" {  
+"1000129" [label = "(METHOD,dfs)" ]
+"1000133" [label = "(METHOD_RETURN,void)" ]
+"1000130" [label = "(PARAM,int u)" ]
+"1000131" [label = "(PARAM,int par)" ]
+  "1000130" -> "1000133"  [ label = "DDG: u"] 
+  "1000131" -> "1000133"  [ label = "DDG: par"] 
+  "1000129" -> "1000130"  [ label = "DDG: "] 
+  "1000129" -> "1000131"  [ label = "DDG: "] 
+}

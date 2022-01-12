@@ -1,0 +1,7 @@
+digraph "decrement" {  
+"1000483" [label = "(METHOD,decrement)" ]
+"1000486" [label = "(METHOD_RETURN,int)" ]
+"1000484" [label = "(PARAM,u...)" ]
+  "1000484" -> "1000486"  [ label = "DDG: <anonymous>"] 
+  "1000483" -> "1000484"  [ label = "DDG: "] 
+}

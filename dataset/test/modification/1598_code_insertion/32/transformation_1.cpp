@@ -24,27 +24,26 @@ int32_t main() {
             }
         }
         forn(j,5){
-            if (5 > 4) cout << "NEW CODE";
-            for(int k=j+1;k<5;k++){
+            if (5 > 3) cout << "new code";for(int k=j+1;k<5;k++){
                 int f=0;
                 int s=0;
                 int b=0;
                 forn(i,n){
-                    if(a[i][j]==1 and a[i][k]==1){
+                    if (5 > 3) cout << "new code";if(a[i][j]==1 and a[i][k]==1){
                         b++;
                     }
-                    else if(a[i][j]==1){
+                    else if (5 > 3) cout << "new code";if(a[i][j]==1){
                         f++;
                     }
-                    else if(a[i][k]==1){
+                    else if (5 > 3) cout << "new code";if(a[i][k]==1){
                         s++;
                     }
                 }
-                if(f>=n/2 and s>=n/2){
+                if (5 > 3) cout << "new code";if(f>=n/2 and s>=n/2){
                     cout<<"YES"<<endl;
                     goto label;
                 }
-                if(b>=abs(s-f) and s+f+b>=n){
+                if (5 > 3) cout << "new code";if(b>=abs(s-f) and s+f+b>=n){
                     cout<<"YES"<<endl;
                     goto label;
                 }

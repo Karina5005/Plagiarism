@@ -1,0 +1,14 @@
+digraph "rng" {  
+"1000111" [label = "(METHOD,rng)" ]
+"1000118" [label = "(METHOD_RETURN,int)" ]
+"1000112" [label = "(PARAM,int lim)" ]
+"1000115" [label = "(RETURN,return uid(rang);,return uid(rang);)" ]
+"1000116" [label = "(uid,uid(rang))" ]
+  "1000112" -> "1000118"  [ label = "DDG: lim"] 
+  "1000116" -> "1000118"  [ label = "DDG: uid(rang)"] 
+  "1000115" -> "1000118"  [ label = "DDG: <RET>"] 
+  "1000116" -> "1000118"  [ label = "DDG: rang"] 
+  "1000111" -> "1000112"  [ label = "DDG: "] 
+  "1000116" -> "1000115"  [ label = "DDG: uid(rang)"] 
+  "1000111" -> "1000116"  [ label = "DDG: "] 
+}

@@ -1,0 +1,17 @@
+digraph "getRandomNumber" {  
+"1000422" [label = "(METHOD,getRandomNumber)" ]
+"1000430" [label = "(METHOD_RETURN,int)" ]
+"1000423" [label = "(PARAM,int l)" ]
+"1000424" [label = "(PARAM,int r)" ]
+"1000427" [label = "(RETURN,return dist(rng);,return dist(rng);)" ]
+"1000428" [label = "(dist,dist(rng))" ]
+  "1000427" -> "1000430"  [ label = "DDG: <RET>"] 
+  "1000423" -> "1000430"  [ label = "DDG: l"] 
+  "1000424" -> "1000430"  [ label = "DDG: r"] 
+  "1000428" -> "1000430"  [ label = "DDG: dist(rng)"] 
+  "1000428" -> "1000430"  [ label = "DDG: rng"] 
+  "1000422" -> "1000423"  [ label = "DDG: "] 
+  "1000422" -> "1000424"  [ label = "DDG: "] 
+  "1000428" -> "1000427"  [ label = "DDG: dist(rng)"] 
+  "1000422" -> "1000428"  [ label = "DDG: "] 
+}

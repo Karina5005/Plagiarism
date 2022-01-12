@@ -1,0 +1,15 @@
+digraph "Matrix" {  
+"1000629" [label = "(METHOD,Matrix)" ]
+"1000635" [label = "(METHOD_RETURN,int)" ]
+"1000630" [label = "(PARAM,int n)" ]
+"1000632" [label = "(x.resize,x.resize(n))" ]
+"1000634" [label = "(x[i].clear,x[i].clear())" ]
+  "1000630" -> "1000635"  [ label = "DDG: n"] 
+  "1000632" -> "1000635"  [ label = "DDG: n"] 
+  "1000632" -> "1000635"  [ label = "DDG: x.resize(n)"] 
+  "1000634" -> "1000635"  [ label = "DDG: x[i].clear()"] 
+  "1000629" -> "1000630"  [ label = "DDG: "] 
+  "1000629" -> "1000634"  [ label = "DDG: "] 
+  "1000630" -> "1000632"  [ label = "DDG: n"] 
+  "1000629" -> "1000632"  [ label = "DDG: "] 
+}

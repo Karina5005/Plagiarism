@@ -1,0 +1,16 @@
+digraph "offset" {  
+"1000336" [label = "(METHOD,offset)" ]
+"1000343" [label = "(METHOD_RETURN,void)" ]
+"1000337" [label = "(PARAM,ll o)" ]
+"1000338" [label = "(PARAM,vt<T> &x)" ]
+"1000340" [label = "(offset,offset(o, a))" ]
+  "1000337" -> "1000343"  [ label = "DDG: o"] 
+  "1000338" -> "1000343"  [ label = "DDG: x"] 
+  "1000340" -> "1000343"  [ label = "DDG: o"] 
+  "1000340" -> "1000343"  [ label = "DDG: offset(o, a)"] 
+  "1000340" -> "1000343"  [ label = "DDG: a"] 
+  "1000336" -> "1000337"  [ label = "DDG: "] 
+  "1000336" -> "1000338"  [ label = "DDG: "] 
+  "1000337" -> "1000340"  [ label = "DDG: o"] 
+  "1000336" -> "1000340"  [ label = "DDG: "] 
+}

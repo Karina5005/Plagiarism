@@ -1,0 +1,12 @@
+digraph "mul" {  
+"1000618" [label = "(METHOD,mul)" ]
+"1000623" [label = "(METHOD_RETURN,ll)" ]
+"1000619" [label = "(PARAM,ll x)" ]
+"1000620" [label = "(PARAM,ll y)" ]
+"1000622" [label = "(IDENTIFIER,mod,)" ]
+  "1000619" -> "1000623"  [ label = "DDG: x"] 
+  "1000620" -> "1000623"  [ label = "DDG: y"] 
+  "1000618" -> "1000619"  [ label = "DDG: "] 
+  "1000618" -> "1000620"  [ label = "DDG: "] 
+  "1000618" -> "1000622"  [ label = "DDG: "] 
+}

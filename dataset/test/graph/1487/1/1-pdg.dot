@@ -1,0 +1,12 @@
+digraph "onlinejudge" {  
+"1000151" [label = "(METHOD,onlinejudge)" ]
+"1000161" [label = "(METHOD_RETURN,void)" ]
+"1000153" [label = "(freopen,freopen(\"Input.txt\", \"r\", stdin))" ]
+"1000157" [label = "(freopen,freopen(\"Output.txt\", \"w\", stdout))" ]
+  "1000153" -> "1000161"  [ label = "DDG: freopen(\"Input.txt\", \"r\", stdin)"] 
+  "1000157" -> "1000161"  [ label = "DDG: freopen(\"Output.txt\", \"w\", stdout)"] 
+  "1000153" -> "1000161"  [ label = "DDG: stdin"] 
+  "1000157" -> "1000161"  [ label = "DDG: stdout"] 
+  "1000151" -> "1000153"  [ label = "DDG: "] 
+  "1000151" -> "1000157"  [ label = "DDG: "] 
+}

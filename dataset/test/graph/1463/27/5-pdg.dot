@@ -1,0 +1,10 @@
+digraph "print_the_array" {  
+"1000131" [label = "(METHOD,print_the_array)" ]
+"1000135" [label = "(METHOD_RETURN,int)" ]
+"1000132" [label = "(PARAM,b2)" ]
+"1000133" [label = "(PARAM,n)" ]
+  "1000132" -> "1000135"  [ label = "DDG: <anonymous>"] 
+  "1000133" -> "1000135"  [ label = "DDG: <anonymous>"] 
+  "1000131" -> "1000132"  [ label = "DDG: "] 
+  "1000131" -> "1000133"  [ label = "DDG: "] 
+}

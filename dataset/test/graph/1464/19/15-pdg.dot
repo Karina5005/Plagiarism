@@ -1,0 +1,14 @@
+digraph "Fflush" {  
+"1000547" [label = "(METHOD,Fflush)" ]
+"1000559" [label = "(METHOD_RETURN,void)" ]
+"1000556" [label = "(<operator>.assignment,opt=0)" ]
+"1000550" [label = "(IDENTIFIER,opt,if (opt))" ]
+"1000551" [label = "(fwrite,fwrite(obuf,1,opt,stdout))" ]
+  "1000551" -> "1000559"  [ label = "DDG: stdout"] 
+  "1000551" -> "1000559"  [ label = "DDG: fwrite(obuf,1,opt,stdout)"] 
+  "1000556" -> "1000559"  [ label = "DDG: opt"] 
+  "1000551" -> "1000559"  [ label = "DDG: obuf"] 
+  "1000547" -> "1000556"  [ label = "DDG: "] 
+  "1000547" -> "1000550"  [ label = "DDG: "] 
+  "1000547" -> "1000551"  [ label = "DDG: "] 
+}

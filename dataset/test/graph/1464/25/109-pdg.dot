@@ -1,0 +1,10 @@
+digraph "clear" {  
+"1004270" [label = "(METHOD,clear)" ]
+"1004276" [label = "(METHOD_RETURN,void)" ]
+"1004272" [label = "(payload.clear,payload.clear())" ]
+"1004273" [label = "(<operator>.assignment,pos = 0)" ]
+  "1004272" -> "1004276"  [ label = "DDG: payload.clear()"] 
+  "1004273" -> "1004276"  [ label = "DDG: pos"] 
+  "1004270" -> "1004272"  [ label = "DDG: "] 
+  "1004270" -> "1004273"  [ label = "DDG: "] 
+}

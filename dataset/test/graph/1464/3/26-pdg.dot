@@ -1,0 +1,10 @@
+digraph "front" {  
+"1000678" [label = "(METHOD,front)" ]
+"1000682" [label = "(METHOD_RETURN,vector<T> &)" ]
+"1000680" [label = "(RETURN,return x.front();,return x.front();)" ]
+"1000681" [label = "(x.front,x.front())" ]
+  "1000680" -> "1000682"  [ label = "DDG: <RET>"] 
+  "1000681" -> "1000682"  [ label = "DDG: x.front()"] 
+  "1000681" -> "1000680"  [ label = "DDG: x.front()"] 
+  "1000678" -> "1000681"  [ label = "DDG: "] 
+}

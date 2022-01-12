@@ -1,0 +1,7 @@
+digraph "print" {  
+"1000295" [label = "(METHOD,print)" ]
+"1000299" [label = "(METHOD_RETURN,void)" ]
+"1000297" [label = "(write,write(\"\n\"))" ]
+  "1000297" -> "1000299"  [ label = "DDG: write(\"\n\")"] 
+  "1000295" -> "1000297"  [ label = "DDG: "] 
+}

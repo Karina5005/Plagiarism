@@ -1,0 +1,13 @@
+digraph "solve2" {  
+"1000554" [label = "(METHOD,solve2)" ]
+"1000559" [label = "(METHOD_RETURN,int)" ]
+"1000555" [label = "(PARAM,n_vals)" ]
+"1000556" [label = "(PARAM,b)" ]
+"1000557" [label = "(PARAM,adj)" ]
+  "1000555" -> "1000559"  [ label = "DDG: <anonymous>"] 
+  "1000556" -> "1000559"  [ label = "DDG: <anonymous>"] 
+  "1000557" -> "1000559"  [ label = "DDG: <anonymous>"] 
+  "1000554" -> "1000555"  [ label = "DDG: "] 
+  "1000554" -> "1000556"  [ label = "DDG: "] 
+  "1000554" -> "1000557"  [ label = "DDG: "] 
+}

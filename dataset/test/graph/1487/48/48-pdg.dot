@@ -1,0 +1,17 @@
+digraph "operator/=" {  
+"1001193" [label = "(METHOD,operator/=)" ]
+"1001204" [label = "(METHOD_RETURN,mint&)" ]
+"1001194" [label = "(PARAM,const mint& rhs)" ]
+"1001196" [label = "(RETURN,return *this = *this * rhs.inv();,return *this = *this * rhs.inv();)" ]
+"1001197" [label = "(<operator>.assignment,*this = *this * rhs.inv())" ]
+"1001200" [label = "(<operator>.multiplication,*this * rhs.inv())" ]
+  "1001196" -> "1001204"  [ label = "DDG: <RET>"] 
+  "1001194" -> "1001204"  [ label = "DDG: rhs"] 
+  "1001197" -> "1001204"  [ label = "DDG: *this"] 
+  "1001200" -> "1001204"  [ label = "DDG: rhs.inv()"] 
+  "1001197" -> "1001204"  [ label = "DDG: *this * rhs.inv()"] 
+  "1001193" -> "1001194"  [ label = "DDG: "] 
+  "1001200" -> "1001197"  [ label = "DDG: rhs.inv()"] 
+  "1001200" -> "1001197"  [ label = "DDG: *this"] 
+  "1001193" -> "1001200"  [ label = "DDG: "] 
+}

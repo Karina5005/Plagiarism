@@ -1,0 +1,17 @@
+digraph "write" {  
+"1000229" [label = "(METHOD,write)" ]
+"1000236" [label = "(METHOD_RETURN,void)" ]
+"1000230" [label = "(PARAM,T x)" ]
+"1000232" [label = "(<operator>.shiftLeft,cout << to_string(x))" ]
+"1000234" [label = "(to_string,to_string(x))" ]
+  "1000230" -> "1000236"  [ label = "DDG: x"] 
+  "1000234" -> "1000236"  [ label = "DDG: x"] 
+  "1000232" -> "1000236"  [ label = "DDG: to_string(x)"] 
+  "1000232" -> "1000236"  [ label = "DDG: cout << to_string(x)"] 
+  "1000232" -> "1000236"  [ label = "DDG: cout"] 
+  "1000229" -> "1000230"  [ label = "DDG: "] 
+  "1000229" -> "1000232"  [ label = "DDG: "] 
+  "1000234" -> "1000232"  [ label = "DDG: x"] 
+  "1000230" -> "1000234"  [ label = "DDG: x"] 
+  "1000229" -> "1000234"  [ label = "DDG: "] 
+}

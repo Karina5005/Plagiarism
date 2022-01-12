@@ -1,19 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-int vjx_bw;
-cin>>vjx_bw;
-while(vjx_bw--){
-	int o_but;
-	cin>>o_but;
-	if(o_but%2==0){
-		for(int auo_dy=1;auo_dy<=o_but;auo_dy+=2)
-		cout<<auo_dy+1<<" "<<auo_dy<<" ";
+int be_b;
+cin>>be_b;
+while(be_b--){
+	int zo;
+	cin>>zo;
+	if(zo%2==0){
+		for(int mr=1;mr<=zo;mr+=2)
+		cout<<mr+1<<" "<<mr<<" ";
 	}
 	else{
 	cout<<"3 1 2 ";
-	for(int g=4;g<=o_but;g+=2)
-	cout<< g+1<<" "<<g<<' ';
+	for(int zfl=4;zfl<=zo;zfl+=2)
+	cout<< zfl+1<<" "<<zfl<<' ';
 	}
 	cout<<endl;
 }

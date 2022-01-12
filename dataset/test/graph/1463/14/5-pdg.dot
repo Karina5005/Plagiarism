@@ -1,0 +1,10 @@
+digraph "size" {  
+"1000230" [label = "(METHOD,size)" ]
+"1000234" [label = "(METHOD_RETURN,int)" ]
+"1000232" [label = "(RETURN,return size_;,return size_;)" ]
+"1000233" [label = "(IDENTIFIER,size_,return size_;)" ]
+  "1000232" -> "1000234"  [ label = "DDG: <RET>"] 
+  "1000233" -> "1000232"  [ label = "DDG: size_"] 
+  "1000230" -> "1000232"  [ label = "DDG: "] 
+  "1000230" -> "1000233"  [ label = "DDG: "] 
+}

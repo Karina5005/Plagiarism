@@ -1,0 +1,16 @@
+digraph "operator /" {  
+"1002408" [label = "(METHOD,operator /)" ]
+"1002415" [label = "(METHOD_RETURN,Int)" ]
+"1002409" [label = "(PARAM,const int& rhs)" ]
+"1002411" [label = "(RETURN,return qtt(val, rhs);,return qtt(val, rhs);)" ]
+"1002412" [label = "(qtt,qtt(val, rhs))" ]
+  "1002411" -> "1002415"  [ label = "DDG: <RET>"] 
+  "1002409" -> "1002415"  [ label = "DDG: rhs"] 
+  "1002412" -> "1002415"  [ label = "DDG: rhs"] 
+  "1002412" -> "1002415"  [ label = "DDG: qtt(val, rhs)"] 
+  "1002412" -> "1002415"  [ label = "DDG: val"] 
+  "1002408" -> "1002409"  [ label = "DDG: "] 
+  "1002412" -> "1002411"  [ label = "DDG: qtt(val, rhs)"] 
+  "1002408" -> "1002412"  [ label = "DDG: "] 
+  "1002409" -> "1002412"  [ label = "DDG: rhs"] 
+}

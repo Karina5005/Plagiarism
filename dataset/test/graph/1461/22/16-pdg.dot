@@ -1,0 +1,16 @@
+digraph "Modular" {  
+"1000429" [label = "(METHOD,Modular)" ]
+"1000436" [label = "(METHOD_RETURN,int)" ]
+"1000430" [label = "(PARAM,const U& x)" ]
+"1000432" [label = "(<operator>.assignment,value = normalize(x))" ]
+"1000434" [label = "(normalize,normalize(x))" ]
+  "1000430" -> "1000436"  [ label = "DDG: x"] 
+  "1000434" -> "1000436"  [ label = "DDG: x"] 
+  "1000432" -> "1000436"  [ label = "DDG: normalize(x)"] 
+  "1000432" -> "1000436"  [ label = "DDG: value"] 
+  "1000429" -> "1000430"  [ label = "DDG: "] 
+  "1000434" -> "1000432"  [ label = "DDG: x"] 
+  "1000429" -> "1000432"  [ label = "DDG: "] 
+  "1000430" -> "1000434"  [ label = "DDG: x"] 
+  "1000429" -> "1000434"  [ label = "DDG: "] 
+}

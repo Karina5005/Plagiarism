@@ -5,33 +5,33 @@
 using namespace std;
 typedef long long ll;
 
-ll qr_sl()
+ll t()
 {
-    int w;
-    cin >> w;;
+    int r_ah;
+    cin >> r_ah;;
 
-    ll rob_fs[w], d_zs = 0;
-    for (int f = 0; f < w; f++)
+    ll i[r_ah], e_y = 0;
+    for (int qap_qyc = 0; qap_qyc < r_ah; qap_qyc++)
     {
-        cin >> rob_fs[f];
-        d_zs += rob_fs[f];
+        cin >> i[qap_qyc];
+        e_y += i[qap_qyc];
     }
-    if ((d_zs<<1) % w) return 0;
-    ll n_czf = (d_zs<<1) / w, ibh_arf = 0;
-    map<ll, ll> w_ort;
-    for (ll p : rob_fs)
+    if ((e_y<<1) % r_ah) return 0;
+    ll vea = (e_y<<1) / r_ah, xh_wr = 0;
+    map<ll, ll> ae;
+    for (ll jba_k : i)
     {
-        ibh_arf += w_ort[n_czf-p];
-        w_ort[p]++;
+        xh_wr += ae[vea-jba_k];
+        ae[jba_k]++;
     }   
-    return ibh_arf;
+    return xh_wr;
 }
 
 int main()
 { 
-    int hca_prn;
-    cin >> hca_prn;
-    while(hca_prn--)
-       cout << qr_sl() << endl;
+    int i;
+    cin >> i;
+    while(i--)
+       cout << t() << endl;
     return 0;
 }

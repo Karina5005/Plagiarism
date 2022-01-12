@@ -1,0 +1,13 @@
+digraph "reverse_bits" {  
+"1001715" [label = "(METHOD,reverse_bits)" ]
+"1001720" [label = "(METHOD_RETURN,inline LL)" ]
+"1001716" [label = "(PARAM,LL x)" ]
+"1001718" [label = "(RETURN,return x;,return x;)" ]
+"1001719" [label = "(IDENTIFIER,x,return x;)" ]
+  "1001716" -> "1001720"  [ label = "DDG: x"] 
+  "1001718" -> "1001720"  [ label = "DDG: <RET>"] 
+  "1001715" -> "1001716"  [ label = "DDG: "] 
+  "1001719" -> "1001718"  [ label = "DDG: x"] 
+  "1001716" -> "1001718"  [ label = "DDG: x"] 
+  "1001715" -> "1001719"  [ label = "DDG: "] 
+}

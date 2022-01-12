@@ -1,0 +1,10 @@
+digraph "main" {  
+"1001677" [label = "(METHOD,main)" ]
+"1001681" [label = "(METHOD_RETURN,signed)" ]
+"1001679" [label = "(faster,faster())" ]
+"1001680" [label = "(Process,Process())" ]
+  "1001679" -> "1001681"  [ label = "DDG: faster()"] 
+  "1001680" -> "1001681"  [ label = "DDG: Process()"] 
+  "1001677" -> "1001679"  [ label = "DDG: "] 
+  "1001677" -> "1001680"  [ label = "DDG: "] 
+}

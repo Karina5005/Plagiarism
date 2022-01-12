@@ -1,0 +1,15 @@
+digraph "inv" {  
+"1000229" [label = "(METHOD,inv)" ]
+"1000236" [label = "(METHOD_RETURN,modint)" ]
+"1000231" [label = "(RETURN,return pow(mod-2);,return pow(mod-2);)" ]
+"1000232" [label = "(pow,pow(mod-2))" ]
+"1000233" [label = "(<operator>.subtraction,mod-2)" ]
+  "1000232" -> "1000236"  [ label = "DDG: mod-2"] 
+  "1000232" -> "1000236"  [ label = "DDG: pow(mod-2)"] 
+  "1000231" -> "1000236"  [ label = "DDG: <RET>"] 
+  "1000233" -> "1000236"  [ label = "DDG: mod"] 
+  "1000232" -> "1000231"  [ label = "DDG: pow(mod-2)"] 
+  "1000233" -> "1000232"  [ label = "DDG: 2"] 
+  "1000233" -> "1000232"  [ label = "DDG: mod"] 
+  "1000229" -> "1000233"  [ label = "DDG: "] 
+}

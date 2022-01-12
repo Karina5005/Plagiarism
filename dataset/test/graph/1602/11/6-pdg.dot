@@ -1,0 +1,14 @@
+digraph "check" {  
+"1000268" [label = "(METHOD,check)" ]
+"1000275" [label = "(METHOD_RETURN,void)" ]
+"1000270" [label = "(<operator>.shiftLeft,cout<<\"HI\"<<endl)" ]
+"1000272" [label = "(<operator>.shiftLeft,\"HI\"<<endl)" ]
+  "1000270" -> "1000275"  [ label = "DDG: \"HI\"<<endl"] 
+  "1000270" -> "1000275"  [ label = "DDG: cout<<\"HI\"<<endl"] 
+  "1000272" -> "1000275"  [ label = "DDG: endl"] 
+  "1000270" -> "1000275"  [ label = "DDG: cout"] 
+  "1000268" -> "1000270"  [ label = "DDG: "] 
+  "1000272" -> "1000270"  [ label = "DDG: \"HI\""] 
+  "1000272" -> "1000270"  [ label = "DDG: endl"] 
+  "1000268" -> "1000272"  [ label = "DDG: "] 
+}

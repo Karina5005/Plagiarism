@@ -1,0 +1,14 @@
+digraph "operator-" {  
+"1000125" [label = "(METHOD,operator-)" ]
+"1000131" [label = "(METHOD_RETURN,modint)" ]
+"1000127" [label = "(RETURN,return modint(-x);,return modint(-x);)" ]
+"1000128" [label = "(modint,modint(-x))" ]
+"1000129" [label = "(<operator>.minus,-x)" ]
+  "1000127" -> "1000131"  [ label = "DDG: <RET>"] 
+  "1000128" -> "1000131"  [ label = "DDG: -x"] 
+  "1000128" -> "1000131"  [ label = "DDG: modint(-x)"] 
+  "1000129" -> "1000131"  [ label = "DDG: x"] 
+  "1000128" -> "1000127"  [ label = "DDG: modint(-x)"] 
+  "1000129" -> "1000128"  [ label = "DDG: x"] 
+  "1000125" -> "1000129"  [ label = "DDG: "] 
+}

@@ -1,0 +1,7 @@
+digraph "string" {  
+"1000115" [label = "(METHOD,string)" ]
+"1000118" [label = "(METHOD_RETURN,int)" ]
+"1000116" [label = "(PARAM,s)" ]
+  "1000116" -> "1000118"  [ label = "DDG: <anonymous>"] 
+  "1000115" -> "1000116"  [ label = "DDG: "] 
+}

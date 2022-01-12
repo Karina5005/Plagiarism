@@ -1,0 +1,14 @@
+digraph "operator+" {  
+"1000184" [label = "(METHOD,operator+)" ]
+"1000192" [label = "(METHOD_RETURN,modint)" ]
+"1000185" [label = "(PARAM,const modint a)" ]
+"1000188" [label = "(RETURN,return res+=a;,return res+=a;)" ]
+"1000189" [label = "(<operator>.assignmentPlus,res+=a)" ]
+  "1000185" -> "1000192"  [ label = "DDG: a"] 
+  "1000189" -> "1000192"  [ label = "DDG: res"] 
+  "1000189" -> "1000192"  [ label = "DDG: a"] 
+  "1000188" -> "1000192"  [ label = "DDG: <RET>"] 
+  "1000184" -> "1000185"  [ label = "DDG: "] 
+  "1000185" -> "1000189"  [ label = "DDG: a"] 
+  "1000184" -> "1000189"  [ label = "DDG: "] 
+}

@@ -1,0 +1,7 @@
+digraph "scc_graph" {  
+"1005539" [label = "(METHOD,scc_graph)" ]
+"1005542" [label = "(METHOD_RETURN,int)" ]
+"1005540" [label = "(PARAM,int n)" ]
+  "1005540" -> "1005542"  [ label = "DDG: n"] 
+  "1005539" -> "1005540"  [ label = "DDG: "] 
+}

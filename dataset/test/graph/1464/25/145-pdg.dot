@@ -1,0 +1,7 @@
+digraph "all_prod" {  
+"1006019" [label = "(METHOD,all_prod)" ]
+"1006025" [label = "(METHOD_RETURN,S)" ]
+"1006021" [label = "(RETURN,return d[1];,return d[1];)" ]
+  "1006021" -> "1006025"  [ label = "DDG: <RET>"] 
+  "1006019" -> "1006021"  [ label = "DDG: "] 
+}

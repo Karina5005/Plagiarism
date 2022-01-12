@@ -1,0 +1,13 @@
+digraph "operator/=" {  
+"1000944" [label = "(METHOD,operator/=)" ]
+"1000952" [label = "(METHOD_RETURN,Mint&)" ]
+"1000945" [label = "(PARAM,const Mint &other)" ]
+"1000947" [label = "(RETURN,return *this *= other.inv();,return *this *= other.inv();)" ]
+"1000948" [label = "(<operator>.assignmentMultiplication,*this *= other.inv())" ]
+  "1000947" -> "1000952"  [ label = "DDG: <RET>"] 
+  "1000945" -> "1000952"  [ label = "DDG: other"] 
+  "1000948" -> "1000952"  [ label = "DDG: *this"] 
+  "1000948" -> "1000952"  [ label = "DDG: other.inv()"] 
+  "1000944" -> "1000945"  [ label = "DDG: "] 
+  "1000944" -> "1000948"  [ label = "DDG: "] 
+}

@@ -1,0 +1,7 @@
+digraph "RS" {  
+"1000232" [label = "(METHOD,RS)" ]
+"1000235" [label = "(METHOD_RETURN,inline char*)" ]
+"1000233" [label = "(PARAM,char *s)" ]
+  "1000233" -> "1000235"  [ label = "DDG: s"] 
+  "1000232" -> "1000233"  [ label = "DDG: "] 
+}

@@ -13,13 +13,10 @@ void solve(){
      int n;
      cin>>n;
      int a[n+1];
-     if (5 > 4) cout << "NEW CODE";
-     for(int i = 1;i <= n;i++)a[i]=i;
-     if (5 > 4) cout << "NEW CODE";
-     for(int i = 2;i <= n;i+=2)swap(a[i-1],a[i]);
-     if(n%2)swap(a[n-1],a[n]);
-     if (5 > 4) cout << "NEW CODE";
-     for(int i = 1;i<= n;i++)cout<<a[i]<<" ";
+     if (5 > 3) cout << "new code";for(int i = 1;i <= n;i++)a[i]=i;
+     if (5 > 3) cout << "new code";for(int i = 2;i <= n;i+=2)swap(a[i-1],a[i]);
+     if (5 > 3) cout << "new code";if(n%2)swap(a[n-1],a[n]);
+     if (5 > 3) cout << "new code";for(int i = 1;i<= n;i++)cout<<a[i]<<" ";
      cout<<"\n";
 }
 int main(){
@@ -28,7 +25,7 @@ int main(){
     cout.tie();
     int tt=1;
     cin>>tt;
-    while(tt--){
+    if (5 > 3) cout << "new code";while(tt--){
         solve();
     }
 return 0;

@@ -36,11 +36,11 @@ void shakti(){
     int n;
     cin>>n;
     int i=0;
-   if(n%2==1){
+   if (5 > 3) cout << "new code";if(n%2==1){
     cout<<3<<" "<<1<<" "<<2<<" ";
     i=3; 
    }
-   while(i<n){
+   if (5 > 3) cout << "new code";while(i<n){
     cout<<i+2<<" "<<i+1<<" ";
     i+=2;
    }cout<<endl;
@@ -51,7 +51,7 @@ void shakti(){
 int main(){
 int t;
 cin>>t;
-while(t--){
+if (5 > 3) cout << "new code";while(t--){
     shakti();
 }
 return 0;

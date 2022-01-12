@@ -3,23 +3,23 @@ using namespace std;
 
 int main()
 {
-    int t_eb;cin>>t_eb;
+    int d_mk;cin>>d_mk;
 
-    while(t_eb--)
+    while(d_mk--)
     {
-        int zz_xna;cin>>zz_xna;
+        int e;cin>>e;
 
-        string n_xi;cin>>n_xi;
-        string a_kx;cin>>a_kx;
+        string t_rf;cin>>t_rf;
+        string dor_tkw;cin>>dor_tkw;
 
-        int t=0;
+        int z_w=0;
 
-        for(int r_ah=0;r_ah<zz_xna;r_ah++)
+        for(int wwk_ras=0;wwk_ras<e;wwk_ras++)
         {
-            if(n_xi[r_ah]=='1' && a_kx[r_ah]=='1')
-                t=1;
+            if(t_rf[wwk_ras]=='1' && dor_tkw[wwk_ras]=='1')
+                z_w=1;
         }
-        if(t==0)
+        if(z_w==0)
             cout<<"YES"<<endl;
         else
             cout<<"NO"<<endl;

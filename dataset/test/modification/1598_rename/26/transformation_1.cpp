@@ -20,45 +20,45 @@ using namespace std;
 
 
 typedef unsigned long long ll;
-int ik_okg(string ugk) //to count Distinct character in a string
+int nff(string t_tay) //to count Distinct character in a string
 { 
 
-    unordered_map<char, int> oj; 
+    unordered_map<char, int> ilx; 
 
-    for (int fdw_k = 0; fdw_k < ugk.length(); fdw_k++) { 
-        oj[ugk[fdw_k]]++; 
+    for (int ire_y = 0; ire_y < t_tay.length(); ire_y++) { 
+        ilx[t_tay[ire_y]]++; 
     } 
 
-    return oj.size(); 
+    return ilx.size(); 
 } 
-void iv_g(int &h_zb)
+void ai_q(int &re_zim)
 {
     //variable to indicate sign of input number
-    bool h = false;
-    register int ujy;
+    bool o_wa = false;
+    register int hm;
   
-    h_zb = 0;
+    re_zim = 0;
   
     // extract current character from buffer
-    ujy = getchar();
-    if (ujy=='-')
+    hm = getchar();
+    if (hm=='-')
     {
         // number is negative
-        h = true;
+        o_wa = true;
   
         // extract the next character from the buffer
-        ujy = getchar();
+        hm = getchar();
     }
   
     // Keep on extracting characters if they are integers
     // i.e ASCII Value lies from '0'(48) to '9' (57)
-    for (; (ujy>47 && ujy<58); ujy=getchar())
-        h_zb = h_zb *10 + ujy - 48;
+    for (; (hm>47 && hm<58); hm=getchar())
+        re_zim = re_zim *10 + hm - 48;
   
     // if scanned input has a negative sign, negate the
     // value of the input number
-    if (h)
-        h_zb *= -1;
+    if (o_wa)
+        re_zim *= -1;
 }
 
 
@@ -74,15 +74,15 @@ int main()
     fastio;
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-    ll wa;cin>>wa;
-    while(wa--){
-        ll dvo;cin>>dvo;
-        string y,oa;
-        cin>>y>>oa;
-        string p_jte="YES";
-        for(ll ur=0;ur<dvo;ur++)
-            if(y[ur]=='1' && oa[ur]=='1'){p_jte ="NO";break;}
-        cout<<p_jte;
+    ll pte;cin>>pte;
+    while(pte--){
+        ll iu;cin>>iu;
+        string s_bv,g;
+        cin>>s_bv>>g;
+        string lyf="YES";
+        for(ll f_eru=0;f_eru<iu;f_eru++)
+            if(s_bv[f_eru]=='1' && g[f_eru]=='1'){lyf ="NO";break;}
+        cout<<lyf;
         cout<<'\n';
     }
     

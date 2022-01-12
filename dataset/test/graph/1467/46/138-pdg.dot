@@ -1,0 +1,10 @@
+digraph "int" {  
+"1002316" [label = "(METHOD,int)" ]
+"1002320" [label = "(METHOD_RETURN,int)" ]
+"1002318" [label = "(RETURN,return val;,return val;)" ]
+"1002319" [label = "(IDENTIFIER,val,return val;)" ]
+  "1002318" -> "1002320"  [ label = "DDG: <RET>"] 
+  "1002319" -> "1002318"  [ label = "DDG: val"] 
+  "1002316" -> "1002318"  [ label = "DDG: "] 
+  "1002316" -> "1002319"  [ label = "DDG: "] 
+}

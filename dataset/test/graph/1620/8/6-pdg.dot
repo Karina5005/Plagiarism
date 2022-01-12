@@ -1,0 +1,16 @@
+digraph "main" {  
+"1000333" [label = "(METHOD,main)" ]
+"1000339" [label = "(METHOD_RETURN,int32_t)" ]
+"1000335" [label = "(inp_out,inp_out())" ]
+"1000336" [label = "(ans_nikalo,ans_nikalo())" ]
+"1000337" [label = "(RETURN,return 0;,return 0;)" ]
+"1000338" [label = "(LITERAL,0,return 0;)" ]
+  "1000335" -> "1000339"  [ label = "DDG: inp_out()"] 
+  "1000336" -> "1000339"  [ label = "DDG: ans_nikalo()"] 
+  "1000337" -> "1000339"  [ label = "DDG: <RET>"] 
+  "1000333" -> "1000335"  [ label = "DDG: "] 
+  "1000333" -> "1000336"  [ label = "DDG: "] 
+  "1000338" -> "1000337"  [ label = "DDG: 0"] 
+  "1000333" -> "1000337"  [ label = "DDG: "] 
+  "1000333" -> "1000338"  [ label = "DDG: "] 
+}

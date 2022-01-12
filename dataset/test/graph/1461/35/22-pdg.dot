@@ -1,0 +1,9 @@
+digraph "main" {  
+"1000854" [label = "(METHOD,main)" ]
+"1000859" [label = "(METHOD_RETURN,int)" ]
+"1000856" [label = "(IDENTIFIER,fio,)" ]
+"1000858" [label = "(solve,solve())" ]
+  "1000858" -> "1000859"  [ label = "DDG: solve()"] 
+  "1000854" -> "1000856"  [ label = "DDG: "] 
+  "1000854" -> "1000858"  [ label = "DDG: "] 
+}

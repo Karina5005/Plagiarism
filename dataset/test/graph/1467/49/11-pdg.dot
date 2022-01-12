@@ -1,0 +1,7 @@
+digraph "children" {  
+"1000500" [label = "(METHOD,children)" ]
+"1000503" [label = "(METHOD_RETURN,int)" ]
+"1000501" [label = "(PARAM,n)" ]
+  "1000501" -> "1000503"  [ label = "DDG: <anonymous>"] 
+  "1000500" -> "1000501"  [ label = "DDG: "] 
+}

@@ -1,0 +1,17 @@
+digraph "OPEN" {  
+"1000267" [label = "(METHOD,OPEN)" ]
+"1000278" [label = "(METHOD_RETURN,inline void)" ]
+"1000268" [label = "(PARAM,string s)" ]
+"1000270" [label = "(freopen,freopen((s + \".in\").c_str(), \"r\", stdin))" ]
+"1000274" [label = "(freopen,freopen((s + \".out\").c_str(), \"w\", stdout))" ]
+  "1000268" -> "1000278"  [ label = "DDG: s"] 
+  "1000270" -> "1000278"  [ label = "DDG: (s + \".in\").c_str()"] 
+  "1000270" -> "1000278"  [ label = "DDG: freopen((s + \".in\").c_str(), \"r\", stdin)"] 
+  "1000274" -> "1000278"  [ label = "DDG: (s + \".out\").c_str()"] 
+  "1000274" -> "1000278"  [ label = "DDG: freopen((s + \".out\").c_str(), \"w\", stdout)"] 
+  "1000270" -> "1000278"  [ label = "DDG: stdin"] 
+  "1000274" -> "1000278"  [ label = "DDG: stdout"] 
+  "1000267" -> "1000268"  [ label = "DDG: "] 
+  "1000267" -> "1000270"  [ label = "DDG: "] 
+  "1000267" -> "1000274"  [ label = "DDG: "] 
+}

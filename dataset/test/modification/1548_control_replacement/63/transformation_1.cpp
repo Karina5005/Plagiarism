@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -32,7 +34,8 @@ void compute_silnia() {
 	silnia[0] = 1;
 	{
 	int i = 1;
-	while (i <= 3 * n + 4) {
+	for ( ; i <= 3 * n + 4; ) 
+{
 		silnia[i] = (long long) silnia[i - 1] * i % mod;
 		i++; 
 	
@@ -57,12 +60,14 @@ int main() {
 	// cout << newton(6, 2) << " " << silnia[7] << " " << silnia[5] << " " << silnia[2] << endl;;
 	dp[0][0] = n;
 	dp[0][1] = n;
-	while (q--) {
+	for ( ; q--; ) 
+{
 		int a;
 		scanf("%d", &a);
-		while (nr < a) {
+		for ( ; nr < a; ) 
+{
 			compute_next();
 		}
-		printf("%d\n", dp[a][0]);
+		std::cout << dp[a][0] << "\n";
 	}
 }

@@ -1,0 +1,16 @@
+digraph "apply" {  
+"1000143" [label = "(METHOD,apply)" ]
+"1000152" [label = "(METHOD_RETURN,void)" ]
+"1000144" [label = "(PARAM,long long L)" ]
+"1000146" [label = "(<operator>.assignmentPlus,val += L)" ]
+"1000149" [label = "(<operator>.assignmentPlus,lazy += L)" ]
+  "1000144" -> "1000152"  [ label = "DDG: L"] 
+  "1000149" -> "1000152"  [ label = "DDG: L"] 
+  "1000146" -> "1000152"  [ label = "DDG: val"] 
+  "1000149" -> "1000152"  [ label = "DDG: lazy"] 
+  "1000143" -> "1000144"  [ label = "DDG: "] 
+  "1000144" -> "1000146"  [ label = "DDG: L"] 
+  "1000143" -> "1000146"  [ label = "DDG: "] 
+  "1000144" -> "1000149"  [ label = "DDG: L"] 
+  "1000143" -> "1000149"  [ label = "DDG: "] 
+}

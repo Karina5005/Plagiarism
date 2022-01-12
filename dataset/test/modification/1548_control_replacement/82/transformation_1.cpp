@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -62,7 +64,8 @@ void solve() {
         add(u, v);
     }
     ll q; cin>>q;
-    while(q --) {
+    for ( ; q --; ) 
+{
         ll a, u, v; cin>>a;
         if(a == 3) {
             cout<< cont.size() <<endl;
@@ -86,7 +89,8 @@ int32_t main()
     ll T; T = 1;
 
     //cin>>T;
-    while(T --) {
+    for ( ; T --; ) 
+{
         solve();
 
     }

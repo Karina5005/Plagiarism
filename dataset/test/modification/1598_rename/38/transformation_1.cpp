@@ -7,14 +7,14 @@ int32_t main()
     cin>>t;
     while(t--)
     {
-        string y,p;
+        string vjx_bw,o_but;
         int n,cnt=0;
         cin>>n;
-        cin>>y;
-        cin>>p;
+        cin>>vjx_bw;
+        cin>>o_but;
         for(int i=0;i<n;i++)
         {
-            if(y[i]=='1'&&p[i]=='1')
+            if(vjx_bw[i]=='1'&&o_but[i]=='1')
             cnt++;
 
         }

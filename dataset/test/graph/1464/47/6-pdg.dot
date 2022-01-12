@@ -1,0 +1,12 @@
+digraph "ST" {  
+"1000217" [label = "(METHOD,ST)" ]
+"1000222" [label = "(METHOD_RETURN,int)" ]
+"1000218" [label = "(PARAM,int _S=1)" ]
+"1000220" [label = "(init,init(_S))" ]
+  "1000218" -> "1000222"  [ label = "DDG: _S"] 
+  "1000220" -> "1000222"  [ label = "DDG: _S"] 
+  "1000220" -> "1000222"  [ label = "DDG: init(_S)"] 
+  "1000217" -> "1000218"  [ label = "DDG: "] 
+  "1000218" -> "1000220"  [ label = "DDG: _S"] 
+  "1000217" -> "1000220"  [ label = "DDG: "] 
+}

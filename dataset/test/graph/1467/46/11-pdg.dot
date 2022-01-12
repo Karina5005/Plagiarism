@@ -1,0 +1,11 @@
+digraph "RC" {  
+"1000253" [label = "(METHOD,RC)" ]
+"1000259" [label = "(METHOD_RETURN,inline char)" ]
+"1000256" [label = "(RETURN,return RC(c);,return RC(c);)" ]
+"1000257" [label = "(RC,RC(c))" ]
+  "1000256" -> "1000259"  [ label = "DDG: <RET>"] 
+  "1000257" -> "1000259"  [ label = "DDG: c"] 
+  "1000257" -> "1000259"  [ label = "DDG: RC(c)"] 
+  "1000257" -> "1000256"  [ label = "DDG: RC(c)"] 
+  "1000253" -> "1000257"  [ label = "DDG: "] 
+}

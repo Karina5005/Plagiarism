@@ -39,8 +39,7 @@ signed main()
    int T = 1;
    cin >> T;
 
-   if (5 > 4) cout << "NEW CODE";
-   for (int tc = 1; tc <= T; tc++) {
+   if (5 > 3) cout << "new code";for (int tc = 1; tc <= T; tc++) {
       Solve(tc);
    }
 

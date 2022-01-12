@@ -1,0 +1,13 @@
+digraph "pushup" {  
+"1000666" [label = "(METHOD,pushup)" ]
+"1000680" [label = "(METHOD_RETURN,void)" ]
+"1000667" [label = "(PARAM,int u)" ]
+"1000669" [label = "(<operator>.assignment,t[u] = t[lc] + t[rc])" ]
+"1000673" [label = "(<operator>.addition,t[lc] + t[rc])" ]
+  "1000667" -> "1000680"  [ label = "DDG: u"] 
+  "1000669" -> "1000680"  [ label = "DDG: t[u]"] 
+  "1000673" -> "1000680"  [ label = "DDG: t[lc]"] 
+  "1000673" -> "1000680"  [ label = "DDG: t[rc]"] 
+  "1000669" -> "1000680"  [ label = "DDG: t[lc] + t[rc]"] 
+  "1000666" -> "1000667"  [ label = "DDG: "] 
+}

@@ -1,0 +1,17 @@
+digraph "segscore" {  
+"1000234" [label = "(METHOD,segscore)" ]
+"1000246" [label = "(METHOD_RETURN,ll)" ]
+"1000235" [label = "(PARAM,vl &v)" ]
+"1000236" [label = "(PARAM,ll ind)" ]
+"1000239" [label = "(<operator>.assignment,rn=0)" ]
+"1000243" [label = "(<operator>.assignment,n=v.size())" ]
+  "1000235" -> "1000246"  [ label = "DDG: v"] 
+  "1000236" -> "1000246"  [ label = "DDG: ind"] 
+  "1000239" -> "1000246"  [ label = "DDG: rn"] 
+  "1000243" -> "1000246"  [ label = "DDG: n"] 
+  "1000243" -> "1000246"  [ label = "DDG: v.size()"] 
+  "1000234" -> "1000235"  [ label = "DDG: "] 
+  "1000234" -> "1000236"  [ label = "DDG: "] 
+  "1000234" -> "1000239"  [ label = "DDG: "] 
+  "1000234" -> "1000243"  [ label = "DDG: "] 
+}

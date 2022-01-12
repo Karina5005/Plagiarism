@@ -1,18 +1,18 @@
 #include <iostream>
 #define long long int
      
-void jox() {
-    int hu_d;
-    std::cin >> hu_d;
-    if(hu_d%2){
+void sx() {
+    int c;
+    std::cin >> c;
+    if(c%2){
         std::cout << "3 1 2 ";
-        for(int io_i=4; io_i<hu_d; io_i+=2){
-            std::cout << io_i+1 << " " << io_i << " ";
+        for(int vdj=4; vdj<c; vdj+=2){
+            std::cout << vdj+1 << " " << vdj << " ";
         }
     }
     else {
-        for(int k_s=1; k_s<hu_d; k_s+=2){
-            std::cout << k_s+1 << " " << k_s << " ";
+        for(int t=1; t<c; t+=2){
+            std::cout << t+1 << " " << t << " ";
         }
     }
     std::cout << "\n";
@@ -21,9 +21,9 @@ void jox() {
 signed main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(0);
-    int pvq_dlp = 0;
-    std::cin >> pvq_dlp;
-    while(pvq_dlp--){
-        jox();
+    int gj_b = 0;
+    std::cin >> gj_b;
+    while(gj_b--){
+        sx();
     }
 }

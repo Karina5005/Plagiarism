@@ -1,0 +1,7 @@
+digraph "modint" {  
+"1000121" [label = "(METHOD,modint)" ]
+"1000124" [label = "(METHOD_RETURN,int)" ]
+"1000122" [label = "(PARAM,ll x=0)" ]
+  "1000122" -> "1000124"  [ label = "DDG: x"] 
+  "1000121" -> "1000122"  [ label = "DDG: "] 
+}

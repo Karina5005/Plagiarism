@@ -1,0 +1,10 @@
+digraph "umod" {  
+"1000133" [label = "(METHOD,umod)" ]
+"1000137" [label = "(METHOD_RETURN,unsigned int)" ]
+"1000135" [label = "(RETURN,return _m;,return _m;)" ]
+"1000136" [label = "(IDENTIFIER,_m,return _m;)" ]
+  "1000135" -> "1000137"  [ label = "DDG: <RET>"] 
+  "1000136" -> "1000135"  [ label = "DDG: _m"] 
+  "1000133" -> "1000135"  [ label = "DDG: "] 
+  "1000133" -> "1000136"  [ label = "DDG: "] 
+}

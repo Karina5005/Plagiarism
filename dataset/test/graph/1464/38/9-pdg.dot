@@ -1,0 +1,16 @@
+digraph "operator <" {  
+"1000417" [label = "(METHOD,operator <)" ]
+"1000426" [label = "(METHOD_RETURN,inline bool)" ]
+"1000418" [label = "(PARAM,const diam &o)" ]
+"1000420" [label = "(RETURN,return len<o.len;,return len<o.len;)" ]
+"1000421" [label = "(<operator>.lessThan,len<o.len)" ]
+  "1000418" -> "1000426"  [ label = "DDG: o"] 
+  "1000421" -> "1000426"  [ label = "DDG: o.len"] 
+  "1000421" -> "1000426"  [ label = "DDG: len<o.len"] 
+  "1000420" -> "1000426"  [ label = "DDG: <RET>"] 
+  "1000421" -> "1000426"  [ label = "DDG: len"] 
+  "1000417" -> "1000418"  [ label = "DDG: "] 
+  "1000421" -> "1000420"  [ label = "DDG: len<o.len"] 
+  "1000417" -> "1000421"  [ label = "DDG: "] 
+  "1000418" -> "1000421"  [ label = "DDG: o"] 
+}

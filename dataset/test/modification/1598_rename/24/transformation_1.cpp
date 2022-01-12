@@ -3,35 +3,35 @@ using namespace std;
 #define ll long long
 
 int main(){
-   int lu;
-   cin >> lu;
-   while(lu--){
-      int ymk_tij;
-      cin >> ymk_tij;
-      vector<vector<int>> jj (ymk_tij, vector<int>(5, 0));
-      for(int isg_nyi = 0; isg_nyi<ymk_tij; isg_nyi++){
-         for(int cgb_jsn = 0; cgb_jsn<5; cgb_jsn++){
-            cin >> jj[isg_nyi][cgb_jsn];
+   int at;
+   cin >> at;
+   while(at--){
+      int pq;
+      cin >> pq;
+      vector<vector<int>> jz (pq, vector<int>(5, 0));
+      for(int ukf = 0; ukf<pq; ukf++){
+         for(int nuf = 0; nuf<5; nuf++){
+            cin >> jz[ukf][nuf];
          }
       }
-      bool iw = false;
-      for(int x = 0; x<5; x++){
-         for(int ob = 0; ob<5; ob++){
-            if(x == ob) continue;
-            int re, g, ln;
-            re = g = ln = 0;
-            for(int f = 0; f<ymk_tij; f++){
-               if(jj[f][x] == 1 and jj[f][ob] == 0) re++;
-               else if(jj[f][x] == 0 and jj[f][ob] == 1) g++;
-               else if(jj[f][x] == 1 and jj[f][ob] == 1) ln++;
+      bool p = false;
+      for(int cd_g = 0; cd_g<5; cd_g++){
+         for(int s = 0; s<5; s++){
+            if(cd_g == s) continue;
+            int t_eb, zz_xna, n_xi;
+            t_eb = zz_xna = n_xi = 0;
+            for(int a_kx = 0; a_kx<pq; a_kx++){
+               if(jz[a_kx][cd_g] == 1 and jz[a_kx][s] == 0) t_eb++;
+               else if(jz[a_kx][cd_g] == 0 and jz[a_kx][s] == 1) zz_xna++;
+               else if(jz[a_kx][cd_g] == 1 and jz[a_kx][s] == 1) n_xi++;
             }
-            if(re + g + ln == ymk_tij and abs(re - g) <= ln){
-               iw = true;
+            if(t_eb + zz_xna + n_xi == pq and abs(t_eb - zz_xna) <= n_xi){
+               p = true;
                break;
             }
          }
       }
-      if(iw) cout << "YES" << endl;
+      if(p) cout << "YES" << endl;
       else cout << "NO" << endl;
    }
 }   

@@ -1,0 +1,12 @@
+digraph "operator-" {  
+"1000857" [label = "(METHOD,operator-)" ]
+"1000864" [label = "(METHOD_RETURN,mint)" ]
+"1000859" [label = "(RETURN,return mint() - *this;,return mint() - *this;)" ]
+"1000860" [label = "(<operator>.subtraction,mint() - *this)" ]
+  "1000859" -> "1000864"  [ label = "DDG: <RET>"] 
+  "1000860" -> "1000864"  [ label = "DDG: mint()"] 
+  "1000860" -> "1000864"  [ label = "DDG: *this"] 
+  "1000860" -> "1000864"  [ label = "DDG: mint() - *this"] 
+  "1000860" -> "1000859"  [ label = "DDG: mint() - *this"] 
+  "1000857" -> "1000860"  [ label = "DDG: "] 
+}

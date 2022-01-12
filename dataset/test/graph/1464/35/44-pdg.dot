@@ -1,0 +1,18 @@
+digraph "operator--" {  
+"1001124" [label = "(METHOD,operator--)" ]
+"1001137" [label = "(METHOD_RETURN,mint)" ]
+"1001125" [label = "(PARAM,int)" ]
+"1001128" [label = "(<operator>.assignment,result = *this)" ]
+"1001132" [label = "(<operator>.preDecrement,--*this)" ]
+"1001135" [label = "(RETURN,return result;,return result;)" ]
+"1001136" [label = "(IDENTIFIER,result,return result;)" ]
+  "1001135" -> "1001137"  [ label = "DDG: <RET>"] 
+  "1001125" -> "1001137"  [ label = "DDG: <anonymous>"] 
+  "1001128" -> "1001137"  [ label = "DDG: result"] 
+  "1001132" -> "1001137"  [ label = "DDG: *this"] 
+  "1001124" -> "1001125"  [ label = "DDG: "] 
+  "1001136" -> "1001135"  [ label = "DDG: result"] 
+  "1001128" -> "1001135"  [ label = "DDG: result"] 
+  "1001124" -> "1001128"  [ label = "DDG: "] 
+  "1001124" -> "1001136"  [ label = "DDG: "] 
+}

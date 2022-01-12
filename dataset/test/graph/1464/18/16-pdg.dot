@@ -1,0 +1,14 @@
+digraph "read" {  
+"1000559" [label = "(METHOD,read)" ]
+"1000566" [label = "(METHOD_RETURN,inline int)" ]
+"1000562" [label = "(FI,FI(x))" ]
+"1000564" [label = "(RETURN,return x;,return x;)" ]
+"1000565" [label = "(IDENTIFIER,x,return x;)" ]
+  "1000562" -> "1000566"  [ label = "DDG: x"] 
+  "1000562" -> "1000566"  [ label = "DDG: FI(x)"] 
+  "1000564" -> "1000566"  [ label = "DDG: <RET>"] 
+  "1000565" -> "1000564"  [ label = "DDG: x"] 
+  "1000562" -> "1000564"  [ label = "DDG: x"] 
+  "1000559" -> "1000562"  [ label = "DDG: "] 
+  "1000559" -> "1000565"  [ label = "DDG: "] 
+}

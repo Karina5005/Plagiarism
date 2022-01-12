@@ -1,0 +1,18 @@
+digraph "raw" {  
+"1000662" [label = "(METHOD,raw)" ]
+"1000673" [label = "(METHOD_RETURN,static mint)" ]
+"1000663" [label = "(PARAM,int v)" ]
+"1000666" [label = "(<operator>.assignment,x._v = v)" ]
+"1000671" [label = "(RETURN,return x;,return x;)" ]
+"1000672" [label = "(IDENTIFIER,x,return x;)" ]
+  "1000663" -> "1000673"  [ label = "DDG: v"] 
+  "1000666" -> "1000673"  [ label = "DDG: x._v"] 
+  "1000666" -> "1000673"  [ label = "DDG: v"] 
+  "1000671" -> "1000673"  [ label = "DDG: <RET>"] 
+  "1000662" -> "1000663"  [ label = "DDG: "] 
+  "1000663" -> "1000666"  [ label = "DDG: v"] 
+  "1000662" -> "1000666"  [ label = "DDG: "] 
+  "1000672" -> "1000671"  [ label = "DDG: x"] 
+  "1000666" -> "1000671"  [ label = "DDG: x._v"] 
+  "1000662" -> "1000672"  [ label = "DDG: "] 
+}

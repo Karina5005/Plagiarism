@@ -1,0 +1,15 @@
+digraph "high_idx" {  
+"1001883" [label = "(METHOD,high_idx)" ]
+"1001889" [label = "(METHOD_RETURN,inline int)" ]
+"1001884" [label = "(PARAM,int x)" ]
+"1001886" [label = "(RETURN,return lg2(x);,return lg2(x);)" ]
+"1001887" [label = "(lg2,lg2(x))" ]
+  "1001886" -> "1001889"  [ label = "DDG: <RET>"] 
+  "1001884" -> "1001889"  [ label = "DDG: x"] 
+  "1001887" -> "1001889"  [ label = "DDG: x"] 
+  "1001887" -> "1001889"  [ label = "DDG: lg2(x)"] 
+  "1001883" -> "1001884"  [ label = "DDG: "] 
+  "1001887" -> "1001886"  [ label = "DDG: lg2(x)"] 
+  "1001884" -> "1001887"  [ label = "DDG: x"] 
+  "1001883" -> "1001887"  [ label = "DDG: "] 
+}

@@ -1,0 +1,13 @@
+digraph "pw2" {  
+"1000154" [label = "(METHOD,pw2)" ]
+"1000160" [label = "(METHOD_RETURN,inline T)" ]
+"1000155" [label = "(PARAM,T x)" ]
+"1000157" [label = "(<operator>.shiftLeft,L<<x)" ]
+  "1000155" -> "1000160"  [ label = "DDG: x"] 
+  "1000157" -> "1000160"  [ label = "DDG: x"] 
+  "1000157" -> "1000160"  [ label = "DDG: L<<x"] 
+  "1000157" -> "1000160"  [ label = "DDG: L"] 
+  "1000154" -> "1000155"  [ label = "DDG: "] 
+  "1000154" -> "1000157"  [ label = "DDG: "] 
+  "1000155" -> "1000157"  [ label = "DDG: x"] 
+}

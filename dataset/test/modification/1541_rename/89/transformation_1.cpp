@@ -9,35 +9,35 @@
  
 using namespace std;
  
-mt19937 pkb(chrono::steady_clock::now().time_since_epoch().count());
+mt19937 a_cq(chrono::steady_clock::now().time_since_epoch().count());
  
-void j_gwf() { cerr << "\n";}
+void b_fcl() { cerr << "\n";}
 template<typename Head, typename... Tail>
-void debug(Head s_fj, Tail... zy) {cerr << s_fj << " "; debug(zy...); }
+void debug(Head os, Tail... m) {cerr << os << " "; debug(m...); }
  
-template<class T> void umin(T &ej,T e_j) { ej = min(ej, e_j);}
-template<class T> void umax(T &pav_i,T z_ud) { pav_i = max(pav_i, z_ud);}
+template<class T> void umin(T &hs_ftf,T k_r) { hs_ftf = min(hs_ftf, k_r);}
+template<class T> void umax(T &ge,T h_rc) { ge = max(ge, h_rc);}
  
 using ll = long long;
 using pii = pair<int, int>;
 using pll = pair<ll, ll>;
  
-const int p = 1e9 + 7, dob_is = 1e6 + 5;
+const int xfi_e = 1e9 + 7, st_puc = 1e6 + 5;
 
-void gs() {
-  int cs_s;
-  cin >> cs_s;
-  vector<int> tz;
-  if (cs_s & 1) {
+void wk_nh() {
+  int wi;
+  cin >> wi;
+  vector<int> owi;
+  if (wi & 1) {
     cout << "2 3 1" << ' ';
-    for (int q = 4; q <= cs_s; q += 2) {
-      cout << q + 1 << ' ' << q << ' ';
+    for (int zd_ckh = 4; zd_ckh <= wi; zd_ckh += 2) {
+      cout << zd_ckh + 1 << ' ' << zd_ckh << ' ';
     }
     cout << '\n';
   }
   else {
-    for (int o_zcy = 1; o_zcy <= cs_s; o_zcy += 2) {
-      cout << o_zcy + 1 << ' ' << o_zcy << ' ';
+    for (int tvq = 1; tvq <= wi; tvq += 2) {
+      cout << tvq + 1 << ' ' << tvq << ' ';
     }
     cout << '\n';
 
@@ -91,6 +91,6 @@ void gs() {
 int main(){
   ios_base::sync_with_stdio(false);
   cin.tie(0);
-  int w; cin >> w; while (w--)
-  gs();
+  int d_mk; cin >> d_mk; while (d_mk--)
+  wk_nh();
 }

@@ -1,0 +1,16 @@
+digraph "identity" {  
+"1001003" [label = "(METHOD,identity)" ]
+"1001018" [label = "(METHOD_RETURN,Matrix<T>)" ]
+"1001004" [label = "(PARAM,int n)" ]
+"1001007" [label = "(<operator>.assignment,res.x[i][i] = 1)" ]
+"1001016" [label = "(RETURN,return res;,return res;)" ]
+"1001017" [label = "(IDENTIFIER,res,return res;)" ]
+  "1001016" -> "1001018"  [ label = "DDG: <RET>"] 
+  "1001004" -> "1001018"  [ label = "DDG: n"] 
+  "1001007" -> "1001018"  [ label = "DDG: res.x[i][i]"] 
+  "1001003" -> "1001004"  [ label = "DDG: "] 
+  "1001003" -> "1001007"  [ label = "DDG: "] 
+  "1001017" -> "1001016"  [ label = "DDG: res"] 
+  "1001003" -> "1001016"  [ label = "DDG: "] 
+  "1001003" -> "1001017"  [ label = "DDG: "] 
+}

@@ -1,0 +1,7 @@
+digraph "to_string" {  
+"1000130" [label = "(METHOD,to_string)" ]
+"1000133" [label = "(METHOD_RETURN,string)" ]
+"1000131" [label = "(PARAM,tuple<A, B, C, D> p)" ]
+  "1000131" -> "1000133"  [ label = "DDG: p"] 
+  "1000130" -> "1000131"  [ label = "DDG: "] 
+}

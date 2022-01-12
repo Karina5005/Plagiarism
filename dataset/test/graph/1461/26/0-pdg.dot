@@ -1,0 +1,15 @@
+digraph "get_rand" {  
+"1000101" [label = "(METHOD,get_rand)" ]
+"1000113" [label = "(METHOD_RETURN,int)" ]
+"1000104" [label = "(<operator>.assignment,a = rand())" ]
+"1000108" [label = "(<operator>.assignment,b = rand())" ]
+"1000111" [label = "(<operator>.plus,+ b)" ]
+  "1000104" -> "1000113"  [ label = "DDG: a"] 
+  "1000108" -> "1000113"  [ label = "DDG: rand()"] 
+  "1000111" -> "1000113"  [ label = "DDG: b"] 
+  "1000111" -> "1000113"  [ label = "DDG: + b"] 
+  "1000101" -> "1000104"  [ label = "DDG: "] 
+  "1000101" -> "1000108"  [ label = "DDG: "] 
+  "1000108" -> "1000111"  [ label = "DDG: b"] 
+  "1000101" -> "1000111"  [ label = "DDG: "] 
+}

@@ -1,0 +1,12 @@
+digraph "pr" {  
+"1000691" [label = "(METHOD,pr)" ]
+"1000701" [label = "(METHOD_RETURN,void)" ]
+"1000692" [label = "(PARAM,pair<T,U>& x)" ]
+"1000694" [label = "(pr,pr(x.f,x.s))" ]
+  "1000692" -> "1000701"  [ label = "DDG: x"] 
+  "1000694" -> "1000701"  [ label = "DDG: x.f"] 
+  "1000694" -> "1000701"  [ label = "DDG: x.s"] 
+  "1000694" -> "1000701"  [ label = "DDG: pr(x.f,x.s)"] 
+  "1000691" -> "1000692"  [ label = "DDG: "] 
+  "1000692" -> "1000694"  [ label = "DDG: x"] 
+}

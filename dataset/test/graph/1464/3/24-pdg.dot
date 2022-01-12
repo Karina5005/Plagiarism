@@ -1,0 +1,7 @@
+digraph "pop_back" {  
+"1000670" [label = "(METHOD,pop_back)" ]
+"1000673" [label = "(METHOD_RETURN,void)" ]
+"1000672" [label = "(x.pop_back,x.pop_back())" ]
+  "1000672" -> "1000673"  [ label = "DDG: x.pop_back()"] 
+  "1000670" -> "1000672"  [ label = "DDG: "] 
+}

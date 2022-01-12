@@ -1,0 +1,17 @@
+digraph "dbg_out" {  
+"1000167" [label = "(METHOD,dbg_out)" ]
+"1000178" [label = "(METHOD_RETURN,void)" ]
+"1000168" [label = "(PARAM,Head H)" ]
+"1000169" [label = "(PARAM,Tail... T)" ]
+"1000171" [label = "(<operator>.shiftLeft,cerr << &#39)" ]
+"1000177" [label = "(IDENTIFIER,H,)" ]
+  "1000168" -> "1000178"  [ label = "DDG: H"] 
+  "1000169" -> "1000178"  [ label = "DDG: T"] 
+  "1000171" -> "1000178"  [ label = "DDG: &#39"] 
+  "1000171" -> "1000178"  [ label = "DDG: cerr << &#39"] 
+  "1000171" -> "1000178"  [ label = "DDG: cerr"] 
+  "1000167" -> "1000168"  [ label = "DDG: "] 
+  "1000167" -> "1000169"  [ label = "DDG: "] 
+  "1000167" -> "1000177"  [ label = "DDG: "] 
+  "1000167" -> "1000171"  [ label = "DDG: "] 
+}

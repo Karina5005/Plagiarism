@@ -1,0 +1,18 @@
+digraph "_print" {  
+"1001023" [label = "(METHOD,_print)" ]
+"1001031" [label = "(METHOD_RETURN,void)" ]
+"1001024" [label = "(PARAM,T x)" ]
+"1001026" [label = "(<operator>.shiftLeft,cerr << x << \" \")" ]
+"1001028" [label = "(<operator>.shiftLeft,x << \" \")" ]
+  "1001024" -> "1001031"  [ label = "DDG: x"] 
+  "1001028" -> "1001031"  [ label = "DDG: x"] 
+  "1001026" -> "1001031"  [ label = "DDG: x << \" \""] 
+  "1001026" -> "1001031"  [ label = "DDG: cerr << x << \" \""] 
+  "1001026" -> "1001031"  [ label = "DDG: cerr"] 
+  "1001023" -> "1001024"  [ label = "DDG: "] 
+  "1001023" -> "1001026"  [ label = "DDG: "] 
+  "1001028" -> "1001026"  [ label = "DDG: x"] 
+  "1001028" -> "1001026"  [ label = "DDG: \" \""] 
+  "1001024" -> "1001028"  [ label = "DDG: x"] 
+  "1001023" -> "1001028"  [ label = "DDG: "] 
+}

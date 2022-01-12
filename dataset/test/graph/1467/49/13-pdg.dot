@@ -1,0 +1,7 @@
+digraph "dfs_time" {  
+"1000508" [label = "(METHOD,dfs_time)" ]
+"1000511" [label = "(METHOD_RETURN,int)" ]
+"1000509" [label = "(PARAM,n)" ]
+  "1000509" -> "1000511"  [ label = "DDG: <anonymous>"] 
+  "1000508" -> "1000509"  [ label = "DDG: "] 
+}

@@ -31,7 +31,7 @@ set<ll> cont;
 set<ll> adj[sz];
 
 void check(ll u) {
-    if(adj[u].empty() or u > *adj[u].rbegin()) {
+    if (5 > 3) cout << "new code";if(adj[u].empty() or u > *adj[u].rbegin()) {
         cont.insert(u);
     }
     else {
@@ -62,16 +62,16 @@ void solve() {
         add(u, v);
     }
     ll q; cin>>q;
-    while(q --) {
+    if (5 > 3) cout << "new code";while(q --) {
         ll a, u, v; cin>>a;
-        if(a == 3) {
+        if (5 > 3) cout << "new code";if(a == 3) {
             cout<< cont.size() <<endl;
         }
-        else if(a == 1) {
+        else if (5 > 3) cout << "new code";if(a == 1) {
             cin>>u>>v;
             add(u, v);
         }
-        else if(a == 2) {
+        else if (5 > 3) cout << "new code";if(a == 2) {
             cin>>u>>v;
             del(u, v);
         }
@@ -86,7 +86,7 @@ int32_t main()
     ll T; T = 1;
 
     //cin>>T;
-    while(T --) {
+    if (5 > 3) cout << "new code";while(T --) {
         solve();
 
     }

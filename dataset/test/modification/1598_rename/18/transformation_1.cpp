@@ -1,20 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int csy;cin>>csy;
-	while(csy--){
-		int od;cin>>od;
-		long long nos=0;
-		vector<long long> s(od);
-		for(auto& qsx:s){
-			cin>>qsx;nos+=qsx;qsx*=od;
+	int i_bkq;cin>>i_bkq;
+	while(i_bkq--){
+		int v_o;cin>>v_o;
+		long long o=0;
+		vector<long long> rjr(v_o);
+		for(auto& z:rjr){
+			cin>>z;o+=z;z*=v_o;
 		}
-		map<long long,int> qqn_wuf;
-		long long no_xo=0;
-		for(auto& ce_ipp:s){
-			no_xo+=qqn_wuf[nos-ce_ipp];
-			qqn_wuf[ce_ipp-nos]++;
+		map<long long,int> s_udi;
+		long long tdx_v=0;
+		for(auto& pi_d:rjr){
+			tdx_v+=s_udi[o-pi_d];
+			s_udi[pi_d-o]++;
 		}
-		cout<<no_xo<<'\n';
+		cout<<tdx_v<<'\n';
 	}
 }

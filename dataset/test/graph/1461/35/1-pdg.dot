@@ -1,0 +1,18 @@
+digraph "useme" {  
+"1000151" [label = "(METHOD,useme)" ]
+"1000162" [label = "(METHOD_RETURN,void)" ]
+"1000152" [label = "(PARAM,lli x)" ]
+"1000155" [label = "(<operator>.assignment,heh = x)" ]
+"1000159" [label = "(IDENTIFIER,heh,while(heh))" ]
+"1000160" [label = "(<operator>.preDecrement,--heh)" ]
+  "1000152" -> "1000162"  [ label = "DDG: x"] 
+  "1000155" -> "1000162"  [ label = "DDG: heh"] 
+  "1000155" -> "1000162"  [ label = "DDG: x"] 
+  "1000160" -> "1000162"  [ label = "DDG: heh"] 
+  "1000151" -> "1000152"  [ label = "DDG: "] 
+  "1000152" -> "1000155"  [ label = "DDG: x"] 
+  "1000151" -> "1000155"  [ label = "DDG: "] 
+  "1000151" -> "1000159"  [ label = "DDG: "] 
+  "1000155" -> "1000160"  [ label = "DDG: heh"] 
+  "1000151" -> "1000160"  [ label = "DDG: "] 
+}

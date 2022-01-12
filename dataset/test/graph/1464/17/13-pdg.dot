@@ -1,0 +1,13 @@
+digraph "Triple" {  
+"1000476" [label = "(METHOD,Triple)" ]
+"1000481" [label = "(METHOD_RETURN,int)" ]
+"1000477" [label = "(PARAM,int u)" ]
+"1000478" [label = "(PARAM,int v)" ]
+"1000479" [label = "(PARAM,int dis)" ]
+  "1000477" -> "1000481"  [ label = "DDG: u"] 
+  "1000478" -> "1000481"  [ label = "DDG: v"] 
+  "1000479" -> "1000481"  [ label = "DDG: dis"] 
+  "1000476" -> "1000477"  [ label = "DDG: "] 
+  "1000476" -> "1000478"  [ label = "DDG: "] 
+  "1000476" -> "1000479"  [ label = "DDG: "] 
+}

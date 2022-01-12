@@ -1,0 +1,15 @@
+digraph "ctz" {  
+"1001824" [label = "(METHOD,ctz)" ]
+"1001830" [label = "(METHOD_RETURN,inline int)" ]
+"1001825" [label = "(PARAM,LL x)" ]
+"1001827" [label = "(RETURN,return __builtin_ctzll(x);,return __builtin_ctzll(x);)" ]
+"1001828" [label = "(__builtin_ctzll,__builtin_ctzll(x))" ]
+  "1001825" -> "1001830"  [ label = "DDG: x"] 
+  "1001828" -> "1001830"  [ label = "DDG: x"] 
+  "1001828" -> "1001830"  [ label = "DDG: __builtin_ctzll(x)"] 
+  "1001827" -> "1001830"  [ label = "DDG: <RET>"] 
+  "1001824" -> "1001825"  [ label = "DDG: "] 
+  "1001828" -> "1001827"  [ label = "DDG: __builtin_ctzll(x)"] 
+  "1001825" -> "1001828"  [ label = "DDG: x"] 
+  "1001824" -> "1001828"  [ label = "DDG: "] 
+}

@@ -1,0 +1,13 @@
+digraph "read" {  
+"1000195" [label = "(METHOD,read)" ]
+"1000201" [label = "(METHOD_RETURN,void)" ]
+"1000196" [label = "(PARAM,Arg1&& arg1)" ]
+"1000198" [label = "(<operator>.arithmeticShiftRight,cin>>arg1)" ]
+  "1000196" -> "1000201"  [ label = "DDG: arg1"] 
+  "1000198" -> "1000201"  [ label = "DDG: arg1"] 
+  "1000198" -> "1000201"  [ label = "DDG: cin>>arg1"] 
+  "1000198" -> "1000201"  [ label = "DDG: cin"] 
+  "1000195" -> "1000196"  [ label = "DDG: "] 
+  "1000195" -> "1000198"  [ label = "DDG: "] 
+  "1000196" -> "1000198"  [ label = "DDG: arg1"] 
+}

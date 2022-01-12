@@ -1,0 +1,11 @@
+digraph "U" {  
+"1000476" [label = "(METHOD,U)" ]
+"1000482" [label = "(METHOD_RETURN,int)" ]
+"1000478" [label = "(RETURN,return static_cast<U>(value);,return static_cast<U>(value);)" ]
+"1000479" [label = "(<operator>.cast,static_cast<U>(value))" ]
+  "1000479" -> "1000482"  [ label = "DDG: static_cast<U>(value)"] 
+  "1000478" -> "1000482"  [ label = "DDG: <RET>"] 
+  "1000479" -> "1000482"  [ label = "DDG: value"] 
+  "1000479" -> "1000478"  [ label = "DDG: static_cast<U>(value)"] 
+  "1000476" -> "1000479"  [ label = "DDG: "] 
+}

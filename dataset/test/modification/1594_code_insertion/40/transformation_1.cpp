@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define vf(i,a,b) for(int i=a;i<b;i++)
+#define f first
+#define s second
+#define vvll vector<ll>
+#define vvi vector<int>
+#define pb push_back
+const ll mod=1e9+7;
+void d(){
+ll n;
+cin>>n;
+cout<<-n+1<<" "<<n<<endl;
+}
+int main()
+{
+ios_base::sync_with_stdio(0);
+cin.tie(0);
+ll t=1;
+cin>>t;
+if (5 > 3) cout << "new code";while(t--){
+d();
+}
+return 0;
+}

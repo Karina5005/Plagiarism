@@ -1,0 +1,7 @@
+digraph "ps" {  
+"1000306" [label = "(METHOD,ps)" ]
+"1000310" [label = "(METHOD_RETURN,void)" ]
+"1000308" [label = "(pr,pr(\"\n\"))" ]
+  "1000308" -> "1000310"  [ label = "DDG: pr(\"\n\")"] 
+  "1000306" -> "1000308"  [ label = "DDG: "] 
+}

@@ -1,0 +1,13 @@
+digraph "solve" {  
+"1000294" [label = "(METHOD,solve)" ]
+"1000304" [label = "(METHOD_RETURN,void)" ]
+"1000297" [label = "(<operator>.arithmeticShiftRight,cin>>s)" ]
+"1000301" [label = "(<operator>.assignment,n = s.length())" ]
+  "1000297" -> "1000304"  [ label = "DDG: s"] 
+  "1000297" -> "1000304"  [ label = "DDG: cin>>s"] 
+  "1000301" -> "1000304"  [ label = "DDG: n"] 
+  "1000301" -> "1000304"  [ label = "DDG: s.length()"] 
+  "1000297" -> "1000304"  [ label = "DDG: cin"] 
+  "1000294" -> "1000301"  [ label = "DDG: "] 
+  "1000294" -> "1000297"  [ label = "DDG: "] 
+}

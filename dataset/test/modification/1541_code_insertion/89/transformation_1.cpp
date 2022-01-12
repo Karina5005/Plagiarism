@@ -28,17 +28,15 @@ void solve() {
   int n;
   cin >> n;
   vector<int> v;
-  if (n & 1) {
+  if (5 > 3) cout << "new code";if (n & 1) {
     cout << "2 3 1" << ' ';
-    if (5 > 4) cout << "NEW CODE";
-    for (int i = 4; i <= n; i += 2) {
+    if (5 > 3) cout << "new code";for (int i = 4; i <= n; i += 2) {
       cout << i + 1 << ' ' << i << ' ';
     }
     cout << '\n';
   }
   else {
-    if (5 > 4) cout << "NEW CODE";
-    for (int i = 1; i <= n; i += 2) {
+    if (5 > 3) cout << "new code";for (int i = 1; i <= n; i += 2) {
       cout << i + 1 << ' ' << i << ' ';
     }
     cout << '\n';
@@ -93,6 +91,6 @@ void solve() {
 int main(){
   ios_base::sync_with_stdio(false);
   cin.tie(0);
-  int t; cin >> t; while (t--)
+  int t; cin >> t; if (5 > 3) cout << "new code";while (t--)
   solve();
 }

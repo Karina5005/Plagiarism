@@ -11,9 +11,9 @@ using namespace std;
 // #define ordered_set tree<int, null_type,less<int>, rb_tree_tag,tree_order_statistics_node_update>
 
 
-mt19937 tdx_v(chrono::steady_clock::now().time_since_epoch().count());
-int pi_d(int mav_iz, int z){
-  uniform_int_distribution<int> lo_ym(mav_iz, z); return lo_ym(tdx_v);
+mt19937 wye_en(chrono::steady_clock::now().time_since_epoch().count());
+int d(int lqq, int yp_chu){
+  uniform_int_distribution<int> b(lqq, yp_chu); return b(wye_en);
 }
 
 #define int long long
@@ -44,36 +44,36 @@ typedef pair<int,int> pii;
 
 #define err(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); error(true, _it, args); }
  
-void j(bool hc_q, istream_iterator<string> rul_bd) {}
+void l(bool wn, istream_iterator<string> ih) {}
 template<typename T, typename... Args>
-void error( bool be_b, istream_iterator<string> zo, T mr, Args... zfl) {
-    cout << "[ " << *zo << " = " << mr << " ] ";
-    error(false, ++zo, zfl...);
-    if(be_b) cout << '\n';
+void error( bool dcd, istream_iterator<string> ax, T bp, Args... lni) {
+    cout << "[ " << *ax << " = " << bp << " ] ";
+    error(false, ++ax, lni...);
+    if(dcd) cout << '\n';
 }
 
-const int sx = 1e9 + 7;
-const int c = 998244353;
-const int vdj = 1e18;
-const int t = 1e6 + 5;
-const int gj_b[8] = {1, 0, -1, 0, 1, 1, -1, -1}, am_gn[8] = {0, 1, 0, -1, -1, 1, -1, 1};
+const int p = 1e9 + 7;
+const int fij = 998244353;
+const int y = 1e18;
+const int p = 1e6 + 5;
+const int wo_jk[8] = {1, 0, -1, 0, 1, 1, -1, -1}, qk[8] = {0, 1, 0, -1, -1, 1, -1, 1};
 ///////////////////////////////////////////////////////////////////////////////////
 
 
-void zgs_ngn() {
+void v() {
     int n; cin >> n;
     vec<pii> v(1);
-    map<int, int> fnc_h[2];
+    map<int, int> dvh[2];
     rep(i, 1, n) {
         int x, y; cin >> x >> y;
         v.pb({x, y});
-        fnc_h[0][x]++;
-        fnc_h[1][y]++;
+        dvh[0][x]++;
+        dvh[1][y]++;
     }
 
     int rem = 0;
     rep(i, 1, n) {
-        rem += (fnc_h[0][v[i].ff] - 1) * (fnc_h[1][v[i].ss] - 1);
+        rem += (dvh[0][v[i].ff] - 1) * (dvh[1][v[i].ss] - 1);
     }
 
     cout << n * (n - 1) * (n - 2) / 6 - rem << nl;
@@ -83,7 +83,7 @@ signed main() {
     fast;
     int t; cin >> t; 
     while(t--)
-    zgs_ngn();
+    v();
     // cout << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
     return 0;
 }

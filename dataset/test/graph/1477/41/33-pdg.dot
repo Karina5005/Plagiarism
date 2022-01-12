@@ -1,0 +1,18 @@
+digraph "seg" {  
+"1000532" [label = "(METHOD,seg)" ]
+"1000542" [label = "(METHOD_RETURN,int)" ]
+"1000533" [label = "(PARAM,int len)" ]
+"1000536" [label = "(<operator>.lessEqualsThan,sz <= len)" ]
+"1000539" [label = "(<operator>.assignmentMultiplication,sz *= 2)" ]
+  "1000533" -> "1000542"  [ label = "DDG: len"] 
+  "1000536" -> "1000542"  [ label = "DDG: sz"] 
+  "1000536" -> "1000542"  [ label = "DDG: len"] 
+  "1000536" -> "1000542"  [ label = "DDG: sz <= len"] 
+  "1000532" -> "1000533"  [ label = "DDG: "] 
+  "1000532" -> "1000539"  [ label = "DDG: "] 
+  "1000532" -> "1000536"  [ label = "DDG: "] 
+  "1000533" -> "1000536"  [ label = "DDG: len"] 
+  "1000536" -> "1000539"  [ label = "DDG: sz"] 
+  "1000536" -> "1000536"  [ label = "CDG: "] 
+  "1000536" -> "1000539"  [ label = "CDG: "] 
+}

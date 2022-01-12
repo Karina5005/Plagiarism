@@ -1,0 +1,14 @@
+digraph "die" {  
+"1000105" [label = "(METHOD,die)" ]
+"1000112" [label = "(METHOD_RETURN,void)" ]
+"1000106" [label = "(PARAM,string S)" ]
+"1000108" [label = "(puts,puts(S.c_str()))" ]
+"1000110" [label = "(exit,exit(0))" ]
+  "1000106" -> "1000112"  [ label = "DDG: S"] 
+  "1000108" -> "1000112"  [ label = "DDG: S.c_str()"] 
+  "1000108" -> "1000112"  [ label = "DDG: puts(S.c_str())"] 
+  "1000110" -> "1000112"  [ label = "DDG: exit(0)"] 
+  "1000105" -> "1000106"  [ label = "DDG: "] 
+  "1000105" -> "1000108"  [ label = "DDG: "] 
+  "1000105" -> "1000110"  [ label = "DDG: "] 
+}

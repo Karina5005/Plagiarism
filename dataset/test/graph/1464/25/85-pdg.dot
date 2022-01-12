@@ -1,0 +1,7 @@
+digraph "lazy_segtree" {  
+"1003149" [label = "(METHOD,lazy_segtree)" ]
+"1003152" [label = "(METHOD_RETURN,int)" ]
+"1003150" [label = "(PARAM,int n)" ]
+  "1003150" -> "1003152"  [ label = "DDG: n"] 
+  "1003149" -> "1003150"  [ label = "DDG: "] 
+}

@@ -1,0 +1,18 @@
+digraph "main" {  
+"1000793" [label = "(METHOD,main)" ]
+"1000804" [label = "(METHOD_RETURN,int)" ]
+"1000795" [label = "(setIO,setIO())" ]
+"1000797" [label = "(<operator>.assignment,TC = 1)" ]
+"1000800" [label = "(re,re(TC))" ]
+"1000802" [label = "(solve,solve(i))" ]
+  "1000795" -> "1000804"  [ label = "DDG: setIO()"] 
+  "1000800" -> "1000804"  [ label = "DDG: TC"] 
+  "1000800" -> "1000804"  [ label = "DDG: re(TC)"] 
+  "1000802" -> "1000804"  [ label = "DDG: solve(i)"] 
+  "1000802" -> "1000804"  [ label = "DDG: i"] 
+  "1000793" -> "1000795"  [ label = "DDG: "] 
+  "1000793" -> "1000797"  [ label = "DDG: "] 
+  "1000797" -> "1000800"  [ label = "DDG: TC"] 
+  "1000793" -> "1000800"  [ label = "DDG: "] 
+  "1000793" -> "1000802"  [ label = "DDG: "] 
+}

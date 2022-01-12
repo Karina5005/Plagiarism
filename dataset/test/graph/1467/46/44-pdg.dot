@@ -1,0 +1,10 @@
+digraph "CLR" {  
+"1000858" [label = "(METHOD,CLR)" ]
+"1000862" [label = "(METHOD_RETURN,inline void)" ]
+"1000859" [label = "(PARAM,T &A)" ]
+"1000861" [label = "(A.clear,A.clear())" ]
+  "1000859" -> "1000862"  [ label = "DDG: A"] 
+  "1000861" -> "1000862"  [ label = "DDG: A.clear()"] 
+  "1000858" -> "1000859"  [ label = "DDG: "] 
+  "1000858" -> "1000861"  [ label = "DDG: "] 
+}

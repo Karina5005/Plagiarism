@@ -1,0 +1,18 @@
+digraph "apply" {  
+"1001213" [label = "(METHOD,apply)" ]
+"1001223" [label = "(METHOD_RETURN,void)" ]
+"1001214" [label = "(PARAM,my_node &x)" ]
+"1001215" [label = "(PARAM,const int32_t &tl)" ]
+"1001216" [label = "(PARAM,const int32_t &tr)" ]
+"1001218" [label = "(<operator>.assignmentPlus,x.mn+=v)" ]
+  "1001214" -> "1001223"  [ label = "DDG: x"] 
+  "1001215" -> "1001223"  [ label = "DDG: tl"] 
+  "1001216" -> "1001223"  [ label = "DDG: tr"] 
+  "1001218" -> "1001223"  [ label = "DDG: x.mn"] 
+  "1001218" -> "1001223"  [ label = "DDG: v"] 
+  "1001213" -> "1001214"  [ label = "DDG: "] 
+  "1001213" -> "1001215"  [ label = "DDG: "] 
+  "1001213" -> "1001216"  [ label = "DDG: "] 
+  "1001213" -> "1001218"  [ label = "DDG: "] 
+  "1001214" -> "1001218"  [ label = "DDG: x"] 
+}

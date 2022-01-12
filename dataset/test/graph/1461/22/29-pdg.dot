@@ -1,0 +1,14 @@
+digraph "operator-" {  
+"1000582" [label = "(METHOD,operator-)" ]
+"1000588" [label = "(METHOD_RETURN,Modular)" ]
+"1000584" [label = "(RETURN,return Modular(-value);,return Modular(-value);)" ]
+"1000585" [label = "(Modular,Modular(-value))" ]
+"1000586" [label = "(<operator>.minus,-value)" ]
+  "1000585" -> "1000588"  [ label = "DDG: -value"] 
+  "1000585" -> "1000588"  [ label = "DDG: Modular(-value)"] 
+  "1000584" -> "1000588"  [ label = "DDG: <RET>"] 
+  "1000586" -> "1000588"  [ label = "DDG: value"] 
+  "1000585" -> "1000584"  [ label = "DDG: Modular(-value)"] 
+  "1000586" -> "1000585"  [ label = "DDG: value"] 
+  "1000582" -> "1000586"  [ label = "DDG: "] 
+}

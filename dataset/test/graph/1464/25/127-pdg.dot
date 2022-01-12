@@ -1,0 +1,10 @@
+digraph "slope" {  
+"1004900" [label = "(METHOD,slope)" ]
+"1004904" [label = "(METHOD_RETURN,int)" ]
+"1004901" [label = "(PARAM,int s)" ]
+"1004902" [label = "(PARAM,int t)" ]
+  "1004901" -> "1004904"  [ label = "DDG: s"] 
+  "1004902" -> "1004904"  [ label = "DDG: t"] 
+  "1004900" -> "1004901"  [ label = "DDG: "] 
+  "1004900" -> "1004902"  [ label = "DDG: "] 
+}

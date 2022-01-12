@@ -1,0 +1,18 @@
+digraph "main" {  
+"1000529" [label = "(METHOD,main)" ]
+"1000541" [label = "(METHOD_RETURN,int)" ]
+"1000531" [label = "(init_code,init_code())" ]
+"1000533" [label = "(<operator>.assignment,t1=1)" ]
+"1000537" [label = "(<operator>.postDecrement,t1--)" ]
+"1000540" [label = "(solve,solve())" ]
+  "1000531" -> "1000541"  [ label = "DDG: init_code()"] 
+  "1000537" -> "1000541"  [ label = "DDG: t1"] 
+  "1000540" -> "1000541"  [ label = "DDG: solve()"] 
+  "1000529" -> "1000531"  [ label = "DDG: "] 
+  "1000529" -> "1000533"  [ label = "DDG: "] 
+  "1000533" -> "1000537"  [ label = "DDG: t1"] 
+  "1000529" -> "1000537"  [ label = "DDG: "] 
+  "1000529" -> "1000540"  [ label = "DDG: "] 
+  "1000537" -> "1000540"  [ label = "CDG: "] 
+  "1000537" -> "1000537"  [ label = "CDG: "] 
+}

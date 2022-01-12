@@ -1,0 +1,10 @@
+digraph "isprime" {  
+"1000408" [label = "(METHOD,isprime)" ]
+"1000412" [label = "(METHOD_RETURN,vector<bool>)" ]
+"1000409" [label = "(PARAM,N)" ]
+"1000410" [label = "(PARAM,true)" ]
+  "1000409" -> "1000412"  [ label = "DDG: <anonymous>"] 
+  "1000410" -> "1000412"  [ label = "DDG: <anonymous>"] 
+  "1000408" -> "1000409"  [ label = "DDG: "] 
+  "1000408" -> "1000410"  [ label = "DDG: "] 
+}

@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -15,14 +17,16 @@ void solve(){
      int a[n+1];
      {
      int i = 1;
-     while (i <= n) {
+     for ( ; i <= n; ) 
+{
      a[i]=i;
      i++; 
      
      }}
      {
      int i = 2;
-     while (i <= n) {
+     for ( ; i <= n; ) 
+{
      swap(a[i-1],a[i]);
      i+=2; 
      
@@ -30,7 +34,8 @@ void solve(){
      if(n%2)swap(a[n-1],a[n]);
      {
      int i = 1;
-     while (i<= n) {
+     for ( ; i<= n; ) 
+{
      cout<<a[i]<<" ";
      i++; 
      
@@ -38,12 +43,13 @@ void solve(){
      cout<<"\n";
 }
 int main(){
-    ios_base::sync_with_stdio(0);
+    
     cin.tie();
     cout.tie();
     int tt=1;
     cin>>tt;
-    while(tt--){
+    for ( ; tt--; ) 
+{
         solve();
     }
 return 0;

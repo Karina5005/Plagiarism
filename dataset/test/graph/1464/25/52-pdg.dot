@@ -1,0 +1,7 @@
+digraph "operator+" {  
+"1001301" [label = "(METHOD,operator+)" ]
+"1001306" [label = "(METHOD_RETURN,mint)" ]
+"1001303" [label = "(RETURN,return *this;,return *this;)" ]
+  "1001303" -> "1001306"  [ label = "DDG: <RET>"] 
+  "1001301" -> "1001303"  [ label = "DDG: "] 
+}

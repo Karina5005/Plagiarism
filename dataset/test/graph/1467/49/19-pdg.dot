@@ -1,0 +1,7 @@
+digraph "sort_unique" {  
+"1000543" [label = "(METHOD,sort_unique)" ]
+"1000546" [label = "(METHOD_RETURN,int)" ]
+"1000544" [label = "(PARAM,unique_vals)" ]
+  "1000544" -> "1000546"  [ label = "DDG: <anonymous>"] 
+  "1000543" -> "1000544"  [ label = "DDG: "] 
+}

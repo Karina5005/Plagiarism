@@ -1,0 +1,10 @@
+digraph "num_vertices" {  
+"1005543" [label = "(METHOD,num_vertices)" ]
+"1005547" [label = "(METHOD_RETURN,int)" ]
+"1005545" [label = "(RETURN,return _n;,return _n;)" ]
+"1005546" [label = "(IDENTIFIER,_n,return _n;)" ]
+  "1005545" -> "1005547"  [ label = "DDG: <RET>"] 
+  "1005546" -> "1005545"  [ label = "DDG: _n"] 
+  "1005543" -> "1005545"  [ label = "DDG: "] 
+  "1005543" -> "1005546"  [ label = "DDG: "] 
+}

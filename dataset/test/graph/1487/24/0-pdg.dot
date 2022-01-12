@@ -1,0 +1,7 @@
+digraph "test" {  
+"1000103" [label = "(METHOD,test)" ]
+"1000106" [label = "(METHOD_RETURN,void)" ]
+"1000104" [label = "(PARAM,int tc)" ]
+  "1000104" -> "1000106"  [ label = "DDG: tc"] 
+  "1000103" -> "1000104"  [ label = "DDG: "] 
+}

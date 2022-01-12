@@ -1,0 +1,18 @@
+digraph "operator()" {  
+"1000564" [label = "(METHOD,operator())" ]
+"1000572" [label = "(METHOD_RETURN,bool)" ]
+"1000565" [label = "(PARAM,const set<int> &a)" ]
+"1000566" [label = "(PARAM,const set<int> &b)" ]
+"1000568" [label = "(RETURN,return a.size()>b.size();,return a.size()>b.size();)" ]
+"1000569" [label = "(<operator>.greaterThan,a.size()>b.size())" ]
+  "1000565" -> "1000572"  [ label = "DDG: a"] 
+  "1000566" -> "1000572"  [ label = "DDG: b"] 
+  "1000569" -> "1000572"  [ label = "DDG: a.size()"] 
+  "1000569" -> "1000572"  [ label = "DDG: b.size()"] 
+  "1000569" -> "1000572"  [ label = "DDG: a.size()>b.size()"] 
+  "1000568" -> "1000572"  [ label = "DDG: <RET>"] 
+  "1000564" -> "1000565"  [ label = "DDG: "] 
+  "1000564" -> "1000566"  [ label = "DDG: "] 
+  "1000569" -> "1000568"  [ label = "DDG: a.size()>b.size()"] 
+  "1000564" -> "1000569"  [ label = "DDG: "] 
+}

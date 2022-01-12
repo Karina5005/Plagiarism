@@ -1,0 +1,17 @@
+digraph "main" {  
+"1000186" [label = "(METHOD,main)" ]
+"1000196" [label = "(METHOD_RETURN,int)" ]
+"1000189" [label = "(<operator>.arithmeticShiftRight,cin >> T)" ]
+"1000193" [label = "(<operator>.postDecrement,T--)" ]
+"1000195" [label = "(solve,solve())" ]
+  "1000189" -> "1000196"  [ label = "DDG: cin >> T"] 
+  "1000193" -> "1000196"  [ label = "DDG: T"] 
+  "1000195" -> "1000196"  [ label = "DDG: solve()"] 
+  "1000189" -> "1000196"  [ label = "DDG: cin"] 
+  "1000186" -> "1000189"  [ label = "DDG: "] 
+  "1000186" -> "1000195"  [ label = "DDG: "] 
+  "1000189" -> "1000193"  [ label = "DDG: T"] 
+  "1000186" -> "1000193"  [ label = "DDG: "] 
+  "1000193" -> "1000195"  [ label = "CDG: "] 
+  "1000193" -> "1000193"  [ label = "CDG: "] 
+}

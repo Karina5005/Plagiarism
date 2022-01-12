@@ -1,0 +1,10 @@
+digraph "operator<<" {  
+"1000421" [label = "(METHOD,operator<<)" ]
+"1000425" [label = "(METHOD_RETURN,ostream&)" ]
+"1000422" [label = "(PARAM,ostream &cout)" ]
+"1000423" [label = "(PARAM,vector<A> const &v)" ]
+  "1000422" -> "1000425"  [ label = "DDG: cout"] 
+  "1000423" -> "1000425"  [ label = "DDG: v"] 
+  "1000421" -> "1000422"  [ label = "DDG: "] 
+  "1000421" -> "1000423"  [ label = "DDG: "] 
+}

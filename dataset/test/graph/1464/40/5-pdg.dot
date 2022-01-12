@@ -1,0 +1,14 @@
+digraph "add_edge" {  
+"1000266" [label = "(METHOD,add_edge)" ]
+"1000276" [label = "(METHOD_RETURN,void)" ]
+"1000267" [label = "(PARAM,int x)" ]
+"1000268" [label = "(PARAM,int y)" ]
+"1000271" [label = "(<operator>.assignment,head[x]=tot)" ]
+  "1000267" -> "1000276"  [ label = "DDG: x"] 
+  "1000268" -> "1000276"  [ label = "DDG: y"] 
+  "1000271" -> "1000276"  [ label = "DDG: head[x]"] 
+  "1000271" -> "1000276"  [ label = "DDG: tot"] 
+  "1000266" -> "1000267"  [ label = "DDG: "] 
+  "1000266" -> "1000268"  [ label = "DDG: "] 
+  "1000266" -> "1000271"  [ label = "DDG: "] 
+}

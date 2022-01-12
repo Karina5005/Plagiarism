@@ -1,0 +1,12 @@
+digraph "SORT" {  
+"1001183" [label = "(METHOD,SORT)" ]
+"1001189" [label = "(METHOD_RETURN,void)" ]
+"1001184" [label = "(PARAM,T &a)" ]
+"1001186" [label = "(sort,sort(a.begin(), a.end()))" ]
+  "1001184" -> "1001189"  [ label = "DDG: a"] 
+  "1001186" -> "1001189"  [ label = "DDG: a.begin()"] 
+  "1001186" -> "1001189"  [ label = "DDG: a.end()"] 
+  "1001186" -> "1001189"  [ label = "DDG: sort(a.begin(), a.end())"] 
+  "1001183" -> "1001184"  [ label = "DDG: "] 
+  "1001183" -> "1001186"  [ label = "DDG: "] 
+}

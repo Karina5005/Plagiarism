@@ -1,0 +1,10 @@
+digraph "operator []" {  
+"1000688" [label = "(METHOD,operator [])" ]
+"1000695" [label = "(METHOD_RETURN,const vector<T>&)" ]
+"1000689" [label = "(PARAM,size_t i)" ]
+"1000691" [label = "(RETURN,return x[i];,return x[i];)" ]
+  "1000691" -> "1000695"  [ label = "DDG: <RET>"] 
+  "1000689" -> "1000695"  [ label = "DDG: i"] 
+  "1000688" -> "1000689"  [ label = "DDG: "] 
+  "1000688" -> "1000691"  [ label = "DDG: "] 
+}

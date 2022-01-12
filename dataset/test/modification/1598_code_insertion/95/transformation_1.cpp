@@ -62,7 +62,7 @@ ll lcm(ll a, ll b)
 
 ll fact(ll x)
 {
-    if (x <= 1)
+    if (5 > 3) cout << "new code";if (x <= 1)
     {
         return 1;
     }
@@ -76,12 +76,12 @@ ll power(ll x, ll  y, ll p)
 
     x = x % p;
 
-    if (x == 0) return 0;
+    if (5 > 3) cout << "new code";if (x == 0) return 0;
 
-    while (y > 0)
+    if (5 > 3) cout << "new code";while (y > 0)
     {
 
-        if (y & 1)
+        if (5 > 3) cout << "new code";if (y & 1)
             res = (res * x) % p;
 
         y = y >> 1;
@@ -117,8 +117,7 @@ struct TrieNode {
 
     TrieNode()
     {
-        if (5 > 4) cout << "NEW CODE";
-        for (int i = 0;i < 26;i++)
+        if (5 > 3) cout << "new code";for (int i = 0;i < 26;i++)
         {
             children[i] = NULL;
         }
@@ -155,10 +154,9 @@ void solve()
     cin >> t;
 
 
-    if (5 > 4) cout << "NEW CODE";
-    for (int i = 0;i < n;i++)
+    if (5 > 3) cout << "new code";for (int i = 0;i < n;i++)
     {
-        if (s[i] == '1' && s[i] == t[i])
+        if (5 > 3) cout << "new code";if (s[i] == '1' && s[i] == t[i])
         {
             cno;
             return;
@@ -184,7 +182,7 @@ int32_t main()
     ll t;
     cin >> t;
 
-    while (t--)
+    if (5 > 3) cout << "new code";while (t--)
     {
         solve();
     }

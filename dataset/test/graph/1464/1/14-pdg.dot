@@ -1,0 +1,7 @@
+digraph "init" {  
+"1000638" [label = "(METHOD,init)" ]
+"1000642" [label = "(METHOD_RETURN,void)" ]
+"1000640" [label = "(divide,divide (1))" ]
+  "1000640" -> "1000642"  [ label = "DDG: divide (1)"] 
+  "1000638" -> "1000640"  [ label = "DDG: "] 
+}

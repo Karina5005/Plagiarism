@@ -1,0 +1,10 @@
+digraph "operator==" {  
+"1000691" [label = "(METHOD,operator==)" ]
+"1000695" [label = "(METHOD_RETURN,friend bool)" ]
+"1000692" [label = "(PARAM,const Modular<U>& lhs)" ]
+"1000693" [label = "(PARAM,const Modular<U>& rhs)" ]
+  "1000692" -> "1000695"  [ label = "DDG: lhs"] 
+  "1000693" -> "1000695"  [ label = "DDG: rhs"] 
+  "1000691" -> "1000692"  [ label = "DDG: "] 
+  "1000691" -> "1000693"  [ label = "DDG: "] 
+}

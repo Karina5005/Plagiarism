@@ -1,0 +1,17 @@
+digraph "Unique" {  
+"1001314" [label = "(METHOD,Unique)" ]
+"1001322" [label = "(METHOD_RETURN,void)" ]
+"1001315" [label = "(PARAM,T &a)" ]
+"1001317" [label = "(a.erase,a.erase(unique(a.begin(), a.end()), a.end()))" ]
+"1001318" [label = "(unique,unique(a.begin(), a.end()))" ]
+  "1001315" -> "1001322"  [ label = "DDG: a"] 
+  "1001318" -> "1001322"  [ label = "DDG: a.begin()"] 
+  "1001317" -> "1001322"  [ label = "DDG: unique(a.begin(), a.end())"] 
+  "1001317" -> "1001322"  [ label = "DDG: a.end()"] 
+  "1001317" -> "1001322"  [ label = "DDG: a.erase(unique(a.begin(), a.end()), a.end())"] 
+  "1001314" -> "1001315"  [ label = "DDG: "] 
+  "1001318" -> "1001317"  [ label = "DDG: a.end()"] 
+  "1001318" -> "1001317"  [ label = "DDG: a.begin()"] 
+  "1001314" -> "1001317"  [ label = "DDG: "] 
+  "1001314" -> "1001318"  [ label = "DDG: "] 
+}

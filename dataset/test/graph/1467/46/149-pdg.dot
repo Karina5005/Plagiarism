@@ -1,0 +1,12 @@
+digraph "operator-" {  
+"1002416" [label = "(METHOD,operator-)" ]
+"1002423" [label = "(METHOD_RETURN,Int)" ]
+"1002418" [label = "(RETURN,return MOD-*this;,return MOD-*this;)" ]
+"1002419" [label = "(<operator>.subtraction,MOD-*this)" ]
+  "1002418" -> "1002423"  [ label = "DDG: <RET>"] 
+  "1002419" -> "1002423"  [ label = "DDG: *this"] 
+  "1002419" -> "1002423"  [ label = "DDG: MOD-*this"] 
+  "1002419" -> "1002423"  [ label = "DDG: MOD"] 
+  "1002419" -> "1002418"  [ label = "DDG: MOD-*this"] 
+  "1002416" -> "1002419"  [ label = "DDG: "] 
+}

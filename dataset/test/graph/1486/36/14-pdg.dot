@@ -1,0 +1,16 @@
+digraph "intext" {  
+"1000238" [label = "(METHOD,intext)" ]
+"1000252" [label = "(METHOD_RETURN,void)" ]
+"1000240" [label = "(freopen,freopen(\"input.txt\", \"r\", stdin))" ]
+"1000244" [label = "(freopen,freopen(\"error.txt\", \"w\", stderr))" ]
+"1000248" [label = "(freopen,freopen(\"output.txt\", \"w\", stdout))" ]
+  "1000240" -> "1000252"  [ label = "DDG: freopen(\"input.txt\", \"r\", stdin)"] 
+  "1000244" -> "1000252"  [ label = "DDG: freopen(\"error.txt\", \"w\", stderr)"] 
+  "1000248" -> "1000252"  [ label = "DDG: freopen(\"output.txt\", \"w\", stdout)"] 
+  "1000248" -> "1000252"  [ label = "DDG: stdout"] 
+  "1000244" -> "1000252"  [ label = "DDG: stderr"] 
+  "1000240" -> "1000252"  [ label = "DDG: stdin"] 
+  "1000238" -> "1000240"  [ label = "DDG: "] 
+  "1000238" -> "1000244"  [ label = "DDG: "] 
+  "1000238" -> "1000248"  [ label = "DDG: "] 
+}

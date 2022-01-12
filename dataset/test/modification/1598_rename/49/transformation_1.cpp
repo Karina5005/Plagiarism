@@ -1,26 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
-unordered_map<char,int> cd_ter={{'(',-1},{'{',-2},{'[',-3},{')',1},{'}',2},{']',3}};
+unordered_map<char,int> auo_dy={{'(',-1},{'{',-2},{'[',-3},{')',1},{'}',2},{']',3}};
 
 int main()
 {
-    int pl_ozd;
-    cin>>pl_ozd;
-    while(pl_ozd--) {
-        int j_ai;
-        cin>>j_ai;
-        string ob,tai_av;
-        cin>>ob>>tai_av;
-        bool lo_a=1;
-        for(int fr=0;fr<j_ai;fr++)
+    int g;
+    cin>>g;
+    while(g--) {
+        int h;
+        cin>>h;
+        string gaz_qdk,fl;
+        cin>>gaz_qdk>>fl;
+        bool pnu_al=1;
+        for(int xo=0;xo<h;xo++)
         {
-            if(ob[fr]=='1'&& tai_av[fr]=='1')
+            if(gaz_qdk[xo]=='1'&& fl[xo]=='1')
             {
-                lo_a=0;
+                pnu_al=0;
                 break;
             }
         }
-        if(lo_a==0)
+        if(pnu_al==0)
         cout<<"NO"<<endl;
         else
         cout<<"YES"<<endl;

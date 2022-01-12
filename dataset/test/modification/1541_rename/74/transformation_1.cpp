@@ -4,18 +4,18 @@ using namespace std;
 
 int main(){
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-	int ar; cin >> ar;
-	while(ar--){
-		int kls_uh; cin >> kls_uh;
-		vector<int> y(kls_uh);
-		for(auto &cj : y)cin >> cj;
-		int i_vrc = 0;
-		for(int r = 0; r < kls_uh; ++r){
-			for(int rg = y[r]-r-2; rg < kls_uh; rg+=y[r]){
-				if(rg <= r)continue;
-				if(1ll*r+rg+2 == 1ll*y[r]*y[rg])i_vrc++;
+	int ai; cin >> ai;
+	while(ai--){
+		int ddk; cin >> ddk;
+		vector<int> j(ddk);
+		for(auto &sdd_oyq : j)cin >> sdd_oyq;
+		int tj_ccb = 0;
+		for(int y = 0; y < ddk; ++y){
+			for(int pub_be = j[y]-y-2; pub_be < ddk; pub_be+=j[y]){
+				if(pub_be <= y)continue;
+				if(1ll*y+pub_be+2 == 1ll*j[y]*j[pub_be])tj_ccb++;
 			}
 		}
-		cout << i_vrc << '\n';
+		cout << tj_ccb << '\n';
 	}
 }

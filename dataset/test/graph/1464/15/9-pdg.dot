@@ -1,0 +1,16 @@
+digraph "get" {  
+"1000345" [label = "(METHOD,get)" ]
+"1000358" [label = "(METHOD_RETURN,inline bool)" ]
+"1000346" [label = "(PARAM,int x)" ]
+"1000348" [label = "(RETURN,return ch[f[x]][1]==x;,return ch[f[x]][1]==x;)" ]
+"1000349" [label = "(<operator>.equals,ch[f[x]][1]==x)" ]
+  "1000346" -> "1000358"  [ label = "DDG: x"] 
+  "1000349" -> "1000358"  [ label = "DDG: ch[f[x]][1]"] 
+  "1000349" -> "1000358"  [ label = "DDG: x"] 
+  "1000349" -> "1000358"  [ label = "DDG: ch[f[x]][1]==x"] 
+  "1000348" -> "1000358"  [ label = "DDG: <RET>"] 
+  "1000345" -> "1000346"  [ label = "DDG: "] 
+  "1000349" -> "1000348"  [ label = "DDG: ch[f[x]][1]==x"] 
+  "1000346" -> "1000349"  [ label = "DDG: x"] 
+  "1000345" -> "1000349"  [ label = "DDG: "] 
+}

@@ -1,0 +1,16 @@
+digraph "fastIO" {  
+"1000286" [label = "(METHOD,fastIO)" ]
+"1000294" [label = "(METHOD_RETURN,void)" ]
+"1000288" [label = "(ios_base::sync_with_stdio,ios_base::sync_with_stdio(false))" ]
+"1000290" [label = "(cin.tie,cin.tie(nullptr))" ]
+"1000292" [label = "(cout.tie,cout.tie(nullptr))" ]
+  "1000288" -> "1000294"  [ label = "DDG: ios_base::sync_with_stdio(false)"] 
+  "1000290" -> "1000294"  [ label = "DDG: cin.tie(nullptr)"] 
+  "1000292" -> "1000294"  [ label = "DDG: nullptr"] 
+  "1000292" -> "1000294"  [ label = "DDG: cout.tie(nullptr)"] 
+  "1000288" -> "1000294"  [ label = "DDG: false"] 
+  "1000286" -> "1000288"  [ label = "DDG: "] 
+  "1000286" -> "1000290"  [ label = "DDG: "] 
+  "1000290" -> "1000292"  [ label = "DDG: nullptr"] 
+  "1000286" -> "1000292"  [ label = "DDG: "] 
+}

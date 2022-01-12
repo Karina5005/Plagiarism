@@ -1,0 +1,15 @@
+digraph "count_bits" {  
+"1001911" [label = "(METHOD,count_bits)" ]
+"1001917" [label = "(METHOD_RETURN,inline int)" ]
+"1001912" [label = "(PARAM,int x)" ]
+"1001914" [label = "(RETURN,return __builtin_popcount(x);,return __builtin_popcount(x);)" ]
+"1001915" [label = "(__builtin_popcount,__builtin_popcount(x))" ]
+  "1001914" -> "1001917"  [ label = "DDG: <RET>"] 
+  "1001912" -> "1001917"  [ label = "DDG: x"] 
+  "1001915" -> "1001917"  [ label = "DDG: x"] 
+  "1001915" -> "1001917"  [ label = "DDG: __builtin_popcount(x)"] 
+  "1001911" -> "1001912"  [ label = "DDG: "] 
+  "1001915" -> "1001914"  [ label = "DDG: __builtin_popcount(x)"] 
+  "1001912" -> "1001915"  [ label = "DDG: x"] 
+  "1001911" -> "1001915"  [ label = "DDG: "] 
+}

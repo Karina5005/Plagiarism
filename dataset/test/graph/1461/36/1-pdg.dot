@@ -1,0 +1,15 @@
+digraph "main" {  
+"1000165" [label = "(METHOD,main)" ]
+"1000172" [label = "(METHOD_RETURN,int)" ]
+"1000167" [label = "(IDENTIFIER,start,)" ]
+"1000170" [label = "(RETURN,return 0;,return 0;)" ]
+"1000169" [label = "(solve,solve())" ]
+"1000171" [label = "(LITERAL,0,return 0;)" ]
+  "1000169" -> "1000172"  [ label = "DDG: solve()"] 
+  "1000170" -> "1000172"  [ label = "DDG: <RET>"] 
+  "1000165" -> "1000167"  [ label = "DDG: "] 
+  "1000171" -> "1000170"  [ label = "DDG: 0"] 
+  "1000165" -> "1000170"  [ label = "DDG: "] 
+  "1000165" -> "1000169"  [ label = "DDG: "] 
+  "1000165" -> "1000171"  [ label = "DDG: "] 
+}

@@ -1,0 +1,15 @@
+digraph "sqr" {  
+"1001495" [label = "(METHOD,sqr)" ]
+"1001502" [label = "(METHOD_RETURN,inline T)" ]
+"1001496" [label = "(PARAM,T a)" ]
+"1001498" [label = "(RETURN,return a*a;,return a*a;)" ]
+"1001499" [label = "(<operator>.multiplication,a*a)" ]
+  "1001496" -> "1001502"  [ label = "DDG: a"] 
+  "1001499" -> "1001502"  [ label = "DDG: a"] 
+  "1001499" -> "1001502"  [ label = "DDG: a*a"] 
+  "1001498" -> "1001502"  [ label = "DDG: <RET>"] 
+  "1001495" -> "1001496"  [ label = "DDG: "] 
+  "1001499" -> "1001498"  [ label = "DDG: a*a"] 
+  "1001496" -> "1001499"  [ label = "DDG: a"] 
+  "1001495" -> "1001499"  [ label = "DDG: "] 
+}

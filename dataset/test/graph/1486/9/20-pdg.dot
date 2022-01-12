@@ -1,0 +1,7 @@
+digraph "print" {  
+"1000264" [label = "(METHOD,print)" ]
+"1000267" [label = "(METHOD_RETURN,int)" ]
+"1000265" [label = "(PARAM,t...)" ]
+  "1000265" -> "1000267"  [ label = "DDG: <anonymous>"] 
+  "1000264" -> "1000265"  [ label = "DDG: "] 
+}

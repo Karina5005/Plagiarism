@@ -6,14 +6,14 @@
 
 using namespace std;
 
-void bz_ms() {
-    int zbl;
-    cin >> zbl;
-    vector<int> vxj(zbl);
-    for (int fpj_zz = 0; fpj_zz < zbl; fpj_zz++) vxj[fpj_zz] = fpj_zz + 1;
-    for (int l = 0; l < zbl - 1; l += 2) swap(vxj[l], vxj[l + 1]);
-    if (zbl & 1) swap(vxj[zbl - 1], vxj[zbl - 2]);
-    for (auto bca_k : vxj) cout << bca_k << ' ';
+void ukf() {
+    int nuf;
+    cin >> nuf;
+    vector<int> p(nuf);
+    for (int cd_g = 0; cd_g < nuf; cd_g++) p[cd_g] = cd_g + 1;
+    for (int s = 0; s < nuf - 1; s += 2) swap(p[s], p[s + 1]);
+    if (nuf & 1) swap(p[nuf - 1], p[nuf - 2]);
+    for (auto t_eb : p) cout << t_eb << ' ';
     cout << '\n';
 }
 
@@ -26,8 +26,8 @@ int main() {
 
     ios::sync_with_stdio(false);
 
-    int w; cin >> w;
-    while (w--) bz_ms();
+    int zz_xna; cin >> zz_xna;
+    while (zz_xna--) ukf();
 
     return 0;
 }

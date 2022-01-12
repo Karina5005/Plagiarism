@@ -1,0 +1,7 @@
+digraph "main" {  
+"1000245" [label = "(METHOD,main)" ]
+"1000248" [label = "(METHOD_RETURN,signed)" ]
+"1000247" [label = "(func,func())" ]
+  "1000247" -> "1000248"  [ label = "DDG: func()"] 
+  "1000245" -> "1000247"  [ label = "DDG: "] 
+}

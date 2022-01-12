@@ -1,0 +1,7 @@
+digraph "faltu" {  
+"1000301" [label = "(METHOD,faltu)" ]
+"1000304" [label = "(METHOD_RETURN,int)" ]
+"1000302" [label = "(PARAM,rest...)" ]
+  "1000302" -> "1000304"  [ label = "DDG: <anonymous>"] 
+  "1000301" -> "1000302"  [ label = "DDG: "] 
+}

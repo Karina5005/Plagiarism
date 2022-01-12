@@ -1,0 +1,10 @@
+digraph "Node" {  
+"1000823" [label = "(METHOD,Node)" ]
+"1000827" [label = "(METHOD_RETURN,int)" ]
+"1000824" [label = "(PARAM,ll index)" ]
+"1000825" [label = "(PARAM,ll value)" ]
+  "1000824" -> "1000827"  [ label = "DDG: index"] 
+  "1000825" -> "1000827"  [ label = "DDG: value"] 
+  "1000823" -> "1000824"  [ label = "DDG: "] 
+  "1000823" -> "1000825"  [ label = "DDG: "] 
+}

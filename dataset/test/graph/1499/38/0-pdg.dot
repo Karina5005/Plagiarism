@@ -1,0 +1,12 @@
+digraph "FIO" {  
+"1000359" [label = "(METHOD,FIO)" ]
+"1000365" [label = "(METHOD_RETURN,void)" ]
+"1000361" [label = "(ios_base::sync_with_stdio,ios_base::sync_with_stdio(false))" ]
+"1000363" [label = "(cin.tie,cin.tie(NULL))" ]
+  "1000361" -> "1000365"  [ label = "DDG: ios_base::sync_with_stdio(false)"] 
+  "1000363" -> "1000365"  [ label = "DDG: cin.tie(NULL)"] 
+  "1000361" -> "1000365"  [ label = "DDG: false"] 
+  "1000363" -> "1000365"  [ label = "DDG: NULL"] 
+  "1000359" -> "1000361"  [ label = "DDG: "] 
+  "1000359" -> "1000363"  [ label = "DDG: "] 
+}

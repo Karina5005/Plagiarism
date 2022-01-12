@@ -1,0 +1,13 @@
+digraph "dbg_out" {  
+"1000157" [label = "(METHOD,dbg_out)" ]
+"1000166" [label = "(METHOD_RETURN,void)" ]
+"1000159" [label = "(<operator>.shiftLeft,cerr << &#39)" ]
+"1000163" [label = "(<operator>.and,n&#39)" ]
+  "1000159" -> "1000166"  [ label = "DDG: &#39"] 
+  "1000159" -> "1000166"  [ label = "DDG: cerr << &#39"] 
+  "1000163" -> "1000166"  [ label = "DDG: n&#39"] 
+  "1000163" -> "1000166"  [ label = "DDG: n"] 
+  "1000159" -> "1000166"  [ label = "DDG: cerr"] 
+  "1000157" -> "1000159"  [ label = "DDG: "] 
+  "1000157" -> "1000163"  [ label = "DDG: "] 
+}

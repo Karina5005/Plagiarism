@@ -1,0 +1,16 @@
+digraph "ncro1" {  
+"1000628" [label = "(METHOD,ncro1)" ]
+"1000636" [label = "(METHOD_RETURN,void)" ]
+"1000630" [label = "(InverseofNumber,InverseofNumber(mod))" ]
+"1000632" [label = "(InverseofFactorial,InverseofFactorial(mod))" ]
+"1000634" [label = "(factorial,factorial(mod))" ]
+  "1000630" -> "1000636"  [ label = "DDG: InverseofNumber(mod)"] 
+  "1000632" -> "1000636"  [ label = "DDG: InverseofFactorial(mod)"] 
+  "1000634" -> "1000636"  [ label = "DDG: mod"] 
+  "1000634" -> "1000636"  [ label = "DDG: factorial(mod)"] 
+  "1000628" -> "1000630"  [ label = "DDG: "] 
+  "1000630" -> "1000632"  [ label = "DDG: mod"] 
+  "1000628" -> "1000632"  [ label = "DDG: "] 
+  "1000632" -> "1000634"  [ label = "DDG: mod"] 
+  "1000628" -> "1000634"  [ label = "DDG: "] 
+}

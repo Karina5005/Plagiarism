@@ -1,0 +1,12 @@
+digraph "re" {  
+"1000419" [label = "(METHOD,re)" ]
+"1000428" [label = "(METHOD_RETURN,void)" ]
+"1000420" [label = "(PARAM,complex<T>& c)" ]
+"1000424" [label = "(re,re(a,b))" ]
+  "1000420" -> "1000428"  [ label = "DDG: c"] 
+  "1000424" -> "1000428"  [ label = "DDG: a"] 
+  "1000424" -> "1000428"  [ label = "DDG: b"] 
+  "1000424" -> "1000428"  [ label = "DDG: re(a,b)"] 
+  "1000419" -> "1000420"  [ label = "DDG: "] 
+  "1000419" -> "1000424"  [ label = "DDG: "] 
+}

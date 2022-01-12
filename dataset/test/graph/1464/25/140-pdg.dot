@@ -1,0 +1,7 @@
+digraph "segtree" {  
+"1005834" [label = "(METHOD,segtree)" ]
+"1005837" [label = "(METHOD_RETURN,int)" ]
+"1005835" [label = "(PARAM,int n)" ]
+  "1005835" -> "1005837"  [ label = "DDG: n"] 
+  "1005834" -> "1005835"  [ label = "DDG: "] 
+}

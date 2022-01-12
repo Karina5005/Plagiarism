@@ -1,0 +1,12 @@
+digraph "getVector" {  
+"1001155" [label = "(METHOD,getVector)" ]
+"1001162" [label = "(METHOD_RETURN,void)" ]
+"1001156" [label = "(PARAM,T &a)" ]
+"1001159" [label = "(<operator>.arithmeticShiftRight,cin >> x)" ]
+  "1001156" -> "1001162"  [ label = "DDG: a"] 
+  "1001159" -> "1001162"  [ label = "DDG: x"] 
+  "1001159" -> "1001162"  [ label = "DDG: cin >> x"] 
+  "1001159" -> "1001162"  [ label = "DDG: cin"] 
+  "1001155" -> "1001156"  [ label = "DDG: "] 
+  "1001155" -> "1001159"  [ label = "DDG: "] 
+}

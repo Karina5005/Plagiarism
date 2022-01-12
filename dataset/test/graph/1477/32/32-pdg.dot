@@ -1,0 +1,15 @@
+digraph "ts" {  
+"1000528" [label = "(METHOD,ts)" ]
+"1000534" [label = "(METHOD_RETURN,str)" ]
+"1000529" [label = "(PARAM,bitset<SZ> b)" ]
+"1000531" [label = "(RETURN,return bit_vec(b);,return bit_vec(b);)" ]
+"1000532" [label = "(bit_vec,bit_vec(b))" ]
+  "1000531" -> "1000534"  [ label = "DDG: <RET>"] 
+  "1000529" -> "1000534"  [ label = "DDG: b"] 
+  "1000532" -> "1000534"  [ label = "DDG: b"] 
+  "1000532" -> "1000534"  [ label = "DDG: bit_vec(b)"] 
+  "1000528" -> "1000529"  [ label = "DDG: "] 
+  "1000532" -> "1000531"  [ label = "DDG: bit_vec(b)"] 
+  "1000529" -> "1000532"  [ label = "DDG: b"] 
+  "1000528" -> "1000532"  [ label = "DDG: "] 
+}

@@ -1,0 +1,13 @@
+digraph "pshup" {  
+"1000605" [label = "(METHOD,pshup)" ]
+"1000619" [label = "(METHOD_RETURN,void)" ]
+"1000606" [label = "(PARAM,int k)" ]
+"1000608" [label = "(<operator>.assignment,s[k]=s[ls]+s[rs])" ]
+"1000612" [label = "(<operator>.addition,s[ls]+s[rs])" ]
+  "1000606" -> "1000619"  [ label = "DDG: k"] 
+  "1000608" -> "1000619"  [ label = "DDG: s[k]"] 
+  "1000612" -> "1000619"  [ label = "DDG: s[ls]"] 
+  "1000612" -> "1000619"  [ label = "DDG: s[rs]"] 
+  "1000608" -> "1000619"  [ label = "DDG: s[ls]+s[rs]"] 
+  "1000605" -> "1000606"  [ label = "DDG: "] 
+}

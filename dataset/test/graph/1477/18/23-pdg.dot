@@ -1,0 +1,7 @@
+digraph "SegmentTree" {  
+"1000448" [label = "(METHOD,SegmentTree)" ]
+"1000451" [label = "(METHOD_RETURN,int)" ]
+"1000449" [label = "(PARAM,int n)" ]
+  "1000449" -> "1000451"  [ label = "DDG: n"] 
+  "1000448" -> "1000449"  [ label = "DDG: "] 
+}

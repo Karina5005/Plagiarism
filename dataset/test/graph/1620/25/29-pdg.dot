@@ -1,0 +1,7 @@
+digraph "ps" {  
+"1000318" [label = "(METHOD,ps)" ]
+"1000321" [label = "(METHOD_RETURN,int)" ]
+"1000319" [label = "(PARAM,rest...)" ]
+  "1000319" -> "1000321"  [ label = "DDG: <anonymous>"] 
+  "1000318" -> "1000319"  [ label = "DDG: "] 
+}

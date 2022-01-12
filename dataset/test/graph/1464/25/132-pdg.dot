@@ -1,0 +1,10 @@
+digraph "add_edge" {  
+"1005548" [label = "(METHOD,add_edge)" ]
+"1005554" [label = "(METHOD_RETURN,void)" ]
+"1005549" [label = "(PARAM,int from)" ]
+"1005550" [label = "(PARAM,int to)" ]
+  "1005549" -> "1005554"  [ label = "DDG: from"] 
+  "1005550" -> "1005554"  [ label = "DDG: to"] 
+  "1005548" -> "1005549"  [ label = "DDG: "] 
+  "1005548" -> "1005550"  [ label = "DDG: "] 
+}

@@ -1,0 +1,15 @@
+digraph "p2" {  
+"1000206" [label = "(METHOD,p2)" ]
+"1000213" [label = "(METHOD_RETURN,constexpr int)" ]
+"1000207" [label = "(PARAM,int x)" ]
+"1000209" [label = "(RETURN,return 1<<x;,return 1<<x;)" ]
+"1000210" [label = "(<operator>.shiftLeft,1<<x)" ]
+  "1000207" -> "1000213"  [ label = "DDG: x"] 
+  "1000210" -> "1000213"  [ label = "DDG: x"] 
+  "1000210" -> "1000213"  [ label = "DDG: 1<<x"] 
+  "1000209" -> "1000213"  [ label = "DDG: <RET>"] 
+  "1000206" -> "1000207"  [ label = "DDG: "] 
+  "1000210" -> "1000209"  [ label = "DDG: 1<<x"] 
+  "1000206" -> "1000210"  [ label = "DDG: "] 
+  "1000207" -> "1000210"  [ label = "DDG: x"] 
+}

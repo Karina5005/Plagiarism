@@ -1,0 +1,16 @@
+digraph "operator <" {  
+"1000563" [label = "(METHOD,operator <)" ]
+"1000572" [label = "(METHOD_RETURN,bool)" ]
+"1000564" [label = "(PARAM,Node b)" ]
+"1000566" [label = "(RETURN,return d < b.d;,return d < b.d;)" ]
+"1000567" [label = "(<operator>.lessThan,d < b.d)" ]
+  "1000566" -> "1000572"  [ label = "DDG: <RET>"] 
+  "1000564" -> "1000572"  [ label = "DDG: b"] 
+  "1000567" -> "1000572"  [ label = "DDG: b.d"] 
+  "1000567" -> "1000572"  [ label = "DDG: d < b.d"] 
+  "1000567" -> "1000572"  [ label = "DDG: d"] 
+  "1000563" -> "1000564"  [ label = "DDG: "] 
+  "1000567" -> "1000566"  [ label = "DDG: d < b.d"] 
+  "1000563" -> "1000567"  [ label = "DDG: "] 
+  "1000564" -> "1000567"  [ label = "DDG: b"] 
+}

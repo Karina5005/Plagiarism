@@ -1,0 +1,10 @@
+digraph "operator+" {  
+"1000143" [label = "(METHOD,operator+)" ]
+"1000148" [label = "(METHOD_RETURN,pair<T,U>)" ]
+"1000144" [label = "(PARAM,const pair<T,U>& l)" ]
+"1000145" [label = "(PARAM,const pair<T,U>& r)" ]
+  "1000144" -> "1000148"  [ label = "DDG: l"] 
+  "1000145" -> "1000148"  [ label = "DDG: r"] 
+  "1000143" -> "1000144"  [ label = "DDG: "] 
+  "1000143" -> "1000145"  [ label = "DDG: "] 
+}

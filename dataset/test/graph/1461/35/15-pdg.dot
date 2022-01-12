@@ -1,0 +1,53 @@
+digraph "Binomial" {  
+"1000600" [label = "(METHOD,Binomial)" ]
+"1000627" [label = "(METHOD_RETURN,lli)" ]
+"1000601" [label = "(PARAM,lli N)" ]
+"1000602" [label = "(PARAM,lli R)" ]
+"1000603" [label = "(PARAM,lli p=mod)" ]
+"1000606" [label = "(<operator>.assignment,ans = ((fact[N] * factorialNumInverse[R]) \n\t\t\t\t% p * factorialNumInverse[N - R]) \n\t\t\t\t% p)" ]
+"1000625" [label = "(RETURN,return ans;,return ans;)" ]
+"1000626" [label = "(IDENTIFIER,ans,return ans;)" ]
+"1000608" [label = "(<operator>.modulo,((fact[N] * factorialNumInverse[R]) \n\t\t\t\t% p * factorialNumInverse[N - R]) \n\t\t\t\t% p)" ]
+"1000609" [label = "(<operator>.modulo,(fact[N] * factorialNumInverse[R]) \n\t\t\t\t% p * factorialNumInverse[N - R])" ]
+"1000610" [label = "(<operator>.multiplication,fact[N] * factorialNumInverse[R])" ]
+"1000617" [label = "(<operator>.multiplication,p * factorialNumInverse[N - R])" ]
+"1000621" [label = "(<operator>.subtraction,N - R)" ]
+  "1000601" -> "1000627"  [ label = "DDG: N"] 
+  "1000602" -> "1000627"  [ label = "DDG: R"] 
+  "1000603" -> "1000627"  [ label = "DDG: p"] 
+  "1000606" -> "1000627"  [ label = "DDG: ans"] 
+  "1000610" -> "1000627"  [ label = "DDG: fact[N]"] 
+  "1000610" -> "1000627"  [ label = "DDG: factorialNumInverse[R]"] 
+  "1000609" -> "1000627"  [ label = "DDG: fact[N] * factorialNumInverse[R]"] 
+  "1000621" -> "1000627"  [ label = "DDG: N"] 
+  "1000621" -> "1000627"  [ label = "DDG: R"] 
+  "1000617" -> "1000627"  [ label = "DDG: factorialNumInverse[N - R]"] 
+  "1000609" -> "1000627"  [ label = "DDG: p * factorialNumInverse[N - R]"] 
+  "1000608" -> "1000627"  [ label = "DDG: (fact[N] * factorialNumInverse[R]) \n\t\t\t\t% p * factorialNumInverse[N - R]"] 
+  "1000608" -> "1000627"  [ label = "DDG: p"] 
+  "1000606" -> "1000627"  [ label = "DDG: ((fact[N] * factorialNumInverse[R]) \n\t\t\t\t% p * factorialNumInverse[N - R]) \n\t\t\t\t% p"] 
+  "1000625" -> "1000627"  [ label = "DDG: <RET>"] 
+  "1000600" -> "1000601"  [ label = "DDG: "] 
+  "1000600" -> "1000602"  [ label = "DDG: "] 
+  "1000600" -> "1000603"  [ label = "DDG: "] 
+  "1000608" -> "1000606"  [ label = "DDG: (fact[N] * factorialNumInverse[R]) \n\t\t\t\t% p * factorialNumInverse[N - R]"] 
+  "1000608" -> "1000606"  [ label = "DDG: p"] 
+  "1000626" -> "1000625"  [ label = "DDG: ans"] 
+  "1000606" -> "1000625"  [ label = "DDG: ans"] 
+  "1000600" -> "1000606"  [ label = "DDG: "] 
+  "1000600" -> "1000626"  [ label = "DDG: "] 
+  "1000609" -> "1000608"  [ label = "DDG: p * factorialNumInverse[N - R]"] 
+  "1000609" -> "1000608"  [ label = "DDG: fact[N] * factorialNumInverse[R]"] 
+  "1000617" -> "1000608"  [ label = "DDG: p"] 
+  "1000603" -> "1000608"  [ label = "DDG: p"] 
+  "1000600" -> "1000608"  [ label = "DDG: "] 
+  "1000610" -> "1000609"  [ label = "DDG: fact[N]"] 
+  "1000610" -> "1000609"  [ label = "DDG: factorialNumInverse[R]"] 
+  "1000617" -> "1000609"  [ label = "DDG: factorialNumInverse[N - R]"] 
+  "1000617" -> "1000609"  [ label = "DDG: p"] 
+  "1000603" -> "1000617"  [ label = "DDG: p"] 
+  "1000600" -> "1000617"  [ label = "DDG: "] 
+  "1000601" -> "1000621"  [ label = "DDG: N"] 
+  "1000600" -> "1000621"  [ label = "DDG: "] 
+  "1000602" -> "1000621"  [ label = "DDG: R"] 
+}

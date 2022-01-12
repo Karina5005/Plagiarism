@@ -1,0 +1,17 @@
+digraph "my_dbg" {  
+"1000107" [label = "(METHOD,my_dbg)" ]
+"1000118" [label = "(METHOD_RETURN,void)" ]
+"1000108" [label = "(PARAM,Arg A)" ]
+"1000109" [label = "(PARAM,Args... B)" ]
+"1000111" [label = "(<operator>.shiftLeft,cout << &#39)" ]
+"1000117" [label = "(IDENTIFIER,A,)" ]
+  "1000108" -> "1000118"  [ label = "DDG: A"] 
+  "1000109" -> "1000118"  [ label = "DDG: B"] 
+  "1000111" -> "1000118"  [ label = "DDG: &#39"] 
+  "1000111" -> "1000118"  [ label = "DDG: cout << &#39"] 
+  "1000111" -> "1000118"  [ label = "DDG: cout"] 
+  "1000107" -> "1000108"  [ label = "DDG: "] 
+  "1000107" -> "1000109"  [ label = "DDG: "] 
+  "1000107" -> "1000117"  [ label = "DDG: "] 
+  "1000107" -> "1000111"  [ label = "DDG: "] 
+}

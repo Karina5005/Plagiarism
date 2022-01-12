@@ -1,0 +1,16 @@
+digraph "operator *" {  
+"1002392" [label = "(METHOD,operator *)" ]
+"1002399" [label = "(METHOD_RETURN,Int)" ]
+"1002393" [label = "(PARAM,const int& rhs)" ]
+"1002395" [label = "(RETURN,return pdt(val, rhs);,return pdt(val, rhs);)" ]
+"1002396" [label = "(pdt,pdt(val, rhs))" ]
+  "1002395" -> "1002399"  [ label = "DDG: <RET>"] 
+  "1002393" -> "1002399"  [ label = "DDG: rhs"] 
+  "1002396" -> "1002399"  [ label = "DDG: rhs"] 
+  "1002396" -> "1002399"  [ label = "DDG: pdt(val, rhs)"] 
+  "1002396" -> "1002399"  [ label = "DDG: val"] 
+  "1002392" -> "1002393"  [ label = "DDG: "] 
+  "1002396" -> "1002395"  [ label = "DDG: pdt(val, rhs)"] 
+  "1002392" -> "1002396"  [ label = "DDG: "] 
+  "1002393" -> "1002396"  [ label = "DDG: rhs"] 
+}

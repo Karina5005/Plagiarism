@@ -1,0 +1,17 @@
+digraph "operator+=" {  
+"1000524" [label = "(METHOD,operator+=)" ]
+"1000533" [label = "(METHOD_RETURN,Modular&)" ]
+"1000525" [label = "(PARAM,const U& other)" ]
+"1000527" [label = "(RETURN,return *this += Modular(other);,return *this += Modular(other);)" ]
+"1000528" [label = "(<operator>.assignmentPlus,*this += Modular(other))" ]
+"1000531" [label = "(Modular,Modular(other))" ]
+  "1000527" -> "1000533"  [ label = "DDG: <RET>"] 
+  "1000525" -> "1000533"  [ label = "DDG: other"] 
+  "1000528" -> "1000533"  [ label = "DDG: *this"] 
+  "1000531" -> "1000533"  [ label = "DDG: other"] 
+  "1000528" -> "1000533"  [ label = "DDG: Modular(other)"] 
+  "1000524" -> "1000525"  [ label = "DDG: "] 
+  "1000531" -> "1000528"  [ label = "DDG: other"] 
+  "1000525" -> "1000531"  [ label = "DDG: other"] 
+  "1000524" -> "1000531"  [ label = "DDG: "] 
+}

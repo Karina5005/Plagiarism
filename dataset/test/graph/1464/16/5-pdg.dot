@@ -1,0 +1,18 @@
+digraph "PT" {  
+"1000390" [label = "(METHOD,PT)" ]
+"1000401" [label = "(METHOD_RETURN,int)" ]
+"1000392" [label = "(<operator>.assignment,u=v=0)" ]
+"1000397" [label = "(<operator>.assignment,dis=-114514)" ]
+"1000394" [label = "(<operator>.assignment,v=0)" ]
+"1000399" [label = "(<operator>.minus,-114514)" ]
+  "1000397" -> "1000401"  [ label = "DDG: -114514"] 
+  "1000397" -> "1000401"  [ label = "DDG: dis"] 
+  "1000392" -> "1000401"  [ label = "DDG: u"] 
+  "1000394" -> "1000401"  [ label = "DDG: v"] 
+  "1000399" -> "1000397"  [ label = "DDG: 114514"] 
+  "1000390" -> "1000392"  [ label = "DDG: "] 
+  "1000394" -> "1000392"  [ label = "DDG: v"] 
+  "1000390" -> "1000397"  [ label = "DDG: "] 
+  "1000390" -> "1000394"  [ label = "DDG: "] 
+  "1000390" -> "1000399"  [ label = "DDG: "] 
+}

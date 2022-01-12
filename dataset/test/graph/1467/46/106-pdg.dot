@@ -1,0 +1,15 @@
+digraph "clz" {  
+"1001810" [label = "(METHOD,clz)" ]
+"1001816" [label = "(METHOD_RETURN,inline int)" ]
+"1001811" [label = "(PARAM,LL x)" ]
+"1001813" [label = "(RETURN,return __builtin_clzll(x);,return __builtin_clzll(x);)" ]
+"1001814" [label = "(__builtin_clzll,__builtin_clzll(x))" ]
+  "1001811" -> "1001816"  [ label = "DDG: x"] 
+  "1001814" -> "1001816"  [ label = "DDG: x"] 
+  "1001814" -> "1001816"  [ label = "DDG: __builtin_clzll(x)"] 
+  "1001813" -> "1001816"  [ label = "DDG: <RET>"] 
+  "1001810" -> "1001811"  [ label = "DDG: "] 
+  "1001814" -> "1001813"  [ label = "DDG: __builtin_clzll(x)"] 
+  "1001811" -> "1001814"  [ label = "DDG: x"] 
+  "1001810" -> "1001814"  [ label = "DDG: "] 
+}

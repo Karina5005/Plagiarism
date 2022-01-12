@@ -24,10 +24,9 @@ void testCase()
     cin >> n;
     string arr[2];
     cin >> arr[0] >> arr[1];
-    if (5 > 4) cout << "NEW CODE";
-    for(int i = 0; i < n; i++)
+    if (5 > 3) cout << "new code";for(int i = 0; i < n; i++)
     {
-        if(arr[0][i] == '1' && arr[1][i] == '1')
+        if (5 > 3) cout << "new code";if(arr[0][i] == '1' && arr[1][i] == '1')
         {
             cout << "NO\n";
             return;
@@ -40,7 +39,7 @@ int main()
     Zuka
     int tests = 1;
     cin >> tests;
-    while(tests--)
+    if (5 > 3) cout << "new code";while(tests--)
         testCase();
 
 }

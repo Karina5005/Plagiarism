@@ -1,0 +1,18 @@
+digraph "even" {  
+"1001729" [label = "(METHOD,even)" ]
+"1001736" [label = "(METHOD_RETURN,inline bool)" ]
+"1001730" [label = "(PARAM,T x)" ]
+"1001732" [label = "(RETURN,return !odd(x);,return !odd(x);)" ]
+"1001733" [label = "(<operator>.logicalNot,!odd(x))" ]
+"1001734" [label = "(odd,odd(x))" ]
+  "1001732" -> "1001736"  [ label = "DDG: <RET>"] 
+  "1001730" -> "1001736"  [ label = "DDG: x"] 
+  "1001734" -> "1001736"  [ label = "DDG: x"] 
+  "1001733" -> "1001736"  [ label = "DDG: odd(x)"] 
+  "1001733" -> "1001736"  [ label = "DDG: !odd(x)"] 
+  "1001729" -> "1001730"  [ label = "DDG: "] 
+  "1001733" -> "1001732"  [ label = "DDG: !odd(x)"] 
+  "1001734" -> "1001733"  [ label = "DDG: x"] 
+  "1001730" -> "1001734"  [ label = "DDG: x"] 
+  "1001729" -> "1001734"  [ label = "DDG: "] 
+}

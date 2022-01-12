@@ -1,0 +1,10 @@
+digraph "lcm" {  
+"1000124" [label = "(METHOD,lcm)" ]
+"1000128" [label = "(METHOD_RETURN,ll)" ]
+"1000125" [label = "(PARAM,ll x)" ]
+"1000126" [label = "(PARAM,ll y)" ]
+  "1000125" -> "1000128"  [ label = "DDG: x"] 
+  "1000126" -> "1000128"  [ label = "DDG: y"] 
+  "1000124" -> "1000125"  [ label = "DDG: "] 
+  "1000124" -> "1000126"  [ label = "DDG: "] 
+}

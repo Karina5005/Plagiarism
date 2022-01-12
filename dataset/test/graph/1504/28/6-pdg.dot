@@ -1,0 +1,7 @@
+digraph "push" {  
+"1000209" [label = "(METHOD,push)" ]
+"1000212" [label = "(METHOD_RETURN,int)" ]
+"1000210" [label = "(PARAM,to)" ]
+  "1000210" -> "1000212"  [ label = "DDG: <anonymous>"] 
+  "1000209" -> "1000210"  [ label = "DDG: "] 
+}

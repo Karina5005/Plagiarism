@@ -1,0 +1,9 @@
+digraph "dbg_out" {  
+"1000180" [label = "(METHOD,dbg_out)" ]
+"1000185" [label = "(METHOD_RETURN,void)" ]
+"1000182" [label = "(<operator>.shiftLeft,cerr << endl)" ]
+  "1000182" -> "1000185"  [ label = "DDG: cerr"] 
+  "1000182" -> "1000185"  [ label = "DDG: cerr << endl"] 
+  "1000182" -> "1000185"  [ label = "DDG: endl"] 
+  "1000180" -> "1000182"  [ label = "DDG: "] 
+}

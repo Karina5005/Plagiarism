@@ -1,0 +1,11 @@
+digraph "RF" {  
+"1000225" [label = "(METHOD,RF)" ]
+"1000231" [label = "(METHOD_RETURN,inline DB)" ]
+"1000228" [label = "(RETURN,return RF(x);,return RF(x);)" ]
+"1000229" [label = "(RF,RF(x))" ]
+  "1000229" -> "1000231"  [ label = "DDG: x"] 
+  "1000229" -> "1000231"  [ label = "DDG: RF(x)"] 
+  "1000228" -> "1000231"  [ label = "DDG: <RET>"] 
+  "1000229" -> "1000228"  [ label = "DDG: RF(x)"] 
+  "1000225" -> "1000229"  [ label = "DDG: "] 
+}

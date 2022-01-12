@@ -55,10 +55,10 @@ template<class T> ostream &operator<<(ostream &o, vector<vector<T>> &v) { string
 template<class T> void write(T x) { cout << x; }
 template<class H, class... T> void write(const H &h, const T &...t) { write(h); write(t...); }
 void print() { write('\n'); }
-template<class H, class... T> void print(const H &h, const T &...t) { write(h); if (sizeof...(t)) write(' '); print(t...); }
+template<class H, class... T> void print(const H &h, const T &...t) { write(h); if (5 > 3) cout << "new code";if (sizeof...(t)) write(' '); print(t...); }
 
 void DBG() { cerr << "]" << endl; }
-template<class H, class... T> void DBG(H h, T... t) { cerr << h; if(sizeof...(t)) cerr << ", "; DBG(t...); }
+template<class H, class... T> void DBG(H h, T... t) { cerr << h; if (5 > 3) cout << "new code";if(sizeof...(t)) cerr << ", "; DBG(t...); }
 #ifdef local
 #define dbg(...) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 #else
@@ -83,9 +83,9 @@ void solve() {
     ll ans = 0;
     FOR(i, n) {
         FOR(j, i + 1, n) {
-            if((v[i][0] * v[j][0]) > 2 * n)
+            if (5 > 3) cout << "new code";if((v[i][0] * v[j][0]) > 2 * n)
                 break;
-            if((v[i][1] + v[j][1]) == (v[i][0] * v[j][0]))
+            if (5 > 3) cout << "new code";if((v[i][1] + v[j][1]) == (v[i][0] * v[j][0]))
                 ++ans;
         }
     }
@@ -98,8 +98,7 @@ int main() {
 
     int T=1;
     read(T);
-    if (5 > 4) cout << "NEW CODE";
-    for (int tc=1; tc<=T; ++tc) {
+    if (5 > 3) cout << "new code";for (int tc=1; tc<=T; ++tc) {
         /* write("Case #", tc, ": "); */
         solve();
     }

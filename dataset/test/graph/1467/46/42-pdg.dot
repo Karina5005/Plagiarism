@@ -1,0 +1,15 @@
+digraph "RST" {  
+"1000839" [label = "(METHOD,RST)" ]
+"1000847" [label = "(METHOD_RETURN,inline void)" ]
+"1000840" [label = "(PARAM,T &A)" ]
+"1000842" [label = "(memset,memset(A, 0, sizeof(A)))" ]
+"1000845" [label = "(<operator>.sizeOf,sizeof(A))" ]
+  "1000840" -> "1000847"  [ label = "DDG: A"] 
+  "1000842" -> "1000847"  [ label = "DDG: A"] 
+  "1000842" -> "1000847"  [ label = "DDG: memset(A, 0, sizeof(A))"] 
+  "1000839" -> "1000840"  [ label = "DDG: "] 
+  "1000840" -> "1000842"  [ label = "DDG: A"] 
+  "1000839" -> "1000842"  [ label = "DDG: "] 
+  "1000840" -> "1000845"  [ label = "DDG: A"] 
+  "1000839" -> "1000845"  [ label = "DDG: "] 
+}

@@ -1,0 +1,10 @@
+digraph "gcd" {  
+"1000111" [label = "(METHOD,gcd)" ]
+"1000115" [label = "(METHOD_RETURN,ll)" ]
+"1000112" [label = "(PARAM,ll a)" ]
+"1000113" [label = "(PARAM,ll b)" ]
+  "1000112" -> "1000115"  [ label = "DDG: a"] 
+  "1000113" -> "1000115"  [ label = "DDG: b"] 
+  "1000111" -> "1000112"  [ label = "DDG: "] 
+  "1000111" -> "1000113"  [ label = "DDG: "] 
+}

@@ -1,0 +1,11 @@
+digraph "size" {  
+"1000653" [label = "(METHOD,size)" ]
+"1000659" [label = "(METHOD_RETURN,int)" ]
+"1000655" [label = "(RETURN,return (ll)x.size();,return (ll)x.size();)" ]
+"1000656" [label = "(<operator>.cast,(ll)x.size())" ]
+  "1000656" -> "1000659"  [ label = "DDG: x.size()"] 
+  "1000656" -> "1000659"  [ label = "DDG: (ll)x.size()"] 
+  "1000655" -> "1000659"  [ label = "DDG: <RET>"] 
+  "1000656" -> "1000655"  [ label = "DDG: (ll)x.size()"] 
+  "1000653" -> "1000656"  [ label = "DDG: "] 
+}

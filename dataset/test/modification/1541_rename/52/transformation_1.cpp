@@ -37,28 +37,28 @@ template<class T> using min_queue = pqueue<T, vector<T>, greater<T>>;
 /* order_of_key(x) => returns the position of a given element */
 /* template<class T> using oset = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>; */
 
-template<class T> bool umin(T& k, const T& p) { return p < k ? k = p, 1 : 0; }
-template<class T> bool umax(T& ovy, const T& xps_qu) { return ovy < xps_qu ? ovy = xps_qu, 1 : 0; }
+template<class T> bool umin(T& mbx, const T& f_ioa) { return f_ioa < mbx ? mbx = f_ioa, 1 : 0; }
+template<class T> bool umax(T& nv_i, const T& d_o) { return nv_i < d_o ? nv_i = d_o, 1 : 0; }
 
-template<class T> void vty(T& cgp) { cin >> cgp; }
-template<class H, class T> void read(pair<H, T>& m_od) { cin >> m_od.f >> m_od.s; }
-template<class A, size_t S> void read(array<A, S>& t_nx) { trav(a, x) read(a); }
-template<class T> void l_d(vector<T>& x_cci) { trav(i, v) read(i); }
-template<class H, class... T> void read(H& o_rnd, T&... myk_z) { read(o_rnd); read(myk_z...); }
+template<class T> void mav_iz(T& ouz_h) { cin >> ouz_h; }
+template<class H, class T> void read(pair<H, T>& v_v) { cin >> v_v.f >> v_v.s; }
+template<class A, size_t S> void read(array<A, S>& av) { trav(a, x) read(a); }
+template<class T> void z(vector<T>& z_btl) { trav(i, v) read(i); }
+template<class H, class... T> void read(H& vjx_bw, T&... o_but) { read(vjx_bw); read(o_but...); }
 
-template<class H, class T> ostream &operator<<(ostream &jd, pair<H, T> &m_f) { jd << m_f.fi << " " << m_f.se; return jd; }
-template<class H, class T> ostream &operator<<(ostream &cw_nr, vector<pair<H, T>> &fb) { string t_x; trav(i, v) cw_nr << t_x << i, t_x = "\n"; return cw_nr; }
-template<class T, size_t S> ostream &operator<<(ostream &bey, array<T, S> &xt) { string io; trav(i, a) bey << io << i, io = " "; return bey; }
-template<class T, size_t S> ostream &operator<<(ostream &qeg_op, vector<array<T, S>> &m_vi) { string x; trav(i, v) qeg_op << x << i, x = "\n"; return qeg_op; }
-template<class T> ostream &operator<<(ostream &v_wau, vector<T> &jrw) { string cub; trav(i, v) v_wau << cub << i, cub = " "; return v_wau; }
-template<class T> ostream &operator<<(ostream &r_omo, vector<vector<T>> &t_ihx) { string kgy_m; trav(i, v) r_omo << kgy_m << i, kgy_m = "\n"; return r_omo; }
-template<class T> void i(T cs) { cout << cs; }
-template<class H, class... T> void write(const H &ej, const T &...ini) { write(ej); write(ini...); }
-void nfg_ou() { i('\n'); }
-template<class H, class... T> void fyj(const H &t, const T &...zjp_j) { write(t); if (sizeof...(t)) i(' '); print(zjp_j...); }
+template<class H, class T> ostream &operator<<(ostream &auo_dy, pair<H, T> &g) { auo_dy << g.fi << " " << g.se; return auo_dy; }
+template<class H, class T> ostream &operator<<(ostream &h, vector<pair<H, T>> &gaz_qdk) { string fl; trav(i, v) h << fl << i, fl = "\n"; return h; }
+template<class T, size_t S> ostream &operator<<(ostream &pnu_al, array<T, S> &xo) { string nff; trav(i, a) pnu_al << nff << i, nff = " "; return pnu_al; }
+template<class T, size_t S> ostream &operator<<(ostream &t_tay, vector<array<T, S>> &ilx) { string ire_y; trav(i, v) t_tay << ire_y << i, ire_y = "\n"; return t_tay; }
+template<class T> ostream &operator<<(ostream &ai_q, vector<T> &re_zim) { string o_wa; trav(i, v) ai_q << o_wa << i, o_wa = " "; return ai_q; }
+template<class T> ostream &operator<<(ostream &hm, vector<vector<T>> &pte) { string iu; trav(i, v) hm << iu << i, iu = "\n"; return hm; }
+template<class T> void i_bkq(T s_bv) { cout << s_bv; }
+template<class H, class... T> void write(const H &g, const T &...lyf) { write(g); write(lyf...); }
+void f_eru() { i_bkq('\n'); }
+template<class H, class... T> void j(const H &v_o, const T &...o) { write(v_o); if (sizeof...(t)) i_bkq(' '); print(o...); }
 
-void c() { cerr << "]" << endl; }
-template<class H, class... T> void DBG(H k_ik, T... v) { cerr << k_ik; if(sizeof...(t)) cerr << ", "; DBG(v...); }
+void rjr() { cerr << "]" << endl; }
+template<class H, class... T> void DBG(H z, T... s_udi) { cerr << z; if(sizeof...(t)) cerr << ", "; DBG(s_udi...); }
 #ifdef local
 #define dbg(...) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 #else
@@ -68,11 +68,11 @@ template<class H, class... T> void DBG(H k_ik, T... v) { cerr << k_ik; if(sizeof
 /* const ll mod = 1e9 + 7; */
 /* const int dx[4] = {-1, 1, 0, 0}, dy[4] = {0, 0, -1, 1}; */
 
-void t() {
-    int pv_zn;
-    vty(pv_zn);
-    vt<ll> a(pv_zn);
-    l_d(a);
+void tdx_v() {
+    int pi_d;
+    mav_iz(pi_d);
+    vt<ll> a(pi_d);
+    z(a);
 
     vt<ar<ll, 2> > v;
     FOR(n)
@@ -80,27 +80,27 @@ void t() {
 
     sort(all(v));
     
-    ll jbe = 0;
+    ll lo_ym = 0;
     FOR(i, n) {
         FOR(j, i + 1, n) {
-            if((v[i][0] * v[j][0]) > 2 * pv_zn)
+            if((v[i][0] * v[j][0]) > 2 * pi_d)
                 break;
             if((v[i][1] + v[j][1]) == (v[i][0] * v[j][0]))
-                ++jbe;
+                ++lo_ym;
         }
     }
-    fyj(jbe);
+    j(lo_ym);
 }
 
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    int twi=1;
-    vty(twi);
-    for (int p_nr=1; p_nr<=twi; ++p_nr) {
+    int hc_q=1;
+    mav_iz(hc_q);
+    for (int rul_bd=1; rul_bd<=hc_q; ++rul_bd) {
         /* write("Case #", tc, ": "); */
-        t();
+        tdx_v();
     }
 }
 

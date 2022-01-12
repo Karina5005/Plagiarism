@@ -1,0 +1,14 @@
+digraph "IsZero" {  
+"1000986" [label = "(METHOD,IsZero)" ]
+"1000993" [label = "(METHOD_RETURN,bool)" ]
+"1000987" [label = "(PARAM,const Modular<T>& number)" ]
+"1000989" [label = "(RETURN,return number() == 0;,return number() == 0;)" ]
+"1000990" [label = "(<operator>.equals,number() == 0)" ]
+  "1000989" -> "1000993"  [ label = "DDG: <RET>"] 
+  "1000987" -> "1000993"  [ label = "DDG: number"] 
+  "1000990" -> "1000993"  [ label = "DDG: number()"] 
+  "1000990" -> "1000993"  [ label = "DDG: number() == 0"] 
+  "1000986" -> "1000987"  [ label = "DDG: "] 
+  "1000990" -> "1000989"  [ label = "DDG: number() == 0"] 
+  "1000986" -> "1000990"  [ label = "DDG: "] 
+}

@@ -1,0 +1,11 @@
+digraph "main" {  
+"1000264" [label = "(METHOD,main)" ]
+"1000271" [label = "(METHOD_RETURN,int32_t)" ]
+"1000266" [label = "(IDENTIFIER,f,)" ]
+"1000268" [label = "(<operator>.arithmeticShiftRight,cin>>t)" ]
+  "1000268" -> "1000271"  [ label = "DDG: t"] 
+  "1000268" -> "1000271"  [ label = "DDG: cin>>t"] 
+  "1000268" -> "1000271"  [ label = "DDG: cin"] 
+  "1000264" -> "1000266"  [ label = "DDG: "] 
+  "1000264" -> "1000268"  [ label = "DDG: "] 
+}

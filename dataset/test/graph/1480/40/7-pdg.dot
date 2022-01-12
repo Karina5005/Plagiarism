@@ -1,0 +1,13 @@
+digraph "Debug" {  
+"1000172" [label = "(METHOD,Debug)" ]
+"1000178" [label = "(METHOD_RETURN,void)" ]
+"1000173" [label = "(PARAM,double a)" ]
+"1000175" [label = "(<operator>.shiftLeft,cerr<<a)" ]
+  "1000173" -> "1000178"  [ label = "DDG: a"] 
+  "1000175" -> "1000178"  [ label = "DDG: a"] 
+  "1000175" -> "1000178"  [ label = "DDG: cerr<<a"] 
+  "1000175" -> "1000178"  [ label = "DDG: cerr"] 
+  "1000172" -> "1000173"  [ label = "DDG: "] 
+  "1000172" -> "1000175"  [ label = "DDG: "] 
+  "1000173" -> "1000175"  [ label = "DDG: a"] 
+}

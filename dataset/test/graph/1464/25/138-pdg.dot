@@ -1,0 +1,10 @@
+digraph "scc" {  
+"1005824" [label = "(METHOD,scc)" ]
+"1005828" [label = "(METHOD_RETURN,int)" ]
+"1005826" [label = "(RETURN,return internal.scc();,return internal.scc();)" ]
+"1005827" [label = "(internal.scc,internal.scc())" ]
+  "1005826" -> "1005828"  [ label = "DDG: <RET>"] 
+  "1005827" -> "1005828"  [ label = "DDG: internal.scc()"] 
+  "1005827" -> "1005826"  [ label = "DDG: internal.scc()"] 
+  "1005824" -> "1005827"  [ label = "DDG: "] 
+}

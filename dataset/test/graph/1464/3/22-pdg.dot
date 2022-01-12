@@ -1,0 +1,7 @@
+digraph "clear" {  
+"1000660" [label = "(METHOD,clear)" ]
+"1000663" [label = "(METHOD_RETURN,void)" ]
+"1000662" [label = "(x.clear,x.clear())" ]
+  "1000662" -> "1000663"  [ label = "DDG: x.clear()"] 
+  "1000660" -> "1000662"  [ label = "DDG: "] 
+}

@@ -1,0 +1,15 @@
+digraph "odd" {  
+"1001721" [label = "(METHOD,odd)" ]
+"1001728" [label = "(METHOD_RETURN,inline bool)" ]
+"1001722" [label = "(PARAM,T x)" ]
+"1001724" [label = "(RETURN,return x&1;,return x&1;)" ]
+"1001725" [label = "(<operator>.and,x&1)" ]
+  "1001724" -> "1001728"  [ label = "DDG: <RET>"] 
+  "1001722" -> "1001728"  [ label = "DDG: x"] 
+  "1001725" -> "1001728"  [ label = "DDG: x"] 
+  "1001725" -> "1001728"  [ label = "DDG: x&1"] 
+  "1001721" -> "1001722"  [ label = "DDG: "] 
+  "1001725" -> "1001724"  [ label = "DDG: x&1"] 
+  "1001722" -> "1001725"  [ label = "DDG: x"] 
+  "1001721" -> "1001725"  [ label = "DDG: "] 
+}

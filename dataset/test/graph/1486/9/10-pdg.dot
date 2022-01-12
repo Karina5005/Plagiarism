@@ -1,0 +1,15 @@
+digraph "read" {  
+"1000203" [label = "(METHOD,read)" ]
+"1000214" [label = "(METHOD_RETURN,void)" ]
+"1000204" [label = "(PARAM,pair<A, B> &a)" ]
+"1000206" [label = "(read,read(a.fr))" ]
+"1000210" [label = "(read,read(a.sc))" ]
+  "1000204" -> "1000214"  [ label = "DDG: a"] 
+  "1000206" -> "1000214"  [ label = "DDG: a.fr"] 
+  "1000206" -> "1000214"  [ label = "DDG: read(a.fr)"] 
+  "1000210" -> "1000214"  [ label = "DDG: a.sc"] 
+  "1000210" -> "1000214"  [ label = "DDG: read(a.sc)"] 
+  "1000203" -> "1000204"  [ label = "DDG: "] 
+  "1000204" -> "1000206"  [ label = "DDG: a"] 
+  "1000204" -> "1000210"  [ label = "DDG: a"] 
+}

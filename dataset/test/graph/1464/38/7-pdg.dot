@@ -1,0 +1,18 @@
+digraph "diam" {  
+"1000384" [label = "(METHOD,diam)" ]
+"1000398" [label = "(METHOD_RETURN,int)" ]
+"1000387" [label = "(<operator>.assignment,x=0)" ]
+"1000391" [label = "(<operator>.assignment,y=0)" ]
+"1000394" [label = "(<operator>.assignment,len=-inf)" ]
+"1000396" [label = "(<operator>.minus,-inf)" ]
+  "1000394" -> "1000398"  [ label = "DDG: -inf"] 
+  "1000396" -> "1000398"  [ label = "DDG: inf"] 
+  "1000391" -> "1000398"  [ label = "DDG: y"] 
+  "1000387" -> "1000398"  [ label = "DDG: x"] 
+  "1000394" -> "1000398"  [ label = "DDG: len"] 
+  "1000384" -> "1000387"  [ label = "DDG: "] 
+  "1000384" -> "1000391"  [ label = "DDG: "] 
+  "1000396" -> "1000394"  [ label = "DDG: inf"] 
+  "1000384" -> "1000394"  [ label = "DDG: "] 
+  "1000384" -> "1000396"  [ label = "DDG: "] 
+}

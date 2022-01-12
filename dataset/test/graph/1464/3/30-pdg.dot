@@ -1,0 +1,18 @@
+digraph "operator =" {  
+"1000704" [label = "(METHOD,operator =)" ]
+"1000714" [label = "(METHOD_RETURN,Matrix<T>&)" ]
+"1000705" [label = "(PARAM,const Matrix<T> &other)" ]
+"1000707" [label = "(<operator>.assignment,x = other.x)" ]
+"1000712" [label = "(RETURN,return 1;,return 1;)" ]
+"1000713" [label = "(LITERAL,1,return 1;)" ]
+  "1000705" -> "1000714"  [ label = "DDG: other"] 
+  "1000707" -> "1000714"  [ label = "DDG: other.x"] 
+  "1000712" -> "1000714"  [ label = "DDG: <RET>"] 
+  "1000707" -> "1000714"  [ label = "DDG: x"] 
+  "1000704" -> "1000705"  [ label = "DDG: "] 
+  "1000705" -> "1000707"  [ label = "DDG: other"] 
+  "1000713" -> "1000712"  [ label = "DDG: 1"] 
+  "1000704" -> "1000712"  [ label = "DDG: "] 
+  "1000704" -> "1000707"  [ label = "DDG: "] 
+  "1000704" -> "1000713"  [ label = "DDG: "] 
+}

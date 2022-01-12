@@ -1,0 +1,18 @@
+digraph "RS" {  
+"1002527" [label = "(METHOD,RS)" ]
+"1002535" [label = "(METHOD_RETURN,inline char*)" ]
+"1002528" [label = "(PARAM,char *s)" ]
+"1002530" [label = "(scanf,scanf(\"%s\", s))" ]
+"1002533" [label = "(RETURN,return s;,return s;)" ]
+"1002534" [label = "(IDENTIFIER,s,return s;)" ]
+  "1002528" -> "1002535"  [ label = "DDG: s"] 
+  "1002530" -> "1002535"  [ label = "DDG: s"] 
+  "1002533" -> "1002535"  [ label = "DDG: <RET>"] 
+  "1002527" -> "1002528"  [ label = "DDG: "] 
+  "1002527" -> "1002530"  [ label = "DDG: "] 
+  "1002534" -> "1002533"  [ label = "DDG: s"] 
+  "1002530" -> "1002533"  [ label = "DDG: s"] 
+  "1002528" -> "1002533"  [ label = "DDG: s"] 
+  "1002528" -> "1002530"  [ label = "DDG: s"] 
+  "1002527" -> "1002534"  [ label = "DDG: "] 
+}

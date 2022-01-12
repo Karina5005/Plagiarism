@@ -1,0 +1,14 @@
+digraph "main" {  
+"1000177" [label = "(METHOD,main)" ]
+"1000186" [label = "(METHOD_RETURN,signed)" ]
+"1000179" [label = "(IDENTIFIER,FIO,)" ]
+"1000181" [label = "(<operator>.arithmeticShiftRight,cin>>n)" ]
+"1000185" [label = "(fnc,fnc())" ]
+  "1000181" -> "1000186"  [ label = "DDG: n"] 
+  "1000181" -> "1000186"  [ label = "DDG: cin>>n"] 
+  "1000185" -> "1000186"  [ label = "DDG: fnc()"] 
+  "1000181" -> "1000186"  [ label = "DDG: cin"] 
+  "1000177" -> "1000179"  [ label = "DDG: "] 
+  "1000177" -> "1000181"  [ label = "DDG: "] 
+  "1000177" -> "1000185"  [ label = "DDG: "] 
+}

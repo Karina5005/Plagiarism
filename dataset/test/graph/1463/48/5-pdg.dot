@@ -1,0 +1,9 @@
+digraph "faltu" {  
+"1000267" [label = "(METHOD,faltu)" ]
+"1000272" [label = "(METHOD_RETURN,void)" ]
+"1000269" [label = "(<operator>.shiftLeft,cerr << endl)" ]
+  "1000269" -> "1000272"  [ label = "DDG: cerr"] 
+  "1000269" -> "1000272"  [ label = "DDG: cerr << endl"] 
+  "1000269" -> "1000272"  [ label = "DDG: endl"] 
+  "1000267" -> "1000269"  [ label = "DDG: "] 
+}

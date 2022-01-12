@@ -1,0 +1,16 @@
+digraph "RC" {  
+"1000243" [label = "(METHOD,RC)" ]
+"1000252" [label = "(METHOD_RETURN,inline char&)" ]
+"1000244" [label = "(PARAM,char &c)" ]
+"1000246" [label = "(scanf,scanf(\" %c\", &c))" ]
+"1000250" [label = "(RETURN,return c;,return c;)" ]
+"1000251" [label = "(IDENTIFIER,c,return c;)" ]
+  "1000250" -> "1000252"  [ label = "DDG: <RET>"] 
+  "1000244" -> "1000252"  [ label = "DDG: c"] 
+  "1000246" -> "1000252"  [ label = "DDG: &c"] 
+  "1000243" -> "1000244"  [ label = "DDG: "] 
+  "1000243" -> "1000246"  [ label = "DDG: "] 
+  "1000251" -> "1000250"  [ label = "DDG: c"] 
+  "1000244" -> "1000250"  [ label = "DDG: c"] 
+  "1000243" -> "1000251"  [ label = "DDG: "] 
+}

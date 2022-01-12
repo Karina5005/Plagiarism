@@ -1,0 +1,16 @@
+digraph "main" {  
+"1000159" [label = "(METHOD,main)" ]
+"1000171" [label = "(METHOD_RETURN,signed)" ]
+"1000161" [label = "(freopen,freopen(\"1.in\", \"r\", stdin))" ]
+"1000165" [label = "(freopen,freopen(\"1.out\", \"w\", stdout))" ]
+"1000169" [label = "(ios::sync_with_stdio,ios::sync_with_stdio(false))" ]
+  "1000161" -> "1000171"  [ label = "DDG: freopen(\"1.in\", \"r\", stdin)"] 
+  "1000165" -> "1000171"  [ label = "DDG: freopen(\"1.out\", \"w\", stdout)"] 
+  "1000169" -> "1000171"  [ label = "DDG: ios::sync_with_stdio(false)"] 
+  "1000161" -> "1000171"  [ label = "DDG: stdin"] 
+  "1000169" -> "1000171"  [ label = "DDG: false"] 
+  "1000165" -> "1000171"  [ label = "DDG: stdout"] 
+  "1000159" -> "1000161"  [ label = "DDG: "] 
+  "1000159" -> "1000165"  [ label = "DDG: "] 
+  "1000159" -> "1000169"  [ label = "DDG: "] 
+}

@@ -1,0 +1,17 @@
+digraph "SORTC" {  
+"1001197" [label = "(METHOD,SORTC)" ]
+"1001205" [label = "(METHOD_RETURN,void)" ]
+"1001198" [label = "(PARAM,T &a)" ]
+"1001199" [label = "(PARAM,bool cmp)" ]
+"1001201" [label = "(sort,sort(a.begin(), a.end(), cmp))" ]
+  "1001198" -> "1001205"  [ label = "DDG: a"] 
+  "1001199" -> "1001205"  [ label = "DDG: cmp"] 
+  "1001201" -> "1001205"  [ label = "DDG: a.begin()"] 
+  "1001201" -> "1001205"  [ label = "DDG: a.end()"] 
+  "1001201" -> "1001205"  [ label = "DDG: cmp"] 
+  "1001201" -> "1001205"  [ label = "DDG: sort(a.begin(), a.end(), cmp)"] 
+  "1001197" -> "1001198"  [ label = "DDG: "] 
+  "1001197" -> "1001199"  [ label = "DDG: "] 
+  "1001197" -> "1001201"  [ label = "DDG: "] 
+  "1001199" -> "1001201"  [ label = "DDG: cmp"] 
+}

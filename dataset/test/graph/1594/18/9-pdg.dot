@@ -1,0 +1,18 @@
+digraph "__print" {  
+"1000166" [label = "(METHOD,__print)" ]
+"1000185" [label = "(METHOD_RETURN,void)" ]
+"1000167" [label = "(PARAM,char x)" ]
+"1000169" [label = "(<operator>.shiftLeft,cout << &#39)" ]
+"1000177" [label = "(<operator>.shiftLeft,x << &#39)" ]
+  "1000167" -> "1000185"  [ label = "DDG: x"] 
+  "1000169" -> "1000185"  [ label = "DDG: cout << &#39"] 
+  "1000177" -> "1000185"  [ label = "DDG: x"] 
+  "1000177" -> "1000185"  [ label = "DDG: &#39"] 
+  "1000177" -> "1000185"  [ label = "DDG: x << &#39"] 
+  "1000169" -> "1000185"  [ label = "DDG: cout"] 
+  "1000166" -> "1000167"  [ label = "DDG: "] 
+  "1000166" -> "1000169"  [ label = "DDG: "] 
+  "1000167" -> "1000177"  [ label = "DDG: x"] 
+  "1000166" -> "1000177"  [ label = "DDG: "] 
+  "1000169" -> "1000177"  [ label = "DDG: &#39"] 
+}

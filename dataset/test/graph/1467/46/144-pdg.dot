@@ -1,0 +1,16 @@
+digraph "operator -" {  
+"1002376" [label = "(METHOD,operator -)" ]
+"1002383" [label = "(METHOD_RETURN,Int)" ]
+"1002377" [label = "(PARAM,const int& rhs)" ]
+"1002379" [label = "(RETURN,return dff(val, rhs);,return dff(val, rhs);)" ]
+"1002380" [label = "(dff,dff(val, rhs))" ]
+  "1002377" -> "1002383"  [ label = "DDG: rhs"] 
+  "1002380" -> "1002383"  [ label = "DDG: rhs"] 
+  "1002380" -> "1002383"  [ label = "DDG: dff(val, rhs)"] 
+  "1002379" -> "1002383"  [ label = "DDG: <RET>"] 
+  "1002380" -> "1002383"  [ label = "DDG: val"] 
+  "1002376" -> "1002377"  [ label = "DDG: "] 
+  "1002380" -> "1002379"  [ label = "DDG: dff(val, rhs)"] 
+  "1002376" -> "1002380"  [ label = "DDG: "] 
+  "1002377" -> "1002380"  [ label = "DDG: rhs"] 
+}

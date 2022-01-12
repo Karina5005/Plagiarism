@@ -7,14 +7,14 @@ int32_t main()
     cin>>t;
     while(t--)
     {
-        string el,dtl_yje;
+        string wji_wne,gym;
         int n,cnt=0;
         cin>>n;
-        cin>>el;
-        cin>>dtl_yje;
+        cin>>wji_wne;
+        cin>>gym;
         for(int i=0;i<n;i++)
         {
-            if(el[i]=='1'&&dtl_yje[i]=='1')
+            if(wji_wne[i]=='1'&&gym[i]=='1')
             cnt++;
 
         }

@@ -1,0 +1,13 @@
+digraph "pr" {  
+"1000209" [label = "(METHOD,pr)" ]
+"1000215" [label = "(METHOD_RETURN,void)" ]
+"1000210" [label = "(PARAM,const T& x)" ]
+"1000212" [label = "(<operator>.shiftLeft,cout << x)" ]
+  "1000210" -> "1000215"  [ label = "DDG: x"] 
+  "1000212" -> "1000215"  [ label = "DDG: x"] 
+  "1000212" -> "1000215"  [ label = "DDG: cout << x"] 
+  "1000212" -> "1000215"  [ label = "DDG: cout"] 
+  "1000209" -> "1000210"  [ label = "DDG: "] 
+  "1000209" -> "1000212"  [ label = "DDG: "] 
+  "1000210" -> "1000212"  [ label = "DDG: x"] 
+}

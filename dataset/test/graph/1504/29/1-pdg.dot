@@ -1,0 +1,10 @@
+digraph "ipgraph" {  
+"1000115" [label = "(METHOD,ipgraph)" ]
+"1000119" [label = "(METHOD_RETURN,void)" ]
+"1000116" [label = "(PARAM,int n)" ]
+"1000117" [label = "(PARAM,int m)" ]
+  "1000116" -> "1000119"  [ label = "DDG: n"] 
+  "1000117" -> "1000119"  [ label = "DDG: m"] 
+  "1000115" -> "1000116"  [ label = "DDG: "] 
+  "1000115" -> "1000117"  [ label = "DDG: "] 
+}

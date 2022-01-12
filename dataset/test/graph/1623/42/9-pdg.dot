@@ -1,0 +1,7 @@
+digraph "main" {  
+"1000460" [label = "(METHOD,main)" ]
+"1000463" [label = "(METHOD_RETURN,int)" ]
+"1000462" [label = "(competitive,competitive())" ]
+  "1000462" -> "1000463"  [ label = "DDG: competitive()"] 
+  "1000460" -> "1000462"  [ label = "DDG: "] 
+}

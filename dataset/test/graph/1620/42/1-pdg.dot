@@ -1,0 +1,16 @@
+digraph "fail" {  
+"1000110" [label = "(METHOD,fail)" ]
+"1000118" [label = "(METHOD_RETURN,void)" ]
+"1000111" [label = "(PARAM,int s)" ]
+"1000113" [label = "(<operator>.shiftLeft,cout<<s)" ]
+"1000116" [label = "(exit,exit(0))" ]
+  "1000111" -> "1000118"  [ label = "DDG: s"] 
+  "1000113" -> "1000118"  [ label = "DDG: s"] 
+  "1000113" -> "1000118"  [ label = "DDG: cout<<s"] 
+  "1000116" -> "1000118"  [ label = "DDG: exit(0)"] 
+  "1000113" -> "1000118"  [ label = "DDG: cout"] 
+  "1000110" -> "1000111"  [ label = "DDG: "] 
+  "1000110" -> "1000113"  [ label = "DDG: "] 
+  "1000111" -> "1000113"  [ label = "DDG: s"] 
+  "1000110" -> "1000116"  [ label = "DDG: "] 
+}

@@ -1,0 +1,13 @@
+digraph "__print" {  
+"1000203" [label = "(METHOD,__print)" ]
+"1000209" [label = "(METHOD_RETURN,void)" ]
+"1000204" [label = "(PARAM,long double x)" ]
+"1000206" [label = "(<operator>.shiftLeft,cerr << x)" ]
+  "1000204" -> "1000209"  [ label = "DDG: x"] 
+  "1000206" -> "1000209"  [ label = "DDG: x"] 
+  "1000206" -> "1000209"  [ label = "DDG: cerr << x"] 
+  "1000206" -> "1000209"  [ label = "DDG: cerr"] 
+  "1000203" -> "1000204"  [ label = "DDG: "] 
+  "1000203" -> "1000206"  [ label = "DDG: "] 
+  "1000204" -> "1000206"  [ label = "DDG: x"] 
+}

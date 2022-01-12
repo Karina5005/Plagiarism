@@ -1,0 +1,14 @@
+digraph "operator*" {  
+"1000193" [label = "(METHOD,operator*)" ]
+"1000201" [label = "(METHOD_RETURN,modint)" ]
+"1000194" [label = "(PARAM,const modint a)" ]
+"1000197" [label = "(RETURN,return res*=a;,return res*=a;)" ]
+"1000198" [label = "(<operator>.assignmentMultiplication,res*=a)" ]
+  "1000197" -> "1000201"  [ label = "DDG: <RET>"] 
+  "1000194" -> "1000201"  [ label = "DDG: a"] 
+  "1000198" -> "1000201"  [ label = "DDG: res"] 
+  "1000198" -> "1000201"  [ label = "DDG: a"] 
+  "1000193" -> "1000194"  [ label = "DDG: "] 
+  "1000194" -> "1000198"  [ label = "DDG: a"] 
+  "1000193" -> "1000198"  [ label = "DDG: "] 
+}

@@ -1,0 +1,16 @@
+digraph "setIO" {  
+"1000101" [label = "(METHOD,setIO)" ]
+"1000109" [label = "(METHOD_RETURN,void)" ]
+"1000103" [label = "(ios_base::sync_with_stdio,ios_base::sync_with_stdio(false))" ]
+"1000105" [label = "(cin.tie,cin.tie(nullptr))" ]
+"1000107" [label = "(cout.tie,cout.tie(nullptr))" ]
+  "1000103" -> "1000109"  [ label = "DDG: ios_base::sync_with_stdio(false)"] 
+  "1000105" -> "1000109"  [ label = "DDG: cin.tie(nullptr)"] 
+  "1000107" -> "1000109"  [ label = "DDG: nullptr"] 
+  "1000107" -> "1000109"  [ label = "DDG: cout.tie(nullptr)"] 
+  "1000103" -> "1000109"  [ label = "DDG: false"] 
+  "1000101" -> "1000103"  [ label = "DDG: "] 
+  "1000101" -> "1000105"  [ label = "DDG: "] 
+  "1000105" -> "1000107"  [ label = "DDG: nullptr"] 
+  "1000101" -> "1000107"  [ label = "DDG: "] 
+}

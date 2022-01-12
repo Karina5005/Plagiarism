@@ -1,0 +1,10 @@
+digraph "to_string" {  
+"1000118" [label = "(METHOD,to_string)" ]
+"1000124" [label = "(METHOD_RETURN,string)" ]
+"1000119" [label = "(PARAM,char t)" ]
+"1000122" [label = "(<operator>.plus,+ \"&#39;\")" ]
+  "1000119" -> "1000124"  [ label = "DDG: t"] 
+  "1000122" -> "1000124"  [ label = "DDG: + \"&#39;\""] 
+  "1000118" -> "1000119"  [ label = "DDG: "] 
+  "1000118" -> "1000122"  [ label = "DDG: "] 
+}

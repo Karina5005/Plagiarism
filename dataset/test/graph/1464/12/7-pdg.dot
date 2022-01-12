@@ -1,0 +1,18 @@
+digraph "Node" {  
+"1000520" [label = "(METHOD,Node)" ]
+"1000532" [label = "(METHOD_RETURN,int)" ]
+"1000523" [label = "(<operator>.assignment,x = y = 0)" ]
+"1000528" [label = "(<operator>.assignment,d = -1)" ]
+"1000525" [label = "(<operator>.assignment,y = 0)" ]
+"1000530" [label = "(<operator>.minus,-1)" ]
+  "1000528" -> "1000532"  [ label = "DDG: -1"] 
+  "1000528" -> "1000532"  [ label = "DDG: d"] 
+  "1000525" -> "1000532"  [ label = "DDG: y"] 
+  "1000523" -> "1000532"  [ label = "DDG: x"] 
+  "1000530" -> "1000528"  [ label = "DDG: 1"] 
+  "1000520" -> "1000523"  [ label = "DDG: "] 
+  "1000525" -> "1000523"  [ label = "DDG: y"] 
+  "1000520" -> "1000528"  [ label = "DDG: "] 
+  "1000520" -> "1000525"  [ label = "DDG: "] 
+  "1000520" -> "1000530"  [ label = "DDG: "] 
+}

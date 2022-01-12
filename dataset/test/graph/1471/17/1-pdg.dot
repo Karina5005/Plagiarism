@@ -1,0 +1,14 @@
+digraph "init_code" {  
+"1000140" [label = "(METHOD,init_code)" ]
+"1000151" [label = "(METHOD_RETURN,void)" ]
+"1000142" [label = "(IDENTIFIER,fast_io,)" ]
+"1000143" [label = "(freopen,freopen(\"input.txt\", \"r\", stdin))" ]
+"1000147" [label = "(freopen,freopen(\"output.txt\", \"w\", stdout))" ]
+  "1000143" -> "1000151"  [ label = "DDG: freopen(\"input.txt\", \"r\", stdin)"] 
+  "1000147" -> "1000151"  [ label = "DDG: freopen(\"output.txt\", \"w\", stdout)"] 
+  "1000147" -> "1000151"  [ label = "DDG: stdout"] 
+  "1000143" -> "1000151"  [ label = "DDG: stdin"] 
+  "1000140" -> "1000142"  [ label = "DDG: "] 
+  "1000140" -> "1000143"  [ label = "DDG: "] 
+  "1000140" -> "1000147"  [ label = "DDG: "] 
+}

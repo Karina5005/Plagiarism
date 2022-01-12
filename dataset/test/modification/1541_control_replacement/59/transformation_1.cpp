@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 #include <iostream>
 #define long long int
      
@@ -7,7 +9,8 @@ void solve() {
     if(!(n%2)){
         {
         int i=1;
-        while (i<n) {
+        for ( ; i<n; ) 
+{
             std::cout << i+1 << " " << i << " ";
         	i+=2; 
         
@@ -17,7 +20,8 @@ void solve() {
         std::cout << "3 1 2 ";
         {
         int i=4;
-        while (i<n) {
+        for ( ; i<n; ) 
+{
             std::cout << i+1 << " " << i << " ";
         	i+=2; 
         
@@ -27,11 +31,12 @@ void solve() {
 }
      
 signed main() {
-    std::ios::sync_with_stdio(false);
+    
     std::cin.tie(0);
     int t = 0;
     std::cin >> t;
-    while(t--){
+    for ( ; t--; ) 
+{
         solve();
     }
 }

@@ -1,0 +1,12 @@
+digraph "my_update" {  
+"1001195" [label = "(METHOD,my_update)" ]
+"1001201" [label = "(METHOD_RETURN,int)" ]
+"1001196" [label = "(PARAM,ll val)" ]
+"1001198" [label = "(<operator>.assignment,v = val)" ]
+  "1001196" -> "1001201"  [ label = "DDG: val"] 
+  "1001198" -> "1001201"  [ label = "DDG: val"] 
+  "1001198" -> "1001201"  [ label = "DDG: v"] 
+  "1001195" -> "1001196"  [ label = "DDG: "] 
+  "1001196" -> "1001198"  [ label = "DDG: val"] 
+  "1001195" -> "1001198"  [ label = "DDG: "] 
+}

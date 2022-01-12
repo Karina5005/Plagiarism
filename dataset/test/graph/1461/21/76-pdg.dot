@@ -1,0 +1,13 @@
+digraph "input" {  
+"1001253" [label = "(METHOD,input)" ]
+"1001259" [label = "(METHOD_RETURN,void)" ]
+"1001254" [label = "(PARAM,T &&t)" ]
+"1001256" [label = "(<operator>.arithmeticShiftRight,cin>>t)" ]
+  "1001254" -> "1001259"  [ label = "DDG: t"] 
+  "1001256" -> "1001259"  [ label = "DDG: t"] 
+  "1001256" -> "1001259"  [ label = "DDG: cin>>t"] 
+  "1001256" -> "1001259"  [ label = "DDG: cin"] 
+  "1001253" -> "1001254"  [ label = "DDG: "] 
+  "1001253" -> "1001256"  [ label = "DDG: "] 
+  "1001254" -> "1001256"  [ label = "DDG: t"] 
+}

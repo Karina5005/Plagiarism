@@ -2,25 +2,25 @@
 using namespace std;
 int main()
 {
-	int pat_ce;cin>>pat_ce;
-	while(pat_ce--)
+	int dvl_y;cin>>dvl_y;
+	while(dvl_y--)
 	{
-		int rq;cin>>rq;
-		vector<long long int>udf_kku(rq);
-		long long int scm=0;
-		for(auto &uj:udf_kku)
+		int m;cin>>m;
+		vector<long long int>oa_m(m);
+		long long int qqo=0;
+		for(auto &wt:oa_m)
 		{
-			cin>>uj;
-			scm+=uj;
-			uj*=rq;
+			cin>>wt;
+			qqo+=wt;
+			wt*=m;
 		}
-		long long int diu=0;
-		map<long long int,int>xdb_dh;
-		for(auto &fp:udf_kku){
-			diu+=xdb_dh[scm-fp];
-			xdb_dh[fp-scm]++;
+		long long int au_wqh=0;
+		map<long long int,int>fz_jbw;
+		for(auto &w_hd:oa_m){
+			au_wqh+=fz_jbw[qqo-w_hd];
+			fz_jbw[w_hd-qqo]++;
 		}
-		cout<<diu<<endl;
+		cout<<au_wqh<<endl;
 	}
 	return 0;
 }

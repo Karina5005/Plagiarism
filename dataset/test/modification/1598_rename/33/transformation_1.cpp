@@ -3,18 +3,18 @@ using namespace std;
 #define ll long long
 #define mod 1000000007
 
-char p_b[2][1000];
-int k[2][1000];
+char a[2][1000];
+int lvv[2][1000];
 
-void vc_xrs()
+void agc()
 {
-    int hsw_in;
-    cin >> hsw_in;
-    string v_k[2];
-    int ziy = 0;
-    cin >> v_k[0] >> v_k[1];
-    for (int v = 0; v < hsw_in;v++) if(v_k[0][v]=='1' && v_k[1][v]=='1') ziy = 1;
-   if(ziy==0)
+    int uep_xjt;
+    cin >> uep_xjt;
+    string j_j[2];
+    int o = 0;
+    cin >> j_j[0] >> j_j[1];
+    for (int o = 0; o < uep_xjt;o++) if(j_j[0][o]=='1' && j_j[1][o]=='1') o = 1;
+   if(o==0)
        cout << "YES\n";
    else
        cout << "NO\n";
@@ -25,7 +25,7 @@ int main() {
     cin>>test;
     while(test--)
     {
-        vc_xrs();
+        agc();
     }
     return 0;
 }

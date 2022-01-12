@@ -1,0 +1,7 @@
+digraph "tie" {  
+"1000534" [label = "(METHOD,tie)" ]
+"1000537" [label = "(METHOD_RETURN,int)" ]
+"1000535" [label = "(PARAM,NULL)" ]
+  "1000535" -> "1000537"  [ label = "DDG: <anonymous>"] 
+  "1000534" -> "1000535"  [ label = "DDG: "] 
+}

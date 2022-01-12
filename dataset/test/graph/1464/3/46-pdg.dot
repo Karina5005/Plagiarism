@@ -1,0 +1,12 @@
+digraph "revrs" {  
+"1001176" [label = "(METHOD,revrs)" ]
+"1001182" [label = "(METHOD_RETURN,void)" ]
+"1001177" [label = "(PARAM,T &a)" ]
+"1001179" [label = "(reverse,reverse(a.begin(), a.end()))" ]
+  "1001177" -> "1001182"  [ label = "DDG: a"] 
+  "1001179" -> "1001182"  [ label = "DDG: a.begin()"] 
+  "1001179" -> "1001182"  [ label = "DDG: a.end()"] 
+  "1001179" -> "1001182"  [ label = "DDG: reverse(a.begin(), a.end())"] 
+  "1001176" -> "1001177"  [ label = "DDG: "] 
+  "1001176" -> "1001179"  [ label = "DDG: "] 
+}

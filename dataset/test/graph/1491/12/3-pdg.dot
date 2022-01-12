@@ -1,0 +1,10 @@
+digraph "ncr" {  
+"1000116" [label = "(METHOD,ncr)" ]
+"1000120" [label = "(METHOD_RETURN,ll)" ]
+"1000117" [label = "(PARAM,ll n)" ]
+"1000118" [label = "(PARAM,ll r)" ]
+  "1000117" -> "1000120"  [ label = "DDG: n"] 
+  "1000118" -> "1000120"  [ label = "DDG: r"] 
+  "1000116" -> "1000117"  [ label = "DDG: "] 
+  "1000116" -> "1000118"  [ label = "DDG: "] 
+}

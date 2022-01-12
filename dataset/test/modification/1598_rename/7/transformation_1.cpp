@@ -14,19 +14,19 @@ using namespace __gnu_pbds;
 template<typename T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-const ll ire_y = 1e18 + 5;
-const ll ai_q = 2e5 + 5; const ll re_zim = 1e9 + 7;
+const ll y = 1e18 + 5;
+const ll pub_be = 2e5 + 5; const ll dx = 1e9 + 7;
 
 
-void o_wa()
+void khi_beh()
 {
-    int hm;
-    cin >> hm;
-    string pte[2];
-    cin >> pte[0] >> pte[1];
-    for(int iu = 0; iu < hm; iu++)
+    int ged;
+    cin >> ged;
+    string wj[2];
+    cin >> wj[0] >> wj[1];
+    for(int mbx = 0; mbx < ged; mbx++)
     {
-        if(pte[0][iu] == '1' && pte[1][iu] == '1')
+        if(wj[0][mbx] == '1' && wj[1][mbx] == '1')
         {
             cout << "NO\n";
             return;
@@ -37,9 +37,9 @@ void o_wa()
 int main()
 {
     Zuka
-    int s_bv = 1;
-    cin >> s_bv;
-    while(s_bv--)
-        o_wa();
+    int f_ioa = 1;
+    cin >> f_ioa;
+    while(f_ioa--)
+        khi_beh();
 
 }

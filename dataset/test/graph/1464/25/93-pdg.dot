@@ -1,0 +1,14 @@
+digraph "max_right" {  
+"1003620" [label = "(METHOD,max_right)" ]
+"1003627" [label = "(METHOD_RETURN,int)" ]
+"1003621" [label = "(PARAM,int l)" ]
+"1003624" [label = "(RETURN,return g(x);,return g(x);)" ]
+"1003625" [label = "(g,g(x))" ]
+  "1003621" -> "1003627"  [ label = "DDG: l"] 
+  "1003625" -> "1003627"  [ label = "DDG: g(x)"] 
+  "1003624" -> "1003627"  [ label = "DDG: <RET>"] 
+  "1003625" -> "1003627"  [ label = "DDG: x"] 
+  "1003620" -> "1003621"  [ label = "DDG: "] 
+  "1003625" -> "1003624"  [ label = "DDG: g(x)"] 
+  "1003620" -> "1003625"  [ label = "DDG: "] 
+}

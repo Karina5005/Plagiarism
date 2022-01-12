@@ -1,0 +1,16 @@
+digraph "run" {  
+"1000172" [label = "(METHOD,run)" ]
+"1000180" [label = "(METHOD_RETURN,void)" ]
+"1000174" [label = "(ios::sync_with_stdio,ios::sync_with_stdio(false))" ]
+"1000176" [label = "(cin.tie,cin.tie(NULL))" ]
+"1000178" [label = "(cout.tie,cout.tie(NULL))" ]
+  "1000174" -> "1000180"  [ label = "DDG: ios::sync_with_stdio(false)"] 
+  "1000176" -> "1000180"  [ label = "DDG: cin.tie(NULL)"] 
+  "1000178" -> "1000180"  [ label = "DDG: NULL"] 
+  "1000178" -> "1000180"  [ label = "DDG: cout.tie(NULL)"] 
+  "1000174" -> "1000180"  [ label = "DDG: false"] 
+  "1000172" -> "1000174"  [ label = "DDG: "] 
+  "1000172" -> "1000176"  [ label = "DDG: "] 
+  "1000176" -> "1000178"  [ label = "DDG: NULL"] 
+  "1000172" -> "1000178"  [ label = "DDG: "] 
+}

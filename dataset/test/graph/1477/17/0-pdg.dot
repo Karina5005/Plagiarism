@@ -1,0 +1,10 @@
+digraph "power" {  
+"1000149" [label = "(METHOD,power)" ]
+"1000153" [label = "(METHOD_RETURN,int)" ]
+"1000150" [label = "(PARAM,int a)" ]
+"1000151" [label = "(PARAM,int n)" ]
+  "1000150" -> "1000153"  [ label = "DDG: a"] 
+  "1000151" -> "1000153"  [ label = "DDG: n"] 
+  "1000149" -> "1000150"  [ label = "DDG: "] 
+  "1000149" -> "1000151"  [ label = "DDG: "] 
+}

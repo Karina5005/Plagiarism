@@ -1,16 +1,20 @@
+#include <iomanip>
+#include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
 int t;
 cin>>t;
-while(t--){
+for ( ; t--; ) 
+{
 	int n;
 	cin>>n;
 	if(!(n%2==0)){
 	cout<<"3 1 2 ";
 	{
 	int i=4;
-	while (i<=n) {
+	for ( ; i<=n; ) 
+{
 	cout<< i+1<<" "<<i<<' ';
 	i+=2; 
 	
@@ -19,7 +23,8 @@ while(t--){
 	else{
 		{
 		int i=1;
-		while (i<=n) {
+		for ( ; i<=n; ) 
+{
 		cout<<i+1<<" "<<i<<" ";
 		i+=2; 
 		

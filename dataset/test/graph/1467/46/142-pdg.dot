@@ -1,0 +1,16 @@
+digraph "operator +" {  
+"1002360" [label = "(METHOD,operator +)" ]
+"1002367" [label = "(METHOD_RETURN,Int)" ]
+"1002361" [label = "(PARAM,const int& rhs)" ]
+"1002363" [label = "(RETURN,return sum(val, rhs);,return sum(val, rhs);)" ]
+"1002364" [label = "(sum,sum(val, rhs))" ]
+  "1002361" -> "1002367"  [ label = "DDG: rhs"] 
+  "1002364" -> "1002367"  [ label = "DDG: rhs"] 
+  "1002364" -> "1002367"  [ label = "DDG: sum(val, rhs)"] 
+  "1002363" -> "1002367"  [ label = "DDG: <RET>"] 
+  "1002364" -> "1002367"  [ label = "DDG: val"] 
+  "1002360" -> "1002361"  [ label = "DDG: "] 
+  "1002364" -> "1002363"  [ label = "DDG: sum(val, rhs)"] 
+  "1002360" -> "1002364"  [ label = "DDG: "] 
+  "1002361" -> "1002364"  [ label = "DDG: rhs"] 
+}

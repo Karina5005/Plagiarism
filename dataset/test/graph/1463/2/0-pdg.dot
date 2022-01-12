@@ -1,0 +1,13 @@
+digraph "__print" {  
+"1000101" [label = "(METHOD,__print)" ]
+"1000107" [label = "(METHOD_RETURN,pragma region Debugger\nvoid)" ]
+"1000102" [label = "(PARAM,int x)" ]
+"1000104" [label = "(<operator>.shiftLeft,cerr << x)" ]
+  "1000102" -> "1000107"  [ label = "DDG: x"] 
+  "1000104" -> "1000107"  [ label = "DDG: x"] 
+  "1000104" -> "1000107"  [ label = "DDG: cerr << x"] 
+  "1000104" -> "1000107"  [ label = "DDG: cerr"] 
+  "1000101" -> "1000102"  [ label = "DDG: "] 
+  "1000101" -> "1000104"  [ label = "DDG: "] 
+  "1000102" -> "1000104"  [ label = "DDG: x"] 
+}

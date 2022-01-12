@@ -1,0 +1,13 @@
+digraph "_1" {  
+"1001628" [label = "(METHOD,_1)" ]
+"1001634" [label = "(METHOD_RETURN,inline LL)" ]
+"1001629" [label = "(PARAM,int i)" ]
+"1001631" [label = "(<operator>.shiftLeft,L<<i)" ]
+  "1001629" -> "1001634"  [ label = "DDG: i"] 
+  "1001631" -> "1001634"  [ label = "DDG: i"] 
+  "1001631" -> "1001634"  [ label = "DDG: L<<i"] 
+  "1001631" -> "1001634"  [ label = "DDG: L"] 
+  "1001628" -> "1001629"  [ label = "DDG: "] 
+  "1001628" -> "1001631"  [ label = "DDG: "] 
+  "1001629" -> "1001631"  [ label = "DDG: i"] 
+}

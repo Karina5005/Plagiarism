@@ -24,56 +24,56 @@ typedef     map<ll, ll>             mll;
 typedef     unordered_map<ll, ll>   umll;
 typedef     multimap<ll, ll>        mmll;
 
-const ll z_btl = 1e9+7;
-const ll vjx_bw  = 2e5+5;
+const ll ai = 1e9+7;
+const ll ddk  = 2e5+5;
 
-set<ll> o_but;
-set<ll> auo_dy[vjx_bw];
+set<ll> j;
+set<ll> sdd_oyq[ddk];
 
-void g(ll h) {
-    if(auo_dy[h].empty() or h > *auo_dy[h].rbegin()) {
-        o_but.insert(h);
+void tj_ccb(ll y) {
+    if(sdd_oyq[y].empty() or y > *sdd_oyq[y].rbegin()) {
+        j.insert(y);
     }
     else {
-        o_but.erase(h);
+        j.erase(y);
     }
 }
 
-void gaz_qdk(ll fl, ll pnu_al) {
-    auo_dy[fl].insert(pnu_al);
-    auo_dy[pnu_al].insert(fl);
-    g(fl);
-    g(pnu_al);
+void pub_be(ll dx, ll khi_beh) {
+    sdd_oyq[dx].insert(khi_beh);
+    sdd_oyq[khi_beh].insert(dx);
+    tj_ccb(dx);
+    tj_ccb(khi_beh);
 }
-void xo(ll nff, ll t_tay) {
-    auo_dy[t_tay].erase(nff);
-    auo_dy[nff].erase(t_tay);
-    g(nff);
-    g(t_tay);
+void ged(ll wj, ll mbx) {
+    sdd_oyq[mbx].erase(wj);
+    sdd_oyq[wj].erase(mbx);
+    tj_ccb(wj);
+    tj_ccb(mbx);
 }
 
 
 
-void ilx() {
-    ll ire_y, ai_q; cin>> ire_y>>ai_q;
-    For(i, 1, n + 1) o_but.insert(i);
+void f_ioa() {
+    ll nv_i, d_o; cin>> nv_i>>d_o;
+    For(i, 1, n + 1) j.insert(i);
     For(i, 0, m) {
-        ll re_zim, o_wa; cin>>re_zim>>o_wa;
-        gaz_qdk(re_zim, o_wa);
+        ll ouz_h, v_v; cin>>ouz_h>>v_v;
+        pub_be(ouz_h, v_v);
     }
-    ll hm; cin>>hm;
-    while(hm --) {
-        ll pte, iu, s_bv; cin>>pte;
-        if(pte == 3) {
-            cout<< o_but.size() <<endl;
+    ll av; cin>>av;
+    while(av --) {
+        ll z_btl, vjx_bw, o_but; cin>>z_btl;
+        if(z_btl == 3) {
+            cout<< j.size() <<endl;
         }
-        else if(pte == 1) {
-            cin>>iu>>s_bv;
-            gaz_qdk(iu, s_bv);
+        else if(z_btl == 1) {
+            cin>>vjx_bw>>o_but;
+            pub_be(vjx_bw, o_but);
         }
-        else if(pte == 2) {
-            cin>>iu>>s_bv;
-            xo(iu, s_bv);
+        else if(z_btl == 2) {
+            cin>>vjx_bw>>o_but;
+            ged(vjx_bw, o_but);
         }
     }
 
@@ -83,11 +83,11 @@ void ilx() {
 int32_t main()
 {
     fastIO
-    ll g; g = 1;
+    ll auo_dy; auo_dy = 1;
 
     //cin>>T;
-    while(g --) {
-        ilx();
+    while(auo_dy --) {
+        f_ioa();
 
     }
 

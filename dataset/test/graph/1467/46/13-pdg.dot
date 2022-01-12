@@ -1,0 +1,11 @@
+digraph "RDD" {  
+"1000264" [label = "(METHOD,RDD)" ]
+"1000270" [label = "(METHOD_RETURN,inline LL)" ]
+"1000267" [label = "(RETURN,return RDD(x);,return RDD(x);)" ]
+"1000268" [label = "(RDD,RDD(x))" ]
+  "1000267" -> "1000270"  [ label = "DDG: <RET>"] 
+  "1000268" -> "1000270"  [ label = "DDG: x"] 
+  "1000268" -> "1000270"  [ label = "DDG: RDD(x)"] 
+  "1000268" -> "1000267"  [ label = "DDG: RDD(x)"] 
+  "1000264" -> "1000268"  [ label = "DDG: "] 
+}

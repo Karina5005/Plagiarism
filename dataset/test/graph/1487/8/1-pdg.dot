@@ -1,0 +1,13 @@
+digraph "SIZE" {  
+"1000110" [label = "(METHOD,SIZE)" ]
+"1000115" [label = "(METHOD_RETURN,int)" ]
+"1000111" [label = "(PARAM,const T &t)" ]
+"1000113" [label = "(RETURN,return t.size();,return t.size();)" ]
+"1000114" [label = "(t.size,t.size())" ]
+  "1000113" -> "1000115"  [ label = "DDG: <RET>"] 
+  "1000111" -> "1000115"  [ label = "DDG: t"] 
+  "1000114" -> "1000115"  [ label = "DDG: t.size()"] 
+  "1000110" -> "1000111"  [ label = "DDG: "] 
+  "1000114" -> "1000113"  [ label = "DDG: t.size()"] 
+  "1000110" -> "1000114"  [ label = "DDG: "] 
+}

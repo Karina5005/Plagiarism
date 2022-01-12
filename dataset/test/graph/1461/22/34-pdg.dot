@@ -1,0 +1,10 @@
+digraph "abs" {  
+"1000683" [label = "(METHOD,abs)" ]
+"1000690" [label = "(METHOD_RETURN,friend const Type&)" ]
+"1000684" [label = "(PARAM,const Modular& x)" ]
+"1000686" [label = "(RETURN,return x.value;,return x.value;)" ]
+  "1000686" -> "1000690"  [ label = "DDG: <RET>"] 
+  "1000684" -> "1000690"  [ label = "DDG: x"] 
+  "1000683" -> "1000684"  [ label = "DDG: "] 
+  "1000684" -> "1000686"  [ label = "DDG: x"] 
+}

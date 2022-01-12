@@ -32,27 +32,27 @@ using namespace std;
 #define pii   pair<int,int>
 #define take(a,n)  for(int i=0;i<n;i++) cin>>a[i];
 
-void l(){
-    int wn;
-    cin>>wn;
-    int ih=0;
-   if(wn%2==1){
+void dx(){
+    int khi_beh;
+    cin>>khi_beh;
+    int ged=0;
+   if(khi_beh%2==1){
     cout<<3<<" "<<1<<" "<<2<<" ";
-    ih=3; 
+    ged=3; 
    }
-   while(ih<wn){
-    cout<<ih+2<<" "<<ih+1<<" ";
-    ih+=2;
+   while(ged<khi_beh){
+    cout<<ged+2<<" "<<ged+1<<" ";
+    ged+=2;
    }cout<<endl;
 
 }
 
 
 int main(){
-int dcd;
-cin>>dcd;
-while(dcd--){
-    l();
+int wj;
+cin>>wj;
+while(wj--){
+    dx();
 }
 return 0;
 }

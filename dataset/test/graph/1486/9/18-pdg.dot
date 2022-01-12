@@ -1,0 +1,17 @@
+digraph "print" {  
+"1000250" [label = "(METHOD,print)" ]
+"1000259" [label = "(METHOD_RETURN,void)" ]
+"1000251" [label = "(PARAM,vt<T> x)" ]
+"1000258" [label = "(print,print())" ]
+"1000254" [label = "(write,write(i))" ]
+"1000256" [label = "(write,write(\" \"))" ]
+  "1000251" -> "1000259"  [ label = "DDG: x"] 
+  "1000254" -> "1000259"  [ label = "DDG: write(i)"] 
+  "1000256" -> "1000259"  [ label = "DDG: write(\" \")"] 
+  "1000258" -> "1000259"  [ label = "DDG: print()"] 
+  "1000254" -> "1000259"  [ label = "DDG: i"] 
+  "1000250" -> "1000251"  [ label = "DDG: "] 
+  "1000250" -> "1000258"  [ label = "DDG: "] 
+  "1000250" -> "1000254"  [ label = "DDG: "] 
+  "1000250" -> "1000256"  [ label = "DDG: "] 
+}

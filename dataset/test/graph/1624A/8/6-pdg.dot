@@ -1,0 +1,10 @@
+digraph "swap" {  
+"1000275" [label = "(METHOD,swap)" ]
+"1000279" [label = "(METHOD_RETURN,int)" ]
+"1000276" [label = "(PARAM,a)" ]
+"1000277" [label = "(PARAM,b)" ]
+  "1000276" -> "1000279"  [ label = "DDG: <anonymous>"] 
+  "1000277" -> "1000279"  [ label = "DDG: <anonymous>"] 
+  "1000275" -> "1000276"  [ label = "DDG: "] 
+  "1000275" -> "1000277"  [ label = "DDG: "] 
+}

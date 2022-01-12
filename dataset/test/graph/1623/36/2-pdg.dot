@@ -1,0 +1,12 @@
+digraph "inp_out" {  
+"1000177" [label = "(METHOD,inp_out)" ]
+"1000187" [label = "(METHOD_RETURN,void)" ]
+"1000179" [label = "(freopen,freopen(\"input.txt\", \"r\", stdin))" ]
+"1000183" [label = "(freopen,freopen(\"output.txt\", \"w\", stdout))" ]
+  "1000179" -> "1000187"  [ label = "DDG: freopen(\"input.txt\", \"r\", stdin)"] 
+  "1000183" -> "1000187"  [ label = "DDG: freopen(\"output.txt\", \"w\", stdout)"] 
+  "1000183" -> "1000187"  [ label = "DDG: stdout"] 
+  "1000179" -> "1000187"  [ label = "DDG: stdin"] 
+  "1000177" -> "1000179"  [ label = "DDG: "] 
+  "1000177" -> "1000183"  [ label = "DDG: "] 
+}

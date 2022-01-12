@@ -1,0 +1,7 @@
+digraph "BIT" {  
+"1000128" [label = "(METHOD,BIT)" ]
+"1000131" [label = "(METHOD_RETURN,int)" ]
+"1000129" [label = "(PARAM,ll M)" ]
+  "1000129" -> "1000131"  [ label = "DDG: M"] 
+  "1000128" -> "1000129"  [ label = "DDG: "] 
+}

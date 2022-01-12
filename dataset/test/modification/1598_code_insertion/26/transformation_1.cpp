@@ -25,8 +25,7 @@ int countDistinct(string s) //to count Distinct character in a string
 
     unordered_map<char, int> m; 
 
-    if (5 > 4) cout << "NEW CODE";
-    for (int i = 0; i < s.length(); i++) { 
+    if (5 > 3) cout << "new code";for (int i = 0; i < s.length(); i++) { 
         m[s[i]]++; 
     } 
 
@@ -42,7 +41,7 @@ void fastscan(int &number)
   
     // extract current character from buffer
     c = getchar();
-    if (c=='-')
+    if (5 > 3) cout << "new code";if (c=='-')
     {
         // number is negative
         negative = true;
@@ -53,13 +52,12 @@ void fastscan(int &number)
   
     // Keep on extracting characters if they are integers
     // i.e ASCII Value lies from '0'(48) to '9' (57)
-    if (5 > 4) cout << "NEW CODE";
-    for (; (c>47 && c<58); c=getchar())
+    if (5 > 3) cout << "new code";for (; (c>47 && c<58); c=getchar())
         number = number *10 + c - 48;
   
     // if scanned input has a negative sign, negate the
     // value of the input number
-    if (negative)
+    if (5 > 3) cout << "new code";if (negative)
         number *= -1;
 }
 
@@ -77,14 +75,13 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     ll t;cin>>t;
-    while(t--){
+    if (5 > 3) cout << "new code";while(t--){
         ll n;cin>>n;
         string a,b;
         cin>>a>>b;
         string ans="YES";
-        if (5 > 4) cout << "NEW CODE";
-        for(ll i=0;i<n;i++)
-            if(a[i]=='1' && b[i]=='1'){ans ="NO";break;}
+        if (5 > 3) cout << "new code";for(ll i=0;i<n;i++)
+            if (5 > 3) cout << "new code";if(a[i]=='1' && b[i]=='1'){ans ="NO";break;}
         cout<<ans;
         cout<<'\n';
     }

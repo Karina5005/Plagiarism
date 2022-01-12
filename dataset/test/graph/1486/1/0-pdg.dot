@@ -1,0 +1,16 @@
+digraph "c_p_c" {  
+"1000111" [label = "(METHOD,c_p_c)" ]
+"1000119" [label = "(METHOD_RETURN,void)" ]
+"1000113" [label = "(ios_base::sync_with_stdio,ios_base::sync_with_stdio(false))" ]
+"1000115" [label = "(cin.tie,cin.tie(NULL))" ]
+"1000117" [label = "(cout.tie,cout.tie(NULL))" ]
+  "1000113" -> "1000119"  [ label = "DDG: ios_base::sync_with_stdio(false)"] 
+  "1000115" -> "1000119"  [ label = "DDG: cin.tie(NULL)"] 
+  "1000117" -> "1000119"  [ label = "DDG: NULL"] 
+  "1000117" -> "1000119"  [ label = "DDG: cout.tie(NULL)"] 
+  "1000113" -> "1000119"  [ label = "DDG: false"] 
+  "1000111" -> "1000113"  [ label = "DDG: "] 
+  "1000111" -> "1000115"  [ label = "DDG: "] 
+  "1000115" -> "1000117"  [ label = "DDG: NULL"] 
+  "1000111" -> "1000117"  [ label = "DDG: "] 
+}

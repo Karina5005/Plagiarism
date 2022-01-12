@@ -1,0 +1,13 @@
+digraph "check" {  
+"1000903" [label = "(METHOD,check)" ]
+"1000908" [label = "(METHOD_RETURN,bool)" ]
+"1000904" [label = "(PARAM,ll mid)" ]
+"1000906" [label = "(RETURN,return 1;,return 1;)" ]
+"1000907" [label = "(LITERAL,1,return 1;)" ]
+  "1000904" -> "1000908"  [ label = "DDG: mid"] 
+  "1000906" -> "1000908"  [ label = "DDG: <RET>"] 
+  "1000903" -> "1000904"  [ label = "DDG: "] 
+  "1000907" -> "1000906"  [ label = "DDG: 1"] 
+  "1000903" -> "1000906"  [ label = "DDG: "] 
+  "1000903" -> "1000907"  [ label = "DDG: "] 
+}

@@ -1,0 +1,14 @@
+digraph "add" {  
+"1000163" [label = "(METHOD,add)" ]
+"1000173" [label = "(METHOD_RETURN,void)" ]
+"1000164" [label = "(PARAM,int u)" ]
+"1000165" [label = "(PARAM,int v)" ]
+"1000168" [label = "(<operator>.assignment,head[u] = tot)" ]
+  "1000164" -> "1000173"  [ label = "DDG: u"] 
+  "1000165" -> "1000173"  [ label = "DDG: v"] 
+  "1000168" -> "1000173"  [ label = "DDG: head[u]"] 
+  "1000168" -> "1000173"  [ label = "DDG: tot"] 
+  "1000163" -> "1000164"  [ label = "DDG: "] 
+  "1000163" -> "1000165"  [ label = "DDG: "] 
+  "1000163" -> "1000168"  [ label = "DDG: "] 
+}

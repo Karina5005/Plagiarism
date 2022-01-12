@@ -1,0 +1,9 @@
+digraph "operator--" {  
+"1000552" [label = "(METHOD,operator--)" ]
+"1000559" [label = "(METHOD_RETURN,Modular&)" ]
+"1000554" [label = "(RETURN,return *this -= 1;,return *this -= 1;)" ]
+"1000555" [label = "(<operator>.assignmentMinus,*this -= 1)" ]
+  "1000554" -> "1000559"  [ label = "DDG: <RET>"] 
+  "1000555" -> "1000559"  [ label = "DDG: *this"] 
+  "1000552" -> "1000555"  [ label = "DDG: "] 
+}

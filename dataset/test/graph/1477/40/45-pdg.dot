@@ -1,0 +1,12 @@
+digraph "my_node" {  
+"1001169" [label = "(METHOD,my_node)" ]
+"1001175" [label = "(METHOD_RETURN,int)" ]
+"1001170" [label = "(PARAM,int val)" ]
+"1001172" [label = "(<operator>.assignment,mn = val)" ]
+  "1001170" -> "1001175"  [ label = "DDG: val"] 
+  "1001172" -> "1001175"  [ label = "DDG: val"] 
+  "1001172" -> "1001175"  [ label = "DDG: mn"] 
+  "1001169" -> "1001170"  [ label = "DDG: "] 
+  "1001170" -> "1001172"  [ label = "DDG: val"] 
+  "1001169" -> "1001172"  [ label = "DDG: "] 
+}

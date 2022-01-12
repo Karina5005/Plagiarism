@@ -1,0 +1,16 @@
+digraph "operator==" {  
+"1001069" [label = "(METHOD,operator==)" ]
+"1001078" [label = "(METHOD_RETURN,bool)" ]
+"1001070" [label = "(PARAM,const Mint &other)" ]
+"1001072" [label = "(RETURN,return val == other.val;,return val == other.val;)" ]
+"1001073" [label = "(<operator>.equals,val == other.val)" ]
+  "1001070" -> "1001078"  [ label = "DDG: other"] 
+  "1001073" -> "1001078"  [ label = "DDG: other.val"] 
+  "1001073" -> "1001078"  [ label = "DDG: val == other.val"] 
+  "1001072" -> "1001078"  [ label = "DDG: <RET>"] 
+  "1001073" -> "1001078"  [ label = "DDG: val"] 
+  "1001069" -> "1001070"  [ label = "DDG: "] 
+  "1001073" -> "1001072"  [ label = "DDG: val == other.val"] 
+  "1001069" -> "1001073"  [ label = "DDG: "] 
+  "1001070" -> "1001073"  [ label = "DDG: other"] 
+}

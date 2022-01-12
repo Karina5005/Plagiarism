@@ -1,0 +1,7 @@
+digraph "_it" {  
+"1000140" [label = "(METHOD,_it)" ]
+"1000143" [label = "(METHOD_RETURN,istream_iterator<string>)" ]
+"1000141" [label = "(PARAM,_ss)" ]
+  "1000141" -> "1000143"  [ label = "DDG: <anonymous>"] 
+  "1000140" -> "1000141"  [ label = "DDG: "] 
+}

@@ -1,0 +1,18 @@
+digraph "upd" {  
+"1000300" [label = "(METHOD,upd)" ]
+"1000310" [label = "(METHOD_RETURN,void)" ]
+"1000301" [label = "(PARAM,int q)" ]
+"1000302" [label = "(PARAM,int x)" ]
+"1000304" [label = "(upd,upd(1, 0, S, q, x))" ]
+  "1000301" -> "1000310"  [ label = "DDG: q"] 
+  "1000302" -> "1000310"  [ label = "DDG: x"] 
+  "1000304" -> "1000310"  [ label = "DDG: q"] 
+  "1000304" -> "1000310"  [ label = "DDG: x"] 
+  "1000304" -> "1000310"  [ label = "DDG: upd(1, 0, S, q, x)"] 
+  "1000304" -> "1000310"  [ label = "DDG: S"] 
+  "1000300" -> "1000301"  [ label = "DDG: "] 
+  "1000300" -> "1000302"  [ label = "DDG: "] 
+  "1000300" -> "1000304"  [ label = "DDG: "] 
+  "1000301" -> "1000304"  [ label = "DDG: q"] 
+  "1000302" -> "1000304"  [ label = "DDG: x"] 
+}

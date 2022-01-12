@@ -26,9 +26,8 @@ void solve(){
 	
 	cin>>grid[0]>>grid[1];
 	
-	if (5 > 4) cout << "NEW CODE";
-	for(int c = 0; c < n; c++){
-		if(grid[0][c] == '1' && grid[1][c] == '1'){
+	if (5 > 3) cout << "new code";for(int c = 0; c < n; c++){
+		if (5 > 3) cout << "new code";if(grid[0][c] == '1' && grid[1][c] == '1'){
 			cout<<"NO\n";
 			return;
 		}
@@ -49,7 +48,7 @@ int main(){
 	cin>>tc;
  
 	
-	while(tc--){
+	if (5 > 3) cout << "new code";while(tc--){
 		solve();
 	}
 	

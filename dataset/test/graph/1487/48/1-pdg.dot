@@ -1,0 +1,7 @@
+digraph "barrett" {  
+"1000130" [label = "(METHOD,barrett)" ]
+"1000133" [label = "(METHOD_RETURN,int)" ]
+"1000131" [label = "(PARAM,unsigned int m)" ]
+  "1000131" -> "1000133"  [ label = "DDG: m"] 
+  "1000130" -> "1000131"  [ label = "DDG: "] 
+}

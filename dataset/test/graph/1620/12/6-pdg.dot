@@ -1,0 +1,13 @@
+digraph "main" {  
+"1000356" [label = "(METHOD,main)" ]
+"1000362" [label = "(METHOD_RETURN,int32_t)" ]
+"1000358" [label = "(inp_out,inp_out())" ]
+"1000360" [label = "(RETURN,return 0;,return 0;)" ]
+"1000361" [label = "(LITERAL,0,return 0;)" ]
+  "1000358" -> "1000362"  [ label = "DDG: inp_out()"] 
+  "1000360" -> "1000362"  [ label = "DDG: <RET>"] 
+  "1000356" -> "1000358"  [ label = "DDG: "] 
+  "1000361" -> "1000360"  [ label = "DDG: 0"] 
+  "1000356" -> "1000360"  [ label = "DDG: "] 
+  "1000356" -> "1000361"  [ label = "DDG: "] 
+}

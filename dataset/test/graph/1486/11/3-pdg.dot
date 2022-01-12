@@ -1,0 +1,15 @@
+digraph "pw" {  
+"1000146" [label = "(METHOD,pw)" ]
+"1000153" [label = "(METHOD_RETURN,inline T)" ]
+"1000147" [label = "(PARAM,T x)" ]
+"1000149" [label = "(RETURN,return x*x;,return x*x;)" ]
+"1000150" [label = "(<operator>.multiplication,x*x)" ]
+  "1000147" -> "1000153"  [ label = "DDG: x"] 
+  "1000150" -> "1000153"  [ label = "DDG: x"] 
+  "1000150" -> "1000153"  [ label = "DDG: x*x"] 
+  "1000149" -> "1000153"  [ label = "DDG: <RET>"] 
+  "1000146" -> "1000147"  [ label = "DDG: "] 
+  "1000150" -> "1000149"  [ label = "DDG: x*x"] 
+  "1000147" -> "1000150"  [ label = "DDG: x"] 
+  "1000146" -> "1000150"  [ label = "DDG: "] 
+}

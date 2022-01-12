@@ -1,0 +1,10 @@
+digraph "binexp" {  
+"1000106" [label = "(METHOD,binexp)" ]
+"1000110" [label = "(METHOD_RETURN,ll)" ]
+"1000107" [label = "(PARAM,ll a)" ]
+"1000108" [label = "(PARAM,ll b)" ]
+  "1000107" -> "1000110"  [ label = "DDG: a"] 
+  "1000108" -> "1000110"  [ label = "DDG: b"] 
+  "1000106" -> "1000107"  [ label = "DDG: "] 
+  "1000106" -> "1000108"  [ label = "DDG: "] 
+}

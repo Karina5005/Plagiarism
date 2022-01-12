@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>#define ll int64_t#define ff first#define ss second#define forn(i, n) for (int i = 1; i <= int(n); i++)#define all(a) a.begin(), a.end()using namespace std;#include <ext/pb_ds/assoc_container.hpp>#include <ext/pb_ds/tree_policy.hpp>using namespace __gnu_pbds;template <class T> using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update >; ll MOD=1e9+7 ;const int MAXN=1e7;ll mod(ll a){return ((a%MOD)+MOD)%MOD;}ll add(ll x,ll y){return mod(mod(x)+mod(y));}ll mul(ll x,ll y){return mod(mod(x)*mod(y));}ll binpow(ll a, ll b,ll m) {a %= m;ll res = 1;while (b > 0) {/* 'if' begin */
+if (b & 1)/* 'if' inside */
+res = res * a % m;a = a * a % m;b >>= 1;}return res;}ll fact(ll n){ll num=1;for(ll i=1;i<=n;i++)/* 'for' inside */
+{num=mul(num,i);mod(num);}return num;}ll ncr(ll n,ll r){ll fn=fact(n);ll rn=mod(fact(r)*fact(n-r));return mod(fn*binpow(rn,MOD-2,MOD));}ll inv(ll a){return binpow(a,MOD-2,MOD);}bool isPowTwo(ll n){return (n>0)&&((n&(-n))==n);}bool comp(vector<ll>v1,vector<ll>v2){    /* 'if' begin */
+    if(v1[0]<v2[0])        /* 'if' inside */
+        return true;    return v1[1]>v2[1];}int dx[]={0,0,1,-1};int dy[]={1,-1,0,0};bool val(int i,int j,int n,int m){    return (i>=0&&i<n&&j>=0&&j<m);}int arr[]={11,111,1111,11111,111111,1111111,11111111,111111111};bool helper(int i,ll n){    /* 'if' begin */
+    if(i<0||n<0)        /* 'if' inside */
+        return false;    /* 'if' begin */
+    if(n==0)        /* 'if' inside */
+        return true;    return helper(i,n-arr[i])||helper(i-1,n-arr[i])||helper(i-1,n);}void test(){    int n;    cin>>n;    helper(7,n)==true?cout<<"YES\n":cout<<"NO\n";}int32_t main() {    #ifndef ONLINE_JUDGE    freopen("input.txt","r",stdin);    freopen("output.txt","w",stdout);    #endif    ios_base::sync_with_stdio(false);    cin.tie(NULL);    int t;    cin>>t;    while(t--){        test();    }    return 0;}

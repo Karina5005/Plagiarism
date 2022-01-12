@@ -1,0 +1,7 @@
+digraph "dsu" {  
+"1002837" [label = "(METHOD,dsu)" ]
+"1002840" [label = "(METHOD_RETURN,int)" ]
+"1002838" [label = "(PARAM,int n)" ]
+  "1002838" -> "1002840"  [ label = "DDG: n"] 
+  "1002837" -> "1002838"  [ label = "DDG: "] 
+}

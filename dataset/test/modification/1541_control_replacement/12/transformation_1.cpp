@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 #include<bits/stdc++.h>
  
 // #include<ext/pb_ds/assoc_container.hpp>
@@ -40,7 +42,8 @@ void shakti(){
     cout<<3<<" "<<1<<" "<<2<<" ";
     i=3; 
    }
-   while(i<n){
+   for ( ; i<n; ) 
+{
     cout<<i+2<<" "<<i+1<<" ";
     i+=2;
    }cout<<endl;
@@ -51,7 +54,8 @@ void shakti(){
 int main(){
 int t;
 cin>>t;
-while(t--){
+for ( ; t--; ) 
+{
     shakti();
 }
 return 0;

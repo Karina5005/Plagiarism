@@ -1,0 +1,14 @@
+digraph "to_string" {  
+"1000994" [label = "(METHOD,to_string)" ]
+"1001000" [label = "(METHOD_RETURN,string)" ]
+"1000995" [label = "(PARAM,const Modular<T>& number)" ]
+"1000997" [label = "(RETURN,return to_string(number());,return to_string(number());)" ]
+"1000998" [label = "(to_string,to_string(number()))" ]
+  "1000997" -> "1001000"  [ label = "DDG: <RET>"] 
+  "1000995" -> "1001000"  [ label = "DDG: number"] 
+  "1000998" -> "1001000"  [ label = "DDG: number()"] 
+  "1000998" -> "1001000"  [ label = "DDG: to_string(number())"] 
+  "1000994" -> "1000995"  [ label = "DDG: "] 
+  "1000998" -> "1000997"  [ label = "DDG: to_string(number())"] 
+  "1000994" -> "1000998"  [ label = "DDG: "] 
+}

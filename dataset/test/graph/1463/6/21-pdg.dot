@@ -1,0 +1,7 @@
+digraph "col" {  
+"1000295" [label = "(METHOD,col)" ]
+"1000298" [label = "(METHOD_RETURN,vll)" ]
+"1000296" [label = "(PARAM,N)" ]
+  "1000296" -> "1000298"  [ label = "DDG: <anonymous>"] 
+  "1000295" -> "1000296"  [ label = "DDG: "] 
+}

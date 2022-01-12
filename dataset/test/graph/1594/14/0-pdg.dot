@@ -1,0 +1,9 @@
+digraph "my_dbg" {  
+"1000101" [label = "(METHOD,my_dbg)" ]
+"1000106" [label = "(METHOD_RETURN,void)" ]
+"1000103" [label = "(<operator>.shiftLeft,cout << endl)" ]
+  "1000103" -> "1000106"  [ label = "DDG: endl"] 
+  "1000103" -> "1000106"  [ label = "DDG: cout << endl"] 
+  "1000103" -> "1000106"  [ label = "DDG: cout"] 
+  "1000101" -> "1000103"  [ label = "DDG: "] 
+}

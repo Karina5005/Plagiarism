@@ -1,0 +1,5 @@
+digraph "rand" {  
+"1000128" [label = "(METHOD,rand)" ]
+"1000130" [label = "(IDENTIFIER,rng,)" ]
+  "1000128" -> "1000130"  [ label = "DDG: "] 
+}

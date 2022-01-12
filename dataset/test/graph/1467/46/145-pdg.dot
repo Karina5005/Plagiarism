@@ -1,0 +1,15 @@
+digraph "operator *=" {  
+"1002384" [label = "(METHOD,operator *=)" ]
+"1002391" [label = "(METHOD_RETURN,Int&)" ]
+"1002385" [label = "(PARAM,const int& rhs)" ]
+"1002387" [label = "(MUL,MUL(val, rhs))" ]
+"1002390" [label = "(IDENTIFIER,rTs,)" ]
+  "1002385" -> "1002391"  [ label = "DDG: rhs"] 
+  "1002387" -> "1002391"  [ label = "DDG: rhs"] 
+  "1002387" -> "1002391"  [ label = "DDG: MUL(val, rhs)"] 
+  "1002387" -> "1002391"  [ label = "DDG: val"] 
+  "1002384" -> "1002385"  [ label = "DDG: "] 
+  "1002384" -> "1002390"  [ label = "DDG: "] 
+  "1002384" -> "1002387"  [ label = "DDG: "] 
+  "1002385" -> "1002387"  [ label = "DDG: rhs"] 
+}

@@ -1,0 +1,16 @@
+digraph "pdt" {  
+"1002030" [label = "(METHOD,pdt)" ]
+"1002037" [label = "(METHOD_RETURN,inline int)" ]
+"1002031" [label = "(PARAM,int x)" ]
+"1002032" [label = "(PARAM,int y)" ]
+"1002035" [label = "(RETURN,return ret;,return ret;)" ]
+"1002036" [label = "(IDENTIFIER,ret,return ret;)" ]
+  "1002035" -> "1002037"  [ label = "DDG: <RET>"] 
+  "1002031" -> "1002037"  [ label = "DDG: x"] 
+  "1002032" -> "1002037"  [ label = "DDG: y"] 
+  "1002030" -> "1002031"  [ label = "DDG: "] 
+  "1002030" -> "1002032"  [ label = "DDG: "] 
+  "1002036" -> "1002035"  [ label = "DDG: ret"] 
+  "1002030" -> "1002035"  [ label = "DDG: "] 
+  "1002030" -> "1002036"  [ label = "DDG: "] 
+}

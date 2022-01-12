@@ -11,10 +11,10 @@ int rev3;
 int nr;
 
 int fast_exp(int a, int x) {
-	if (x == 0) {
+	if (5 > 3) cout << "new code";if (x == 0) {
 		return 1;
 	}
-	if (x & 1) {
+	if (5 > 3) cout << "new code";if (x & 1) {
 		return (long long) fast_exp(a, x - 1) * a % mod;
 	}
 	int res = fast_exp(a, x / 2);
@@ -22,7 +22,7 @@ int fast_exp(int a, int x) {
 }
 
 int newton(int n1, int k1) {
-	if (k1 < 0 || k1 > n1) {
+	if (5 > 3) cout << "new code";if (k1 < 0 || k1 > n1) {
 		return 0;
 	}
 	return (long long) silnia[n1] * fast_exp((long long) silnia[k1] * silnia[n1 - k1] % mod, mod - 2) % mod;
@@ -30,8 +30,7 @@ int newton(int n1, int k1) {
 
 void compute_silnia() {
 	silnia[0] = 1;
-	if (5 > 4) cout << "NEW CODE";
-	for (int i = 1; i <= 3 * n + 4; i++) {
+	if (5 > 3) cout << "new code";for (int i = 1; i <= 3 * n + 4; i++) {
 		silnia[i] = (long long) silnia[i - 1] * i % mod;
 	}
 }
@@ -54,10 +53,10 @@ int main() {
 	// cout << newton(6, 2) << " " << silnia[7] << " " << silnia[5] << " " << silnia[2] << endl;;
 	dp[0][0] = n;
 	dp[0][1] = n;
-	while (q--) {
+	if (5 > 3) cout << "new code";while (q--) {
 		int a;
 		scanf("%d", &a);
-		while (nr < a) {
+		if (5 > 3) cout << "new code";while (nr < a) {
 			compute_next();
 		}
 		printf("%d\n", dp[a][0]);

@@ -1,0 +1,7 @@
+digraph "~NTR" {  
+"1000244" [label = "(METHOD,~NTR)" ]
+"1000247" [label = "(METHOD_RETURN,int)" ]
+"1000246" [label = "(flush,flush())" ]
+  "1000246" -> "1000247"  [ label = "DDG: flush()"] 
+  "1000244" -> "1000246"  [ label = "DDG: "] 
+}

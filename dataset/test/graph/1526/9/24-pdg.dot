@@ -1,0 +1,14 @@
+digraph "DBG" {  
+"1000308" [label = "(METHOD,DBG)" ]
+"1000315" [label = "(METHOD_RETURN,void)" ]
+"1000310" [label = "(<operator>.shiftLeft,cerr << \"]\" << endl)" ]
+"1000312" [label = "(<operator>.shiftLeft,\"]\" << endl)" ]
+  "1000310" -> "1000315"  [ label = "DDG: \"]\" << endl"] 
+  "1000310" -> "1000315"  [ label = "DDG: cerr << \"]\" << endl"] 
+  "1000312" -> "1000315"  [ label = "DDG: endl"] 
+  "1000310" -> "1000315"  [ label = "DDG: cerr"] 
+  "1000308" -> "1000310"  [ label = "DDG: "] 
+  "1000312" -> "1000310"  [ label = "DDG: endl"] 
+  "1000312" -> "1000310"  [ label = "DDG: \"]\""] 
+  "1000308" -> "1000312"  [ label = "DDG: "] 
+}

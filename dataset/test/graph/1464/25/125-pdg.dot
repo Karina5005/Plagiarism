@@ -1,0 +1,10 @@
+digraph "flow" {  
+"1004887" [label = "(METHOD,flow)" ]
+"1004891" [label = "(METHOD_RETURN,std::pair<Cap, Cost>)" ]
+"1004888" [label = "(PARAM,int s)" ]
+"1004889" [label = "(PARAM,int t)" ]
+  "1004888" -> "1004891"  [ label = "DDG: s"] 
+  "1004889" -> "1004891"  [ label = "DDG: t"] 
+  "1004887" -> "1004888"  [ label = "DDG: "] 
+  "1004887" -> "1004889"  [ label = "DDG: "] 
+}

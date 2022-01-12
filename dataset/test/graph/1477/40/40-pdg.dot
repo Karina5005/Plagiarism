@@ -1,0 +1,11 @@
+digraph "inv" {  
+"1001089" [label = "(METHOD,inv)" ]
+"1001094" [label = "(METHOD_RETURN,Mint)" ]
+"1001091" [label = "(RETURN,return mod_inv(val);,return mod_inv(val);)" ]
+"1001092" [label = "(mod_inv,mod_inv(val))" ]
+  "1001091" -> "1001094"  [ label = "DDG: <RET>"] 
+  "1001092" -> "1001094"  [ label = "DDG: mod_inv(val)"] 
+  "1001092" -> "1001094"  [ label = "DDG: val"] 
+  "1001092" -> "1001091"  [ label = "DDG: mod_inv(val)"] 
+  "1001089" -> "1001092"  [ label = "DDG: "] 
+}

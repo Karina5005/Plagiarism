@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <iostream>
 # include <bits/stdc++.h>
 # define sz(x) (int)((x).size())
 # define f first 
@@ -31,7 +33,8 @@ void solve() {
   if (!(n & 1)) {
     {
     int i = 1;
-    while (i <= n) {
+    for ( ; i <= n; ) 
+{
       cout << i + 1 << ' ' << i << ' ';
     	i += 2; 
     
@@ -43,7 +46,8 @@ void solve() {
     cout << "2 3 1" << ' ';
     {
     int i = 4;
-    while (i <= n) {
+    for ( ; i <= n; ) 
+{
       cout << i + 1 << ' ' << i << ' ';
     	i += 2; 
     
@@ -97,8 +101,8 @@ void solve() {
 }
  
 int main(){
-  ios_base::sync_with_stdio(false);
+  
   cin.tie(0);
-  int t; cin >> t; while (t--)
-  solve();
+  int t; cin >> t; for ( ; t--; ) 
+solve();
 }

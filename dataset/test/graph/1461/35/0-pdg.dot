@@ -1,0 +1,13 @@
+digraph "sing" {  
+"1000144" [label = "(METHOD,sing)" ]
+"1000150" [label = "(METHOD_RETURN,string)" ]
+"1000145" [label = "(PARAM,char x)" ]
+"1000148" [label = "(RETURN,return s;,return s;)" ]
+"1000149" [label = "(IDENTIFIER,s,return s;)" ]
+  "1000148" -> "1000150"  [ label = "DDG: <RET>"] 
+  "1000145" -> "1000150"  [ label = "DDG: x"] 
+  "1000144" -> "1000145"  [ label = "DDG: "] 
+  "1000149" -> "1000148"  [ label = "DDG: s"] 
+  "1000144" -> "1000148"  [ label = "DDG: "] 
+  "1000144" -> "1000149"  [ label = "DDG: "] 
+}

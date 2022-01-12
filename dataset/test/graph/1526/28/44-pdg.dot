@@ -1,0 +1,18 @@
+digraph "main" {  
+"1001026" [label = "(METHOD,main)" ]
+"1001039" [label = "(METHOD_RETURN,int)" ]
+"1001028" [label = "(freopen,freopen(\"input.txt\", \"r\", stdin))" ]
+"1001032" [label = "(freopen,freopen(\"output2.txt\", \"w\", stdout))" ]
+"1001036" [label = "(fastio,fastio())" ]
+"1001038" [label = "(solve,solve())" ]
+  "1001028" -> "1001039"  [ label = "DDG: freopen(\"input.txt\", \"r\", stdin)"] 
+  "1001032" -> "1001039"  [ label = "DDG: freopen(\"output2.txt\", \"w\", stdout)"] 
+  "1001036" -> "1001039"  [ label = "DDG: fastio()"] 
+  "1001038" -> "1001039"  [ label = "DDG: solve()"] 
+  "1001032" -> "1001039"  [ label = "DDG: stdout"] 
+  "1001028" -> "1001039"  [ label = "DDG: stdin"] 
+  "1001026" -> "1001036"  [ label = "DDG: "] 
+  "1001026" -> "1001028"  [ label = "DDG: "] 
+  "1001026" -> "1001032"  [ label = "DDG: "] 
+  "1001026" -> "1001038"  [ label = "DDG: "] 
+}

@@ -1,0 +1,15 @@
+digraph "query" {  
+"1000612" [label = "(METHOD,query)" ]
+"1000621" [label = "(METHOD_RETURN,int)" ]
+"1000613" [label = "(PARAM,int x)" ]
+"1000615" [label = "(RETURN,return BIT::query(bg[x],BIT::t1);,return BIT::query(bg[x],BIT::t1);)" ]
+"1000616" [label = "(BIT::query,BIT::query(bg[x],BIT::t1))" ]
+  "1000613" -> "1000621"  [ label = "DDG: x"] 
+  "1000616" -> "1000621"  [ label = "DDG: bg[x]"] 
+  "1000616" -> "1000621"  [ label = "DDG: BIT::query(bg[x],BIT::t1)"] 
+  "1000615" -> "1000621"  [ label = "DDG: <RET>"] 
+  "1000616" -> "1000621"  [ label = "DDG: BIT::t1"] 
+  "1000612" -> "1000613"  [ label = "DDG: "] 
+  "1000616" -> "1000615"  [ label = "DDG: BIT::query(bg[x],BIT::t1)"] 
+  "1000612" -> "1000616"  [ label = "DDG: "] 
+}

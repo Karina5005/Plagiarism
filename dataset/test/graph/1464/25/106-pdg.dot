@@ -1,0 +1,16 @@
+digraph "empty" {  
+"1004249" [label = "(METHOD,empty)" ]
+"1004256" [label = "(METHOD_RETURN,bool)" ]
+"1004251" [label = "(RETURN,return pos == int(payload.size());,return pos == int(payload.size());)" ]
+"1004252" [label = "(<operator>.equals,pos == int(payload.size()))" ]
+"1004254" [label = "(int,int(payload.size()))" ]
+  "1004254" -> "1004256"  [ label = "DDG: payload.size()"] 
+  "1004252" -> "1004256"  [ label = "DDG: int(payload.size())"] 
+  "1004252" -> "1004256"  [ label = "DDG: pos == int(payload.size())"] 
+  "1004251" -> "1004256"  [ label = "DDG: <RET>"] 
+  "1004252" -> "1004256"  [ label = "DDG: pos"] 
+  "1004252" -> "1004251"  [ label = "DDG: pos == int(payload.size())"] 
+  "1004249" -> "1004252"  [ label = "DDG: "] 
+  "1004254" -> "1004252"  [ label = "DDG: payload.size()"] 
+  "1004249" -> "1004254"  [ label = "DDG: "] 
+}

@@ -1,0 +1,10 @@
+digraph "mod" {  
+"1000658" [label = "(METHOD,mod)" ]
+"1000662" [label = "(METHOD_RETURN,static constexpr int)" ]
+"1000660" [label = "(RETURN,return m;,return m;)" ]
+"1000661" [label = "(IDENTIFIER,m,return m;)" ]
+  "1000660" -> "1000662"  [ label = "DDG: <RET>"] 
+  "1000661" -> "1000660"  [ label = "DDG: m"] 
+  "1000658" -> "1000660"  [ label = "DDG: "] 
+  "1000658" -> "1000661"  [ label = "DDG: "] 
+}

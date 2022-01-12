@@ -1,0 +1,7 @@
+digraph "ios_base::sync_with_stdio" {  
+"1000105" [label = "(METHOD,ios_base::sync_with_stdio)" ]
+"1000108" [label = "(METHOD_RETURN,int)" ]
+"1000106" [label = "(PARAM,false)" ]
+  "1000106" -> "1000108"  [ label = "DDG: <anonymous>"] 
+  "1000105" -> "1000106"  [ label = "DDG: "] 
+}

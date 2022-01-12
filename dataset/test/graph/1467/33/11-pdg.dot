@@ -1,0 +1,13 @@
+digraph "_print" {  
+"1000291" [label = "(METHOD,_print)" ]
+"1000297" [label = "(METHOD_RETURN,void)" ]
+"1000292" [label = "(PARAM,unsigned char t)" ]
+"1000294" [label = "(<operator>.shiftLeft,cerr << t)" ]
+  "1000292" -> "1000297"  [ label = "DDG: t"] 
+  "1000294" -> "1000297"  [ label = "DDG: t"] 
+  "1000294" -> "1000297"  [ label = "DDG: cerr << t"] 
+  "1000294" -> "1000297"  [ label = "DDG: cerr"] 
+  "1000291" -> "1000292"  [ label = "DDG: "] 
+  "1000291" -> "1000294"  [ label = "DDG: "] 
+  "1000292" -> "1000294"  [ label = "DDG: t"] 
+}

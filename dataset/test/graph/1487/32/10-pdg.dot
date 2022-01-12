@@ -1,0 +1,15 @@
+digraph "nxt" {  
+"1000378" [label = "(METHOD,nxt)" ]
+"1000386" [label = "(METHOD_RETURN,int)" ]
+"1000381" [label = "(<operator>.arithmeticShiftRight,cin >> x)" ]
+"1000384" [label = "(RETURN,return x;,return x;)" ]
+"1000385" [label = "(IDENTIFIER,x,return x;)" ]
+  "1000381" -> "1000386"  [ label = "DDG: x"] 
+  "1000381" -> "1000386"  [ label = "DDG: cin >> x"] 
+  "1000384" -> "1000386"  [ label = "DDG: <RET>"] 
+  "1000381" -> "1000386"  [ label = "DDG: cin"] 
+  "1000385" -> "1000384"  [ label = "DDG: x"] 
+  "1000381" -> "1000384"  [ label = "DDG: x"] 
+  "1000378" -> "1000381"  [ label = "DDG: "] 
+  "1000378" -> "1000385"  [ label = "DDG: "] 
+}

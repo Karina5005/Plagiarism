@@ -1,0 +1,10 @@
+digraph "mpow" {  
+"1000119" [label = "(METHOD,mpow)" ]
+"1000123" [label = "(METHOD_RETURN,int)" ]
+"1000120" [label = "(PARAM,int base)" ]
+"1000121" [label = "(PARAM,int exp)" ]
+  "1000120" -> "1000123"  [ label = "DDG: base"] 
+  "1000121" -> "1000123"  [ label = "DDG: exp"] 
+  "1000119" -> "1000120"  [ label = "DDG: "] 
+  "1000119" -> "1000121"  [ label = "DDG: "] 
+}

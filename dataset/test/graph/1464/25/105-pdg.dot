@@ -1,0 +1,16 @@
+digraph "size" {  
+"1004241" [label = "(METHOD,size)" ]
+"1004248" [label = "(METHOD_RETURN,int)" ]
+"1004243" [label = "(RETURN,return int(payload.size()) - pos;,return int(payload.size()) - pos;)" ]
+"1004244" [label = "(<operator>.subtraction,int(payload.size()) - pos)" ]
+"1004245" [label = "(int,int(payload.size()))" ]
+  "1004243" -> "1004248"  [ label = "DDG: <RET>"] 
+  "1004245" -> "1004248"  [ label = "DDG: payload.size()"] 
+  "1004244" -> "1004248"  [ label = "DDG: int(payload.size())"] 
+  "1004244" -> "1004248"  [ label = "DDG: int(payload.size()) - pos"] 
+  "1004244" -> "1004248"  [ label = "DDG: pos"] 
+  "1004244" -> "1004243"  [ label = "DDG: int(payload.size()) - pos"] 
+  "1004245" -> "1004244"  [ label = "DDG: payload.size()"] 
+  "1004241" -> "1004244"  [ label = "DDG: "] 
+  "1004241" -> "1004245"  [ label = "DDG: "] 
+}

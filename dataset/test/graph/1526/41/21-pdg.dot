@@ -1,0 +1,14 @@
+digraph "main" {  
+"1000423" [label = "(METHOD,main)" ]
+"1000431" [label = "(METHOD_RETURN,int)" ]
+"1000425" [label = "(freopen,freopen(\"Error.txt\", \"w\", stderr))" ]
+"1000429" [label = "(fastio,fastio())" ]
+"1000430" [label = "(solve,solve())" ]
+  "1000425" -> "1000431"  [ label = "DDG: freopen(\"Error.txt\", \"w\", stderr)"] 
+  "1000429" -> "1000431"  [ label = "DDG: fastio()"] 
+  "1000430" -> "1000431"  [ label = "DDG: solve()"] 
+  "1000425" -> "1000431"  [ label = "DDG: stderr"] 
+  "1000423" -> "1000429"  [ label = "DDG: "] 
+  "1000423" -> "1000430"  [ label = "DDG: "] 
+  "1000423" -> "1000425"  [ label = "DDG: "] 
+}

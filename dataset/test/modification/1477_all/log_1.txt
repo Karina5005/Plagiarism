@@ -1,0 +1,88 @@
+ - initial
+45/transformation_1.cpp	0
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	1
+42/transformation_1.cpp	1
+ - reorder function decls
+45/transformation_1.cpp	0
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	7
+42/transformation_1.cpp	7
+ - open macros
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	3
+42/transformation_1.cpp	3
+ - remove comments
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	3
+42/transformation_1.cpp	3
+ - rename entities
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	2
+42/transformation_1.cpp	2
+ - for to while
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	2
+42/transformation_1.cpp	2
+ - if else swap
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	2
+42/transformation_1.cpp	2
+ - printf to cout
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	2
+42/transformation_1.cpp	2
+ - while to for
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	2
+42/transformation_1.cpp	2
+ - add comments
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	2
+42/transformation_1.cpp	2
+ - add Code
+45/transformation_1.cpp	2
+12/transformation_1.cpp	0
+11/transformation_1.cpp	0
+2/transformation_1.cpp	1
+48/transformation_1.cpp	0
+47/transformation_1.cpp	2
+42/transformation_1.cpp	2

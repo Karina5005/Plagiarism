@@ -1,0 +1,14 @@
+digraph "size_i" {  
+"1001260" [label = "(METHOD,size_i)" ]
+"1001267" [label = "(METHOD_RETURN,int32_t)" ]
+"1001261" [label = "(PARAM,T &container)" ]
+"1001263" [label = "(RETURN,return static_cast<int32_t>(container.size());,return static_cast<int32_t>(container.size());)" ]
+"1001264" [label = "(<operator>.cast,static_cast<int32_t>(container.size()))" ]
+  "1001261" -> "1001267"  [ label = "DDG: container"] 
+  "1001264" -> "1001267"  [ label = "DDG: container.size()"] 
+  "1001264" -> "1001267"  [ label = "DDG: static_cast<int32_t>(container.size())"] 
+  "1001263" -> "1001267"  [ label = "DDG: <RET>"] 
+  "1001260" -> "1001261"  [ label = "DDG: "] 
+  "1001264" -> "1001263"  [ label = "DDG: static_cast<int32_t>(container.size())"] 
+  "1001260" -> "1001264"  [ label = "DDG: "] 
+}

@@ -16,22 +16,22 @@ ll fp(ll a, ll b){
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int zo;
-    cin>>zo;
+    int du_v;
+    cin>>du_v;
     start:
-    while(zo--){
+    while(du_v--){
         ll n; cin>>n;
-        string vgb_vb[2];
-        for(int w_gvm=0;w_gvm<2;w_gvm++){
-            cin>>vgb_vb[w_gvm];
+        string s[2];
+        for(int kz=0;kz<2;kz++){
+            cin>>s[kz];
         }
-        if(vgb_vb[0][0] == '1' or vgb_vb[1][n-1] == '1'){
+        if(s[0][0] == '1' or s[1][n-1] == '1'){
             cout<<"No\n";
             continue;
         }
-        for(int tic=1;tic<n-1;tic++){
+        for(int pm=1;pm<n-1;pm++){
             // cout<<arr[0][i]<<" "<<arr[1][i]<<'\n';
-            if(vgb_vb[0][tic] == '1' and vgb_vb[1][tic] == '1'){
+            if(s[0][pm] == '1' and s[1][pm] == '1'){
                 cout<<"No\n";
                 goto start;
             }

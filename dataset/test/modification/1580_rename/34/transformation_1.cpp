@@ -5,71 +5,71 @@ using namespace std;
 #define fill(dp) memset(dp,-1,sizeof(dp))
 #define input(vec) for (auto &el : vec) cin >> el;
 #define print(vec) for (auto &el : vec) cout << el << " "; cout << "\n"; 
-int hid_jw,dm_f,oi[450][450];
+int ai,ddk,j[450][450];
 
-void cf_lm() {
-    cin>>hid_jw>>dm_f;
-    vector<int>twu_o(dm_f+1),md(hid_jw+1);
-    vector<pair<int,int>>cb;
-    cb.push_back({0,0});
-    for(int omj_ti=0;omj_ti<hid_jw;omj_ti++) {
-        int si_zdd,efu_nyk;
-        cin>>si_zdd>>efu_nyk;
-        cb.push_back({si_zdd,efu_nyk});
+void sdd_oyq() {
+    cin>>ai>>ddk;
+    vector<int>tj_ccb(ddk+1),y(ai+1);
+    vector<pair<int,int>>pub_be;
+    pub_be.push_back({0,0});
+    for(int dx=0;dx<ai;dx++) {
+        int khi_beh,ged;
+        cin>>khi_beh>>ged;
+        pub_be.push_back({khi_beh,ged});
     }
-    int s = 0;
-    for(int svi_mgv=1;svi_mgv<=dm_f;svi_mgv++) {
-        int u_dbw,poj_b;
-        cin>>u_dbw>>poj_b;
-        int myp_e = cb[poj_b].first+cb[poj_b].second;
-        if(u_dbw==1) {
-            int ntw_q = svi_mgv+cb[poj_b].first,f=svi_mgv+myp_e;
-            md[poj_b] = svi_mgv;
-            if(myp_e>=450LL) {
-                while(ntw_q<=dm_f) {
-                    twu_o[ntw_q]++;
-                    if(f<=dm_f) twu_o[f]--;
-                    ntw_q += myp_e;
-                    f += myp_e;
+    int wj = 0;
+    for(int mbx=1;mbx<=ddk;mbx++) {
+        int f_ioa,nv_i;
+        cin>>f_ioa>>nv_i;
+        int d_o = pub_be[nv_i].first+pub_be[nv_i].second;
+        if(f_ioa==1) {
+            int ouz_h = mbx+pub_be[nv_i].first,v_v=mbx+d_o;
+            y[nv_i] = mbx;
+            if(d_o>=450LL) {
+                while(ouz_h<=ddk) {
+                    tj_ccb[ouz_h]++;
+                    if(v_v<=ddk) tj_ccb[v_v]--;
+                    ouz_h += d_o;
+                    v_v += d_o;
                 }
             }
             else {
-                for(int l_wa=ntw_q;l_wa<f;l_wa++) {
-                    oi[myp_e][l_wa%myp_e]++;
+                for(int av=ouz_h;av<v_v;av++) {
+                    j[d_o][av%d_o]++;
                 }
             }
         }
         else {
-            int q_wz = md[poj_b]+cb[poj_b].first,wk_o=q_wz+cb[poj_b].second;
-            if(myp_e>=450LL) {
-                while(q_wz<=dm_f) {
-                    if(svi_mgv>=q_wz and svi_mgv<wk_o) twu_o[svi_mgv]--;
-                    if(q_wz>svi_mgv) twu_o[q_wz]--;
-                    if(svi_mgv<wk_o and wk_o<=dm_f) twu_o[wk_o]++;
-                    q_wz += myp_e;
-                    wk_o += myp_e;
+            int z_btl = y[nv_i]+pub_be[nv_i].first,vjx_bw=z_btl+pub_be[nv_i].second;
+            if(d_o>=450LL) {
+                while(z_btl<=ddk) {
+                    if(mbx>=z_btl and mbx<vjx_bw) tj_ccb[mbx]--;
+                    if(z_btl>mbx) tj_ccb[z_btl]--;
+                    if(mbx<vjx_bw and vjx_bw<=ddk) tj_ccb[vjx_bw]++;
+                    z_btl += d_o;
+                    vjx_bw += d_o;
                 }
             }
             else {
-                for(int rnf=q_wz;rnf<wk_o;rnf++) {
-                    oi[myp_e][rnf%myp_e]--;
+                for(int o_but=z_btl;o_but<vjx_bw;o_but++) {
+                    j[d_o][o_but%d_o]--;
                 }
             }
         }
-        s += twu_o[svi_mgv];
-        int gg = 0;
-        for(int fg_bup=1;fg_bup<450;fg_bup++) {
-            gg += oi[fg_bup][svi_mgv%fg_bup];
+        wj += tj_ccb[mbx];
+        int auo_dy = 0;
+        for(int g=1;g<450;g++) {
+            auo_dy += j[g][mbx%g];
         }
-        cout<<s+gg<<"\n";
+        cout<<wj+auo_dy<<"\n";
     }
 }
 
 signed main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);cout.tie(nullptr);
-    int x_au=1;
+    int h=1;
     //cin>>testcases;
-    while(x_au--) cf_lm();
+    while(h--) sdd_oyq();
     return 0;
 }

@@ -1,0 +1,44 @@
+ - initial
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - reorder function decls
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - open macros
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - remove comments
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - rename entities
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - for to while
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - if else swap
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - printf to cout
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - while to for
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - add comments
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0
+ - add Code
+10/transformation_1.cpp	0
+1/transformation_1.cpp	0
+43/transformation_1.cpp	0

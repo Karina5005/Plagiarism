@@ -8,26 +8,26 @@ typedef long long int ll;
 
 
 /// Global constants
-const ll p = 998244353;
-const ll hic = 1e9 + 7;
-const int rw_nr = 3e5 + 10;
+const ll xnp = 998244353;
+const ll cs_epa = 1e9 + 7;
+const int a_xpe = 3e5 + 10;
 
 // Global variables
 
 // Helper Functions
 
 // Solve Function
-void mq_dv(){
+void iqo_dmo(){
 	
-	int exl;
-	cin>>exl;
+	int zya;
+	cin>>zya;
 	
-	string apb_bj[2];
+	string y[2];
 	
-	cin>>apb_bj[0]>>apb_bj[1];
+	cin>>y[0]>>y[1];
 	
-	for(int s_sm = 0; s_sm < exl; s_sm++){
-		if(apb_bj[0][s_sm] == '1' && apb_bj[1][s_sm] == '1'){
+	for(int h_qiv = 0; h_qiv < zya; h_qiv++){
+		if(y[0][h_qiv] == '1' && y[1][h_qiv] == '1'){
 			cout<<"NO\n";
 			return;
 		}
@@ -44,12 +44,12 @@ int main(){
 	ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 	
-	int rt = 1;
-	cin>>rt;
+	int uva = 1;
+	cin>>uva;
  
 	
-	while(rt--){
-		mq_dv();
+	while(uva--){
+		iqo_dmo();
 	}
 	
 	return 0;

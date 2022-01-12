@@ -1,0 +1,17 @@
+digraph "CLR" {  
+"1001144" [label = "(METHOD,CLR)" ]
+"1001151" [label = "(METHOD_RETURN,inline void)" ]
+"1001145" [label = "(PARAM,stack<T> &S)" ]
+"1001148" [label = "(<operator>.logicalNot,!S.empty())" ]
+"1001150" [label = "(S.pop,S.pop())" ]
+"1001149" [label = "(S.empty,S.empty())" ]
+  "1001145" -> "1001151"  [ label = "DDG: S"] 
+  "1001148" -> "1001151"  [ label = "DDG: S.empty()"] 
+  "1001148" -> "1001151"  [ label = "DDG: !S.empty()"] 
+  "1001144" -> "1001145"  [ label = "DDG: "] 
+  "1001144" -> "1001150"  [ label = "DDG: "] 
+  "1001144" -> "1001148"  [ label = "DDG: "] 
+  "1001148" -> "1001149"  [ label = "CDG: "] 
+  "1001148" -> "1001150"  [ label = "CDG: "] 
+  "1001148" -> "1001148"  [ label = "CDG: "] 
+}

@@ -1,0 +1,16 @@
+digraph "operator <" {  
+"1000482" [label = "(METHOD,operator <)" ]
+"1000491" [label = "(METHOD_RETURN,bool)" ]
+"1000483" [label = "(PARAM,const Triple &tmp)" ]
+"1000485" [label = "(RETURN,return dis<tmp.dis;,return dis<tmp.dis;)" ]
+"1000486" [label = "(<operator>.lessThan,dis<tmp.dis)" ]
+  "1000485" -> "1000491"  [ label = "DDG: <RET>"] 
+  "1000483" -> "1000491"  [ label = "DDG: tmp"] 
+  "1000486" -> "1000491"  [ label = "DDG: tmp.dis"] 
+  "1000486" -> "1000491"  [ label = "DDG: dis<tmp.dis"] 
+  "1000486" -> "1000491"  [ label = "DDG: dis"] 
+  "1000482" -> "1000483"  [ label = "DDG: "] 
+  "1000486" -> "1000485"  [ label = "DDG: dis<tmp.dis"] 
+  "1000482" -> "1000486"  [ label = "DDG: "] 
+  "1000483" -> "1000486"  [ label = "DDG: tmp"] 
+}

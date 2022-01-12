@@ -1,0 +1,10 @@
+digraph "up_edge" {  
+"1000525" [label = "(METHOD,up_edge)" ]
+"1000529" [label = "(METHOD_RETURN,vector<Edge>)" ]
+"1000526" [label = "(PARAM,n)" ]
+"1000527" [label = "(PARAM,true)" ]
+  "1000526" -> "1000529"  [ label = "DDG: <anonymous>"] 
+  "1000527" -> "1000529"  [ label = "DDG: <anonymous>"] 
+  "1000525" -> "1000526"  [ label = "DDG: "] 
+  "1000525" -> "1000527"  [ label = "DDG: "] 
+}

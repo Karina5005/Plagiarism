@@ -2,25 +2,25 @@
 using namespace std;
 int main()
 {
-	int p_fzz;cin>>p_fzz;
-	while(p_fzz--)
+	int edb_ttp;cin>>edb_ttp;
+	while(edb_ttp--)
 	{
-		int ofz;cin>>ofz;
-		vector<long long int>s_f(ofz);
-		long long int nef_gn=0;
-		for(auto &h_b:s_f)
+		int hg_vf;cin>>hg_vf;
+		vector<long long int>wqh(hg_vf);
+		long long int a_cq=0;
+		for(auto &b_fcl:wqh)
 		{
-			cin>>h_b;
-			nef_gn+=h_b;
-			h_b*=ofz;
+			cin>>b_fcl;
+			a_cq+=b_fcl;
+			b_fcl*=hg_vf;
 		}
-		long long int x=0;
-		map<long long int,int>vpy_pw;
-		for(auto &fg:s_f){
-			x+=vpy_pw[nef_gn-fg];
-			vpy_pw[fg-nef_gn]++;
+		long long int os=0;
+		map<long long int,int>m;
+		for(auto &hs_ftf:wqh){
+			os+=m[a_cq-hs_ftf];
+			m[hs_ftf-a_cq]++;
 		}
-		cout<<x<<endl;
+		cout<<os<<endl;
 	}
 	return 0;
 }

@@ -1,0 +1,12 @@
+digraph "setI" {  
+"1000118" [label = "(METHOD,setI)" ]
+"1000125" [label = "(METHOD_RETURN,void)" ]
+"1000119" [label = "(PARAM,string name)" ]
+"1000121" [label = "(freopen,freopen((name + \".in\").c_str(), \"r\", stdin))" ]
+  "1000119" -> "1000125"  [ label = "DDG: name"] 
+  "1000121" -> "1000125"  [ label = "DDG: (name + \".in\").c_str()"] 
+  "1000121" -> "1000125"  [ label = "DDG: freopen((name + \".in\").c_str(), \"r\", stdin)"] 
+  "1000121" -> "1000125"  [ label = "DDG: stdin"] 
+  "1000118" -> "1000119"  [ label = "DDG: "] 
+  "1000118" -> "1000121"  [ label = "DDG: "] 
+}

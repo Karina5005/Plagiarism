@@ -1,0 +1,7 @@
+digraph "mf_graph" {  
+"1004286" [label = "(METHOD,mf_graph)" ]
+"1004289" [label = "(METHOD_RETURN,int)" ]
+"1004287" [label = "(PARAM,int n)" ]
+  "1004287" -> "1004289"  [ label = "DDG: n"] 
+  "1004286" -> "1004287"  [ label = "DDG: "] 
+}

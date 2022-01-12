@@ -1,0 +1,15 @@
+digraph "pct" {  
+"1000181" [label = "(METHOD,pct)" ]
+"1000187" [label = "(METHOD_RETURN,constexpr int)" ]
+"1000182" [label = "(PARAM,ll x)" ]
+"1000184" [label = "(RETURN,return __builtin_popcountll(x);,return __builtin_popcountll(x);)" ]
+"1000185" [label = "(__builtin_popcountll,__builtin_popcountll(x))" ]
+  "1000182" -> "1000187"  [ label = "DDG: x"] 
+  "1000185" -> "1000187"  [ label = "DDG: x"] 
+  "1000185" -> "1000187"  [ label = "DDG: __builtin_popcountll(x)"] 
+  "1000184" -> "1000187"  [ label = "DDG: <RET>"] 
+  "1000181" -> "1000182"  [ label = "DDG: "] 
+  "1000185" -> "1000184"  [ label = "DDG: __builtin_popcountll(x)"] 
+  "1000182" -> "1000185"  [ label = "DDG: x"] 
+  "1000181" -> "1000185"  [ label = "DDG: "] 
+}

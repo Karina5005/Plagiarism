@@ -1,31 +1,31 @@
 #include <bits\stdc++.h>
 using namespace std;
 
-int wrx(long long yp[], int p)
+int am_gn(long long zgs_ngn[], int fnc_h)
 {
-    int x = 0;
-    for (int f_d = 1; f_d <= p; f_d++)
+    int k_eyw = 0;
+    for (int y_jmf = 1; y_jmf <= fnc_h; y_jmf++)
     {
-        for (int b = yp[f_d] - f_d; b <= p; b += yp[f_d])
+        for (int fs_r = zgs_ngn[y_jmf] - y_jmf; fs_r <= fnc_h; fs_r += zgs_ngn[y_jmf])
         {
-            if (b >= 0){
-                if (yp[f_d] * yp[b] == f_d + b && f_d < b)
-                    x++;
+            if (fs_r >= 0){
+                if (zgs_ngn[y_jmf] * zgs_ngn[fs_r] == y_jmf + fs_r && y_jmf < fs_r)
+                    k_eyw++;
             }
         }
     }
-    return x;
+    return k_eyw;
 }
 
 int main()
 {
-    int twk_zcu, wx;
+    int xnp, cs_epa;
     cin >> t;
-    while (twk_zcu--)
+    while (xnp--)
     {
         cin >> n;
-        long long fgo_bjx[wx + 1];
-        for (int c_zas = 1; c_zas <= wx; c_zas++)
+        long long a_xpe[cs_epa + 1];
+        for (int iqo_dmo = 1; iqo_dmo <= cs_epa; iqo_dmo++)
         {
             cin >> arr[i];
         }

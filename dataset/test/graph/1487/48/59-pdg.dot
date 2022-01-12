@@ -1,0 +1,10 @@
+digraph "umod" {  
+"1001341" [label = "(METHOD,umod)" ]
+"1001345" [label = "(METHOD_RETURN,static unsigned int)" ]
+"1001343" [label = "(RETURN,return bt.umod();,return bt.umod();)" ]
+"1001344" [label = "(bt.umod,bt.umod())" ]
+  "1001343" -> "1001345"  [ label = "DDG: <RET>"] 
+  "1001344" -> "1001345"  [ label = "DDG: bt.umod()"] 
+  "1001344" -> "1001343"  [ label = "DDG: bt.umod()"] 
+  "1001341" -> "1001344"  [ label = "DDG: "] 
+}

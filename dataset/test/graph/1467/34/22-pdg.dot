@@ -1,0 +1,7 @@
+digraph "_print" {  
+"1000344" [label = "(METHOD,_print)" ]
+"1000347" [label = "(METHOD_RETURN,void)" ]
+"1000345" [label = "(PARAM,unordered_multiset<A> s)" ]
+  "1000345" -> "1000347"  [ label = "DDG: s"] 
+  "1000344" -> "1000345"  [ label = "DDG: "] 
+}

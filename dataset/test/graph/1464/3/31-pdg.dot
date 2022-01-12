@@ -1,0 +1,16 @@
+digraph "operator ==" {  
+"1000715" [label = "(METHOD,operator ==)" ]
+"1000724" [label = "(METHOD_RETURN,Matrix<T>&)" ]
+"1000716" [label = "(PARAM,const Matrix<ll> &other)" ]
+"1000718" [label = "(RETURN,return x == other.x;,return x == other.x;)" ]
+"1000719" [label = "(<operator>.equals,x == other.x)" ]
+  "1000718" -> "1000724"  [ label = "DDG: <RET>"] 
+  "1000716" -> "1000724"  [ label = "DDG: other"] 
+  "1000719" -> "1000724"  [ label = "DDG: other.x"] 
+  "1000719" -> "1000724"  [ label = "DDG: x == other.x"] 
+  "1000719" -> "1000724"  [ label = "DDG: x"] 
+  "1000715" -> "1000716"  [ label = "DDG: "] 
+  "1000719" -> "1000718"  [ label = "DDG: x == other.x"] 
+  "1000715" -> "1000719"  [ label = "DDG: "] 
+  "1000716" -> "1000719"  [ label = "DDG: other"] 
+}

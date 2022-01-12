@@ -1,0 +1,15 @@
+digraph "ps" {  
+"1000311" [label = "(METHOD,ps)" ]
+"1000317" [label = "(METHOD_RETURN,void)" ]
+"1000312" [label = "(PARAM,const Arg& first)" ]
+"1000314" [label = "(pr,pr(first))" ]
+"1000316" [label = "(ps,ps())" ]
+  "1000312" -> "1000317"  [ label = "DDG: first"] 
+  "1000314" -> "1000317"  [ label = "DDG: first"] 
+  "1000314" -> "1000317"  [ label = "DDG: pr(first)"] 
+  "1000316" -> "1000317"  [ label = "DDG: ps()"] 
+  "1000311" -> "1000312"  [ label = "DDG: "] 
+  "1000311" -> "1000316"  [ label = "DDG: "] 
+  "1000312" -> "1000314"  [ label = "DDG: first"] 
+  "1000311" -> "1000314"  [ label = "DDG: "] 
+}

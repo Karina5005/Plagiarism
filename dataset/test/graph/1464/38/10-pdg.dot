@@ -1,0 +1,10 @@
+digraph "merge" {  
+"1000427" [label = "(METHOD,merge)" ]
+"1000432" [label = "(METHOD_RETURN,inline diam)" ]
+"1000428" [label = "(PARAM,const diam &a)" ]
+"1000429" [label = "(PARAM,const diam &b)" ]
+  "1000428" -> "1000432"  [ label = "DDG: a"] 
+  "1000429" -> "1000432"  [ label = "DDG: b"] 
+  "1000427" -> "1000428"  [ label = "DDG: "] 
+  "1000427" -> "1000429"  [ label = "DDG: "] 
+}

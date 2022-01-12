@@ -1,0 +1,15 @@
+digraph "poplow" {  
+"1000189" [label = "(METHOD,poplow)" ]
+"1000195" [label = "(METHOD_RETURN,int)" ]
+"1000190" [label = "(PARAM,ll x)" ]
+"1000192" [label = "(RETURN,return __builtin_ctzll(x);,return __builtin_ctzll(x);)" ]
+"1000193" [label = "(__builtin_ctzll,__builtin_ctzll(x))" ]
+  "1000190" -> "1000195"  [ label = "DDG: x"] 
+  "1000193" -> "1000195"  [ label = "DDG: x"] 
+  "1000193" -> "1000195"  [ label = "DDG: __builtin_ctzll(x)"] 
+  "1000192" -> "1000195"  [ label = "DDG: <RET>"] 
+  "1000189" -> "1000190"  [ label = "DDG: "] 
+  "1000193" -> "1000192"  [ label = "DDG: __builtin_ctzll(x)"] 
+  "1000190" -> "1000193"  [ label = "DDG: x"] 
+  "1000189" -> "1000193"  [ label = "DDG: "] 
+}

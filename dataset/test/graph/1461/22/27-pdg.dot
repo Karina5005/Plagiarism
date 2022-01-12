@@ -1,0 +1,16 @@
+digraph "operator++" {  
+"1000560" [label = "(METHOD,operator++)" ]
+"1000570" [label = "(METHOD_RETURN,Modular)" ]
+"1000561" [label = "(PARAM,int)" ]
+"1000564" [label = "(<operator>.assignmentPlus,*this += 1)" ]
+"1000568" [label = "(RETURN,return result;,return result;)" ]
+"1000569" [label = "(IDENTIFIER,result,return result;)" ]
+  "1000561" -> "1000570"  [ label = "DDG: <anonymous>"] 
+  "1000564" -> "1000570"  [ label = "DDG: *this"] 
+  "1000568" -> "1000570"  [ label = "DDG: <RET>"] 
+  "1000560" -> "1000561"  [ label = "DDG: "] 
+  "1000560" -> "1000564"  [ label = "DDG: "] 
+  "1000569" -> "1000568"  [ label = "DDG: result"] 
+  "1000560" -> "1000568"  [ label = "DDG: "] 
+  "1000560" -> "1000569"  [ label = "DDG: "] 
+}

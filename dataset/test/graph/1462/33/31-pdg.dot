@@ -1,0 +1,15 @@
+digraph "sort" {  
+"1000783" [label = "(METHOD,sort)" ]
+"1000790" [label = "(METHOD_RETURN,void)" ]
+"1000784" [label = "(PARAM,vector<T>&v)" ]
+"1000786" [label = "(sort,sort(v.begin(),v.end()))" ]
+"1000789" [label = "(RETURN,return;,return;)" ]
+  "1000789" -> "1000790"  [ label = "DDG: <RET>"] 
+  "1000784" -> "1000790"  [ label = "DDG: v"] 
+  "1000786" -> "1000790"  [ label = "DDG: v.begin()"] 
+  "1000786" -> "1000790"  [ label = "DDG: v.end()"] 
+  "1000786" -> "1000790"  [ label = "DDG: sort(v.begin(),v.end())"] 
+  "1000783" -> "1000784"  [ label = "DDG: "] 
+  "1000783" -> "1000789"  [ label = "DDG: "] 
+  "1000783" -> "1000786"  [ label = "DDG: "] 
+}

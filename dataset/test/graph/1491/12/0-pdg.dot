@@ -1,0 +1,7 @@
+digraph "sieve" {  
+"1000102" [label = "(METHOD,sieve)" ]
+"1000105" [label = "(METHOD_RETURN,vector<ll>)" ]
+"1000103" [label = "(PARAM,int n)" ]
+  "1000103" -> "1000105"  [ label = "DDG: n"] 
+  "1000102" -> "1000103"  [ label = "DDG: "] 
+}

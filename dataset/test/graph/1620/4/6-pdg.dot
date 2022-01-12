@@ -1,0 +1,13 @@
+digraph "main" {  
+"1000483" [label = "(METHOD,main)" ]
+"1000488" [label = "(METHOD_RETURN,int)" ]
+"1000485" [label = "(fac_init,fac_init())" ]
+"1000486" [label = "(input,input())" ]
+"1000487" [label = "(solve,solve())" ]
+  "1000485" -> "1000488"  [ label = "DDG: fac_init()"] 
+  "1000486" -> "1000488"  [ label = "DDG: input()"] 
+  "1000487" -> "1000488"  [ label = "DDG: solve()"] 
+  "1000483" -> "1000485"  [ label = "DDG: "] 
+  "1000483" -> "1000486"  [ label = "DDG: "] 
+  "1000483" -> "1000487"  [ label = "DDG: "] 
+}

@@ -1,0 +1,9 @@
+digraph "operator*=" {  
+"1000541" [label = "(METHOD,operator*=)" ]
+"1000545" [label = "(METHOD_RETURN,Mint)" ]
+"1000542" [label = "(PARAM,const Mint& other)" ]
+"1000544" [label = "(IDENTIFIER,MOD,)" ]
+  "1000542" -> "1000545"  [ label = "DDG: other"] 
+  "1000541" -> "1000542"  [ label = "DDG: "] 
+  "1000541" -> "1000544"  [ label = "DDG: "] 
+}

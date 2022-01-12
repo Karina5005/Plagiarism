@@ -1,0 +1,10 @@
+digraph "edge" {  
+"1000182" [label = "(METHOD,edge)" ]
+"1000186" [label = "(METHOD_RETURN,int)" ]
+"1000183" [label = "(PARAM,int _t)" ]
+"1000184" [label = "(PARAM,int _c)" ]
+  "1000183" -> "1000186"  [ label = "DDG: _t"] 
+  "1000184" -> "1000186"  [ label = "DDG: _c"] 
+  "1000182" -> "1000183"  [ label = "DDG: "] 
+  "1000182" -> "1000184"  [ label = "DDG: "] 
+}

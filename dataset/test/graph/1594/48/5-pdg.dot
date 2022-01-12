@@ -1,0 +1,7 @@
+digraph "UnionFind" {  
+"1000187" [label = "(METHOD,UnionFind)" ]
+"1000190" [label = "(METHOD_RETURN,int)" ]
+"1000188" [label = "(PARAM,int size)" ]
+  "1000188" -> "1000190"  [ label = "DDG: size"] 
+  "1000187" -> "1000188"  [ label = "DDG: "] 
+}

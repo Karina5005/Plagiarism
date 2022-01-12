@@ -1,0 +1,7 @@
+digraph "Mint" {  
+"1000590" [label = "(METHOD,Mint)" ]
+"1000595" [label = "(METHOD_RETURN,int)" ]
+"1000592" [label = "(<operator>.assignment,val = 0)" ]
+  "1000592" -> "1000595"  [ label = "DDG: val"] 
+  "1000590" -> "1000592"  [ label = "DDG: "] 
+}

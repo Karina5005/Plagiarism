@@ -1,0 +1,13 @@
+digraph "ppp" {  
+"1000154" [label = "(METHOD,ppp)" ]
+"1000160" [label = "(METHOD_RETURN,void)" ]
+"1000155" [label = "(PARAM,bool a)" ]
+"1000157" [label = "(<operator>.shiftLeft,cout<<a)" ]
+  "1000155" -> "1000160"  [ label = "DDG: a"] 
+  "1000157" -> "1000160"  [ label = "DDG: a"] 
+  "1000157" -> "1000160"  [ label = "DDG: cout<<a"] 
+  "1000157" -> "1000160"  [ label = "DDG: cout"] 
+  "1000154" -> "1000155"  [ label = "DDG: "] 
+  "1000154" -> "1000157"  [ label = "DDG: "] 
+  "1000155" -> "1000157"  [ label = "DDG: a"] 
+}

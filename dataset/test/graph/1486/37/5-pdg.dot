@@ -1,0 +1,7 @@
+digraph "err" {  
+"1000149" [label = "(METHOD,err)" ]
+"1000152" [label = "(METHOD_RETURN,void)" ]
+"1000150" [label = "(PARAM,istream_iterator<string> it)" ]
+  "1000150" -> "1000152"  [ label = "DDG: it"] 
+  "1000149" -> "1000150"  [ label = "DDG: "] 
+}

@@ -1,0 +1,7 @@
+digraph "pop" {  
+"1004277" [label = "(METHOD,pop)" ]
+"1004281" [label = "(METHOD_RETURN,void)" ]
+"1004279" [label = "(<operator>.postIncrement,pos++)" ]
+  "1004279" -> "1004281"  [ label = "DDG: pos"] 
+  "1004277" -> "1004279"  [ label = "DDG: "] 
+}

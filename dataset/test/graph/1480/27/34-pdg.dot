@@ -1,0 +1,9 @@
+digraph "solution" {  
+"1001632" [label = "(METHOD,solution)" ]
+"1001638" [label = "(METHOD_RETURN,void)" ]
+"1001635" [label = "(<operator>.arithmeticShiftRight,cin >> s)" ]
+  "1001635" -> "1001638"  [ label = "DDG: s"] 
+  "1001635" -> "1001638"  [ label = "DDG: cin >> s"] 
+  "1001635" -> "1001638"  [ label = "DDG: cin"] 
+  "1001632" -> "1001635"  [ label = "DDG: "] 
+}

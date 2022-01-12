@@ -7,21 +7,21 @@ using namespace std;
 
 int main()
 {
-  int z,lu,bs,b_rnd,ty,rs_vt;
-  string x,l_kgj;
-  cin>>rs_vt;
-  while(rs_vt--)
+  int be_b,zo,mr,zfl,sx,c;
+  string vdj,t;
+  cin>>c;
+  while(c--)
   {
-    cin>>b_rnd>>x>>l_kgj;
-    ty=0;
-    for(lu=0;lu<b_rnd;lu++)
+    cin>>zfl>>vdj>>t;
+    sx=0;
+    for(zo=0;zo<zfl;zo++)
     {
-      if(x[lu]=='1' && l_kgj[lu]=='1')
+      if(vdj[zo]=='1' && t[zo]=='1')
       {
-        ty++;
+        sx++;
       }
     }
-    if(ty>0)
+    if(sx>0)
     cout<<"NO"<<endl;
     else
     cout<<"YES"<<endl;
