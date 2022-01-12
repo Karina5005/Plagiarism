@@ -8,7 +8,7 @@ NODE_LABELS = {'cin': 'read',
                'write': 'write',
                'print': 'write',
                'method': 'method',
-               'return': 'ret',
+               'return': 'return',
                'clear': 'clear',
                'front': 'front',
                'back': 'back',
@@ -122,12 +122,8 @@ def fix_labels(G):
         for old_l, new_l in NODE_LABELS.items():
             if 'label' not in G.nodes[i].keys():
                 break
-            if old_l in G.nodes()[i]['label'].lower():
-                G.nodes[i]['label'] = new_l
-                is_fixed = True
-                break
-        if not is_fixed:
-            G.nodes[i]['label'] = 'unknown'
+            G.nodes[i]['label2'] = G.nodes[i]['label']
+            G.nodes[i]['label'] = G.nodes[i]['label'].split(',')[0]
     for i in G.edges:
         is_fixed = False
         for old_l, new_l in EDGE_LABELS.items():

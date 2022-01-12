@@ -9,9 +9,9 @@ git clone https://github.com/ShiftLeftSecurity/joern
 chmod -R a+rwx joern
 cd joern
 ./joern-install.sh
-cd /root/bin/joern/joern-cli
+cd /opt/joern/joern-cli
 joern-parse --language c ../../../../home/karina/$1
-timeout 1s joern /root/bin/joern/joern-cli/cpg.bin
+timeout 1s joern /opt/joern/joern-cli/cpg.bin
 joern-export --repr pdg --out ../../../../home/karina/Plagiarism/pdg1
 cd ../../../../home/karina/Plagiarism/pdg1
 find . -size -60c -delete
@@ -25,7 +25,7 @@ g++ subgraphs.cpp -o subgraphs -lstdc++fs -std=c++17
 {
 chmod -R a+rwx pdg1
 joern-parse --language c ../../../../home/karina/$2
-timeout 1s joern /root/bin/joern/joern-cli/cpg.bin
+timeout 1s joern /opt/joern/joern-cli/cpg.bin
 joern-export --repr pdg --out ../../../../home/karina/Plagiarism/pdg2
 cd ../../../../home/karina/Plagiarism/pdg2
 find . -size -60c -delete
