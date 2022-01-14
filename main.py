@@ -81,7 +81,7 @@ if __name__ == '__main__':
                 continue
             for SG in G1_subgraphs:
                 arg.append((G1, G2, SG, bar))
-            pool = Pool(3)
+            pool = Pool(7)
             f = lambda x: run(*x)
             res = pool.map(f, arg)
             for r in res:
