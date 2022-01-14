@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{fun} \PYG{n+nf}{foo}\PYG{p}{(}\PYG{n+nl}{x}\PYG{p}{:} \PYG{n}{Any}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{k}{if} \PYG{p}{(}\PYG{n}{x} \PYG{n}{is} \PYG{n}{String}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{println}\PYG{p}{(}\PYG{err}{\PYGZsh{}\PYGZbs{}}\PYG{n}{colorbox}\PYG{p}{\PYGZob{}}\PYG{n}{green}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{n}{x}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZsh{}}\PYG{p}{.}\PYG{n}{length}\PYG{p}{)}
+      \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

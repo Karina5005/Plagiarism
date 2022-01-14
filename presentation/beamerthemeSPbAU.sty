@@ -1,0 +1,61 @@
+\ProvidesPackage{beamerthemeSPbAU}[2007/05/12]
+\def\beamerSPbAU@version{3.07}
+
+% Copyright 2003      by Till  Tantau       <tantau@users.sourceforge.net>
+%       and 2005-2006 by Jorg  Cassens      <jmt@cassens.org>
+%       and 2007      by Anton Korobeynikov <asl@math.spbu.ru>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\ifx\beamer@version\beamerSPbAU@version
+\else
+\fi
+
+\mode<presentation>
+
+\newif\ifbeamer@minimal
+\newif\ifbeamer@nonav
+\newif\ifbeamer@blue
+\newif\ifbeamer@sand
+\newif\ifbeamer@numbers
+\newif\ifbeamer@totalnumbers
+\newif\ifbeamer@mylogo
+\newif\ifbeamer@nologo
+
+\beamer@minimalfalse
+\beamer@nonavfalse
+\beamer@bluefalse
+\beamer@sandfalse
+\beamer@numberstrue
+\beamer@totalnumberstrue
+\beamer@mylogofalse
+\beamer@nologotrue
+
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\DeclareOptionBeamer{minimal}{\beamer@minimaltrue}
+\DeclareOptionBeamer{nonav}{\beamer@nonavtrue}
+\DeclareOptionBeamer{blue}{\beamer@bluetrue}
+\DeclareOptionBeamer{sand}{\beamer@sandtrue}
+\DeclareOptionBeamer{numbers}{\beamer@numberstrue}
+\DeclareOptionBeamer{totalnumbers}{\beamer@totalnumberstrue}
+\DeclareOptionBeamer{mylogo}{\beamer@mylogofalse}
+\DeclareOptionBeamer{nologo}{\beamer@nologofalse}
+
+\ProcessOptionsBeamer
+
+\useinnertheme[shadow=true]{SPbAU}
+\useoutertheme{SPbAU}
+\usecolortheme{SPbAUblue}
+
+\ifbeamer@nonav
+  \setbeamertemplate{navigation symbols}{}  % Removes navigation symbols.
+\fi
+
+\usefonttheme[onlymath]{serif}
+\setbeamerfont{block title}{size={}}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamerfont{date}{size=\scriptsize}
+
+\mode
+<all>

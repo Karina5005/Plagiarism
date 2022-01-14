@@ -1,0 +1,57 @@
+\ProvidesPackage{beamercolorthemenSPbAUblue}[2007/05/12]
+
+% Copyright 2003 by Till  Tantau       <tantau@users.sourceforge.net>
+%       and 2005 by Joerg Cassens      <jmt@cassens.org>
+%       and 2007 by Anton Korobeynikov <asl@math.spbu.ru>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\mode<presentation>
+
+\definecolor{SPbAUblue}{RGB}{14,44,142}
+\definecolor{SPbAUsand}{RGB}{244,215,103}
+
+\setbeamercolor*{structure}{fg=SPbAUblue,bg=white}
+\setbeamercolor{normal text}{fg=black,bg=white}
+
+\ifbeamer@blue
+  \setbeamercolor{normal text}{fg=black,bg=white!95!SPbAUblue}
+\fi
+
+\ifbeamer@sand
+  \setbeamercolor{normal text}{fg=black,bg=white!80!SPbAUsand}
+\fi
+
+\setbeamercolor{alerted text}{fg=red}
+
+\setbeamercolor{background canvas}{parent=normal text}
+\setbeamercolor{background}{parent=background canvas}
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!15!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!15!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!15!bg}
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=structure.fg!80!white}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=structure.fg!90!white}
+\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+
+\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\mode
+<all>
