@@ -1,0 +1,448 @@
++ sh analyze_simple_1624.sh 1624C/18 1624C/2
+546109
+5393950
+Skip pdg2/0-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 557.3129647660244 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/3
+546109
+5393950
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 515.1414796689933 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/4
+546109
+5393950
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 432.6766267909843 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/6
+546109
+5393950
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(sort
+"(all
+"(<operator>.greaterThan
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.greaterThan
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 12 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 1376.5785884990182 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/7
+546109
+5393950
+Skip pdg2/0-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 680.1298523870064 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/11
+546109
+5393950
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 1086.8030110519903 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/13
+546109
+5393950
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 973.1417877050117 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/16
+546109
+5393950
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 596.8770853909955 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/18
+546109
+5393950
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 34 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 939.1794972270145 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/20
+546109
+5393950
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 652.4822789879981 seconds ---
++ sh analyze_simple_1624.sh 1624C/18 1624C/22
+546109
+5393950
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(sort
+"(all
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.assignmentDivision
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.indirectIndexAccess
+"(<operator>.equals
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.minus
+"(<operator>.assignment
+"(<operator>.indirectIndexAccess
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operators>.assignmentArithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.logicalNot
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 36
+
+Skip pdg1/graph/1-pdg.dot
+--- 800.9405553340039 seconds ---

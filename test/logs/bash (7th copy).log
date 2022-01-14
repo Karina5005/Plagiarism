@@ -1,0 +1,333 @@
++ sh analyze_simple.sh 1623/36 1623_comment/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2022-01-10 10:02:07.552 WARN ModuleFunctionParserInterface: ans_nikalo was skipped.
+28
+1435
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+5
+13
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(PARAM
+"(<operator>.and
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 3 / 17
+
+Skip pdg1/graph/2-pdg.dot
+17
+19
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 2 / 9
+
+0
+0
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/5-pdg.dot
+--- 3.6937897790339775 seconds ---
++ sh analyze_simple.sh 1623/36 1623_code_insertion/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+28
+1435
+Skip pdg2/5-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+5
+13
+Skip pdg2/5-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(PARAM
+"(<operator>.and
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 3 / 17
+
+Skip pdg1/graph/2-pdg.dot
+17
+19
+Skip pdg2/5-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 2 / 9
+
+0
+0
+Skip pdg2/5-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/5-pdg.dot
+--- 6.112566586991306 seconds ---
++ sh analyze_simple.sh 1623/36 1623_control_replacement/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2022-01-10 10:02:39.616 WARN ModuleFunctionParserInterface: ans_nikalo was skipped.
+28
+1435
+Skip pdg2/16-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+5
+13
+Skip pdg2/16-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(PARAM
+"(<operator>.and
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 3 / 17
+
+Skip pdg1/graph/2-pdg.dot
+17
+19
+Skip pdg2/16-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 2 / 9
+
+0
+0
+Skip pdg2/16-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/5-pdg.dot
+--- 3.300681777007412 seconds ---
++ sh analyze_simple.sh 1623/36 1623_rename/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2022-01-10 10:02:51.029 WARN ModuleFunctionParserInterface: zfl was skipped.
+28
+1435
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+5
+13
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(PARAM
+"(<operator>.and
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(<operator>.assignment
+"(<operator>.modulo
+"(<operator>.multiplication
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 3 / 17
+
+Skip pdg1/graph/2-pdg.dot
+17
+19
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 2 / 9
+
+0
+0
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/5-pdg.dot
+--- 3.4919031590106897 seconds ---
++ sh analyze_simple.sh 1623/43 1623_comment/43
+cp: cannot stat '../dataset/test/graph/1623/43/*': No such file or directory
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+--- 0.00027456600219011307 seconds ---
++ sh analyze_simple.sh 1623/43 1623_code_insertion/43
+cp: cannot stat '../dataset/test/graph/1623/43/*': No such file or directory
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+--- 6.323400884866714e-05 seconds ---
++ sh analyze_simple.sh 1623/43 1623_control_replacement/43
+cp: cannot stat '../dataset/test/graph/1623/43/*': No such file or directory
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2022-01-10 10:03:19.375 WARN AstCreationPass: Cannot parse module: /home/karina/Plagiarism/dataset/test/modification/1623_control_replacement/43/transformation_1.cpp, skipping
+java.lang.StringIndexOutOfBoundsException: offset 11239, count -1, length 12615
+	at java.lang.String.checkBoundsOffCount(String.java:3304) ~[?:?]
+	at java.lang.String.<init>(String.java:505) ~[?:?]
+	at org.antlr.v4.runtime.CodePointCharStream$CodePoint8BitCharStream.getText(CodePointCharStream.java:160) ~[org.antlr.antlr4-runtime-4.9.3.jar:4.9.3]
+	at io.joern.fuzzyc2cpg.parser.ModuleFunctionParserInterface.getCompoundStmtAsString(ModuleFunctionParserInterface.java:51) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.joern.fuzzyc2cpg.parser.ModuleFunctionParserInterface.parseFunctionContents(ModuleFunctionParserInterface.java:24) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.joern.fuzzyc2cpg.passes.astcreation.CModuleParserTreeListener.enterFunction_def(CModuleParserTreeListener.java:72) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.joern.fuzzyc2cpg.ModuleParser$Function_defContext.enterRule(ModuleParser.java:533) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at org.antlr.v4.runtime.tree.ParseTreeWalker.enterRule(ParseTreeWalker.java:50) ~[org.antlr.antlr4-runtime-4.9.3.jar:4.9.3]
+	at org.antlr.v4.runtime.tree.ParseTreeWalker.walk(ParseTreeWalker.java:33) ~[org.antlr.antlr4-runtime-4.9.3.jar:4.9.3]
+	at org.antlr.v4.runtime.tree.ParseTreeWalker.walk(ParseTreeWalker.java:36) ~[org.antlr.antlr4-runtime-4.9.3.jar:4.9.3]
+	at io.joern.fuzzyc2cpg.passes.astcreation.AntlrParserDriver.walkTree(AntlrParserDriver.java:166) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.joern.fuzzyc2cpg.passes.astcreation.AntlrParserDriver.parseAndWalkFile(AntlrParserDriver.java:71) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.joern.fuzzyc2cpg.passes.AstCreationPass.tryToParse(AstCreationPass.scala:50) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.joern.fuzzyc2cpg.passes.AstCreationPass.runOnPart(AstCreationPass.scala:38) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.joern.fuzzyc2cpg.passes.AstCreationPass.runOnPart(AstCreationPass.scala:16) ~[io.joern.fuzzyc2cpg-1.1.405.jar:1.1.405]
+	at io.shiftleft.passes.ConcurrentWriterCpgPass.$anonfun$createApplySerializeAndStore$2(ParallelCpgPass.scala:217) ~[io.shiftleft.codepropertygraph_2.13-1.3.472.jar:1.3.472]
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678) ~[org.scala-lang.scala-library-2.13.7.jar:?]
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467) [org.scala-lang.scala-library-2.13.7.jar:?]
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+--- 6.918003782629967e-05 seconds ---
++ sh analyze_simple.sh 1623/43 1623_rename/43
+cp: cannot stat '../dataset/test/graph/1623/43/*': No such file or directory
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+--- 6.161100463941693e-05 seconds ---

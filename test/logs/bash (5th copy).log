@@ -1,0 +1,5120 @@
++ sh analyze_simple.sh 1504/49 1504_comment/49
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.08855800400488079 seconds ---
++ sh analyze_simple.sh 1504/49 1504_code_insertion/49
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.09192215098300949 seconds ---
++ sh analyze_simple.sh 1504/49 1504_control_replacement/49
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.0944235920032952 seconds ---
++ sh analyze_simple.sh 1504/49 1504_rename/49
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.09454438099055551 seconds ---
++ sh analyze_simple.sh 1504/50 1504_comment/50
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+346
+17082
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(int[n + 1]
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 13 / 18
+
+19035
+176648
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.postIncrement
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/11-pdg.dot
+163
+1824
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+11166
+114105
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+322
+5190
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 14 / 16
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.multiplication
+"(<operator>.subtraction
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/18-pdg.dot
+Skip pdg1/graph/19-pdg.dot
+8
+8052
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+Skip pdg1/graph/20-pdg.dot
+Skip pdg1/graph/21-pdg.dot
+0
+9
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(RETURN
+"(<operator>.equals
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+11031
+664753
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 21 / 24
+
+0
+53
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+95
+1646
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(RETURN
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/8-pdg.dot
+113
+3826
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 690.6732278979907 seconds ---
++ sh analyze_simple.sh 1504/50 1504_code_insertion/50
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+346
+17082
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(int[n + 1]
+"(<operator>.assignment
+"(<operator>.lessEqualsThan
+"(<operator>.postIncrement
+"(<operator>.indirectIndexAccess
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 9 / 18
+
+19035
+176648
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.postIncrement
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/11-pdg.dot
+163
+1824
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+11166
+114105
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+322
+5190
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 14 / 16
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.multiplication
+"(<operator>.subtraction
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/18-pdg.dot
+Skip pdg1/graph/19-pdg.dot
+8
+8052
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.modulo
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 9 / 17
+
+Skip pdg1/graph/20-pdg.dot
+Skip pdg1/graph/21-pdg.dot
+0
+9
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(RETURN
+"(<operator>.equals
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+11031
+664753
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 21 / 24
+
+0
+53
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+95
+1646
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(RETURN
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/8-pdg.dot
+113
+3826
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 807.1335410590109 seconds ---
++ sh analyze_simple.sh 1504/50 1504_control_replacement/50
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+346
+17082
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(int[n + 1]
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 13 / 18
+
+19035
+176648
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.postIncrement
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/11-pdg.dot
+163
+1824
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+11166
+114105
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+322
+5190
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 14 / 16
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.multiplication
+"(<operator>.subtraction
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/18-pdg.dot
+Skip pdg1/graph/19-pdg.dot
+8
+8052
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+Skip pdg1/graph/20-pdg.dot
+Skip pdg1/graph/21-pdg.dot
+0
+9
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(RETURN
+"(<operator>.equals
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+11031
+664753
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 21 / 24
+
+0
+53
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+95
+1646
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(RETURN
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/8-pdg.dot
+113
+3826
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 711.2556855430012 seconds ---
++ sh analyze_simple.sh 1504/50 1504_rename/50
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+346
+17082
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(int[n + 1]
+"(vect.push_back
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 12 / 18
+
+19035
+176648
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(<operator>.greaterThan
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.postIncrement
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/11-pdg.dot
+163
+1824
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+11166
+114105
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+322
+5190
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 14 / 16
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.division
+"(<operator>.multiplication
+"(<operator>.subtraction
+"(RETURN
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/18-pdg.dot
+Skip pdg1/graph/19-pdg.dot
+8
+8052
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+Skip pdg1/graph/20-pdg.dot
+Skip pdg1/graph/21-pdg.dot
+0
+9
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(RETURN
+"(<operator>.equals
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+11031
+664753
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.assignmentPlus
+"(<operator>.and
+"(<operator>.assignment
+"(<operator>.assignmentPlus
+"(pali
+"(pali
+"(METHOD_RETURN
+
+Result: 14 / 24
+
+0
+53
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+95
+1646
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+0
+10
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(RETURN
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/8-pdg.dot
+113
+3826
+Skip pdg2/8-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/21-pdg.dot
+Skip pdg2/20-pdg.dot
+Skip pdg2/18-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 871.3721411979932 seconds ---
++ sh analyze_simple.sh 1519/1 1519_comment/1
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+147
+8764
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 12 / 16
+
+--- 1.038197621004656 seconds ---
++ sh analyze_simple.sh 1519/1 1519_code_insertion/1
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+147
+8764
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 12 / 16
+
+--- 1.3231188289937563 seconds ---
++ sh analyze_simple.sh 1519/1 1519_control_replacement/1
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+147
+8764
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.arithmeticShiftRight
+"(<operator>.arithmeticShiftRight
+"(<operator>.equals
+"(<operator>.subtraction
+"(<operator>.multiplication
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 16
+
+--- 1.1346307439962402 seconds ---
++ sh analyze_simple.sh 1519/1 1519_rename/1
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+147
+8764
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 12 / 16
+
+--- 1.0670393949840218 seconds ---
++ sh analyze_simple.sh 1519/2 1519_comment/2
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+18
+590
+"(METHOD
+"(METHOD_RETURN
+
+Result: 11 / 13
+
+144
+19441
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(METHOD_RETURN
+
+Result: 12 / 17
+
+--- 2.451586301001953 seconds ---
++ sh analyze_simple.sh 1519/2 1519_code_insertion/2
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+18
+590
+"(METHOD
+"(METHOD_RETURN
+
+Result: 11 / 13
+
+144
+19441
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(METHOD_RETURN
+
+Result: 12 / 17
+
+--- 2.969008454994764 seconds ---
++ sh analyze_simple.sh 1519/2 1519_control_replacement/2
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+18
+590
+"(METHOD
+"(METHOD_RETURN
+
+Result: 11 / 13
+
+144
+19441
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+--- 2.0993299979891162 seconds ---
++ sh analyze_simple.sh 1519/2 1519_rename/2
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+18
+590
+"(METHOD
+"(METHOD_RETURN
+
+Result: 11 / 13
+
+144
+19441
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(METHOD_RETURN
+
+Result: 12 / 17
+
+--- 2.5846246459987015 seconds ---
++ sh analyze_simple.sh 1519/3 1519_comment/3
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+12964
+"(METHOD
+"(fast
+"(IDENTIFIER
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+--- 0.8654937559913378 seconds ---
++ sh analyze_simple.sh 1519/3 1519_code_insertion/3
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+12964
+"(METHOD
+"(fast
+"(IDENTIFIER
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+--- 0.9360211720049847 seconds ---
++ sh analyze_simple.sh 1519/3 1519_control_replacement/3
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+12964
+"(METHOD
+"(fast
+"(IDENTIFIER
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+--- 0.9540055710240267 seconds ---
++ sh analyze_simple.sh 1519/3 1519_rename/3
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+12964
+"(METHOD
+"(fast
+"(IDENTIFIER
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+--- 0.8113004170008935 seconds ---
++ sh analyze_simple.sh 1519/4 1519_comment/4
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.preIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+479
+19130
+"(METHOD
+"(METHOD_RETURN
+
+Result: 15 / 17
+
+0
+10
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+--- 3.788677631993778 seconds ---
++ sh analyze_simple.sh 1519/4 1519_code_insertion/4
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.preIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+479
+19130
+"(METHOD
+"(METHOD_RETURN
+
+Result: 15 / 17
+
+0
+10
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+--- 4.172764053015271 seconds ---
++ sh analyze_simple.sh 1519/4 1519_control_replacement/4
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.preIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+479
+19130
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 13 / 17
+
+0
+10
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+--- 3.5813920679793227 seconds ---
++ sh analyze_simple.sh 1519/4 1519_rename/4
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.preIncrement
+"(<operator>.arithmeticShiftRight
+"(<operator>.indirectIndexAccess
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+479
+19130
+"(METHOD
+"(METHOD_RETURN
+
+Result: 15 / 17
+
+0
+10
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+--- 4.168010499997763 seconds ---
++ sh analyze_simple.sh 1519/5 1519_comment/5
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+51
+1495
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+--- 0.6011783530120738 seconds ---
++ sh analyze_simple.sh 1519/5 1519_code_insertion/5
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+51
+1495
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+--- 0.6224452639871743 seconds ---
++ sh analyze_simple.sh 1519/5 1519_control_replacement/5
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+51
+1495
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+--- 0.7222231400082819 seconds ---
++ sh analyze_simple.sh 1519/5 1519_rename/5
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+51
+1495
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+--- 0.743436919990927 seconds ---
++ sh analyze_simple.sh 1519/6 1519_comment/6
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+1130
+61213
+"(METHOD
+"(METHOD_RETURN
+
+Result: 17 / 19
+
+0
+51
+"(METHOD
+"(ios_base::sync_with_stdio
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessEqualsThan
+"(<operator>.postIncrement
+"(tc.solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 5.6874350830039475 seconds ---
++ sh analyze_simple.sh 1519/6 1519_code_insertion/6
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+1130
+61213
+"(METHOD
+"(METHOD_RETURN
+
+Result: 17 / 19
+
+0
+51
+"(METHOD
+"(ios_base::sync_with_stdio
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessEqualsThan
+"(<operator>.postIncrement
+"(tc.solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 6.2474581800051965 seconds ---
++ sh analyze_simple.sh 1519/6 1519_control_replacement/6
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+1130
+61213
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 13 / 19
+
+0
+51
+"(METHOD
+"(ios_base::sync_with_stdio
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessEqualsThan
+"(<operator>.postIncrement
+"(tc.solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 4.930307226983132 seconds ---
++ sh analyze_simple.sh 1519/6 1519_rename/6
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+1130
+61213
+"(METHOD
+"(METHOD_RETURN
+
+Result: 17 / 19
+
+0
+51
+"(METHOD
+"(ios_base::sync_with_stdio
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessEqualsThan
+"(<operator>.postIncrement
+"(tc.solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 5.958344197977567 seconds ---
++ sh analyze_simple.sh 1519/8 1519_comment/8
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+859
+30711
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 14 / 18
+
+--- 4.269370388996322 seconds ---
++ sh analyze_simple.sh 1519/8 1519_code_insertion/8
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+859
+30711
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 14 / 18
+
+--- 5.059127572982106 seconds ---
++ sh analyze_simple.sh 1519/8 1519_control_replacement/8
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+859
+30711
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 12 / 18
+
+--- 3.3053876770136412 seconds ---
++ sh analyze_simple.sh 1519/8 1519_rename/8
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+859
+30711
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 14 / 18
+
+--- 3.8519822289817967 seconds ---
++ sh analyze_simple.sh 1519/11 1519_comment/11
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+4113
+468504
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 16 / 23
+
+--- 23.71469041099772 seconds ---
++ sh analyze_simple.sh 1519/11 1519_code_insertion/11
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+4113
+468504
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 16 / 23
+
+--- 23.65757958200993 seconds ---
++ sh analyze_simple.sh 1519/11 1519_control_replacement/11
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+4113
+468504
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 12 / 23
+
+--- 19.72875818097964 seconds ---
++ sh analyze_simple.sh 1519/11 1519_rename/11
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+4113
+468504
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(cout.tie
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 16 / 23
+
+--- 21.899388725025347 seconds ---
++ sh analyze_simple.sh 1519/18 1519_comment/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.3533810109947808 seconds ---
++ sh analyze_simple.sh 1519/18 1519_code_insertion/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.4332070029922761 seconds ---
++ sh analyze_simple.sh 1519/18 1519_control_replacement/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.4296041339985095 seconds ---
++ sh analyze_simple.sh 1519/18 1519_rename/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.42559569200966507 seconds ---
++ sh analyze_simple.sh 1519/20 1519_comment/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+220
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+--- 0.5629589160089381 seconds ---
++ sh analyze_simple.sh 1519/20 1519_code_insertion/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+220
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+--- 0.4931062270188704 seconds ---
++ sh analyze_simple.sh 1519/20 1519_control_replacement/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+220
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+--- 0.5667448579915799 seconds ---
++ sh analyze_simple.sh 1519/20 1519_rename/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+10
+220
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+--- 0.548199579003267 seconds ---
++ sh analyze_simple.sh 1519/21 1519_comment/21
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+939
+34595
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 14 / 18
+
+--- 4.562606068997411 seconds ---
++ sh analyze_simple.sh 1519/21 1519_code_insertion/21
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+939
+34595
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 14 / 18
+
+--- 5.294783563003875 seconds ---
++ sh analyze_simple.sh 1519/21 1519_control_replacement/21
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+939
+34595
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 10 / 18
+
+--- 3.314909416018054 seconds ---
++ sh analyze_simple.sh 1519/21 1519_rename/21
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+939
+34595
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 14 / 18
+
+--- 4.378398731991183 seconds ---
++ sh analyze_simple.sh 1519/22 1519_comment/22
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+107
+4031
+"(METHOD
+"(RETURN
+"(METHOD_RETURN
+
+Result: 12 / 15
+
+0
+1
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 1.4948466200148687 seconds ---
++ sh analyze_simple.sh 1519/22 1519_code_insertion/22
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+107
+4031
+"(METHOD
+"(RETURN
+"(METHOD_RETURN
+
+Result: 12 / 15
+
+0
+1
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 1.2928538940032013 seconds ---
++ sh analyze_simple.sh 1519/22 1519_control_replacement/22
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+107
+4031
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.arithmeticShiftRight
+"(<operator>.arithmeticShiftRight
+"(<operator>.equals
+"(<operator>.addition
+"(<operator>.subtraction
+"(<operator>.multiplication
+"(<operator>.subtraction
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(METHOD_RETURN
+
+Result: 0 / 15
+
+0
+1
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 1.329143965995172 seconds ---
++ sh analyze_simple.sh 1519/22 1519_rename/22
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+107
+4031
+"(METHOD
+"(RETURN
+"(METHOD_RETURN
+
+Result: 12 / 15
+
+0
+1
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.postIncrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 1.4073139049869496 seconds ---
++ sh analyze_simple.sh 1519/25 1519_comment/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+0
+52
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/44-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/23-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/18-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(cin.tie
+"(cout.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(spidy
+"(timer
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 2.541985696007032 seconds ---
++ sh analyze_simple.sh 1519/25 1519_code_insertion/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+0
+52
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/23-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/42-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/18-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(cin.tie
+"(cout.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(spidy
+"(timer
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 2.6011353390058503 seconds ---
++ sh analyze_simple.sh 1519/25 1519_control_replacement/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+0
+52
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/55-pdg.dot
+Skip pdg2/23-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/18-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(cin.tie
+"(cout.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(spidy
+"(timer
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 2.205427574022906 seconds ---
++ sh analyze_simple.sh 1519/25 1519_rename/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+0
+52
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/11-pdg.dot
+Skip pdg2/44-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/19-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/23-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/18-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(cin.tie
+"(cout.tie
+"(<operator>.assignment
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(spidy
+"(timer
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 2.6696765089873224 seconds ---
++ sh analyze_simple.sh 1519/26 1519_comment/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+502
+4792
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 1.8159641029778868 seconds ---
++ sh analyze_simple.sh 1519/26 1519_code_insertion/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+502
+4792
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 2.7109124139824416 seconds ---
++ sh analyze_simple.sh 1519/26 1519_control_replacement/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+502
+4792
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 2.3474435700045433 seconds ---
++ sh analyze_simple.sh 1519/26 1519_rename/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+502
+4792
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 2.1177527169929817 seconds ---
++ sh analyze_simple.sh 1519/33 1519_comment/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+36130
+295941
+"(METHOD
+"(METHOD_RETURN
+
+Result: 20 / 22
+
+--- 141.1454223849869 seconds ---
++ sh analyze_simple.sh 1519/33 1519_code_insertion/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+36130
+295941
+"(METHOD
+"(METHOD_RETURN
+
+Result: 20 / 22
+
+--- 156.76053745899117 seconds ---
++ sh analyze_simple.sh 1519/33 1519_control_replacement/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+36130
+295941
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 16 / 22
+
+--- 115.94497995302663 seconds ---
++ sh analyze_simple.sh 1519/33 1519_rename/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+36130
+295941
+"(METHOD
+"(METHOD_RETURN
+
+Result: 20 / 22
+
+--- 116.8117288450012 seconds ---
++ sh analyze_simple.sh 1526/13 1526_comment/13
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+77633
+354259
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+--- 232.61651653700392 seconds ---
++ sh analyze_simple.sh 1526/13 1526_code_insertion/13
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+77633
+354259
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+--- 284.7557932329946 seconds ---
++ sh analyze_simple.sh 1526/13 1526_control_replacement/13
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+77633
+354259
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+--- 226.10886982502416 seconds ---
++ sh analyze_simple.sh 1526/13 1526_rename/13
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+77633
+354259
+"(METHOD
+"(vp.begin
+"(vp.end
+"(METHOD_RETURN
+
+Result: 21 / 25
+
+--- 370.68038803100353 seconds ---
++ sh analyze_simple.sh 1526/16 1526_comment/16
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+1
+54
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+37
+1205
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(RETURN
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+Skip pdg1/graph/4-pdg.dot
+4771
+384733
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(arrayInput
+"(<operator>.lessThan
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(RETURN
+"(METHOD_RETURN
+
+Result: 18 / 25
+
+Skip pdg1/graph/6-pdg.dot
+--- 32.042373262986075 seconds ---
++ sh analyze_simple.sh 1526/16 1526_code_insertion/16
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+1
+54
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+37
+1205
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(RETURN
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+Skip pdg1/graph/4-pdg.dot
+4771
+384733
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(arrayInput
+"(<operator>.lessThan
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(RETURN
+"(METHOD_RETURN
+
+Result: 18 / 25
+
+Skip pdg1/graph/6-pdg.dot
+--- 34.01964207700803 seconds ---
++ sh analyze_simple.sh 1526/16 1526_control_replacement/16
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+1
+54
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+37
+1205
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(RETURN
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+Skip pdg1/graph/4-pdg.dot
+4771
+384733
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(arrayInput
+"(<operator>.lessThan
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(RETURN
+"(METHOD_RETURN
+
+Result: 18 / 25
+
+Skip pdg1/graph/6-pdg.dot
+--- 29.851598389999708 seconds ---
++ sh analyze_simple.sh 1526/16 1526_rename/16
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+1
+54
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+37
+1205
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(RETURN
+"(METHOD_RETURN
+
+Result: 11 / 14
+
+Skip pdg1/graph/4-pdg.dot
+4771
+384733
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(arrayInput
+"(<operator>.lessThan
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(ss.begin
+"(ss.erase
+"(RETURN
+"(METHOD_RETURN
+
+Result: 16 / 25
+
+Skip pdg1/graph/6-pdg.dot
+--- 27.882110247999663 seconds ---
++ sh analyze_simple.sh 1526/17 1526_comment/17
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+338
+16083
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 13 / 17
+
+--- 1.5756019440013915 seconds ---
++ sh analyze_simple.sh 1526/17 1526_code_insertion/17
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+338
+16083
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 13 / 17
+
+--- 2.03890491797938 seconds ---
++ sh analyze_simple.sh 1526/17 1526_control_replacement/17
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+338
+16083
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 9 / 17
+
+--- 1.4284758639987558 seconds ---
++ sh analyze_simple.sh 1526/17 1526_rename/17
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+338
+16083
+"(METHOD
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 13 / 17
+
+--- 1.9095546600001398 seconds ---
++ sh analyze_simple.sh 1526/18 1526_comment/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.08571418997598812 seconds ---
++ sh analyze_simple.sh 1526/18 1526_code_insertion/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.08915331301977858 seconds ---
++ sh analyze_simple.sh 1526/18 1526_control_replacement/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.11211651199846528 seconds ---
++ sh analyze_simple.sh 1526/18 1526_rename/18
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+--- 0.08957509801257402 seconds ---
++ sh analyze_simple.sh 1526/20 1526_comment/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+282
+2414
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+1
+460
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 9 / 13
+
+253
+7518
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 13 / 16
+
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+1
+46
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+163
+1824
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+169
+9486
+"(METHOD
+"(METHOD_RETURN
+
+Result: 14 / 16
+
+0
+53
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 33.15272837100201 seconds ---
++ sh analyze_simple.sh 1526/20 1526_code_insertion/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+282
+2414
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+1
+460
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 9 / 13
+
+253
+7518
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 13 / 16
+
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+1
+46
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+163
+1824
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+169
+9486
+"(METHOD
+"(METHOD_RETURN
+
+Result: 14 / 16
+
+0
+53
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 36.60564881001483 seconds ---
++ sh analyze_simple.sh 1526/20 1526_control_replacement/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+282
+2414
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+1
+460
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 9 / 13
+
+253
+7518
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 13 / 16
+
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+1
+46
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+163
+1824
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+169
+9486
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 10 / 16
+
+0
+53
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 33.38160395500017 seconds ---
++ sh analyze_simple.sh 1526/20 1526_rename/20
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+282
+2414
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+1
+460
+"(METHOD
+"(PARAM
+"(<operator>.assignment
+"(METHOD_RETURN
+
+Result: 9 / 13
+
+253
+7518
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 13 / 16
+
+0
+1
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+1
+46
+"(METHOD
+"(METHOD_RETURN
+
+Result: 9 / 11
+
+163
+1824
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+148
+1809
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+169
+9486
+"(METHOD
+"(METHOD_RETURN
+
+Result: 14 / 16
+
+0
+53
+"(METHOD
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(freopen
+"(freopen
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 11
+
+--- 33.326299626001855 seconds ---
++ sh analyze_simple.sh 1526/23 1526_comment/23
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+32042
+1017858
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+Skip pdg1/graph/1-pdg.dot
+--- 137.93079865301843 seconds ---
++ sh analyze_simple.sh 1526/23 1526_code_insertion/23
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+32042
+1017858
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+Skip pdg1/graph/1-pdg.dot
+--- 130.69075299298856 seconds ---
++ sh analyze_simple.sh 1526/23 1526_control_replacement/23
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+32042
+1017858
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+Skip pdg1/graph/1-pdg.dot
+--- 118.07166894499096 seconds ---
++ sh analyze_simple.sh 1526/23 1526_rename/23
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+32042
+1017858
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+Skip pdg1/graph/1-pdg.dot
+--- 122.58704936801223 seconds ---
++ sh analyze_simple.sh 1526/25 1526_comment/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+121
+1902
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/1-pdg.dot
+--- 0.8736961789836641 seconds ---
++ sh analyze_simple.sh 1526/25 1526_code_insertion/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+121
+1902
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/1-pdg.dot
+--- 0.9964160319941584 seconds ---
++ sh analyze_simple.sh 1526/25 1526_control_replacement/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+121
+1902
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/1-pdg.dot
+--- 0.9013879380072467 seconds ---
++ sh analyze_simple.sh 1526/25 1526_rename/25
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+121
+1902
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/1-pdg.dot
+--- 0.9389495909854304 seconds ---
++ sh analyze_simple.sh 1526/26 1526_comment/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+0
+29029
+Skip pdg2/1-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.subtraction
+"(<operator>.multiplication
+"(<operator>.lessThan
+"(<operator>.equals
+"(<operator>.modulo
+"(<operator>.assignment
+"(IDENTIFIER
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 18
+
+--- 1.349276829016162 seconds ---
++ sh analyze_simple.sh 1526/26 1526_code_insertion/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+0
+29029
+Skip pdg2/1-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.subtraction
+"(<operator>.multiplication
+"(<operator>.lessThan
+"(<operator>.equals
+"(<operator>.modulo
+"(<operator>.assignment
+"(IDENTIFIER
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 18
+
+--- 1.450624302990036 seconds ---
++ sh analyze_simple.sh 1526/26 1526_control_replacement/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+0
+29029
+Skip pdg2/1-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.subtraction
+"(<operator>.multiplication
+"(<operator>.lessThan
+"(<operator>.equals
+"(<operator>.modulo
+"(<operator>.assignment
+"(IDENTIFIER
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 18
+
+--- 1.2791667809942737 seconds ---
++ sh analyze_simple.sh 1526/26 1526_rename/26
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+0
+29029
+Skip pdg2/1-pdg.dot
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.subtraction
+"(<operator>.multiplication
+"(<operator>.lessThan
+"(<operator>.equals
+"(<operator>.modulo
+"(<operator>.assignment
+"(IDENTIFIER
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 18
+
+--- 1.1742998999834526 seconds ---
++ sh analyze_simple.sh 1526/27 1526_comment/27
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+7
+172
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+Skip pdg1/graph/12-pdg.dot
+Skip pdg1/graph/13-pdg.dot
+Skip pdg1/graph/14-pdg.dot
+Skip pdg1/graph/15-pdg.dot
+Skip pdg1/graph/16-pdg.dot
+Skip pdg1/graph/17-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(fastIO
+"(<operator>.notEquals
+"(freopen
+"((str + \".in\").c_str
+"(freopen
+"((str + \".out\").c_str
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+12080
+230554
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(sz
+"(METHOD_RETURN
+
+Result: 20 / 25
+
+Skip pdg1/graph/2-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(setIO
+"(<operator>.postDecrement
+"(solve_
+"(<operator>.assignment
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 58.42875079400255 seconds ---
++ sh analyze_simple.sh 1526/27 1526_code_insertion/27
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+7
+172
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+Skip pdg1/graph/12-pdg.dot
+Skip pdg1/graph/13-pdg.dot
+Skip pdg1/graph/14-pdg.dot
+Skip pdg1/graph/15-pdg.dot
+Skip pdg1/graph/16-pdg.dot
+Skip pdg1/graph/17-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(fastIO
+"(<operator>.notEquals
+"(freopen
+"((str + \".in\").c_str
+"(freopen
+"((str + \".out\").c_str
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+12080
+230554
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(sz
+"(METHOD_RETURN
+
+Result: 20 / 25
+
+Skip pdg1/graph/2-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(setIO
+"(<operator>.postDecrement
+"(solve_
+"(<operator>.assignment
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 71.49388953999733 seconds ---
++ sh analyze_simple.sh 1526/27 1526_control_replacement/27
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+7
+172
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+Skip pdg1/graph/12-pdg.dot
+Skip pdg1/graph/13-pdg.dot
+Skip pdg1/graph/14-pdg.dot
+Skip pdg1/graph/15-pdg.dot
+Skip pdg1/graph/16-pdg.dot
+Skip pdg1/graph/17-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(fastIO
+"(<operator>.notEquals
+"(freopen
+"((str + \".in\").c_str
+"(freopen
+"((str + \".out\").c_str
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+12080
+230554
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(sz
+"(METHOD_RETURN
+
+Result: 20 / 25
+
+Skip pdg1/graph/2-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(setIO
+"(<operator>.postDecrement
+"(solve_
+"(<operator>.assignment
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 59.3979842980043 seconds ---
++ sh analyze_simple.sh 1526/27 1526_rename/27
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+7
+172
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 10 / 12
+
+Skip pdg1/graph/12-pdg.dot
+Skip pdg1/graph/13-pdg.dot
+Skip pdg1/graph/14-pdg.dot
+Skip pdg1/graph/15-pdg.dot
+Skip pdg1/graph/16-pdg.dot
+Skip pdg1/graph/17-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(PARAM
+"(fastIO
+"(<operator>.notEquals
+"(freopen
+"((str + \".in\").c_str
+"(freopen
+"((str + \".out\").c_str
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+12080
+230554
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(mt.insert
+"(mt.begin
+"(mt.erase
+"(mt.begin
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(sz
+"(METHOD_RETURN
+
+Result: 16 / 25
+
+Skip pdg1/graph/2-pdg.dot
+0
+1
+Skip pdg2/8-pdg.dot
+Skip pdg2/6-pdg.dot
+Skip pdg2/1-pdg.dot
+Skip pdg2/16-pdg.dot
+Skip pdg2/13-pdg.dot
+Skip pdg2/10-pdg.dot
+Skip pdg2/17-pdg.dot
+Skip pdg2/5-pdg.dot
+Skip pdg2/4-pdg.dot
+Skip pdg2/3-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/7-pdg.dot
+Skip pdg2/15-pdg.dot
+Skip pdg2/9-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(setIO
+"(<operator>.postDecrement
+"(solve_
+"(<operator>.assignment
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 58.55324189201929 seconds ---
++ sh analyze_simple.sh 1526/29 1526_comment/29
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+611
+35095
+"(METHOD
+"(<operator>.assignment
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 14 / 19
+
+--- 2.390404224017402 seconds ---
++ sh analyze_simple.sh 1526/29 1526_code_insertion/29
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+611
+35095
+"(METHOD
+"(<operator>.assignment
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 14 / 19
+
+--- 3.3558497129997704 seconds ---
++ sh analyze_simple.sh 1526/29 1526_control_replacement/29
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+611
+35095
+"(METHOD
+"(<operator>.assignment
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 14 / 19
+
+--- 3.0134056090028025 seconds ---
++ sh analyze_simple.sh 1526/29 1526_rename/29
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+611
+35095
+"(METHOD
+"(<operator>.assignment
+"(s1.insert
+"(s1.begin
+"(s1.erase
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 11 / 19
+
+--- 2.384517226018943 seconds ---
++ sh analyze_simple.sh 1526/30 1526_comment/30
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 11 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 1.9557579899847042 seconds ---
++ sh analyze_simple.sh 1526/30 1526_code_insertion/30
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 11 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 2.1980276929971296 seconds ---
++ sh analyze_simple.sh 1526/30 1526_control_replacement/30
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 11 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 1.6577662589843385 seconds ---
++ sh analyze_simple.sh 1526/30 1526_rename/30
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.assignment
+"(s.insert
+"(<operator>.assignmentPlus
+"(<operator>.lessThan
+"(<operator>.assignmentMinus
+"(<operator>.indirection
+"(s.begin
+"(s.erase
+"(s.begin
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 2.025222454976756 seconds ---
++ sh analyze_simple.sh 1526/31 1526_comment/31
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 11 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 2.0616266510041896 seconds ---
++ sh analyze_simple.sh 1526/31 1526_code_insertion/31
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 11 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 2.135176309006056 seconds ---
++ sh analyze_simple.sh 1526/31 1526_control_replacement/31
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.assignment
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 11 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 1.7625595429854002 seconds ---
++ sh analyze_simple.sh 1526/31 1526_rename/31
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+29
+27581
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(<operator>.arithmeticShiftRight
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.assignment
+"(s.insert
+"(<operator>.assignmentPlus
+"(<operator>.lessThan
+"(<operator>.assignmentMinus
+"(<operator>.indirection
+"(s.begin
+"(s.erase
+"(s.begin
+"(<operator>.assignment
+"(max
+"(<operator>.cast
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(METHOD_RETURN
+
+Result: 0 / 19
+
+0
+531
+Skip pdg2/0-pdg.dot
+"(METHOD
+"(speedup
+"(freopen
+"(freopen
+"(freopen
+"(<operator>.assignment
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(IDENTIFIER
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 13
+
+--- 1.8681787090026774 seconds ---
++ sh analyze_simple.sh 1526/32 1526_comment/32
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+319356
+"(METHOD
+"(cin.tie
+"(ios_base::sync_with_stdio
+"(METHOD_RETURN
+
+Result: 18 / 22
+
+--- 45.179536321986234 seconds ---
++ sh analyze_simple.sh 1526/32 1526_code_insertion/32
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+319356
+"(METHOD
+"(cin.tie
+"(ios_base::sync_with_stdio
+"(METHOD_RETURN
+
+Result: 18 / 22
+
+--- 56.016042539005866 seconds ---
++ sh analyze_simple.sh 1526/32 1526_control_replacement/32
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+319356
+"(METHOD
+"(cin.tie
+"(ios_base::sync_with_stdio
+"(METHOD_RETURN
+
+Result: 18 / 22
+
+--- 52.189393138018204 seconds ---
++ sh analyze_simple.sh 1526/32 1526_rename/32
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+319356
+"(METHOD
+"(cin.tie
+"(ios_base::sync_with_stdio
+"(METHOD_RETURN
+
+Result: 18 / 22
+
+--- 43.056714226986514 seconds ---
++ sh analyze_simple.sh 1526/33 1526_comment/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+125826
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+--- 44.990637473005336 seconds ---
++ sh analyze_simple.sh 1526/33 1526_code_insertion/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+125826
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+--- 53.91033817999414 seconds ---
++ sh analyze_simple.sh 1526/33 1526_control_replacement/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+125826
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+--- 41.78738534299191 seconds ---
++ sh analyze_simple.sh 1526/33 1526_rename/33
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+14183
+125826
+"(METHOD
+"(METHOD_RETURN
+
+Result: 18 / 20
+
+--- 37.027873658022145 seconds ---
++ sh analyze_simple.sh 1526/34 1526_comment/34
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5791
+282758
+"(METHOD
+"(cin.tie
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 17 / 22
+
+--- 27.60624981598812 seconds ---
++ sh analyze_simple.sh 1526/34 1526_code_insertion/34
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5791
+282758
+"(METHOD
+"(cin.tie
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 17 / 22
+
+--- 22.93719538600999 seconds ---
++ sh analyze_simple.sh 1526/34 1526_control_replacement/34
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5791
+282758
+"(METHOD
+"(ios::sync_with_stdio
+"(cin.tie
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 16 / 22
+
+--- 24.898731246998068 seconds ---
++ sh analyze_simple.sh 1526/34 1526_rename/34
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5791
+282758
+"(METHOD
+"(cin.tie
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 17 / 22
+
+--- 22.293389058992034 seconds ---
++ sh analyze_simple.sh 1526/35 1526_comment/35
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5432
+77344
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(sort
+"(METHOD_RETURN
+
+Result: 18 / 21
+
+Skip pdg1/graph/1-pdg.dot
+--- 15.955393161973916 seconds ---
++ sh analyze_simple.sh 1526/35 1526_code_insertion/35
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5432
+77344
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(sort
+"(METHOD_RETURN
+
+Result: 18 / 21
+
+Skip pdg1/graph/1-pdg.dot
+--- 17.933153702004347 seconds ---
++ sh analyze_simple.sh 1526/35 1526_control_replacement/35
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5432
+77344
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(sort
+"(METHOD_RETURN
+
+Result: 18 / 21
+
+Skip pdg1/graph/1-pdg.dot
+--- 18.934948604990495 seconds ---
++ sh analyze_simple.sh 1526/35 1526_rename/35
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+5432
+77344
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(sort
+"(METHOD_RETURN
+
+Result: 18 / 21
+
+Skip pdg1/graph/1-pdg.dot
+--- 18.48945716698654 seconds ---
++ sh analyze_simple.sh 1526/36 1526_comment/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+23847
+301033
+"(METHOD
+"(sort
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+1
+"(METHOD
+"(ios::sync_with_stdio
+"(cin.tie
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 89.77307711300091 seconds ---
++ sh analyze_simple.sh 1526/36 1526_code_insertion/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+23847
+301033
+"(METHOD
+"(sort
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+1
+"(METHOD
+"(ios::sync_with_stdio
+"(cin.tie
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 106.82195950800087 seconds ---
++ sh analyze_simple.sh 1526/36 1526_control_replacement/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+23847
+301033
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(sort
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+1
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(ios::sync_with_stdio
+"(cin.tie
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 75.36584976900485 seconds ---
++ sh analyze_simple.sh 1526/36 1526_rename/36
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+23847
+301033
+"(METHOD
+"(sort
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 20 / 24
+
+0
+1
+"(METHOD
+"(ios::sync_with_stdio
+"(cin.tie
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 119.94702825098648 seconds ---
++ sh analyze_simple.sh 1526/38 1526_comment/38
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(METHOD_RETURN
+
+Result: 16 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 7.837269178999122 seconds ---
++ sh analyze_simple.sh 1526/38 1526_code_insertion/38
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(METHOD_RETURN
+
+Result: 16 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 9.559655823977664 seconds ---
++ sh analyze_simple.sh 1526/38 1526_control_replacement/38
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(METHOD_RETURN
+
+Result: 16 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 7.453202395990957 seconds ---
++ sh analyze_simple.sh 1526/38 1526_rename/38
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(pq.push
+"(pq.top
+"(pq.pop
+"(METHOD_RETURN
+
+Result: 13 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 6.792181622993667 seconds ---
++ sh analyze_simple.sh 1526/39 1526_comment/39
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(METHOD_RETURN
+
+Result: 16 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 7.686356090998743 seconds ---
++ sh analyze_simple.sh 1526/39 1526_code_insertion/39
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(METHOD_RETURN
+
+Result: 16 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 9.415570103010396 seconds ---
++ sh analyze_simple.sh 1526/39 1526_control_replacement/39
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(METHOD_RETURN
+
+Result: 16 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 8.345186436985387 seconds ---
++ sh analyze_simple.sh 1526/39 1526_rename/39
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2143
+73356
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(<operator>.lessThan
+"(<operator>.arithmeticShiftRight
+"(pq.push
+"(pq.top
+"(pq.pop
+"(METHOD_RETURN
+
+Result: 13 / 20
+
+Skip pdg1/graph/1-pdg.dot
+--- 6.72543744900031 seconds ---
++ sh analyze_simple.sh 1526/46 1526_comment/46
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+130
+1748
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+3874
+247084
+"(METHOD
+"(<operator>.assignment
+"(<operator>.new
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 17 / 23
+
+--- 17.153730132995406 seconds ---
++ sh analyze_simple.sh 1526/46 1526_code_insertion/46
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+130
+1748
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+3874
+247084
+"(METHOD
+"(<operator>.assignment
+"(<operator>.new
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 17 / 23
+
+--- 19.93986065799254 seconds ---
++ sh analyze_simple.sh 1526/46 1526_control_replacement/46
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+130
+1748
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+3874
+247084
+"(METHOD
+"(<operator>.assignment
+"(<operator>.new
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 17 / 23
+
+--- 20.308188472001348 seconds ---
++ sh analyze_simple.sh 1526/46 1526_rename/46
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+130
+1748
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+3874
+247084
+"(METHOD
+"(<operator>.assignment
+"(<operator>.new
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 16 / 23
+
+--- 20.98110405600164 seconds ---
++ sh analyze_simple.sh 1526/47 1526_comment/47
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 23 / 26
+
+0
+1
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 112.0804494790209 seconds ---
++ sh analyze_simple.sh 1526/47 1526_code_insertion/47
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 23 / 26
+
+0
+1
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 114.75761904599494 seconds ---
++ sh analyze_simple.sh 1526/47 1526_control_replacement/47
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 23 / 26
+
+0
+1
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 112.32126540399622 seconds ---
++ sh analyze_simple.sh 1526/47 1526_rename/47
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/0-pdg.dot
+Skip pdg2/18-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/0-pdg.dot
+Skip pdg2/18-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(pq.push
+"(pq.top
+"(pq.pop
+"(METHOD_RETURN
+
+Result: 20 / 26
+
+0
+1
+Skip pdg2/0-pdg.dot
+Skip pdg2/18-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 110.52823935201741 seconds ---
++ sh analyze_simple.sh 1526/48 1526_comment/48
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 23 / 26
+
+0
+1
+Skip pdg2/13-pdg.dot
+Skip pdg2/0-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 108.76060183401569 seconds ---
++ sh analyze_simple.sh 1526/48 1526_code_insertion/48
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 23 / 26
+
+0
+1
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 117.94388046400854 seconds ---
++ sh analyze_simple.sh 1526/48 1526_control_replacement/48
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/0-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/0-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(METHOD_RETURN
+
+Result: 23 / 26
+
+0
+1
+Skip pdg2/0-pdg.dot
+Skip pdg2/12-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 81.22802963200957 seconds ---
++ sh analyze_simple.sh 1526/48 1526_rename/48
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+132
+1785
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 12 / 14
+
+Skip pdg1/graph/2-pdg.dot
+24706
+461740
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(IDENTIFIER
+"(pq.push
+"(pq.top
+"(pq.pop
+"(METHOD_RETURN
+
+Result: 20 / 26
+
+0
+1
+Skip pdg2/0-pdg.dot
+Skip pdg2/14-pdg.dot
+Skip pdg2/2-pdg.dot
+"(METHOD
+"(freopen
+"(IDENTIFIER
+"(<operator>.assignment
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 95.73692814199603 seconds ---

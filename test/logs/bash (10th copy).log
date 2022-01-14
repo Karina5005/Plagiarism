@@ -1,0 +1,259 @@
++ sh analyze_simple.sh 1602/5 1602_all/5
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+495
+3057
+"(METHOD
+"(METHOD_RETURN
+
+Result: 13 / 15
+
+--- 1.9137746049673297 seconds ---
++ sh analyze_simple.sh 1602/8 1602_all/8
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+--- 0.2219195020152256 seconds ---
++ sh analyze_simple.sh 1602/16 1602_all/16
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+2025
+560510
+"(METHOD
+"(<operator>.assignment
+"(<operator>.lessThan
+"(<operator>.greaterThan
+"(um.clear
+"(<operator>.postIncrement
+"(<operator>.assignment
+"(<operator>.subtraction
+"(METHOD_RETURN
+
+Result: 16 / 25
+
+0
+1
+"(METHOD
+"(ios::sync_with_stdio
+"(cin.tie
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(Solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 17.95619134401204 seconds ---
++ sh analyze_simple.sh 1602/17 1602_all/17
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+20
+7905
+"(METHOD
+"(<operator>.and
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 11 / 16
+
+0
+1
+"(METHOD
+"(ios::sync_with_stdio
+"(cin.tie
+"(<operator>.arithmeticShiftRight
+"(<operator>.postDecrement
+"(solve
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 9
+
+--- 0.9919047399889678 seconds ---
++ sh analyze_simple.sh 1602/29 1602_all/29
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.38401279400568455 seconds ---
++ sh analyze_simple.sh 1602/30 1602_all/30
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.3596347179845907 seconds ---
++ sh analyze_simple.sh 1602/34 1602_all/34
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/11-pdg.dot
+Skip pdg1/graph/12-pdg.dot
+Skip pdg1/graph/13-pdg.dot
+Skip pdg1/graph/14-pdg.dot
+Skip pdg1/graph/16-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.4258283119997941 seconds ---
++ sh analyze_simple.sh 1602/35 1602_all/35
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/11-pdg.dot
+Skip pdg1/graph/12-pdg.dot
+Skip pdg1/graph/13-pdg.dot
+Skip pdg1/graph/14-pdg.dot
+Skip pdg1/graph/16-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.40543104702373967 seconds ---
++ sh analyze_simple.sh 1602/38 1602_all/38
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+0
+10
+Skip pdg2/1-pdg.dot
+Skip pdg2/5-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(<operator>.equals
+"(RETURN
+"(IDENTIFIER
+"(RETURN
+"(gcd
+"(<operator>.modulo
+"(METHOD_RETURN
+
+Result: 0 / 10
+
+Skip pdg1/graph/1-pdg.dot
+10098
+260129
+Skip pdg2/1-pdg.dot
+Skip pdg2/5-pdg.dot
+"(METHOD
+"(METHOD_RETURN
+
+Result: 23 / 25
+
+Skip pdg1/graph/3-pdg.dot
+--- 38.59626568300882 seconds ---
++ sh analyze_simple.sh 1602/41 1602_all/41
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+Skip pdg1/graph/1-pdg.dot
+Skip pdg1/graph/10-pdg.dot
+Skip pdg1/graph/2-pdg.dot
+Skip pdg1/graph/3-pdg.dot
+Skip pdg1/graph/4-pdg.dot
+Skip pdg1/graph/5-pdg.dot
+Skip pdg1/graph/6-pdg.dot
+Skip pdg1/graph/7-pdg.dot
+Skip pdg1/graph/8-pdg.dot
+Skip pdg1/graph/9-pdg.dot
+--- 0.36366782401455566 seconds ---
++ sh analyze_simple.sh 1602/46 1602_all/46
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+54751
+208784
+"(METHOD
+"(IDENTIFIER
+"(<operator>.addressOf
+"(<operator>.and
+"(<operator>.addressOf
+"(<operator>.addressOf
+"(<operator>.addressOf
+"(<operator>.and
+"(METHOD_RETURN
+
+Result: 15 / 24
+
+--- 148.28507741901558 seconds ---
++ sh analyze_simple.sh 1619/1 1619_all/1
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+Skip pdg1/graph/0-pdg.dot
+13165
+109480
+Skip pdg2/3-pdg.dot
+"(METHOD
+"(b15
+"(METHOD_RETURN
+
+Result: 17 / 20
+
+--- 74.23649055103306 seconds ---
++ sh analyze_simple.sh 1619/2 1619_all/2
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
+31
+11884
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(V.push_back
+"(V.push_back
+"(sort
+"(V.erase
+"(unique
+"(METHOD_RETURN
+
+Result: 10 / 17
+
+0
+17589
+Skip pdg2/1-pdg.dot
+"(METHOD
+"(PARAM
+"(PARAM
+"(ios_base::sync_with_stdio
+"(cin.tie
+"(precompute
+"(<operator>.arithmeticShiftRight
+"(<operator>.arithmeticShiftRight
+"(<operator>.assignment
+"(<operator>.subtraction
+"(upper_bound
+"(<operator>.shiftLeft
+"(<operator>.shiftLeft
+"(<operator>.and
+"(RETURN
+"(LITERAL
+"(METHOD_RETURN
+
+Result: 0 / 17
+
+--- 2.487158536037896 seconds ---
++ sh analyze_simple.sh 1619/7 1619_all/7
+bash: BASH_XTRACEFD: 5: invalid value for trace file descriptor
