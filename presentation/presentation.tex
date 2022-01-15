@@ -9,7 +9,6 @@
 \usepackage{xltxtra}
 \usepackage{xecyr}
 \usepackage{hyperref}
-
 %% Minted для подсветки кода
 \usepackage{minted}
 \usepackage{listings}
@@ -47,6 +46,15 @@
 
 \definecolor{schema-keyword}{RGB}{0, 0, 128}
 \newcommand{\keyword}[1]{\textbf{\textcolor{schema-keyword}{#1}}}
+\usepackage[style=verbose,backend=biber]{biblatex}
+\addbibresource{pres.bib}
+
+\renewbibmacro*{in:}{%
+	\iffieldundef{year}
+	{}
+	{\printtext{\bibstring{in}\intitlepunct}}}
+
+
 
 \begin{document}
 \title[Поиск списываний в контестах]{Поиск списываний в контестах по программированию с помощью построения графов зависимостей программ}
@@ -56,69 +64,150 @@
 \date{19 января 2022 г.}
 \frame{\titlepage}
 
-\begin{frame}[fragile]\frametitle{Задача поиска списывания}
-\begin{columns}[T]
-    \column{0.5\textwidth}
-  Программа 1:
-
-  \begin{minted}[fontsize=\small]{cpp}
-    #include <iostream>
-    using namespace std;
-    
-    int main() {
-        int a, b;
-        a = 5;
-        b = 4;
-        if (a > 4) {
-            cout << a - b;
-        } else {
-            cout << a + b;
-        }
-        return 0;
-    }
-  \end{minted}
-  
-  \column{.02\textwidth}
-  	\rule{.1mm}{0.7\textheight}
-
-
+\begin{frame}\frametitle{Задача поиска списывания}
+		\hspace{-0.5cm}
+Основные модификации\footnote[frame]{GPLAG: Detection of Software Plagiarism by Program Dependence Graph Analysis (2006)}\footnote[frame]{Finding Plagiarisms among a Set of Programs with JPlag(2003)}\footnote[frame]{Comparison and evaluation of code clone detection techniques and tools: A qualitative approach (2009)}:
+\begin{columns}
   \column{0.5\textwidth}
-  Программа 2:
-
-  \begin{minted}[fontsize=\small]{cpp}
-  #include <iostream>
-  using namespace std;
+  \centering
+  \includegraphics[scale=0.7]{clear.png}
   
-  int main() {
-      int k = 5;
-      int l = 4;
-      if (k <= 4) {
-          cout << k + l;
-      } else {
-          cout << k - l;
-      }
-      return 0;
-  }
-  \end{minted}
-  
+  \column{0.5\textwidth}
+  \centering
+  \begin{itemize}
+  	\item Добавление/удаление комментариев
+  	\item Добавление незначимых строк кода
+  	\item Переименование
+  	\item Перестановка операций
+  	\item Взаимозаменяемые конструкции
+  	\begin{itemize}
+  		\item for/while
+  		\item if/else
+  	\end{itemize}
+  \end{itemize}
 \end{columns}
-      
-  
-  
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Задача поиска списывания. Основные модификации}
-	\begin{itemize}
-		\item Добавление/удаление комментариев
-		\item Добавление незначимых строк кода
-		\item Переименование
-		\item Перестановка операций
-		\item Взаимозаменяемые конструкции
+\begin{frame}[fragile]\frametitle{Задача поиска списывания}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{comment.png}
+		
+		\column{0.5\textwidth}
+		\centering
 		\begin{itemize}
-			\item for/while
-			\item if/else
+			\item Добавление/удаление комментариев
+			\textcolor{gray}{
+				\item Добавление незначимых строк кода
+			\item Переименование
+			\item Перестановка операций
+			\item Взаимозаменяемые конструкции
+		}
+			\begin{itemize}
+				\item \textcolor{gray}{for/while
+				\item if/else
+			}
+			\end{itemize}
 		\end{itemize}
-	\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Задача поиска списывания}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{insert.png}
+		
+		\column{0.5\textwidth}
+		\centering
+		\begin{itemize}
+			\item \textcolor{gray}{Добавление/удаление комментариев}
+				\item Добавление незначимых строк кода
+				\textcolor{gray}{
+				\item Переименование
+				\item Перестановка операций
+				\item Взаимозаменяемые конструкции
+			}
+			\begin{itemize}
+				\item \textcolor{gray}{for/while
+					\item if/else
+				}
+			\end{itemize}
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Задача поиска списывания}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{renamed.png}
+		
+		\column{0.5\textwidth}
+		\centering
+		\begin{itemize}
+			\item \textcolor{gray}{Добавление/удаление комментариев
+			\item Добавление незначимых строк кода}
+				\item Переименование
+				\textcolor{gray}{
+				\item Перестановка операций
+				\item Взаимозаменяемые конструкции
+			}
+			\begin{itemize}
+				\item \textcolor{gray}{for/while
+					\item if/else
+				}
+			\end{itemize}
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Задача поиска списывания}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{reordering.png}
+		
+		\column{0.5\textwidth}
+		\centering
+		\begin{itemize}
+			\item \textcolor{gray}{Добавление/удаление комментариев
+				\item Добавление незначимых строк кода
+			\item Переименование}
+				\item Перестановка операций
+				\textcolor{gray}{
+				\item Взаимозаменяемые конструкции
+			}
+			\begin{itemize}
+				\item \textcolor{gray}{for/while
+					\item if/else
+				}
+			\end{itemize}
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Задача поиска списывания}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{control.png}
+		
+		\column{0.5\textwidth}
+		\centering
+		\begin{itemize}
+			\item \textcolor{gray}{Добавление/удаление комментариев
+				\item Добавление незначимых строк кода
+				\item Переименование
+			\item Перестановка операций}
+				\item Взаимозаменяемые конструкции
+			\begin{itemize}
+				\item for/while
+					\item if/else
+			\end{itemize}
+		\end{itemize}
+	\end{columns}
 \end{frame}
 
 
@@ -128,17 +217,17 @@
 		\begin{itemize}
 			\item проверяет код как обычный текст
 		\end{itemize}
-		\item SIM
+		\item SIM \footnote[frame]{Sim: A Utility For Detecting Similarity in Computer Programs (1999)}
 		\begin{itemize}
 			\item токенизация
 			\item С, Java, Pascal
 		\end{itemize}
-	    \item Moss
+	    \item Moss \footnote[frame]{MOSS, A System for Detecting Software Plagiarism(2002)}
 	    \begin{itemize}
 	    	\item токенизация
 	    	\item С/C++, C#, Java, assembly
 	    \end{itemize}
-		\item GPLAG
+		\item GPLAG \footnote[frame]{GPLAG: Detection of Software Plagiarism by Program Dependence Graph Analysis (2006)}
 		\begin{itemize}
 			\item Program Dependency Graph
 			\item Только для Java
@@ -157,7 +246,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Program Dependency Graph}
-	\begin{columns}[C]
+	\begin{columns}
 		\column{0.7\textwidth}
 		\includegraphics[scale=0.4]{pdg_example.png}
 		
@@ -264,38 +353,43 @@
 \end{frame}
 
 \begin{frame}\frametitle{Тестирование. Результаты}
-	\begin{columns}[C]
+	\begin{columns}
 	\column{0.5\textwidth}
 	\centering
-	\includegraphics[scale=0.25]{res.png}
+	\includegraphics[scale=0.52]{res.png}
 	
 	\column{0.5\textwidth}
 	\centering
-	\includegraphics[scale=0.25]{res2.png}
+	\includegraphics[scale=0.52]{res2.png}
 	
 \end{columns}
 	
 \end{frame}
 
 \begin{frame}\frametitle{Тестирование. Результаты}
-		\begin{columns}[C]
+		\begin{columns}
+				\column{0.5\textwidth}
+			\centering
+			\includegraphics[scale=0.51]{res3.png}
+			
 			\column{0.5\textwidth}
 			\centering
-			\includegraphics[scale=0.27]{res3.png}
-			 
-			\column{0.5\textwidth}
-			\centering
-			\includegraphics[scale=0.27]{res4.png}
+			\includegraphics[scale=0.51]{res4.png}
 			
 		\end{columns}
 	\end{frame}
 		
 		
 \begin{frame}\frametitle{Тестирование. Результаты}
-	\begin{columns}[T]
-		\column{\textwidth}
+	\begin{columns}
+		\column{0.5\textwidth}
 		\centering
-		\includegraphics[scale=0.26]{res5.png}
+		\includegraphics[scale=0.51]{res5.png}
+		
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.51]{res6.png}
+		
 	\end{columns}
 \end{frame}
 
