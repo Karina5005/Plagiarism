@@ -128,11 +128,16 @@
 		\begin{itemize}
 			\item проверяет код как обычный текст
 		\end{itemize}
-		\item СOPYLEAKS
+		\item SIM
 		\begin{itemize}
 			\item токенизация
-			\item сравнивает программу с программами из базы
+			\item С, Java, Pascal
 		\end{itemize}
+	    \item Moss
+	    \begin{itemize}
+	    	\item токенизация
+	    	\item С/C++, C#, Java, assembly
+	    \end{itemize}
 		\item GPLAG
 		\begin{itemize}
 			\item Program Dependency Graph
@@ -142,15 +147,16 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{PDG}
+\begin{frame}\frametitle{Program Dependency Graph}
 	\begin{definition}
-		\textbf{PDG} -- представление программы в виде графа. \textbf{Вершинами} являются базовые выражения. \\
+		\textbf{Program Dependency Graph (PDG)} -- представление программы в виде графа. \\
+		\textbf{Вершинами} являются базовые выражения. \\
 		\textbf{Ребра зависимости по данным} соединяют вершины, в которых используются одинаковые данные. \\
 		\textbf{Ребра передачи управления} соединяют две вершины, если контролирующая вершина определяет, будет ли выполняться выражение в зависимой вершине.
 	\end{definition}
 \end{frame}
 
-\begin{frame}\frametitle{PDG}
+\begin{frame}\frametitle{Program Dependency Graph}
 	\begin{columns}[C]
 		\column{0.7\textwidth}
 		\includegraphics[scale=0.4]{pdg_example.png}
@@ -200,25 +206,26 @@
     \end{itemize}
 \end{frame}
     
-\begin{frame}\frametitle{Сравнение графов. Постановка проблемы}
-		\item Для сравнения графов нужно смотреть на изоморфизмы между парами подграфов, на этом этапе возникают следующие проблемы:
+\begin{frame}\frametitle{Сравнение графов}
+	\begin{columns}[T]
+	\column{0.5\textwidth}
 		\begin{itemize}
-		\item Известные алгоритмы не подходят, так как рассматривают изоморфизмы типа граф - подграф
-		\item Подграфов в графах слишком много, поэтому находить все проблематично, даже если найдем то перебор всех пар будет работать слишком долго
+		\item Алгоритмы поиска изоморфизмов типа граф - подграф не подходят
+		\item Подграфов в графах слишком много
 		\item Нужно учитывать типы вершин и ребер
 		\end{itemize}
- 
-\end{frame}
-
-\begin{frame}\frametitle{Сравнение графов. Решение}
-	\begin{itemize}
-		\item Сужаем типы вершин до 60 основных
-		\item Рассматриваем подграфы фиксированного размера: 9 вершин
-		\item Выбираем меньший граф и строим его подграфы оптимальным перебором
-		\item Используем алгоритмы для поиска изоморфизмов вида граф - подграф для всех пар <подграф меньшего графа - больший граф>
-		\item Так как подграфов все равно очень много, а наша задача протестировать работоспособность подхода, предподсчитаем подграфы для тестовых данных заранее
-	\end{itemize}
 	
+	\column{.02\textwidth}
+	\rule{.1mm}{0.7\textheight}
+	
+	\column{0.5\textwidth}
+	\begin{itemize}
+	\item Строим подграфы меньшего графа, ищем изоморфизмы вида граф - подграф для всех пар (подграф меньшего графа, больший граф)
+	\item Фиксируем размер подграфов: 9 вершин. Предподсчитаем подграфы для тестовых данных.
+	\item Сужаем типы вершин до 60 основных
+	\end{itemize}
+	\end{columns}
+ 
 \end{frame}
 
 \begin{frame}\frametitle{Построение датасета}
@@ -246,11 +253,61 @@
 	
 \end{frame}
 
-\begin{frame}\frametitle{Тестирование. Полученные результаты}
+\begin{frame}\frametitle{Тестирование. Детали}
+	\begin{itemize}
+		\item Смотрим на количество покрытых вершин
+		\item Идеальным результатом считаем покрытие графа при сравнении с собой
+		\item Оцениваем метрику похожести
+		\item Похожесть = $\frac{\text{Полученное покрытие}}{\text{Максимальное покрытие}}$
+	\end{itemize}
     
 \end{frame}
 
+\begin{frame}\frametitle{Тестирование. Результаты}
+	\begin{columns}[C]
+	\column{0.5\textwidth}
+	\centering
+	\includegraphics[scale=0.25]{res.png}
+	
+	\column{0.5\textwidth}
+	\centering
+	\includegraphics[scale=0.25]{res2.png}
+	
+\end{columns}
+	
+\end{frame}
+
+\begin{frame}\frametitle{Тестирование. Результаты}
+		\begin{columns}[C]
+			\column{0.5\textwidth}
+			\centering
+			\includegraphics[scale=0.27]{res3.png}
+			 
+			\column{0.5\textwidth}
+			\centering
+			\includegraphics[scale=0.27]{res4.png}
+			
+		\end{columns}
+	\end{frame}
+		
+		
+\begin{frame}\frametitle{Тестирование. Результаты}
+	\begin{columns}[T]
+		\column{\textwidth}
+		\centering
+		\includegraphics[scale=0.26]{res5.png}
+	\end{columns}
+\end{frame}
+
+
 \begin{frame}\frametitle{Итоги}
+	\begin{itemize}
+		\item Реализовала алгоритм из статьи GPLAG
+		\item Поддержала гибкость в работе с разными языками программирования
+		\item Поддержала гибкость в работе с разными подходами к построению PDG
+		\item Собран датасет для оценки возможности применения алгоритма к поиску контестного плагиата
+		\item Провела исследование и доказала применимость алгоритма
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Дальнейшие планы}
