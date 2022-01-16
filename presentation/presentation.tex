@@ -64,6 +64,16 @@
 \date{19 января 2022 г.}
 \frame{\titlepage}
 
+\begin{frame}[fragile]\frametitle{Введение в область}
+	\begin{itemize}
+		\item Число контестов, проводимых онлайн, растет
+		\item Число нечестных участников растет
+		\item Списывания практически не отслеживаются
+		\item Необходимо большое количество сравнений
+		\item Специфические модификации
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Задача поиска списывания}
 		\hspace{-0.5cm}
 Основные модификации\footnote[frame]{GPLAG: Detection of Software Plagiarism by Program Dependence Graph Analysis (2006)}\footnote[frame]{Finding Plagiarisms among a Set of Programs with JPlag(2003)}\footnote[frame]{Comparison and evaluation of code clone detection techniques and tools: A qualitative approach (2009)}:
@@ -210,6 +220,24 @@
 	\end{columns}
 \end{frame}
 
+\begin{frame}\frametitle{Program Dependency Graph}
+	\begin{columns}
+		\column{0.6\textwidth}
+		\begin{definition}
+			\textbf{Program Dependency Graph (PDG)} -- представление программы в виде графа. \\
+			\textbf{Вершинами} являются базовые выражения. \\
+			\textbf{Ребра зависимости по данным} соединяют вершины, в которых используются одинаковые данные. \\
+			\textbf{Ребра передачи управления} соединяют две вершины, если контролирующая вершина определяет, будет ли выполняться выражение в зависимой вершине.
+		\end{definition}
+		
+		\column{0.51\textwidth}
+		\flushleft \hspace*{0.6cm}\includegraphics[scale=0.65]{pdg_code.png}
+		\includegraphics[scale=0.28]{pdg_example.png}
+		\newline
+		
+	\end{columns}
+\end{frame}
+
 
 \begin{frame}[fragile]\frametitle{Существующие решения и аналоги}
 	\begin{itemize}
@@ -219,105 +247,80 @@
 		\end{itemize}
 		\item SIM \footnote[frame]{Sim: A Utility For Detecting Similarity in Computer Programs (1999)}
 		\begin{itemize}
-			\item токенизация
+			\item справляется с форматированием и переименованием
 			\item С, Java, Pascal
 		\end{itemize}
 	    \item Moss \footnote[frame]{MOSS, A System for Detecting Software Plagiarism(2002)}
 	    \begin{itemize}
-	    	\item токенизация
+	    	\item справляется с форматированием и переименованием
 	    	\item С/C++, C#, Java, assembly
 	    \end{itemize}
 		\item GPLAG \footnote[frame]{GPLAG: Detection of Software Plagiarism by Program Dependence Graph Analysis (2006)}
 		\begin{itemize}
-			\item Program Dependency Graph
+			\item Справляется со всеми основными модификациями
 			\item Только для Java
+			\item Оценка качества поиска контестного плагиата не проводилась
 			\item Код утерян
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Program Dependency Graph}
-	\begin{definition}
-		\textbf{Program Dependency Graph (PDG)} -- представление программы в виде графа. \\
-		\textbf{Вершинами} являются базовые выражения. \\
-		\textbf{Ребра зависимости по данным} соединяют вершины, в которых используются одинаковые данные. \\
-		\textbf{Ребра передачи управления} соединяют две вершины, если контролирующая вершина определяет, будет ли выполняться выражение в зависимой вершине.
-	\end{definition}
-\end{frame}
-
-\begin{frame}\frametitle{Program Dependency Graph}
-	\begin{columns}
-		\column{0.7\textwidth}
-		\includegraphics[scale=0.4]{pdg_example.png}
-		
-		\column{.05\textwidth}
-		
-		\column{0.3\textwidth}
-		\centering
-		\includegraphics[scale=0.3]{pdg_example2.png}
-		
-	\end{columns}
-\end{frame}
-
 \begin{frame}\frametitle{Постановка цели и задачи}
-    \textbf{Цель:} Оценить применимость подхода статьи GPLAG к решению задачи поиска контестного плагиата
+    \textbf{Цель:} Оценить применимость алгоритма GPLAG к решению задачи поиска контестного плагиата
     
     \textbf{Задачи:}
     \begin{itemize}
-        \item Реализовать алгоритм из статьи GPLAG
-        \item Собрать датасет
+        \item Реализовать алгоритм GPLAG, так как работающей версии не существует
+        \item Собрать датасет для оценки применимость подхода
         \item Провести тестирование и проанализировать работу полученного решения
     \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Алгоритм}
-\centering
-\includegraphics[width=0.8\paperwidth,height=0.8\paperheight]{algo.png}
-\end{frame}
-
-\begin{frame}\frametitle{Построение PDG}
-    \begin{itemize}
-    	\item PROGEX
-    	\begin{itemize}
-    		\item Парсит только Java, но можно добавлять и свои грамматики
-    		\item На практике добавление новой грамматики проблематично
-    	\end{itemize}
-    	\item TinyPDG
-    	\begin{itemize}
-    		\item Умеет парсить только Java код
-    		\item Добавление новой грамматики не предусмотрено
-    	\end{itemize}
-        \item Joern
-        \begin{itemize}
-        	\item Умеет парсить только C/C++ и Java код
-        	\item Результат в формате *.dot
-        \end{itemize}
-    \end{itemize}
+	\begin{columns}
+		\column{0.6\textwidth}
+		\hspace*{-0.6cm}\includegraphics[scale=0.6]{algo.png}
+		\column{0.4\textwidth}
+		\centering
+		\begin{enumerate}
+			\item Построение PDG с помощью Joern
+			\newline
+			\item Сравнение графов
+			\newline
+			\newline
+			\item Оценка покрытия графа
+		\end{enumerate}
+	\end{columns}
 \end{frame}
     
-\begin{frame}\frametitle{Сравнение графов}
+\begin{frame}\frametitle{Реализация алгоритма. Сравнение графов}
 	\begin{columns}[T]
 	\column{0.5\textwidth}
-		\begin{itemize}
-		\item Алгоритмы поиска изоморфизмов типа граф - подграф не подходят
+	    Проблемы:
+		\begin{enumerate}
+		\item Алгоритмы поиска изоморфизмов вида граф - подграф не
+		подходят
 		\item Подграфов в графах слишком много
 		\item Нужно учитывать типы вершин и ребер
-		\end{itemize}
+		\end{enumerate}
 	
 	\column{.02\textwidth}
-	\rule{.1mm}{0.7\textheight}
 	
 	\column{0.5\textwidth}
-	\begin{itemize}
-	\item Строим подграфы меньшего графа, ищем изоморфизмы вида граф - подграф для всех пар (подграф меньшего графа, больший граф)
-	\item Фиксируем размер подграфов: 9 вершин. Предподсчитаем подграфы для тестовых данных.
+	Решения:
+	\begin{enumerate}
+	\item Сводим задачу к поиску изоморфизмов граф - подграф \newline
+	\item Фиксируем размер подграфов: 9 вершин.
 	\item Сужаем типы вершин до 60 основных
-	\end{itemize}
+	\end{enumerate}
 	\end{columns}
  
 \end{frame}
 
 \begin{frame}\frametitle{Построение датасета}
+	Общедоступного датасета нет, поэтому необходимо его собрать.
+	\newline
+	\newline
 	Датасет для оценки способности алгоритма находить плагиат и чувствительности к разным видам модификаций:
 	\begin{itemize}
 		\item 372 программы из 23 контестов с Codeforces
@@ -344,42 +347,77 @@
 
 \begin{frame}\frametitle{Тестирование. Детали}
 	\begin{itemize}
-		\item Смотрим на количество покрытых вершин
-		\item Идеальным результатом считаем покрытие графа при сравнении с собой
-		\item Оцениваем метрику похожести
 		\item Похожесть = $\frac{\text{Полученное покрытие}}{\text{Максимальное покрытие}}$
+		\item При сравнении графов получаем покрытие
+		\item Максимальное покрытие - покрытие полученное при сравнении программы с собой
 	\end{itemize}
     
 \end{frame}
 
 \begin{frame}\frametitle{Тестирование. Результаты}
+	\hspace*{-0.6cm}
+	\includegraphics[scale=0.6]{res0.png}
+	\hspace*{-0.6cm}
+	Вывод: в случае наличия плагиата алгоритм показывает \hspace*{-0.6cm} достаточно большое значение похожести
+	
+	
+	\hspace*{-0.6cm}
+	\includegraphics[scale=0.6]{res1.png}
+	\hspace*{-0.6cm}
+	Вывод: в случае отсутствия плагиата алгоритм показывает \hspace*{-0.6cm} достаточно маленькое значение похожести, но в случаях \hspace*{-0.6cm} маленьких программ результат неоднозначный
+	
+\end{frame}
+
+
+\begin{frame}\frametitle{Итоги}
+	\begin{itemize}
+		\item Реализован алгоритм из статьи GPLAG, поддержана гибкость в работе с разными языками программирования и разными подходами к построению PDG
+		\item Собран датасет из 1895 программ для оценки возможности применения алгоритма к поиску контестного плагиата
+		\item Проведено исследование и доказана применимость алгоритма GPLAG
+		\newline
+	\end{itemize}
+
+    Репозиторий: \href{https://github.com/Karina5005/Plagiarism}{github.com/Karina5005/Plagiarism}
+\end{frame}
+
+\begin{frame}\frametitle{Дальнейшие планы}
+    \begin{itemize}
+    	\item Оценить точность других алгоритмов поиска плагата в применении к задаче поиска списываний в контестах
+        \item Заменить в системе построение PDG по абстрактному синтаксису на построение PDG по assembler и сравнить эти два подхода
+        \item Придумать и применить эвристики для ускорения поиска подграфов и сокращения их количества без сильной потери точности работы алгоритма
+        \item Решить проблему нахождения плагиата в случаях популярных паттернов
+        
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Тестирование. Результаты}
 	\begin{columns}
-	\column{0.5\textwidth}
-	\centering
-	\includegraphics[scale=0.52]{res.png}
-	
-	\column{0.5\textwidth}
-	\centering
-	\includegraphics[scale=0.52]{res2.png}
-	
-\end{columns}
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.52]{res.png}
+		
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.52]{res2.png}
+		
+	\end{columns}
 	
 \end{frame}
 
 \begin{frame}\frametitle{Тестирование. Результаты}
-		\begin{columns}
-				\column{0.5\textwidth}
-			\centering
-			\includegraphics[scale=0.51]{res3.png}
-			
-			\column{0.5\textwidth}
-			\centering
-			\includegraphics[scale=0.51]{res4.png}
-			
-		\end{columns}
-	\end{frame}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.51]{res3.png}
 		
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.51]{res4.png}
 		
+	\end{columns}
+\end{frame}
+
+
 \begin{frame}\frametitle{Тестирование. Результаты}
 	\begin{columns}
 		\column{0.5\textwidth}
@@ -391,26 +429,6 @@
 		\includegraphics[scale=0.51]{res6.png}
 		
 	\end{columns}
-\end{frame}
-
-
-\begin{frame}\frametitle{Итоги}
-	\begin{itemize}
-		\item Реализовала алгоритм из статьи GPLAG
-		\item Поддержала гибкость в работе с разными языками программирования
-		\item Поддержала гибкость в работе с разными подходами к построению PDG
-		\item Собран датасет для оценки возможности применения алгоритма к поиску контестного плагиата
-		\item Провела исследование и доказала применимость алгоритма
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Дальнейшие планы}
-    \begin{itemize}
-        \item Заменить в системе построение PDG по абстрактному синтаксису на построение PDG по assembler и сравнить эти два подхода
-        \item Придумать и применить эвристики для ускорения поиска подграфов и сокращения их количества без сильной потери точности работы алгоритма
-        \item Решить проблему нахождения плагиата в случаях популярных паттернов
-        
-    \end{itemize}
 \end{frame}
 \end{document}
 
