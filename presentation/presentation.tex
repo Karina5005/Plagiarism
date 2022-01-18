@@ -50,7 +50,7 @@
 \usepackage[style=verbose,backend=biber]{biblatex}
 \addbibresource{pres.bib}
 
-\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand{\footnotesize}{\scriptsize}
 \renewbibmacro*{in:}{%
 	\iffieldundef{year}
 	{}
@@ -226,24 +226,6 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Program Dependency Graph}
-	\begin{columns}
-		\column{0.6\textwidth}
-		\begin{definition}
-			\textbf{Program Dependency Graph (PDG)} -- представление программы в виде графа. \\
-			\textbf{Вершинами} являются базовые выражения. \\
-			\textbf{Ребра зависимости по данным} соединяют вершины, в которых используются одинаковые данные. \\
-			\textbf{Ребра передачи управления} соединяют две вершины, если контролирующая вершина определяет, будет ли выполняться выражение в зависимой вершине.
-		\end{definition}
-		
-		\column{0.51\textwidth}
-		\flushleft \hspace*{0.6cm}\includegraphics[scale=0.65]{pdg_code.png}
-		\includegraphics[scale=0.28]{pdg_example.png}
-		\newline
-		
-	\end{columns}
-\end{frame}
-
 
 \begin{frame}[fragile]\frametitle{Существующие решения и аналоги}
 	\begin{itemize}
@@ -263,7 +245,7 @@
 			\item Справляется со всеми основными модификациями
 			\item Поддерживает Java
 			\item Оценка качества поиска контестного плагиата не проводилась
-			\item Код утерян
+			\item Код утерян*
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -331,7 +313,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Построение датасета}
-	\textbf{Мотивация:} Общедоступного датасета нет\footnote[8,frame]{Academic Source Code Plagiarism Detection by Measuring Program Behavioral Similarity (2021)}, поэтому необходимо его собрать
+	\textbf{Мотивация:} Общедоступного датасета нет\footnote[8,frame]{Academic Source Code Plagiarism Detection by Measuring Program Behavioral Similarity (2021)}
 	\newline
 	\newline
 	Датасет для оценки способности алгоритма находить плагиат и чувствительности к разным видам модификаций:
@@ -344,7 +326,7 @@
 			\item Замена взаимозаменяемыех конструкций
 		\end{itemize}
 		\item Добавлена возможность построения модификации вставки незначимых строк кода в gorshochek
-		\item Для каждой программы построен файл с случайным набором модификаций
+		\item Для каждой программы построен файл с набором разных модификаций
 	\end{itemize}
 	
 \end{frame}
@@ -352,16 +334,15 @@
 \begin{frame}\frametitle{Построение датасета}
 	Датасет для оценки работы алгоритма в случаях отсутствия плагиата:
 	\begin{itemize}
-		\item 23 программы, решающих одну и ту же простую задачу
-		\item 12 программ, решающих одну и ту же сложную задачу
+		\item 23 программы, решающих одну и ту же простую задачу (25 строк кода)
+		\item 12 программ, решающих одну и ту же сложную задачу (60 строк кода)
 	\end{itemize}
 	
 \end{frame}
 
 \begin{frame}\frametitle{Тестирование. Результаты}
-	\hspace*{-0.6cm}
-	\includegraphics[scale=0.6]{res0.png}
-	\hspace*{-0.6cm}
+	\hspace*{-0.4cm}
+	\includegraphics[scale=0.7]{res0.png}
 	Вывод: 
 	\begin{itemize}
 		\item Алгоритм справляется с выявлением контестного плагиата
@@ -374,8 +355,8 @@
 
 \begin{frame}\frametitle{Итоги}
 	\begin{itemize}
-		\item Реализован алгоритм из статьи GPLAG, поддержана возможность работы с разными языками программирования и разными подходами к построению PDG
-		\item Собран датасет из 372 программ с 4 видами модификаций, 23 решений простой задачи и 12 решений сложной задачи
+		\item Реализован алгоритм из статьи GPLAG, поддержана возможность работы с разными языками программирования
+		\item Собран датасет из 372 программ с 4 видами модификаций, 23 решений простой задачи (25 строк кода) и 12 решений сложной задачи (60 строк кода)
 		\item Проведено исследование и показана применимость алгоритма GPLAG. По результатам тестирования алгоритм подходит для выявления контестного плагиата, однако в случаях небольших программ возможны неточности.
 		\newline
 	\end{itemize}
@@ -391,6 +372,24 @@
         \item Решить проблему нахождения плагиата в случаях популярных паттернов
         
     \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Program Dependency Graph}
+	\begin{columns}
+		\column{0.6\textwidth}
+		\begin{definition}
+			\textbf{Program Dependency Graph (PDG)} -- представление программы в виде графа. \\
+			\textbf{Вершинами} являются базовые выражения. \\
+			\textbf{Ребра зависимости по данным} соединяют вершины, в которых используются одинаковые данные. \\
+			\textbf{Ребра передачи управления} соединяют две вершины, если контролирующая вершина определяет, будет ли выполняться выражение в зависимой вершине.
+		\end{definition}
+		
+		\column{0.51\textwidth}
+		\flushleft \hspace*{0.6cm}\includegraphics[scale=0.65]{pdg_code.png}
+		\includegraphics[scale=0.28]{pdg_example.png}
+		\newline
+		
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Тестирование. Результаты}
@@ -432,6 +431,66 @@
 		\includegraphics[scale=0.51]{res6.png}
 		
 	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Перестановка операций}
+	\begin{itemize}
+		\item Сложно автоматизировать
+		\item Идеи автоматизации основаны на использовании графа зависимостей программ\footnote[10,frame]{The Program Dependence Graph and Its Use in Optimization (1987)}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Типизация}
+	Примеры сужения типов:\\
+	$\text{(<operator>.assignment,i = 1)}\hspace{1cm} \longrightarrow \hspace{0.3cm}\text{assignment}$\\
+	(<operator>.postIncrement,i++)\hspace{0.6cm} $\longrightarrow$ \hspace{0.3cm}increment\\
+	(<operator>.lessEqualsThan,j <= n) $\longrightarrow$\hspace{0.3cm} check
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Некорректная модификация}
+	\centering
+	\hspace*{-0.5cm}\includegraphics[scale=0.48]{bad_mod.png}
+\end{frame}
+
+\begin{frame}\frametitle{Построение графа зависимостей программ}
+	\begin{itemize}
+		\item PROGEX\footnote[11,frame]{\href{https://github.com/ghaffarian/progex}{\color{blue}github.com/ghaffarian/progex}}
+		\begin{itemize}
+			\item Парсит только Java, но можно добавлять и свои грамматики
+			\item На практике добавление новой грамматики проблематично
+		\end{itemize}
+		\item TinyPDG\footnote[12,frame]{\href{https://github.com/YoshikiHigo/TinyPDG}{\color{blue}github.com/YoshikiHigo/TinyPDG}}
+		\begin{itemize}
+			\item Умеет парсить только Java код
+			\item Добавление новой грамматики не предусмотрено
+		\end{itemize}
+		\item Joern
+		\begin{itemize}
+			\item Умеет парсить только C/C++ и Java код
+			\item Результат в формате *.dot
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Реализация GPLAG}
+	Существует две реализации:
+	\begin{itemize}
+		\item vfrunza$\backslash$GPLAG-Plagerism-Detection\footnote[13,frame]{\href{https://github.com/vfrunza/GPLAG-Plagerism-Detection}{\color{blue}github.com/vfrunza/GPLAG-Plagerism-Detection}}
+		\begin{itemize}
+			\item Полностью самостоятельная реализация
+			\item Упрощенная версия графа зависимостей программ
+			\item Поддерживает только C
+			\item Нет тестов отдельных частей
+			\item Тестирование проводилось на большом датасете модификаций элементарной программы (9 строк)
+		\end{itemize}
+	    \item sarahfoss$\backslash$GPLAG\footnote[14,frame]{\href{https://github.com/sarahfoss/GPLAG}{\color{blue}github.com/sarahfoss/GPLAG}}
+	    \begin{itemize}
+	    	\item Полностью самостоятельная реализация
+	    	\item Поддерживает только Java
+	    	\item Нет тестов отдельных частей
+	    	\item Тестирование проводилось на 4 тестовых файлах
+	    \end{itemize}
+	\end{itemize}
 \end{frame}
 \end{document}
 
