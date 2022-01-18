@@ -40,7 +40,7 @@ def prepare_graph(path):
     G = nx.drawing.nx_pydot.read_dot(path)
     if next(nx.weakly_connected_components(G), None) is not None:
         G = G.subgraph(max(nx.weakly_connected_components(G), key=len))
-    if G.number_of_nodes() < 9:
+    if G.number_of_nodes() < 1:
         return None
     fix_labels(G)
     return G
