@@ -1,7 +1,7 @@
 #!/bin/bash
 {
 cd /opt/joern/joern-cli
-joern-parse --language c ../../../../$3/$1
+joern-parse ../../../../$3/$1
 timeout 1s joern /opt/joern/joern-cli/cpg.bin
 joern-export --repr pdg --out ../../../../$3/Plagiarism/pdg1
 cd ../../../../home/karina/Plagiarism/pdg1
@@ -15,7 +15,7 @@ g++ subgraphs.cpp -o subgraphs -lstdc++fs -std=c++17
 ./subgraphs pdg1
 {
 chmod -R a+rwx pdg1
-joern-parse --language c ../../../../$3/$2
+joern-parse ../../../../$3/$2
 timeout 1s joern /opt/joern/joern-cli/cpg.bin
 joern-export --repr pdg --out ../../../../$3/Plagiarism/pdg2
 cd ../../../../$3/Plagiarism/pdg2

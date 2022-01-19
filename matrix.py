@@ -18,5 +18,5 @@ if __name__ == '__main__':
             for _list in x:
                 f.write(' '.join(str(e) for e in _list) + '\n')
     toc = time.perf_counter()
-    print(f'Finished building of adjacency matrix in {toc - tic} seconds')
+    print(f'Finished building of adjacency matrix in {toc - tic} seconds, moving next')
     print()

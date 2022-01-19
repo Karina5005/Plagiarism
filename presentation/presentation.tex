@@ -71,7 +71,7 @@
 	\begin{itemize}
 		\item Одиночные файлы
 		\item Небольшой размер файлов
-		\item Потенциальное множество попарных сравнений
+		\item Одинаковые паттерны
 	\end{itemize}
 \end{frame}
 
@@ -245,7 +245,7 @@
 			\item Справляется со всеми основными модификациями
 			\item Поддерживает Java
 			\item Оценка качества поиска контестного плагиата не проводилась
-			\item Код утерян*
+			\item Отсутствует реализация алгоритма*
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -285,8 +285,6 @@
 	\column{0.5\textwidth}
 	    Проблемы:
 		\begin{enumerate}
-		\item Алгоритмы поиска изоморфизмов вида граф - подграф не
-		подходят
 		\item Подграфов в графах слишком много
 		\item Нужно учитывать типы вершин и ребер
 		\end{enumerate}
@@ -296,7 +294,6 @@
 	\column{0.5\textwidth}
 	Решения:
 	\begin{enumerate}
-	\item Сводим задачу к поиску изоморфизмов граф - подграф \newline
 	\item Фиксируем размер подграфов: 9 вершин
 	\item Сужаем типы вершин до 60 основных
 	\end{enumerate}
@@ -309,6 +306,8 @@
 		\item При сравнении графов получаем покрытие
 		\item Максимальное покрытие - покрытие полученное при сравнении программы с собой
 	\end{itemize}
+    \vspace{1cm}
+    \textbf{Итог:} реализован алгоритм GPLAG, поддержана возможность работы с разными языками программирования
 	
 \end{frame}
 
@@ -356,7 +355,7 @@
 \begin{frame}\frametitle{Итоги}
 	\begin{itemize}
 		\item Реализован алгоритм из статьи GPLAG, поддержана возможность работы с разными языками программирования
-		\item Собран датасет из 372 программ с 4 видами модификаций, 23 решений простой задачи (25 строк кода) и 12 решений сложной задачи (60 строк кода)
+		\item Собран датасет из 372 программ с 4 видами модификаций, 23 решений простой задачи и 12 решений сложной задачи
 		\item Проведено исследование и показана применимость алгоритма GPLAG. По результатам тестирования алгоритм подходит для выявления контестного плагиата, однако в случаях небольших программ возможны неточности.
 		\newline
 	\end{itemize}
@@ -424,11 +423,11 @@
 	\begin{columns}
 		\column{0.5\textwidth}
 		\centering
-		\includegraphics[scale=0.51]{res5.png}
+		\includegraphics[scale=0.45]{res5.png}
 		
 		\column{0.5\textwidth}
 		\centering
-		\includegraphics[scale=0.51]{res6.png}
+		\includegraphics[scale=0.45]{res6.png}
 		
 	\end{columns}
 \end{frame}
@@ -450,6 +449,23 @@
 \begin{frame}[fragile]\frametitle{Некорректная модификация}
 	\centering
 	\hspace*{-0.5cm}\includegraphics[scale=0.48]{bad_mod.png}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Похожие программы}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.57]{example.png}
+		
+		\column{0.5\textwidth}
+		\centering
+		\includegraphics[scale=0.57]{example2.png}
+		
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Решение сложной задачи}
+		\includegraphics[scale=0.45]{example_d.png}
 \end{frame}
 
 \begin{frame}\frametitle{Построение графа зависимостей программ}
